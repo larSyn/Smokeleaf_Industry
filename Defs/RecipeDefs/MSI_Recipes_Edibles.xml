@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+	<!--=== Base Edibles ===-->
+	
+  <RecipeDef>
+    <defName>BakeSmokeleafCookies</defName>
+    <label>bake smokeleaf cookies</label>
+    <description>Bake delicious "special" cookies.</description>
+    <jobString>Baking cookies.</jobString>
+    <workAmount>800</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SmokeleafButter</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>HempFlour</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <SmokeleafCookie>2</SmokeleafCookie>
+    </products>
+    <fixedIngredientFilter>
+		<thingDefs>
+            <li>SmokeleafButter</li>
+			<li>HempFlour</li>
+         </thingDefs>
+      <disallowedSpecialFilters>
+        <li>AllowRotten</li>
+      </disallowedSpecialFilters>
+    </fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+    <researchPrerequisite>SmokeleafEdibles</researchPrerequisite>
+	<skillRequirements>
+        <li>
+          <skill>Cooking</skill>
+          <minLevel>3</minLevel>
+        </li>
+      </skillRequirements>
+	<recipeUsers>
+        <li>FueledStove</li>
+		<li>ElectricStove</li>
+     </recipeUsers>
+  </RecipeDef>	
+
+  <RecipeDef>
+    <defName>BakeSmokeleafBrownies</defName>
+    <label>bake smokeleaf brownies</label>
+    <description>Bake delicious "special" brownies.</description>
+    <jobString>Baking brownies.</jobString>
+    <workAmount>800</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chocolate</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SmokeleafButter</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>HempFlour</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <SmokeleafBrownie>2</SmokeleafBrownie>
+    </products>
+    <fixedIngredientFilter>
+		<thingDefs>
+            <li>SmokeleafButter</li>
+			<li>HempFlour</li>
+         </thingDefs>
+      <disallowedSpecialFilters>
+        <li>AllowRotten</li>
+      </disallowedSpecialFilters>
+    </fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+    <researchPrerequisite>SmokeleafEdibles</researchPrerequisite>
+	<skillRequirements>
+        <li>
+          <skill>Cooking</skill>
+          <minLevel>3</minLevel>
+        </li>
+      </skillRequirements>
+	<recipeUsers>
+        <li>FueledStove</li>
+		<li>ElectricStove</li>
+     </recipeUsers>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>MakeSmokeleafButter</defName>
+    <label>make smokeleaf butter</label>
+    <description>Churn milk and buds to make infused butter.</description>
+    <jobString>Churning butter.</jobString>
+    <workAmount>200</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Milk</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SmokeleafBuds</li>
+          </thingDefs>
+        </filter>
+        <count>8</count>
+      </li>
+    </ingredients>
+    <products>
+      <SmokeleafButter>5</SmokeleafButter>
+    </products>
+    <fixedIngredientFilter>
+		<thingDefs>
+            <li>SmokeleafBuds</li>
+         </thingDefs>
+      <disallowedSpecialFilters>
+        <li>AllowRotten</li>
+      </disallowedSpecialFilters>
+    </fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+    <researchPrerequisite>SmokeleafEdibles</researchPrerequisite>
+	<skillRequirements>
+        <li>
+          <skill>Cooking</skill>
+          <minLevel>3</minLevel>
+        </li>
+      </skillRequirements>
+	<recipeUsers>
+        <li>FueledStove</li>
+		<li>ElectricStove</li>
+     </recipeUsers>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>MakeSmokeleafChocolate</defName>
+    <label>make smokeleaf chocolate</label>
+    <description>Combine chocolate and smokeleaf butter to make a tasty "special" treat.</description>
+    <jobString>Churning butter.</jobString>
+    <workAmount>200</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredients>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>Chocolate</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SmokeleafButter</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <SmokeleafChocolateBar>2</SmokeleafChocolateBar>
+    </products>
+    <fixedIngredientFilter>
+		<thingDefs>
+            <li>SmokeleafButter</li>
+         </thingDefs>
+      <disallowedSpecialFilters>
+        <li>AllowRotten</li>
+      </disallowedSpecialFilters>
+    </fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+    <researchPrerequisite>SmokeleafEdibles</researchPrerequisite>
+	<skillRequirements>
+        <li>
+          <skill>Cooking</skill>
+          <minLevel>3</minLevel>
+        </li>
+    </skillRequirements>
+	<recipeUsers>
+        <li>FueledStove</li>
+		<li>ElectricStove</li>
+     </recipeUsers>
+  </RecipeDef>
+  
+	<!--=== Advanced Edibles ===-->  
+  
+  <RecipeDef>
+    <defName>MakeSmokeleafDeEnergyDrink</defName>
+    <label>make smokeleaf de-energy drink</label>
+    <description>A smokeleaf drink Ricky's been working on...a 5 hour de-energy. It's probably pretty potent.</description>
+    <jobString>Making De-Energy drink.</jobString>
+    <workAmount>500</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredients>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>SmokeleafRosin</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Ambrosia</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <SmokeleafDeEnergyDrink>1</SmokeleafDeEnergyDrink>
+    </products>
+    <fixedIngredientFilter>
+		<thingDefs>
+            <li>SmokeleafRosin</li>
+			<li>Ambrosia</li>
+         </thingDefs>
+      <disallowedSpecialFilters>
+        <li>AllowRotten</li>
+      </disallowedSpecialFilters>
+    </fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+    <researchPrerequisite>AdvancedSmokeleafExtractsAndEdibles</researchPrerequisite>
+	<skillRequirements>
+        <li>
+          <skill>Cooking</skill>
+          <minLevel>12</minLevel>
+        </li>
+    </skillRequirements>
+	<recipeUsers>
+        <li>FueledStove</li>
+		<li>ElectricStove</li>
+     </recipeUsers>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>MakeSmokeleafSmoothie</defName>
+    <label>make smokeleaf smoothie</label>
+    <description>A smokeleaf smoothie. Berries blended with rosin to make a delicious liquid edible.</description>
+    <jobString>Making De-Energy drink.</jobString>
+    <workAmount>500</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredients>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>SmokeleafRosin</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RawBerries</li>
+			<li>RawAgave</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <products>
+      <SmokeleafSmoothie>1</SmokeleafSmoothie>
+    </products>
+    <fixedIngredientFilter>
+		<thingDefs>
+            <li>SmokeleafRosin</li>
+         </thingDefs>
+      <disallowedSpecialFilters>
+        <li>AllowRotten</li>
+      </disallowedSpecialFilters>
+    </fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+    <researchPrerequisite>AdvancedSmokeleafExtractsAndEdibles</researchPrerequisite>
+	<skillRequirements>
+        <li>
+          <skill>Cooking</skill>
+          <minLevel>12</minLevel>
+        </li>
+    </skillRequirements>
+	<recipeUsers>
+        <li>FueledStove</li>
+		<li>ElectricStove</li>
+     </recipeUsers>
+  </RecipeDef>
+  
+	<!--=== MSI Meal ===-->
+	
+	<RecipeDef Name="MSI_CookMealBase" Abstract="True">
+		<workSkill>Cooking</workSkill>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="MSI_CookMealBase">
+		<defName>CookMealInfused</defName>
+		<label>cook infused meal</label>
+		<description>Add some smokeleaf butter to a meal to make it happy.</description>
+		<jobString>Cooking infused meal.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MealSimple</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SmokeleafButter</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<MealInfused>1</MealInfused>
+		</products>
+		<skillRequirements>
+			<li>
+				<skill>Cooking</skill>
+				<minLevel>8</minLevel>
+			</li>
+		</skillRequirements>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+		</recipeUsers>
+		<researchPrerequisite>AdvancedSmokeleafExtractsAndEdibles</researchPrerequisite>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="MSI_CookMealBase">
+		<defName>BulkCookMealInfused</defName>
+		<label>cook infused meal (bulk)</label>
+		<description>Add some smokeleaf butter to a meal to make it happy. For four.</description>
+		<jobString>Cooking infused meal.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MealSimple</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SmokeleafButter</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<products>
+			<MealInfused>4</MealInfused>
+		</products>
+		<skillRequirements>
+			<li>
+				<skill>Cooking</skill>
+				<minLevel>10</minLevel>
+			</li>
+		</skillRequirements>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+		</recipeUsers>
+		<researchPrerequisite>AdvancedSmokeleafExtractsAndEdibles</researchPrerequisite>
+  </RecipeDef>
+
+</RecipeDefs>

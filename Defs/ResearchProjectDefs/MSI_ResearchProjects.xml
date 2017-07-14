@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--=== MSI Research Projects ===-->
+
+	<ResearchProjectDef>
+		<defName>SmokeleafCultivation</defName>
+		<label>smokeleaf cultivation</label>
+		<description>The process of seperating the parts of the Smokeleaf plant. Produces Smokeleaf buds, seeds and hemp fibers. Allows joints to be rolled.</description>
+		<baseCost>300</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>DrugProduction</li>
+		</prerequisites>
+		<tab>MSI</tab>
+		<researchViewX>0</researchViewX>
+		<researchViewY>2</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>HempProcessing</defName>
+		<label>hemp processing</label>
+		<description>After a bit a of research, uses for the scrap materials of smokeleaf are devised.</description>
+		<baseCost>400</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>SmokeleafCultivation</li>
+		</prerequisites>
+		<tab>MSI</tab>
+		<researchViewX>1</researchViewX>
+		<researchViewY>3</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>SmokeleafEdibles</defName>
+		<label>smokeleaf edibles</label>
+		<description>Through trial and error, methods of cooking with smokeleaf have hinted at medicinal benefits.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>SmokeleafCultivation</li>
+			<li>HempProcessing</li>
+		</prerequisites>
+		<tab>MSI</tab>
+		<researchViewX>1</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>IndustrialSmokeleafCultivation</defName>
+		<label>industrial smokeleaf cultivation</label>
+		<description>Industrial processing is now possible. The cultivation table is developed, as well as a cost efficient grow lamp.</description>
+		<baseCost>800</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>SmokeleafCultivation</li>
+			<li>Electricity</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<tab>MSI</tab>
+		<researchViewX>2</researchViewX>
+		<researchViewY>2</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>IndustrialHempProcessing</defName>
+		<label>industrial hemp processing</label>
+		<description>A new fuel and building material are created from the fibers and seeds of smokeleaf.</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>IndustrialSmokeleafCultivation</li>
+			<li>HempProcessing</li>
+		</prerequisites>
+		<tab>MSI</tab>
+		<researchViewX>3</researchViewX>
+		<researchViewY>3</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>SmokeleafExtracts</defName>
+		<label>smokeleaf extracts</label>
+		<description>Basic methods of extracting and concentrating the psychactive indgredients in smokeleaf.</description>
+		<baseCost>1250</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>IndustrialSmokeleafCultivation</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<tab>MSI</tab>
+		<researchViewX>3</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>AdvancedSmokeleafCultivation</defName>
+		<label>advanced smokeleaf processing</label>
+		<description>Our engineers have developed new machinery to aid in the growth and processing of smokeleaf.</description>
+		<baseCost>1500</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>IndustrialSmokeleafCultivation</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<tab>MSI</tab>
+		<researchViewX>4</researchViewX>
+		<researchViewY>2</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>SmokeleafPharmacology</defName>
+		<label>smokeleaf pharmacology</label>
+		<description>Researchers isolate the beneficial compounds of Smokeleaf and are able to apply them in modern medical methods with no ill side effects.</description>
+		<baseCost>1500</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>AdvancedSmokeleafCultivation</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<tab>MSI</tab>
+		<researchViewX>5</researchViewX>
+		<researchViewY>3</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>AdvancedSmokeleafExtractsAndEdibles</defName>
+		<label>advanced smokeleaf extracts and edibles</label>
+		<description>Safer, more efficient ways of extracting the medicinal parts of smokeleaf are developed. Because of this stronger edibles are now possible.</description>
+		<baseCost>1500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>SmokeleafExtracts</li>
+			<li>AdvancedSmokeleafCultivation</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<tab>MSI</tab>
+		<researchViewX>5</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+	
+</Defs>

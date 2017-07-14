@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CHO>
+
+  <ThingDef ParentName="MSI_MakeableDrugBase">
+    <defName>CHO</defName>
+    <label>chemfuel hash oil</label>
+    <description>Chemfuel Hash Oil is a smokeleaf extract prepared using Chemfuel. The drug improves mood, but also increases appetite, reduces focus and slows movement. C.H.O. use can produce a dependency.</description>
+    <graphicData>
+      <texPath>Things/Items/MSI_shatter</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>750</WorkToMake>
+      <MarketValue>25</MarketValue>
+      <Mass>0.05</Mass>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <ingestible>
+      <foodType>Plant, Processed</foodType>
+      <joy>0.95</joy>
+      <baseIngestTicks>720</baseIngestTicks>
+      <nurseable>true</nurseable>
+      <drugCategory>Social</drugCategory>
+      <ingestSound>Ingest_Smoke</ingestSound>
+      <ingestEffect>Smoke_Joint</ingestEffect>
+			<ingestEffectEat>EatVegetarian</ingestEffectEat>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.27,0,0.08)</offset>
+          <behind>true</behind>
+        </northDefault>
+        <east>
+          <offset>(0.45,0,0.08)</offset>
+        </east>
+        <south>
+          <offset>(0.27,0,0.08)</offset>
+        </south>
+        <west>
+          <offset>(-0.50,0,0.08)</offset>
+          <flip>false</flip>
+        </west>
+      </ingestHoldOffsetStanding>
+      <ingestHoldUsesTable>false</ingestHoldUsesTable>
+      <ingestCommandString>Smoke {0}</ingestCommandString>
+      <ingestReportString>Smoking {0}.</ingestReportString>
+      <useEatingSpeedStat>false</useEatingSpeedStat>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>CHOHigh</hediffDef>
+          <severity>0.7</severity>
+          <toleranceChemical>CHO</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_OffsetNeed">
+          <need>Rest</need>
+          <offset>-0.3</offset>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+			<hediffDef>CHOTolerance</hediffDef>
+			<severity>0.035</severity>
+			<divideByBodySize>true</divideByBodySize>
+		</li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+	  <researchPrerequisite>SmokeleafExtracts</researchPrerequisite>
+	  <recipeUsers>
+        <li>PoweredCultivationBench</li>
+      </recipeUsers>
+	  <workSpeedStat>DrugProductionSpeed</workSpeedStat>
+	  <workSkill>Crafting</workSkill>
+	  <skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>8</minLevel>
+			</li>
+	  </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <SmokeleafBuds>7</SmokeleafBuds>
+	  <Chemfuel>1</Chemfuel>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>CHO</chemical>
+        <addictiveness>0.030</addictiveness>
+        <minToleranceToAddict>0.2</minToleranceToAddict>
+        <existingAddictionSeverityOffset>0.06</existingAddictionSeverityOffset>
+        <needLevelOffset>1</needLevelOffset>
+        <listOrder>20</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>CHOHigh</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>blasted on chemfuel hash oil</label>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.15</severityPerDay>
+      </li>
+    </comps>
+      <stages>
+        <li>
+          <hungerRateFactor>1.3</hungerRateFactor>
+          <painOffset>-0.4</painOffset>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <offset>-0.3</offset>
+            </li>
+            <li>
+              <capacity>Moving</capacity>
+              <offset>-0.2</offset>
+            </li>
+          </capMods>
+        </li>
+      </stages>
+  </HediffDef>
+  
+  <ThoughtDef>
+    <defName>CHOHigh</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>CHOHigh</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>high on smokeleaf</label>
+        <description>Wow...I am blasted...</description>
+        <baseMoodEffect>25</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!--=== CHO addiction ===-->
+
+  <ChemicalDef>
+    <defName>CHO</defName>
+    <label>C.H.O.</label>
+    <addictionHediff>SmokeleafAddiction</addictionHediff>
+    <toleranceHediff>SmokeleafTolerance</toleranceHediff>
+		<onGeneratedAddictedToleranceChance>0.8</onGeneratedAddictedToleranceChance>
+	</ChemicalDef>
+
+  <NeedDef ParentName="MSI_DrugAddictionNeedBase">
+    <defName>Chemical_CHO</defName>
+    <needClass>Need_Chemical</needClass>
+    <label>C.H.O.</label>
+    <description>Because of a developed C.H.O. dependence, this person needs to regularly consume the drug to avoid withdrawal symptoms.</description>
+    <listPriority>25</listPriority>
+  </NeedDef>
+  
+  <HediffDef ParentName="MSI_DrugToleranceBase">
+    <defName>CHOTolerance</defName>
+    <label>CHO tolerance</label>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.035</severityPerDay>
+      </li>
+      <li Class="HediffCompProperties_DrugEffectFactor">
+        <chemical>CHO</chemical>
+      </li>
+    </comps>
+		<hediffGivers>
+			<li Class="HediffGiver_RandomDrugEffect">
+				<hediff>Asthma</hediff>
+				<baseMtbDays>180</baseMtbDays>
+				<minSeverity>0.25</minSeverity>
+				<partsToAffect>
+					<li>LeftLung</li>
+					<li>RightLung</li>
+				</partsToAffect>
+				<countToAffect>2</countToAffect>
+			</li>
+			<li Class="HediffGiver_RandomDrugEffect">
+				<hediff>Carcinoma</hediff>
+				<baseMtbDays>180</baseMtbDays>
+				<minSeverity>0.75</minSeverity>
+				<partsToAffect>
+					<li>LeftLung</li>
+					<li>RightLung</li>
+				</partsToAffect>
+				<countToAffect>1</countToAffect>
+			</li>
+		</hediffGivers>
+	</HediffDef>
+
+  <HediffDef ParentName="MSI_AddictionBase">
+    <defName>CHOAddiction</defName>
+    <hediffClass>Hediff_Addiction</hediffClass>
+    <label>CHO dependence</label>
+    <causesNeed>Chemical_CHO</causesNeed>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.0333</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+      </li>
+      <li>
+        <label>withdrawal</label>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.4</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.1</offset>
+          </li>
+        </capMods>
+				<mentalStateGivers>
+					<li>
+						<mentalState>BingingFood</mentalState>
+						<mtbDays>30</mtbDays>
+					</li>
+					<li>
+						<mentalState>BingingDrugMajor</mentalState>
+						<mtbDays>50</mtbDays>
+					</li>
+				</mentalStateGivers>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>CHOWithdrawal</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>CHOAddiction</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>C.H.O. withdrawal</label>
+        <description>I want more of that stuff...</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</CHO>

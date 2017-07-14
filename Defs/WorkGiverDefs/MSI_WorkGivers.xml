@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<WorkGivers>
+
+  <!--=== Auto Trimmer ===-->
+  
+  <WorkGiverDef>
+    <defName>DoBillsAutoTrimmer</defName>
+    <label>auto trim smokeleaf</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Crafting</workType>
+		<workTags>
+			<li>Crafting</li>
+		</workTags>
+    <priorityInType>95</priorityInType>
+    <fixedBillGiverDefs>
+      <li>SmokeleafAutoTrimmer</li>
+    </fixedBillGiverDefs>
+    <verb>auto timming smokeleaf</verb>
+    <gerund>auto timming smokeleaf</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+
+  
+  <!--=== Hand Trimming ===-->
+  
+  <WorkGiverDef>
+    <defName>HandTrimSmokeleaf</defName>
+    <label>hand trim smokeleaf</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Crafting</workType>
+	<fixedBillGiverDefs>
+		<li>DrugLab</li>
+		<li>PoweredCultivationBench</li>
+	</fixedBillGiverDefs>
+    <verb>cut</verb>
+    <gerund>cutting</gerund>
+	<requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+  
+  <!--=== Medicinals Lab ===-->
+  
+  <WorkGiverDef>
+    <defName>DoBillsProduceMedicinals</defName>
+    <label>produce smokeleaf medicinals at medicinals lab</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Crafting</workType>
+		<workTags>
+			<li>Intellectual</li>
+		</workTags>
+    <priorityInType>95</priorityInType>
+    <fixedBillGiverDefs>
+      <li>MedicinalsLab</li>
+    </fixedBillGiverDefs>
+    <verb>produce medicinals</verb>
+    <gerund>producing medicinals at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+
+</WorkGivers>

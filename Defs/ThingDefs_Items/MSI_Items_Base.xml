@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--=== Item Bases ===-->
+  
+  <ThingDef Name="MSI_ResourceBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>75</stackLimit>
+	<statBases>
+		<Beauty>-2</Beauty>
+	</statBases>
+	<comps>
+		<li Class="CompProperties_Forbiddable"/>
+	</comps>
+	<alwaysHaulable>true</alwaysHaulable>
+	<drawGUIOverlay>true</drawGUIOverlay>
+	<rotatable>false</rotatable>
+	<pathCost>15</pathCost>
+  </ThingDef>
+	
+  <ThingDef Abstract="True" Name="MSI_OrganicProductBase" ParentName="MSI_ResourceBase">
+    <graphicData>
+		<graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+		<MaxHitPoints>60</MaxHitPoints>
+		<Flammability>1.0</Flammability>
+		<DeteriorationRate>6</DeteriorationRate>
+		<Mass>0.03</Mass>
+    </statBases>
+    <tickerType>Rare</tickerType>
+  </ThingDef>
+  
+  <ThingDef Abstract="True" Name="MSI_PlantFoodRawBase" ParentName="MSI_OrganicProductBase">
+    <ingestible>
+		<preferability>RawBad</preferability>
+		<tasteThought>AteRawFood</tasteThought>
+		<nutrition>0.05</nutrition>
+		<ingestEffect>EatVegetarian</ingestEffect>
+		<ingestSound>RawVegetable_Eat</ingestSound>
+    </ingestible>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <thingCategories>
+		<li>PlantFoodRaw</li>
+    </thingCategories>
+    <comps>
+		<li Class="CompProperties_FoodPoisoningChance">
+			<humanlikeOnly>true</humanlikeOnly>
+		</li>
+    </comps>
+  </ThingDef>
+	
+  <ThingDef Name="MSI_MealBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <statBases>
+		<MaxHitPoints>50</MaxHitPoints>
+		<Flammability>1.0</Flammability>
+		<Beauty>-4</Beauty>
+		<Mass>0.44</Mass>
+		<DeteriorationRate>10</DeteriorationRate>
+	</statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>75</stackLimit>
+    <tickerType>Rare</tickerType>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <thingCategories>
+      <li>FoodMeals</li>
+    </thingCategories>
+    <alwaysHaulable>true</alwaysHaulable>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Ingredients" />
+      <li Class="CompProperties_FoodPoisonable" />
+    </comps>
+    <pathCost>15</pathCost>
+    <resourceReadoutPriority>Last</resourceReadoutPriority>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <ingestible>
+      <foodType>Meal</foodType>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      <optimalityOffset>16</optimalityOffset>
+    </ingestible>
+  </ThingDef>
+
+  <ThingDef ParentName="MSI_MealBase" Name="MSI_MealRottable" Abstract="True">
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>4</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="MSI_MealRottable" Name="MSI_MealEdibles" Abstract="True">
+    <ingestible>
+      <baseIngestTicks>120</baseIngestTicks>
+      <chairSearchRadius>25</chairSearchRadius>
+      <ingestSound>Meal_Eat</ingestSound>
+      <ingestHoldUsesTable>false</ingestHoldUsesTable>
+	  <useEatingSpeedStat>true</useEatingSpeedStat>
+	  <ingestEffectEat>EatVegetarian</ingestEffectEat>
+	  <preferability>NeverForNutrition</preferability>
+	  <ingestHoldOffsetStanding>
+        <northDefault>
+			<offset>(0.27,0,0.08)</offset>
+			<behind>true</behind>
+		</northDefault>
+		<east>
+			<offset>(0.45,0,0.08)</offset>
+		</east>
+		<south>
+			<offset>(0.27,0,0.08)</offset>
+		</south>
+		<west>
+			<offset>(-0.50,0,0.08)</offset>
+			<flip>true</flip>
+		</west>
+   	  </ingestHoldOffsetStanding>
+	</ingestible>
+  </ThingDef>
+	
+</Defs>

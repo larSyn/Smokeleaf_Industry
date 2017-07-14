@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+	<!--=== Smokeleaf Joint Recipe ===-->
+	
+	<RecipeDef>
+		<defName>BulkRollSmokeleafJoint</defName>
+		<label>make smokeleaf joints (bulk)</label>
+		<description>Roll more joints at a time.</description>
+		<jobString>rolling smokeleaf joints</jobString>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>3000</workAmount>
+		<workSkill>Crafting</workSkill>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SmokeleafBuds</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SmokeleafBuds</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<SmokeleafJoint>10</SmokeleafJoint>
+		</products>
+		<recipeUsers>
+			<li>DrugLab</li>
+			<li>PoweredCultivationBench</li>
+		</recipeUsers>
+		<researchPrerequisite>IndustrialSmokeleafCultivation</researchPrerequisite>
+	</RecipeDef>
+	
+	<!--=== Smokeleaf Kief Recipe ===-->	
+	
+	<RecipeDef>
+		<defName>BulkMakeSmokeleafKief</defName>
+		<label>make smokeleaf kief (bulk)</label>
+		<description>Roll more kief at a time.</description>
+		<jobString>making smokeleaf kief</jobString>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>3000</workAmount>
+		<workSkill>Crafting</workSkill>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SmokeleafBuds</li>
+					</thingDefs>
+				</filter>
+				<count>40</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SmokeleafBuds</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<SmokeleafKief>10</SmokeleafKief>
+		</products>
+		<recipeUsers>
+			<li>PoweredCultivationBench</li>
+		</recipeUsers>
+		<researchPrerequisite>AdvancedSmokeleafCultivation</researchPrerequisite>
+	</RecipeDef>
+	
+	<!--=== Smokeleaf Hash Recipe ===-->	
+	
+	<RecipeDef>
+		<defName>BulkMakeSmokeleafHash</defName>
+		<label>make smokeleaf hash (bulk)</label>
+		<description>Make smokeleaf hash in larger quantities.</description>
+		<jobString>making smokeleaf hash</jobString>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>3000</workAmount>
+		<workSkill>Crafting</workSkill>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SmokeleafKief</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SmokeleafKief</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<SmokeleafHash>10</SmokeleafHash>
+		</products>
+		<recipeUsers>
+			<li>PoweredCultivationBench</li>
+		</recipeUsers>
+		<researchPrerequisite>AdvancedSmokeleafCultivation</researchPrerequisite>
+	</RecipeDef>
+	
+	<!--=== Smokeleaf CHO Recipe ===-->	
+	
+	<RecipeDef>
+		<defName>BulkMakeCHO</defName>
+		<label>make chemfuel hash oil (bulk)</label>
+		<description>Make chemfuel hash oil in larger quantities.</description>
+		<jobString>making chemfuel hash oil</jobString>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>3000</workAmount>
+		<workSkill>Crafting</workSkill>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SmokeleafBuds</li>
+					</thingDefs>
+				</filter>
+				<count>70</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SmokeleafBuds</li>
+				<li>Chemfuel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<CHO>10</CHO>
+		</products>
+		<recipeUsers>
+			<li>PoweredCultivationBench</li>
+		</recipeUsers>
+		<researchPrerequisite>AdvancedSmokeleafCultivation</researchPrerequisite>
+	</RecipeDef>
+	
+	<!--=== Smokeleaf Rosin Recipe ===-->	
+	
+	<RecipeDef>
+		<defName>BulkMakeSmokeleafRosin</defName>
+		<label>make smokeleaf rosin (bulk)</label>
+		<description>Make smokeleaf rosin in larger quantities.</description>
+		<jobString>making smokeleaf rosin</jobString>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>3000</workAmount>
+		<workSkill>Crafting</workSkill>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SmokeleafKief</li>
+					</thingDefs>
+				</filter>
+				<count>40</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SmokeleafBuds</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<SmokeleafRosin>10</SmokeleafRosin>
+		</products>
+		<recipeUsers>
+			<li>MedicinalsLab</li>
+		</recipeUsers>
+		<researchPrerequisite>AdvancedSmokeleafExtractsAndEdibles</researchPrerequisite>
+	</RecipeDef>	
+	
+	<!--=== Smokeleaf Tincture Recipe ===-->	
+	
+	<RecipeDef>
+		<defName>BulkMakeSmokeleafTincture</defName>
+		<label>make smokeleaf tincture (bulk)</label>
+		<description>Make smokeleaf tincture in larger quantities.</description>
+		<jobString>making smokeleaf tincture</jobString>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>3000</workAmount>
+		<workSkill>Crafting</workSkill>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CBD</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Neutroamine</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>CBD</li>
+				<li>Neutroamine</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<SmokeleafTincture>10</SmokeleafTincture>
+		</products>
+		<recipeUsers>
+			<li>MedicinalsLab</li>
+		</recipeUsers>
+		<researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
+	</RecipeDef>
+	
+	<!--=== Smokeleaf Pills Recipe ===-->	
+	
+	<RecipeDef>
+		<defName>BulkMakeSmokeleafPills</defName>
+		<label>make smokeleaf pills (bulk)</label>
+		<description>Make smokeleaf pills in larger quantities.</description>
+		<jobString>making smokeleaf pills</jobString>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>3000</workAmount>
+		<workSkill>Crafting</workSkill>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CBD</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Neutroamine</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>CBD</li>
+				<li>Neutroamine</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<SmokeleafPills>10</SmokeleafPills>
+		</products>
+		<recipeUsers>
+			<li>MedicinalsLab</li>
+		</recipeUsers>
+		<researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
+	</RecipeDef>
+	
+	<!--=== Smokeleaf Lotion Recipe ===-->	
+	
+	<RecipeDef>
+		<defName>BulkMakeSmokeleafLotion</defName>
+		<label>make smokeleaf lotion (bulk)</label>
+		<description>Make smokeleaf lotion in larger quantities.</description>
+		<jobString>making smokeleaf lotion</jobString>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>3000</workAmount>
+		<workSkill>Crafting</workSkill>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CBD</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Neutroamine</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Medicine</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>CBD</li>
+				<li>Neutroamine</li>
+				<li>Medicine</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<SmokeleafLotion>10</SmokeleafLotion>
+		</products>
+		<recipeUsers>
+			<li>MedicinalsLab</li>
+		</recipeUsers>
+		<researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
+	</RecipeDef>
+	
+</RecipeDefs>

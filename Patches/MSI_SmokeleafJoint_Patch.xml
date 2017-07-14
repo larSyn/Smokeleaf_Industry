@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+	    <xpath>*/ThingDef[defName = "SmokeleafJoint"]/recipeMaker/recipeUsers/li</xpath>
+	    <value>
+			<li>DrugLab</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+	    <xpath>*/ThingDef[defName = "SmokeleafJoint"]/recipeMaker/recipeUsers</xpath>
+	    <value>
+			<li>PoweredCultivationBench</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+	    <success>Always</success>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[defName = "SmokeleafJoint"]/costList</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName = "SmokeleafJoint"]</xpath>
+				<value>
+					<costList />
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName = "SmokeleafJoint"]/costList</xpath>
+				<value>
+					<SmokeleafBuds>2</SmokeleafBuds>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+</Patch>

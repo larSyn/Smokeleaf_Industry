@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SmokeleafLotion>
+
+  <ThingDef ParentName="MSI_MakeablePharma">
+    <defName>SmokeleafLotion</defName>
+    <label>smokeleaf lotion</label>
+    <description>A topical lotion that can heal old scars, numb pain and restore some movement.</description>
+    <graphicData>
+      <texPath>Things/Items/MSI_lotion</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <socialPropernessMatters>false</socialPropernessMatters>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>750</WorkToMake>
+      <MarketValue>75</MarketValue>
+      <Mass>0.005</Mass>
+	  <MedicalPotency>0.25</MedicalPotency>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+    <ingestible>
+	  <drugCategory>Medical</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>SmokeleafLotionHigh</hediffDef>
+          <severity>1.0</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+	  <researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
+      <recipeUsers>
+        <li>MedicinalsLab</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <CBD>2</CBD>
+	  <Neutroamine>1</Neutroamine>
+	  <Medicine>1</Medicine>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>1000</listOrder>
+        <overdoseSeverityOffset>
+          <min>0.08</min>
+          <max>0.14</max>
+        </overdoseSeverityOffset>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <HediffDef>
+    <defName>SmokeleafLotionHigh</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>smokeleaf lotion</label>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <maxSeverity>1.0</maxSeverity>
+    <comps>
+	  <li Class="HediffCompProperties_HealOldWounds" />
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.5</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+        <li>
+		  <painOffset>-0.15</painOffset>
+		  <capMods>
+            <li>
+              <capacity>Manipulation</capacity>
+              <offset>0.1</offset>
+			</li>
+			<li>
+              <capacity>Moving</capacity>
+              <offset>0.05</offset>
+            </li>
+          </capMods>
+		</li>
+    </stages>
+  </HediffDef>
+  
+</SmokeleafLotion>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--=== Smokeleaf Industry ===-->
+
+  <DesignationCategoryDef>
+    <DefName>MSI</DefName>
+    <label>Smokeleaf Ind.</label>
+    <description>Medicinal, recreational and industrial smokeleaf production.</description>
+    <order>550</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+  </DesignationCategoryDef>
+  
+</Defs>

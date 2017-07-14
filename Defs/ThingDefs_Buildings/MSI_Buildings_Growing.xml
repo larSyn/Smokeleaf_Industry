@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+  <ThingDef Abstract="True" Name="MSI_LampBase" ParentName="MSI_BuildingBase">
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <selectable>true</selectable>
+    <fillPercent>0.20</fillPercent>
+    <pathCost>8</pathCost>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <designationCategory>Furniture</designationCategory>
+    <rotatable>false</rotatable>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+        <offset>(0,0,-0.1)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <WorkToBuild>170</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <researchPrerequisites>
+      <li>Electricity</li>
+    </researchPrerequisites>
+  </ThingDef>
+  
+	<!--=== Grow Lamp ===-->
+  
+  <ThingDef ParentName="MSI_LampBase">
+    <defName>GrowLamp</defName>
+    <label>grow lamp</label>
+    <description>A less power hungry version of the version of the sun lamp. Automatically turns itself off at night.</description>
+    <thingClass>Building_SunLamp</thingClass>
+    <graphicData>
+      <texPath>Things/Buildings/MSI_growLamp</texPath>
+    </graphicData>
+    <blockWind>true</blockWind>
+    <tickerType>Rare</tickerType>
+    <statBases>
+      <WorkToBuild>350</WorkToBuild>
+      <Mass>4.5</Mass>
+    </statBases>
+    <costList>
+      <Steel>25</Steel>
+	  <Plasteel>10</Plasteel>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <overlightRadius>7.0</overlightRadius>
+        <glowRadius>14</glowRadius>
+        <glowColor>(225,235,250,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>true</startElectricalFires>
+        <basePowerConsumption>1200</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Schedule">
+        <!-- Match plant growing times -->
+        <startTime>0.25</startTime>
+        <endTime>0.8</endTime>
+        <offMessage>Plants need sleep too</offMessage>
+      </li>
+    </comps>
+	<researchPrerequisites>
+	  <li>IndustrialSmokeleafCultivation</li>
+    </researchPrerequisites>
+    <specialDisplayRadius>5.8</specialDisplayRadius>
+	<designationCategory>MSI</designationCategory>
+  </ThingDef>
+
+	<!--=== Space Bucket ===-->
+	
+  <ThingDef ParentName="MSI_BuildingBase">
+    <defName>SpaceBucket</defName>
+    <label>space bucket</label>
+    <thingClass>Building_PlantGrower</thingClass>
+    <graphicData>
+      <texPath>Things/Buildings/MSI_spaceBucket</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+      </shadowData>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+	<pathCost>40</pathCost>
+    <fillPercent>0.25</fillPercent>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Mass>2</Mass>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>25</costStuffCount>
+	<costList>
+	  <Steel>25</Steel>
+      <Component>3</Component>
+    </costList>
+    <description>A self-contained growing system. Uses a fair amount of power for a single plant, but grows plants very quickly. Ideal for growing in confined spaces.</description>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+	  <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>150</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+	  <li Class="CompProperties_Glower">
+        <overlightRadius>1.0</overlightRadius>
+        <glowRadius>1.5</glowRadius>
+        <glowColor>(225,235,250,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Schedule">
+        <!-- Match plant growing times -->
+        <startTime>0.25</startTime>
+        <endTime>0.8</endTime>
+        <offMessage>Plants need sleep too</offMessage>
+      </li>
+    </comps>
+    <fertility>5.0</fertility>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <building>
+      <defaultPlantToGrow>PlantSmokeleaf</defaultPlantToGrow>
+      <sowTag>Hydroponic</sowTag>
+    </building>
+	<researchPrerequisites>
+	  <li>AdvancedSmokeleafCultivation</li>
+	</researchPrerequisites>
+    <rotatable>false</rotatable>
+	<designationCategory>MSI</designationCategory>
+  </ThingDef>	
+  
+</Buildings>

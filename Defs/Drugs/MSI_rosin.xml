@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SmokeleafRosin>
+
+  <ThingDef ParentName="MSI_MakeableDrugBase">
+    <defName>SmokeleafRosin</defName>
+    <label>smokeleaf rosin</label>
+    <description>Smokeleaf rosin is the ultimate extract. Gives a clean high without the risks of other smokeleaf products. More of the good stuff and less bad.</description>
+    <graphicData>
+      <texPath>Things/Items/MSI_rosin</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>750</WorkToMake>
+      <MarketValue>45</MarketValue>
+      <Mass>0.05</Mass>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <ingestible>
+      <foodType>Plant, Processed</foodType>
+      <joy>0.99</joy>
+      <baseIngestTicks>720</baseIngestTicks>
+      <nurseable>true</nurseable>
+      <drugCategory>Social</drugCategory>
+      <ingestSound>Ingest_Smoke</ingestSound>
+      <ingestEffect>Smoke_Joint</ingestEffect>
+	  <ingestEffectEat>EatVegetarian</ingestEffectEat>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.27,0,0.08)</offset>
+          <behind>true</behind>
+        </northDefault>
+        <east>
+          <offset>(0.45,0,0.08)</offset>
+        </east>
+        <south>
+          <offset>(0.27,0,0.08)</offset>
+        </south>
+        <west>
+          <offset>(-0.50,0,0.08)</offset>
+          <flip>true</flip>
+        </west>
+      </ingestHoldOffsetStanding>
+      <ingestHoldUsesTable>false</ingestHoldUsesTable>
+      <ingestCommandString>Smoke {0}</ingestCommandString>
+      <ingestReportString>Smoking {0}.</ingestReportString>
+      <useEatingSpeedStat>false</useEatingSpeedStat>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>SmokeleafRosinHigh</hediffDef>
+          <severity>0.8</severity>
+          <toleranceChemical>SmokeleafRosin</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_OffsetNeed">
+          <need>Rest</need>
+          <offset>-0.15</offset>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+			<hediffDef>SmokeleafRosinTolerance</hediffDef>
+			<severity>0.035</severity>
+			<divideByBodySize>true</divideByBodySize>
+		</li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+	  <researchPrerequisite>AdvancedSmokeleafExtractsAndEdibles</researchPrerequisite>
+	  <recipeUsers>
+        <li>MedicinalsLab</li>
+      </recipeUsers>
+	  <workSpeedStat>DrugProductionSpeed</workSpeedStat>
+	  <workSkill>Crafting</workSkill>
+	  <skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>10</minLevel>
+			</li>
+	  </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <SmokeleafKief>4</SmokeleafKief>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>SmokeleafRosin</chemical>
+        <addictiveness>0.01</addictiveness>
+        <minToleranceToAddict>0.1</minToleranceToAddict>
+        <existingAddictionSeverityOffset>0.02</existingAddictionSeverityOffset>
+        <needLevelOffset>1</needLevelOffset>
+        <listOrder>20</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>SmokeleafRosinHigh</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>lit on rosin</label>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.75</severityPerDay>
+      </li>
+    </comps>
+      <stages>
+        <li>
+          <hungerRateFactor>1.1</hungerRateFactor>
+          <painOffset>-0.75</painOffset>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <offset>-0.1</offset>
+            </li>
+            <li>
+              <capacity>Moving</capacity>
+              <offset>-0.05</offset>
+            </li>
+          </capMods>
+        </li>
+      </stages>
+  </HediffDef>
+  
+  <ThoughtDef>
+    <defName>SmokeleafRosinHigh</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>SmokeleafRosinHigh</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>veerrry high on rosin</label>
+        <description>Holy shit.</description>
+        <baseMoodEffect>30</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!--=== Smokeleaf Rosin addiction ===-->
+
+  <ChemicalDef>
+    <defName>SmokeleafRosin</defName>
+    <label>smokeleaf rosin</label>
+    <addictionHediff>SmokeleafAddiction</addictionHediff>
+    <toleranceHediff>SmokeleafTolerance</toleranceHediff>
+		<onGeneratedAddictedToleranceChance>0.8</onGeneratedAddictedToleranceChance>
+	</ChemicalDef>
+
+  <NeedDef ParentName="MSI_DrugAddictionNeedBase">
+    <defName>Chemical_SmokeleafRosin</defName>
+    <needClass>Need_Chemical</needClass>
+    <label>smokeleaf rosin</label>
+    <description>Because of a developed C.H.O. dependence, this person needs to regularly consume the drug to avoid withdrawal symptoms.</description>
+    <listPriority>25</listPriority>
+  </NeedDef>
+  
+  <HediffDef ParentName="MSI_DrugToleranceBase">
+    <defName>SmokeleafRosinTolerance</defName>
+    <label>smokeleaf rosin tolerance</label>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.035</severityPerDay>
+      </li>
+      <li Class="HediffCompProperties_DrugEffectFactor">
+        <chemical>SmokeleafRosin</chemical>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <HediffDef ParentName="MSI_AddictionBase">
+    <defName>SmokeleafRosinAddiction</defName>
+    <hediffClass>Hediff_Addiction</hediffClass>
+    <label>smokeleaf rosin dependence</label>
+    <causesNeed>Chemical_SmokeleafRosin</causesNeed>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.0333</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+      </li>
+      <li>
+        <label>withdrawal</label>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.1</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.05</offset>
+          </li>
+        </capMods>
+				<mentalStateGivers>
+					<li>
+						<mentalState>BingingFood</mentalState>
+						<mtbDays>30</mtbDays>
+					</li>
+					<li>
+						<mentalState>BingingDrugMajor</mentalState>
+						<mtbDays>50</mtbDays>
+					</li>
+				</mentalStateGivers>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>SmokeleafRosinWithdrawal</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>SmokeleafRosinAddiction</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>smokeleaf rosin withdrawal</label>
+        <description>Waiting for the man...as usual...</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</SmokeleafRosin>
