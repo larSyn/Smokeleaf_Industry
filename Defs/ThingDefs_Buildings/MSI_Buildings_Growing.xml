@@ -122,12 +122,13 @@
 	  <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>150</basePowerConsumption>
+		<startElectricalFires>true</startElectricalFires>
       </li>
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Breakdownable"/>
 	  <li Class="CompProperties_Glower">
-        <overlightRadius>1</overlightRadius>
-        <glowRadius>2</glowRadius>
+        <overlightRadius>2.0</overlightRadius>
+        <glowRadius>2.0</glowRadius>
         <glowColor>(225,235,250,0)</glowColor>
       </li>
       <li Class="CompProperties_Schedule">
