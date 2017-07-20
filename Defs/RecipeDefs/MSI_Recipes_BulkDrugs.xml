@@ -37,41 +37,6 @@
 		<researchPrerequisite>IndustrialSmokeleafCultivation</researchPrerequisite>
 	</RecipeDef>
 	
-	<!--=== Smokeleaf Kief Recipe ===-->	
-	
-	<RecipeDef>
-		<defName>BulkMakeSmokeleafKief</defName>
-		<label>make smokeleaf kief (bulk)</label>
-		<description>Roll more kief at a time.</description>
-		<jobString>making smokeleaf kief</jobString>
-		<effectWorking>Cook</effectWorking>
-		<soundWorking>Recipe_CookMeal</soundWorking>
-		<workAmount>3000</workAmount>
-		<workSkill>Crafting</workSkill>
-		<ingredients>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>SmokeleafBuds</li>
-					</thingDefs>
-				</filter>
-				<count>40</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>SmokeleafBuds</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<products>
-			<SmokeleafKief>10</SmokeleafKief>
-		</products>
-		<recipeUsers>
-			<li>PoweredCultivationBench</li>
-		</recipeUsers>
-		<researchPrerequisite>AdvancedSmokeleafCultivation</researchPrerequisite>
-	</RecipeDef>
-	
 	<!--=== Smokeleaf Hash Recipe ===-->	
 	
 	<RecipeDef>
@@ -87,7 +52,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>SmokeleafKief</li>
+						<li>SmokeleafBuds</li>
 					</thingDefs>
 				</filter>
 				<count>20</count>
@@ -95,7 +60,7 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>SmokeleafKief</li>
+				<li>SmokeleafBuds</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -104,7 +69,7 @@
 		<recipeUsers>
 			<li>PoweredCultivationBench</li>
 		</recipeUsers>
-		<researchPrerequisite>AdvancedSmokeleafCultivation</researchPrerequisite>
+		<researchPrerequisite>AdvancedSmokeleafProcessing</researchPrerequisite>
 	</RecipeDef>
 	
 	<!--=== Smokeleaf CHO Recipe ===-->	
@@ -148,7 +113,7 @@
 		<recipeUsers>
 			<li>PoweredCultivationBench</li>
 		</recipeUsers>
-		<researchPrerequisite>AdvancedSmokeleafCultivation</researchPrerequisite>
+		<researchPrerequisite>AdvancedSmokeleafProcessing</researchPrerequisite>
 	</RecipeDef>
 	
 	<!--=== Smokeleaf Rosin Recipe ===-->	
@@ -183,7 +148,7 @@
 		<recipeUsers>
 			<li>MedicinalsLab</li>
 		</recipeUsers>
-		<researchPrerequisite>AdvancedSmokeleafExtractsAndEdibles</researchPrerequisite>
+		<researchPrerequisite>AdvancedSmokeleafProcessing</researchPrerequisite>
 	</RecipeDef>	
 	
 	<!--=== Smokeleaf Tincture Recipe ===-->	
@@ -302,20 +267,11 @@
 				</filter>
 				<count>20</count>
 			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Medicine</li>
-					</thingDefs>
-				</filter>
-				<count>10</count>
-			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>CBD</li>
 				<li>Neutroamine</li>
-				<li>Medicine</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>

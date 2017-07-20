@@ -4,7 +4,7 @@
   <ThingDef ParentName="MSI_MakeableDrugBase">
     <defName>SmokeleafRosin</defName>
     <label>smokeleaf rosin</label>
-    <description>Smokeleaf rosin is the ultimate extract. Gives a clean high without the risks of other smokeleaf products. More of the good stuff and less bad.</description>
+    <description>Smokeleaf rosin is the ultimate extract. Gives a clean high without the risks of other smokeleaf products.</description>
     <graphicData>
       <texPath>Things/Items/MSI_rosin</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -63,7 +63,7 @@
       </outcomeDoers>
     </ingestible>
     <recipeMaker>
-	  <researchPrerequisite>AdvancedSmokeleafExtractsAndEdibles</researchPrerequisite>
+	  <researchPrerequisite>AdvancedSmokeleafProcessing</researchPrerequisite>
 	  <recipeUsers>
         <li>MedicinalsLab</li>
       </recipeUsers>
@@ -77,7 +77,7 @@
 	  </skillRequirements>
     </recipeMaker>
     <costList>
-      <SmokeleafKief>4</SmokeleafKief>
+      <SmokeleafHash>4</SmokeleafHash>
     </costList>
     <comps>
       <li Class="CompProperties_Drug">

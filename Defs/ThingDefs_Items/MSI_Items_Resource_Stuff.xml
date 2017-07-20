@@ -17,7 +17,7 @@
       <MarketValue>3.0</MarketValue>
       <Mass>0.05</Mass>
       <Flammability>1.0</Flammability>
-      <DeteriorationRate>4</DeteriorationRate>
+      <DeteriorationRate>8</DeteriorationRate>
     </statBases>
     <stuffProps>
       <categories>
@@ -61,10 +61,10 @@
       <MarketValue>1.0</MarketValue>
       <Mass>0.1</Mass>
       <Flammability>1.0</Flammability>
-      <DeteriorationRate>4</DeteriorationRate>
+      <DeteriorationRate>12</DeteriorationRate>
     </statBases>
     <thingCategories>
-      <li>ResourcesRaw</li>
+      <li>Plant, Processed</li>
     </thingCategories>
   </ThingDef>
   
@@ -83,7 +83,7 @@
       <MarketValue>3.5</MarketValue>
       <Mass>0.03</Mass>
       <Flammability>1.0</Flammability>
-      <DeteriorationRate>4</DeteriorationRate>
+      <DeteriorationRate>8</DeteriorationRate>
     </statBases>
     <thingCategories>
       <li>PlantMatter</li>
@@ -144,6 +144,7 @@
     </statBases>
 	<ingestible>
       <foodType>Plant, Processed</foodType>
+	  <nutrition>0.15</nutrition>
     </ingestible>
     <comps>
       <li Class="CompProperties_Rottable">
@@ -207,7 +208,7 @@
   <ThingDef ParentName="MSI_ResourceBase">
     <defName>InfusedMedicine</defName>
     <label>infused medicine</label>
-    <description>Medicine infused with CBD. Slightly more effective than mormal medicine and provides a mild feeling of euphoria.</description>
+    <description>Medicine infused with CBD. More effective than regular medicine and provides a mild feeling of euphoria.</description>
     <thingClass>Medicine</thingClass>
     <graphicData>
       <texPath>Things/Items/MSI_medicine</texPath>
@@ -228,7 +229,7 @@
       <li>Medicine</li>
     </thingCategories>
     <costList>
-      <Medicine>1</Medicine>
+      <HerbalMedicine>1</HerbalMedicine>
       <Neutroamine>1</Neutroamine>
       <CBD>1</CBD>
     </costList>
@@ -237,6 +238,7 @@
       <workSkill>Intellectual</workSkill>
       <recipeUsers>
         <li>DrugLab</li>
+		<li>MedicinalsLab</li>
       </recipeUsers>
       <researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
       <skillRequirements>
@@ -252,7 +254,7 @@
     </recipeMaker>
   </ThingDef>
   
-	<!--=== Infused Meal ===--> 
+  <!--=== Infused Meal ===--> 
 	  
   <ThingDef ParentName="MSI_MealRottable">
     <defName>MealInfused</defName>

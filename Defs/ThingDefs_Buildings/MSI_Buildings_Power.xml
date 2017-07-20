@@ -66,7 +66,7 @@
     <designationHotkey>Misc3</designationHotkey>
     <constructEffect>ConstructMetal</constructEffect>
     <researchPrerequisites>
-      <li>IndustrialHempProcessing</li>
+      <li>IndustrialSmokeleafProcessing</li>
     </researchPrerequisites>
 	<designationCategory>MSI</designationCategory>
   </ThingDef>
