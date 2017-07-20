@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+    <!--=== Infused Medicine ===-->  
+  
+  <ThingDef Class="InfusedMeds" ParentName="MSI_ResourceBase">
+    <defName>InfusedMedicine</defName>
+    <label>infused medicine</label>
+    <description>Medicine infused with CBD. More effective than regular medicine and provides a mild feeling of euphoria.</description>
+    <thingClass>Medicine</thingClass>
+    <graphicData>
+      <texPath>Things/Items/MSI_medicine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <MarketValue>25</MarketValue>
+      <Mass>0.5</Mass>
+      <Flammability>1.0</Flammability>
+      <MedicalPotency>1.50</MedicalPotency>
+      <DeteriorationRate>6</DeteriorationRate>
+      <WorkToMake>750</WorkToMake>
+    </statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+    <costList>
+      <HerbalMedicine>1</HerbalMedicine>
+      <Neutroamine>1</Neutroamine>
+      <CBD>1</CBD>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>DrugProductionSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <recipeUsers>
+        <li>DrugLab</li>
+		<li>MedicinalsLab</li>
+      </recipeUsers>
+      <researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
+      <skillRequirements>
+        <li>
+          <skill>Medicine</skill>
+          <minLevel>8</minLevel>
+        </li>
+        <li>
+          <skill>Crafting</skill>
+          <minLevel>4</minLevel>
+        </li>
+      </skillRequirements>
+    </recipeMaker>
+	<AddHediffChance>1.0</AddHediffChance>
+	<HediffToAdd>InfusedBuzz</HediffToAdd>
+	<thingClass>InfusedMeds_thing</thingClass>
+  </ThingDef>
+  
+</ThingDefs>  
+  
