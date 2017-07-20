@@ -45,7 +45,7 @@
       </disallowedSpecialFilters>
     </fixedIngredientFilter>
     <workSkill>Cooking</workSkill>
-    <researchPrerequisite>SmokeleafEdibles</researchPrerequisite>
+    <researchPrerequisite>SmokeleafProcessing</researchPrerequisite>
 	<skillRequirements>
         <li>
           <skill>Cooking</skill>
@@ -108,7 +108,7 @@
       </disallowedSpecialFilters>
     </fixedIngredientFilter>
     <workSkill>Cooking</workSkill>
-    <researchPrerequisite>SmokeleafEdibles</researchPrerequisite>
+    <researchPrerequisite>SmokeleafProcessing</researchPrerequisite>
 	<skillRequirements>
         <li>
           <skill>Cooking</skill>
@@ -162,7 +162,7 @@
       </disallowedSpecialFilters>
     </fixedIngredientFilter>
     <workSkill>Cooking</workSkill>
-    <researchPrerequisite>SmokeleafEdibles</researchPrerequisite>
+    <researchPrerequisite>SmokeleafProcessing</researchPrerequisite>
 	<skillRequirements>
         <li>
           <skill>Cooking</skill>
@@ -216,7 +216,7 @@
       </disallowedSpecialFilters>
     </fixedIngredientFilter>
     <workSkill>Cooking</workSkill>
-    <researchPrerequisite>SmokeleafEdibles</researchPrerequisite>
+    <researchPrerequisite>SmokeleafProcessing</researchPrerequisite>
 	<skillRequirements>
         <li>
           <skill>Cooking</skill>
@@ -273,7 +273,7 @@
       </disallowedSpecialFilters>
     </fixedIngredientFilter>
     <workSkill>Cooking</workSkill>
-    <researchPrerequisite>AdvancedSmokeleafExtractsAndEdibles</researchPrerequisite>
+    <researchPrerequisite>AdvancedSmokeleafProcessing</researchPrerequisite>
 	<skillRequirements>
         <li>
           <skill>Cooking</skill>
@@ -328,7 +328,7 @@
       </disallowedSpecialFilters>
     </fixedIngredientFilter>
     <workSkill>Cooking</workSkill>
-    <researchPrerequisite>AdvancedSmokeleafExtractsAndEdibles</researchPrerequisite>
+    <researchPrerequisite>AdvancedSmokeleafProcessing</researchPrerequisite>
 	<skillRequirements>
         <li>
           <skill>Cooking</skill>
@@ -386,7 +386,7 @@
 			<li>FueledStove</li>
 			<li>ElectricStove</li>
 		</recipeUsers>
-		<researchPrerequisite>AdvancedSmokeleafExtractsAndEdibles</researchPrerequisite>
+		<researchPrerequisite>AdvancedSmokeleafProcessing</researchPrerequisite>
   </RecipeDef>
   
   <RecipeDef ParentName="MSI_CookMealBase">
@@ -406,7 +406,7 @@
 						<li>MealSimple</li>
 					</thingDefs>
 				</filter>
-				<count>4</count>
+				<count>5</count>
 			</li>
 			<li>
 				<filter>
@@ -414,11 +414,11 @@
 						<li>SmokeleafButter</li>
 					</thingDefs>
 				</filter>
-				<count>4</count>
+				<count>5</count>
 			</li>
 		</ingredients>
 		<products>
-			<MealInfused>4</MealInfused>
+			<MealInfused>5</MealInfused>
 		</products>
 		<skillRequirements>
 			<li>
@@ -430,7 +430,7 @@
 			<li>FueledStove</li>
 			<li>ElectricStove</li>
 		</recipeUsers>
-		<researchPrerequisite>AdvancedSmokeleafExtractsAndEdibles</researchPrerequisite>
+		<researchPrerequisite>AdvancedSmokeleafProcessing</researchPrerequisite>
   </RecipeDef>
 
 </RecipeDefs>

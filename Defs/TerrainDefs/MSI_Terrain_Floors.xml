@@ -18,7 +18,7 @@
     <AcceptTerrainSourceFilth>True</AcceptTerrainSourceFilth>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 	<researchPrerequisites>
-      <li>IndustrialHempProcessing</li>
+      <li>IndustrialSmokeleafProcessing</li>
     </researchPrerequisites>
   </TerrainDef>
   

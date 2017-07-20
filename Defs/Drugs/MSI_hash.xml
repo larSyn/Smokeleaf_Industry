@@ -53,7 +53,7 @@
       </outcomeDoers>
     </ingestible>
     <recipeMaker>
-	  <researchPrerequisite>SmokeleafExtracts</researchPrerequisite>
+	  <researchPrerequisite>IndustrialSmokeleafCultivation</researchPrerequisite>
 	  <recipeUsers>
         <li>PoweredCultivationBench</li>
       </recipeUsers>
@@ -67,7 +67,7 @@
 	  </skillRequirements>
     </recipeMaker>
     <costList>
-      <SmokeleafKief>2</SmokeleafKief>
+      <SmokeleafBuds>2</SmokeleafBuds>
     </costList>
     <comps>
       <li Class="CompProperties_Drug">
