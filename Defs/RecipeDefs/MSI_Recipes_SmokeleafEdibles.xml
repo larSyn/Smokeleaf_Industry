@@ -52,7 +52,6 @@
         <li>AllowRotten</li>
       </disallowedSpecialFilters>
     </fixedIngredientFilter>
-    <workSkill>Cooking</workSkill>
     <researchPrerequisite>SmokeleafProcessing</researchPrerequisite>
 	<skillRequirements>
         <li>
@@ -62,7 +61,7 @@
       </skillRequirements>
   </RecipeDef>	
 
-  <RecipeDef>
+  <RecipeDef ParentName="MSI_CookMealBase">
     <defName>BakeSmokeleafBrownies</defName>
     <label>bake smokeleaf brownies</label>
     <description>Bake delicious "special" brownies.</description>
@@ -108,7 +107,6 @@
         <li>AllowRotten</li>
       </disallowedSpecialFilters>
     </fixedIngredientFilter>
-    <workSkill>Cooking</workSkill>
     <researchPrerequisite>SmokeleafProcessing</researchPrerequisite>
 	<skillRequirements>
         <li>
@@ -118,7 +116,7 @@
       </skillRequirements>
   </RecipeDef>
   
-  <RecipeDef>
+  <RecipeDef ParentName="MSI_CookMealBase">
     <defName>MakeSmokeleafButter</defName>
     <label>make smokeleaf butter</label>
     <description>Simmer milk and smokeleaf buds to make infused butter.</description>
@@ -167,7 +165,7 @@
   
 	<!--========== Advanced Edibles ==========-->  
   
-  <RecipeDef>
+  <RecipeDef ParentName="MSI_CookMealBase">
     <defName>MakeSmokeleafDeEnergyDrink</defName>
     <label>make smokeleaf de-energy drink</label>
     <description>A smokeleaf drink Ricky's been working on...he calls it 5 hour de-energy. It's probably pretty potent.</description>
@@ -205,7 +203,6 @@
         <li>AllowRotten</li>
       </disallowedSpecialFilters>
     </fixedIngredientFilter>
-    <workSkill>Cooking</workSkill>
     <researchPrerequisite>AdvancedSmokeleafProcessing</researchPrerequisite>
 	<skillRequirements>
         <li>
@@ -215,7 +212,7 @@
     </skillRequirements>
   </RecipeDef>
   
-  <RecipeDef>
+  <RecipeDef ParentName="MSI_CookMealBase">
     <defName>MakeSmokeleafSmoothie</defName>
     <label>make smokeleaf smoothie</label>
     <description>Berries blended with distillate to make a delicious smokeleaf smoothie.</description>
