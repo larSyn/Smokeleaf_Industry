@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <SmokeleafLotion>
 
-  <ThingDef ParentName="MSI_MakeablePharma">
+  <ThingDef ParentName="MSI_MakeableDrugPillBase">
     <defName>SmokeleafLotion</defName>
     <label>smokeleaf lotion</label>
     <description>A topical lotion that can heal old scars, numb pain and restore some movement.</description>
@@ -35,7 +35,7 @@
     </recipeMaker>
     <costList>
       <CBD>2</CBD>
-	  <Neutroamine>2</Neutroamine>
+	  <Medicine>1</Medicine>
     </costList>
     <comps>
       <li Class="CompProperties_Drug">
@@ -63,7 +63,6 @@
     <stages>
         <li>
 		  <painOffset>-0.15</painOffset>
-		  <baseMoodEffect>5</baseMoodEffect>
 		  <capMods>
             <li>
               <capacity>Manipulation</capacity>
@@ -77,5 +76,19 @@
 		</li>
     </stages>
   </HediffDef>
+  
+  <ThoughtDef>
+    <defName>SmokeleafLotionRelief</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>SmokeleafLotionHigh</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>used smokeleaf lotion</label>
+        <description>My aches and pains are all gone.</description>
+        <baseMoodEffect>15</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
   
 </SmokeleafLotion>

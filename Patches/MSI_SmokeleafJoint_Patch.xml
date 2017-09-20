@@ -3,8 +3,8 @@
 
 <Patch>
 
-	<Operation Class="PatchOperationReplace">
-	    <xpath>*/ThingDef[defName = "SmokeleafJoint"]/recipeMaker/recipeUsers/li</xpath>
+	<Operation Class="PatchOperationAdd">
+	    <xpath>*/ThingDef[defName = "SmokeleafJoint"]/recipeMaker/recipeUsers</xpath>
 	    <value>
 			<li>DrugLab</li>
 		</value>

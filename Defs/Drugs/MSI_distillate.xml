@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<SmokeleafRosin>
+<SmokeleafDistillate>
 
   <ThingDef ParentName="MSI_MakeableDrugBase">
-    <defName>SmokeleafRosin</defName>
-    <label>smokeleaf rosin</label>
-    <description>Smokeleaf rosin is the ultimate extract. Gives a clean high without the risks of other smokeleaf products.</description>
+    <defName>SmokeleafDistillate</defName>
+    <label>smokeleaf distillate</label>
+    <description>Smokeleaf distillate is the ultimate extract. Gives a clean high without the risks of other smokeleaf products. While not physically addictive, users may still develop a psychological dependence.</description>
     <graphicData>
-      <texPath>Things/Items/MSI_rosin</texPath>
+      <texPath>Things/Items/MSI_distillate</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <rotatable>false</rotatable>
@@ -47,16 +47,16 @@
       <useEatingSpeedStat>false</useEatingSpeedStat>
       <outcomeDoers>
         <li Class="IngestionOutcomeDoer_GiveHediff">
-          <hediffDef>SmokeleafRosinHigh</hediffDef>
+          <hediffDef>SmokeleafDistillateHigh</hediffDef>
           <severity>0.8</severity>
-          <toleranceChemical>SmokeleafRosin</toleranceChemical>
+          <toleranceChemical>SmokeleafDistillate</toleranceChemical>
         </li>
         <li Class="IngestionOutcomeDoer_OffsetNeed">
           <need>Rest</need>
           <offset>-0.15</offset>
         </li>
         <li Class="IngestionOutcomeDoer_GiveHediff">
-			<hediffDef>SmokeleafRosinTolerance</hediffDef>
+			<hediffDef>SmokeleafDistillateTolerance</hediffDef>
 			<severity>0.035</severity>
 			<divideByBodySize>true</divideByBodySize>
 		</li>
@@ -81,7 +81,7 @@
     </costList>
     <comps>
       <li Class="CompProperties_Drug">
-        <chemical>SmokeleafRosin</chemical>
+        <chemical>SmokeleafDistillate</chemical>
         <addictiveness>0.01</addictiveness>
         <minToleranceToAddict>0.1</minToleranceToAddict>
         <existingAddictionSeverityOffset>0.02</existingAddictionSeverityOffset>
@@ -92,9 +92,9 @@
   </ThingDef>
 
   <HediffDef>
-    <defName>SmokeleafRosinHigh</defName>
+    <defName>SmokeleafDistillateHigh</defName>
     <hediffClass>HediffWithComps</hediffClass>
-    <label>lit on rosin</label>
+    <label>lit on distillate</label>
     <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
     <scenarioCanAdd>true</scenarioCanAdd>
     <maxSeverity>1.0</maxSeverity>
@@ -105,8 +105,8 @@
     </comps>
       <stages>
         <li>
-          <hungerRateFactor>1.1</hungerRateFactor>
-          <painOffset>-0.75</painOffset>
+          <hungerRateFactor>1.05</hungerRateFactor>
+          <painOffset>-0.5</painOffset>
           <capMods>
             <li>
               <capacity>Consciousness</capacity>
@@ -122,55 +122,55 @@
   </HediffDef>
   
   <ThoughtDef>
-    <defName>SmokeleafRosinHigh</defName>
+    <defName>SmokeleafDistillateHigh</defName>
     <workerClass>ThoughtWorker_Hediff</workerClass>
-    <hediff>SmokeleafRosinHigh</hediff>
+    <hediff>SmokeleafDistillateHigh</hediff>
     <validWhileDespawned>true</validWhileDespawned>
     <stages>
       <li>
-        <label>veerrry high on rosin</label>
+        <label>veerrry high on distillate</label>
         <description>Holy shit.</description>
         <baseMoodEffect>30</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>
 
-  <!--=== Smokeleaf Rosin addiction ===-->
+  <!--=== Smokeleaf distillate addiction ===-->
 
   <ChemicalDef>
-    <defName>SmokeleafRosin</defName>
-    <label>smokeleaf rosin</label>
+    <defName>SmokeleafDistillate</defName>
+    <label>smokeleaf distillate</label>
     <addictionHediff>SmokeleafAddiction</addictionHediff>
     <toleranceHediff>SmokeleafTolerance</toleranceHediff>
 		<onGeneratedAddictedToleranceChance>0.8</onGeneratedAddictedToleranceChance>
 	</ChemicalDef>
 
   <NeedDef ParentName="MSI_DrugAddictionNeedBase">
-    <defName>Chemical_SmokeleafRosin</defName>
+    <defName>Chemical_SmokeleafDistillate</defName>
     <needClass>Need_Chemical</needClass>
-    <label>smokeleaf rosin</label>
-    <description>Because of a developed C.H.O. dependence, this person needs to regularly consume the drug to avoid withdrawal symptoms.</description>
+    <label>smokeleaf distillate</label>
+    <description>Because of a developed distillate dependence, this person needs to regularly consume the drug to avoid withdrawal symptoms.</description>
     <listPriority>25</listPriority>
   </NeedDef>
   
   <HediffDef ParentName="MSI_DrugToleranceBase">
-    <defName>SmokeleafRosinTolerance</defName>
-    <label>smokeleaf rosin tolerance</label>
+    <defName>SmokeleafDistillateTolerance</defName>
+    <label>smokeleaf distillate tolerance</label>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-0.035</severityPerDay>
       </li>
       <li Class="HediffCompProperties_DrugEffectFactor">
-        <chemical>SmokeleafRosin</chemical>
+        <chemical>SmokeleafDistillate</chemical>
       </li>
     </comps>
   </HediffDef>
 
   <HediffDef ParentName="MSI_AddictionBase">
-    <defName>SmokeleafRosinAddiction</defName>
+    <defName>SmokeleafDistillateAddiction</defName>
     <hediffClass>Hediff_Addiction</hediffClass>
-    <label>smokeleaf rosin dependence</label>
-    <causesNeed>Chemical_SmokeleafRosin</causesNeed>
+    <label>smokeleaf distillate dependence</label>
+    <causesNeed>Chemical_SmokeleafDistillate</causesNeed>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-0.0333</severityPerDay>
@@ -191,35 +191,35 @@
             <offset>-0.05</offset>
           </li>
         </capMods>
-				<mentalStateGivers>
-					<li>
-						<mentalState>BingingFood</mentalState>
-						<mtbDays>30</mtbDays>
-					</li>
-					<li>
-						<mentalState>BingingDrugMajor</mentalState>
-						<mtbDays>50</mtbDays>
-					</li>
-				</mentalStateGivers>
+		<mentalStateGivers>
+			<li>
+				<mentalState>BingingFood</mentalState>
+				<mtbDays>30</mtbDays>
+			</li>
+			<li>
+				<mentalState>BingingDrugMajor</mentalState>
+				<mtbDays>50</mtbDays>
+			</li>
+		</mentalStateGivers>
       </li>
     </stages>
   </HediffDef>
 
   <ThoughtDef>
-    <defName>SmokeleafRosinWithdrawal</defName>
+    <defName>SmokeleafDistillateWithdrawal</defName>
     <workerClass>ThoughtWorker_Hediff</workerClass>
-    <hediff>SmokeleafRosinAddiction</hediff>
+    <hediff>SmokeleafDistillateAddiction</hediff>
     <validWhileDespawned>true</validWhileDespawned>
     <stages>
       <li>
         <visible>false</visible>
       </li>
       <li>
-        <label>smokeleaf rosin withdrawal</label>
+        <label>smokeleaf distillate withdrawal</label>
         <description>Waiting for the man...as usual...</description>
         <baseMoodEffect>-5</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>
 
-</SmokeleafRosin>
+</SmokeleafDistillate>

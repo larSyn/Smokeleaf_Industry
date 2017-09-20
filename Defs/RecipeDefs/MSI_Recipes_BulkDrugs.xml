@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <RecipeDefs>
 
-	<!--=== Smokeleaf Joint Recipe ===-->
+	<!--========== Smokeleaf Joint Recipe ==========-->
 	
 	<RecipeDef>
 		<defName>BulkRollSmokeleafJoint</defName>
@@ -37,7 +37,7 @@
 		<researchPrerequisite>IndustrialSmokeleafCultivation</researchPrerequisite>
 	</RecipeDef>
 	
-	<!--=== Smokeleaf Hash Recipe ===-->	
+	<!--========== Smokeleaf Hash Recipe ==========-->	
 	
 	<RecipeDef>
 		<defName>BulkMakeSmokeleafHash</defName>
@@ -55,7 +55,7 @@
 						<li>SmokeleafBuds</li>
 					</thingDefs>
 				</filter>
-				<count>20</count>
+				<count>40</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -69,10 +69,10 @@
 		<recipeUsers>
 			<li>PoweredCultivationBench</li>
 		</recipeUsers>
-		<researchPrerequisite>AdvancedSmokeleafProcessing</researchPrerequisite>
+		<researchPrerequisite>IndustrialSmokeleafCultivation</researchPrerequisite>
 	</RecipeDef>
 	
-	<!--=== Smokeleaf CHO Recipe ===-->	
+	<!--========== Smokeleaf CHO Recipe ==========-->	
 	
 	<RecipeDef>
 		<defName>BulkMakeCHO</defName>
@@ -90,7 +90,7 @@
 						<li>SmokeleafBuds</li>
 					</thingDefs>
 				</filter>
-				<count>70</count>
+				<count>40</count>
 			</li>
 			<li>
 				<filter>
@@ -113,16 +113,16 @@
 		<recipeUsers>
 			<li>PoweredCultivationBench</li>
 		</recipeUsers>
-		<researchPrerequisite>AdvancedSmokeleafProcessing</researchPrerequisite>
+		<researchPrerequisite>IndustrialSmokeleafCultivation</researchPrerequisite>
 	</RecipeDef>
 	
-	<!--=== Smokeleaf Rosin Recipe ===-->	
+	<!--========== Smokeleaf Distillate Recipe ==========-->	
 	
 	<RecipeDef>
-		<defName>BulkMakeSmokeleafRosin</defName>
-		<label>make smokeleaf rosin (bulk)</label>
-		<description>Make smokeleaf rosin in larger quantities.</description>
-		<jobString>making smokeleaf rosin</jobString>
+		<defName>BulkMakeSmokeleafDistillate</defName>
+		<label>make smokeleaf distillate (bulk)</label>
+		<description>Make smokeleaf distillate in larger quantities.</description>
+		<jobString>extracting smokeleaf distillate</jobString>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<workAmount>3000</workAmount>
@@ -131,7 +131,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>SmokeleafKief</li>
+						<li>SmokeleafHash</li>
 					</thingDefs>
 				</filter>
 				<count>40</count>
@@ -139,11 +139,11 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>SmokeleafBuds</li>
+				<li>SmokeleafHash</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<SmokeleafRosin>10</SmokeleafRosin>
+			<SmokeleafDistillate>10</SmokeleafDistillate>
 		</products>
 		<recipeUsers>
 			<li>MedicinalsLab</li>
@@ -151,7 +151,7 @@
 		<researchPrerequisite>AdvancedSmokeleafProcessing</researchPrerequisite>
 	</RecipeDef>	
 	
-	<!--=== Smokeleaf Tincture Recipe ===-->	
+	<!--========== Smokeleaf Tincture Recipe ==========-->	
 	
 	<RecipeDef>
 		<defName>BulkMakeSmokeleafTincture</defName>
@@ -174,7 +174,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Neutroamine</li>
+						<li>HerbalMedicine</li>
 					</thingDefs>
 				</filter>
 				<count>10</count>
@@ -195,7 +195,7 @@
 		<researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
 	</RecipeDef>
 	
-	<!--=== Smokeleaf Pills Recipe ===-->	
+	<!--========== Smokeleaf Pills Recipe ==========-->	
 	
 	<RecipeDef>
 		<defName>BulkMakeSmokeleafPills</defName>
@@ -239,7 +239,7 @@
 		<researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
 	</RecipeDef>
 	
-	<!--=== Smokeleaf Lotion Recipe ===-->	
+	<!--========== Smokeleaf Lotion Recipe ==========-->	
 	
 	<RecipeDef>
 		<defName>BulkMakeSmokeleafLotion</defName>
@@ -262,10 +262,10 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Neutroamine</li>
+						<li>Medicine</li>
 					</thingDefs>
 				</filter>
-				<count>20</count>
+				<count>10</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>

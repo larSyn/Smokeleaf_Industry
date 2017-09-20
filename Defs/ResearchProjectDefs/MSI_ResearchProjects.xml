@@ -20,7 +20,7 @@
 	<ResearchProjectDef>
 		<defName>SmokeleafProcessing</defName>
 		<label>smokeleaf processing</label>
-		<description>It is noticed that the fibers of the smokeleaf plant can be used to make an excellent fabric. The cooks have also been experimenting...</description>
+		<description>It has been noticed that the fibers of the smokeleaf plant can be used to make an excellent fabric. The cooks have also been experimenting...</description>
 		<baseCost>500</baseCost>
 		<techLevel>Industrial</techLevel>
 		<prerequisites>
@@ -34,7 +34,7 @@
 	<ResearchProjectDef>
 		<defName>IndustrialSmokeleafCultivation</defName>
 		<label>industrial smokeleaf cultivation</label>
-		<description>The cultivation table is developed, letting workers process smokeleaf in larger quantities. A new grow lamp is also invented that is a little easier on the electricity bill.</description>
+		<description>The cultivation table is developed, letting workers process smokeleaf in larger quantities and in new forms. A new grow lamp is also invented that is a little easier on the electricity bill.</description>
 		<baseCost>1000</baseCost>
 		<techLevel>Industrial</techLevel>
 		<prerequisites>
@@ -43,7 +43,7 @@
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<tab>MSI</tab>
-		<researchViewX>3</researchViewX>
+		<researchViewX>2</researchViewX>
 		<researchViewY>0</researchViewY>
 	</ResearchProjectDef>
 	
@@ -57,9 +57,10 @@
 			<li>IndustrialSmokeleafCultivation</li>
 			<li>SmokeleafProcessing</li>
 		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<tab>MSI</tab>
 		<researchViewX>3</researchViewX>
-		<researchViewY>3</researchViewY>
+		<researchViewY>1</researchViewY>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
@@ -77,7 +78,7 @@
 		</requiredResearchFacilities>
 		<tab>MSI</tab>
 		<researchViewX>4</researchViewX>
-		<researchViewY>2</researchViewY>
+		<researchViewY>0</researchViewY>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
@@ -94,19 +95,19 @@
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
 		<tab>MSI</tab>
-		<researchViewX>5</researchViewX>
-		<researchViewY>3</researchViewY>
+		<researchViewX>6</researchViewX>
+		<researchViewY>0</researchViewY>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
 		<defName>AdvancedSmokeleafProcessing</defName>
 		<label>advanced smokeleaf processing</label>
-		<description>New methods have been developed for seperating the medicinal parts of smokeleaf from the fun parts. Because of this, new medicines have been invented and new stronger, safer fun things.</description>
+		<description>New methods have been developed for extracting the beneficial compounds of smokeleaf. Because of this, new edibles and recreational forms are available.</description>
 		<baseCost>1500</baseCost>
 		<techLevel>Industrial</techLevel>
 		<prerequisites>
-			<li>SmokeleafExtracts</li>
 			<li>AdvancedSmokeleafCultivation</li>
+			<li>IndustrialSmokeleafProcessing</li>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<requiredResearchFacilities>

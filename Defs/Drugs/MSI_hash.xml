@@ -4,7 +4,7 @@
   <ThingDef ParentName="MSI_MakeableDrugBase">
     <defName>SmokeleafHash</defName>
     <label>smokeleaf hash</label>
-    <description>Smokeleaf hash is another concentrated form of smokeleaf. It is most easily made using kief and is slightly stronger. The drug improves mood, but also increases appetite, reduces focus and slows movement.</description>
+    <description>Smokeleaf hash is a concentrated form of smokeleaf.</description>
     <graphicData>
       <texPath>Things/Items/MSI_hash</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -67,12 +67,12 @@
 	  </skillRequirements>
     </recipeMaker>
     <costList>
-      <SmokeleafBuds>2</SmokeleafBuds>
+      <SmokeleafBuds>4</SmokeleafBuds>
     </costList>
     <comps>
       <li Class="CompProperties_Drug">
         <chemical>Hash</chemical>
-        <addictiveness>0.25</addictiveness>
+        <addictiveness>0.15</addictiveness>
         <minToleranceToAddict>0.2</minToleranceToAddict>
         <existingAddictionSeverityOffset>0.06</existingAddictionSeverityOffset>
         <needLevelOffset>1</needLevelOffset>
@@ -132,8 +132,8 @@
     <label>Hash</label>
     <addictionHediff>SmokeleafAddiction</addictionHediff>
     <toleranceHediff>SmokeleafTolerance</toleranceHediff>
-		<onGeneratedAddictedToleranceChance>0.8</onGeneratedAddictedToleranceChance>
-	</ChemicalDef>
+	<onGeneratedAddictedToleranceChance>0.8</onGeneratedAddictedToleranceChance>
+  </ChemicalDef>
 
   <NeedDef ParentName="MSI_DrugAddictionNeedBase">
     <defName>Chemical_Hash</defName>

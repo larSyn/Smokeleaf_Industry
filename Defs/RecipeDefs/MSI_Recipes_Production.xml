@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <RecipeDefs>
 
-	<!--=== Trim Smokeleaf ===-->
+	<!--========== Trim Smokeleaf ==========-->
 
   <RecipeDef>
 		<defName>AutoTrimSmokeleaf</defName>
 		<label>auto trim smokeleaf</label>
-		<description>Auto trim bulk smokeleaf with increased speed and yeild.</description>
-		<jobString>Processing Smokeleaf.</jobString>
+		<description>Auto trim large amounts of smokeleaf with increased speed and yield.</description>
+		<jobString>Trimming Smokeleaf.</jobString>
 		<effectWorking>Tailor</effectWorking>
 		<soundWorking>Recipe_Tailor</soundWorking>
 		<workAmount>1500</workAmount>
@@ -41,11 +41,11 @@
 	<RecipeDef>
 		<defName>TrimSmokeleaf</defName>
 		<label>trim smokeleaf</label>
-		<description>Trim the Smokeleaf into refined indgredients.</description>
+		<description>Trim smokeleaf into usable indgredients.</description>
 		<jobString>Trimming Smokeleaf.</jobString>
 		<effectWorking>Tailor</effectWorking>
 		<soundWorking>Recipe_Tailor</soundWorking>
-		<workAmount>500</workAmount>
+		<workAmount>250</workAmount>
 		<workSkill>Crafting</workSkill>
 		<ingredients>
 			<li>
@@ -77,7 +77,7 @@
 	<RecipeDef>
 		<defName>BulkTrimSmokeleaf</defName>
 		<label>bulk trim smokeleaf</label>
-		<description>Trim the Smokeleaf into refined indgredients in larger amounts.</description>
+		<description>Bulk trim smokeleaf into usable indgredients.</description>
 		<jobString>Trimming Smokeleaf.</jobString>
 		<effectWorking>Tailor</effectWorking>
 		<soundWorking>Recipe_Tailor</soundWorking>
@@ -109,13 +109,13 @@
 		<researchPrerequisite>SmokeleafCultivation</researchPrerequisite>
 	</RecipeDef>
 	
-	<!--=== Hemp Crafting ===-->
+	<!--========== Hemp Fabric ==========-->
 	
 	<RecipeDef>
 		<defName>CraftHempFibers</defName>
 		<label>craft hemp fabric</label>
-		<description>Process Hemp Fibers into usable fabric.</description>
-		<jobString>Crafting Hemp.</jobString>
+		<description>Process hemp fibers into a durable fabric.</description>
+		<jobString>Crafting hemp fabric.</jobString>
 		<effectWorking>Tailor</effectWorking>
 		<soundWorking>Recipe_Tailor</soundWorking>
 		<workAmount>500</workAmount>
@@ -148,17 +148,17 @@
 			<li>HandTailoringBench</li>
 			<li>ElectricTailoringBench</li>
 		</recipeUsers>
-		<researchPrerequisite>HempProcessing</researchPrerequisite>
+		<researchPrerequisite>SmokeleafProcessing</researchPrerequisite>
 	</RecipeDef>
 		
 	<RecipeDef>
 		<defName>BulkCraftHempFibers</defName>
 		<label>bulk craft hemp</label>
-		<description>Process Hemp Fibers into usable fabric in larger quantities.</description>
-		<jobString>Crafting Hemp.</jobString>
+		<description>Process hemp fibers into a durable fabric in larger quantities.</description>
+		<jobString>Crafting hemp fabric.</jobString>
 		<effectWorking>Tailor</effectWorking>
 		<soundWorking>Recipe_Tailor</soundWorking>
-		<workAmount>2000</workAmount>
+		<workAmount>3500</workAmount>
 		<workSkill>Crafting</workSkill>
 		<skillRequirements>
 			<li>
@@ -188,19 +188,19 @@
 			<li>HandTailoringBench</li>
 			<li>ElectricTailoringBench</li>
 		</recipeUsers>
-		<researchPrerequisite>IndustrialHempProcessing</researchPrerequisite>
+		<researchPrerequisite>IndustrialSmokeleafProcessing</researchPrerequisite>
 	</RecipeDef>
 	
-	<!--=== Hemp Flour Crafting ===-->
+	<!--========== Hemp Flour ==========-->
 	
 	<RecipeDef>
 		<defName>CraftHempFlour</defName>
 		<label>craft hemp flour</label>
-		<description>Process Hemp Fibers into flour for baking.</description>
-		<jobString>Crafting Hemp.</jobString>
+		<description>Process smokeleaf seeds into flour for baking.</description>
+		<jobString>Crafting hemp flour.</jobString>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
-		<workAmount>500</workAmount>
+		<workAmount>350</workAmount>
 		<workSkill>Cooking</workSkill>
 		<skillRequirements>
 			<li>
@@ -230,17 +230,17 @@
 			<li>FueledStove</li>
 			<li>ElectricStove</li>
 		</recipeUsers>
-		<researchPrerequisite>HempProcessing</researchPrerequisite>
+		<researchPrerequisite>SmokeleafProcessing</researchPrerequisite>
 	</RecipeDef>
 	
 	<RecipeDef>
 		<defName>BulkCraftHempFlour</defName>
 		<label>bulk craft hemp flour</label>
-		<description>Process Hemp Fibers into flour for baking in larger quantities.</description>
-		<jobString>Crafting Hemp Flour.</jobString>
+		<description>Process smokeleaf seeds into flour for baking in larger quantities.</description>
+		<jobString>Crafting hemp flour.</jobString>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
-		<workAmount>2000</workAmount>
+		<workAmount>2750</workAmount>
 		<workSkill>Cooking</workSkill>
 		<skillRequirements>
 			<li>
@@ -270,19 +270,19 @@
 			<li>FueledStove</li>
 			<li>ElectricStove</li>
 		</recipeUsers>
-		<researchPrerequisite>IndustrialHempProcessing</researchPrerequisite>
+		<researchPrerequisite>IndustrialSmokeleafProcessing</researchPrerequisite>
 	</RecipeDef>
 	
-	<!--=== Refine Hempoline ===-->	
+	<!--========== Refine Hempoline ==========-->	
 	
 	<RecipeDef>
 		<defName>MakeHempolineFromHempFibers</defName>
-		<label>make hempoline from hemp fibers</label>
+		<label>refine hempoline from hemp fibers</label>
 		<description>Make a batch of hempoline by refining hemp fibers.</description>
 		<jobString>Refining hempoline from hemp fibers.</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
-		<workAmount>1500</workAmount>
+		<workAmount>2000</workAmount>
 		<workSkill>Crafting</workSkill>
 		<ingredients>
 			<li>
@@ -305,7 +305,7 @@
 		<recipeUsers>
 			<li>Refinery</li>
 		</recipeUsers>
-		<researchPrerequisite>IndustrialHempProcessing</researchPrerequisite>
+		<researchPrerequisite>IndustrialSmokeleafProcessing</researchPrerequisite>
 	</RecipeDef>
 	
 	<RecipeDef>
@@ -315,7 +315,7 @@
 		<jobString>Refining hempoline from hemp fibers.</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
-		<workAmount>1000</workAmount>
+		<workAmount>2000</workAmount>
 		<workSkill>Crafting</workSkill>
 		<ingredients>
 			<li>
@@ -338,14 +338,12 @@
 		<recipeUsers>
 			<li>Refinery</li>
 		</recipeUsers>
-		<researchPrerequisite>IndustrialHempProcessing</researchPrerequisite>
+		<researchPrerequisite>IndustrialSmokeleafProcessing</researchPrerequisite>
 	</RecipeDef>
 	
-	<!--=== Craft Hempcrete Blocks ===-->
+	<!--========== Hempcrete Blocks ==========-->
 	
 	<RecipeDef Name="MSI_MakeHempcreteBlocksBase" Abstract="True">
-		<jobString>Cutting stone blocks from chunk.</jobString>
-		<workAmount>1200</workAmount>
 		<workSpeedStat>StonecuttingSpeed</workSpeedStat>
 		<workSkill>Crafting</workSkill>
 		<workSkillLearnFactor>0.3</workSkillLearnFactor>
@@ -354,14 +352,15 @@
 		<recipeUsers>
 			<li>TableStonecutter</li>
 		</recipeUsers>
-		<researchPrerequisite>IndustrialHempProcessing</researchPrerequisite>
+		<researchPrerequisite>IndustrialSmokeleafProcessing</researchPrerequisite>
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSI_MakeHempcreteBlocksBase">
 		<defName>MakeHempcreteBlocks</defName>
 		<label>make hempcrete blocks</label>
 		<description>Compress hemp products into hempcrete blocks.</description>
-		<workerCounterClass>RecipeWorkerCounter_MakeStoneBlocks</workerCounterClass>
+		<jobString>Making hempcrete blocks.</jobString>
+		<workAmount>1500</workAmount>
 		<ingredients>
 			<li>
 				<filter>
@@ -387,47 +386,14 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<BlocksHempcrete>5</BlocksHempcrete>
+			<BlocksHempcrete>20</BlocksHempcrete>
 		</products>
 		<specialProducts>
 			<li>Butchery</li>
 		</specialProducts>
 	</RecipeDef>
 	
-	<!--=== Extract CBD ===-->
-	
-	<RecipeDef>
-		<defName>ExtractCBD</defName>
-		<label>extract CBD</label>
-		<description>Extract CBD from smokeleaf buds.</description>
-		<jobString>Extracting CBD</jobString>
-		<effectWorking>BurnDrug</effectWorking>
-		<soundWorking>Recipe_Brewing</soundWorking>
-		<workAmount>500</workAmount>
-		<workSkill>Intellectual</workSkill>
-		<ingredients>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>SmokeleafKief</li>
-					</thingDefs>
-				</filter>
-				<count>4</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>SmokeleafKief</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<products>
-			<CBD>1</CBD>
-		</products>
-		<recipeUsers>
-			<li>MedicinalsLab</li>
-		</recipeUsers>
-		<researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
-	</RecipeDef>
+	<!--========== Extract CBD ==========-->
 	
 	<RecipeDef>
 		<defName>BulkExtractCBD</defName>
@@ -442,15 +408,15 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>SmokeleafKief</li>
+						<li>SmokeleafBuds</li>
 					</thingDefs>
 				</filter>
-				<count>20</count>
+				<count>75</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>SmokeleafKief</li>
+				<li>SmokeleafBuds</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>

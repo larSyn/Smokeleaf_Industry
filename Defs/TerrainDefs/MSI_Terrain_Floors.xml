@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <TerrainDefs>
 
-
   <TerrainDef Name="MSI_FloorBase" Abstract="True">
 	<layerable>true</layerable>
     <affordances>
@@ -24,8 +23,8 @@
   
   <ArchitectSense.DesignationSubCategoryDef>
         <defName>MSI_FloorBase</defName>
-        <label>S.I. floors</label>
-        <description>Store your stuff.</description>
+        <label>Hemp Floors</label>
+        <description>Floors made frome hemp products.</description>
         <defNames>
             <li>TileHempcrete</li>
             <li>FlagstoneHempcrete</li>
@@ -38,7 +37,7 @@
         <debug>true</debug>
     </ArchitectSense.DesignationSubCategoryDef>  
   
-  <!--=== MSI TileStoneBase ===-->
+  <!--========== HempBlock TileStoneBase ==========-->
   
   <TerrainDef Abstract="True" ParentName="MSI_FloorBase" Name="MSI_TileStoneBase">
     <RenderPrecedence>220</RenderPrecedence>
@@ -58,7 +57,7 @@
     </CostList>
   </TerrainDef>
   
-  <!--=== MSI FlagStoneBase ===-->
+  <!--========== HempBlock FlagStoneBase ==========-->
   
   <TerrainDef Abstract="True" ParentName="MSI_FloorBase" Name="MSI_FlagstoneBase">
 	<RenderPrecedence>220</RenderPrecedence>
@@ -82,7 +81,7 @@
 	  </CostList>
 	</TerrainDef>
   
-  <!--=== MSI Misc Floors ===-->
+  <!--========== HempBlock Misc Floors ==========-->
 
   <TerrainDef ParentName="MSI_FloorBase">
 	<defName>Hempcrete</defName>
@@ -116,18 +115,18 @@
     </CostList>
   </TerrainDef>
 
-  <!--=== MSI Carpet ===-->
+  <!--========== Hemp Carpet ==========-->
 
     <TerrainDef Name="MSI_CarpetBase" ParentName="MSI_FloorBase" Abstract="True">
     <texturePath>Terrain/MSI_carpet</texturePath>
     <researchPrerequisites>
 	  <li>CarpetMaking</li>
-	  <li>HempProcessing</li>
+	  <li>SmokeleafProcessing</li>
 	</researchPrerequisites>
     <burnedDef>BurnedCarpet</burnedDef>
     <statBases>
       <Beauty>3</Beauty>
-      <Flammability>0.05</Flammability>
+      <Flammability>0.25</Flammability>
     </statBases>
     </TerrainDef>
   

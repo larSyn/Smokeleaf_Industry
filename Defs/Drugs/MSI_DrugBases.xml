@@ -41,25 +41,6 @@
       <soundWorking>Recipe_CookMeal</soundWorking>
     </recipeMaker>
   </ThingDef>
-
-  <ThingDef Name="MSI_MakeablePharma" ParentName="MSI_MakeableDrugBase" Abstract="True">
-    <ingestible>
-      <foodType>Processed</foodType>
-	  <ingestSound>Ingest_Pill</ingestSound>
-      <baseIngestTicks>120</baseIngestTicks>
-      <chairSearchRadius>0</chairSearchRadius>
-      <ingestHoldUsesTable>false</ingestHoldUsesTable>
-      <ingestCommandString>Take {0}</ingestCommandString>
-      <ingestReportString>Taking {0}.</ingestReportString>
-	  <drugCategory>Medical</drugCategory>
-	  <nurseable>true</nurseable>
-    </ingestible>
-	<recipeMaker>
-	  <workSpeedStat>DrugProductionSpeed</workSpeedStat>
-	  <workSkill>Medicine</workSkill>
-	</recipeMaker>	
-    <socialPropernessMatters>true</socialPropernessMatters>
-  </ThingDef>
   
   <ThingDef Name="MSI_MakeableDrugPillBase" ParentName="MSI_MakeableDrugBase" Abstract="True">
     <ingestible>

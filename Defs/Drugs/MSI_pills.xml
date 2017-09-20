@@ -63,20 +63,33 @@
     </comps>
     <stages>
         <li>
-		  <painOffset>-0.3</painOffset>
-		  <baseMoodEffect>5</baseMoodEffect>
+		  <painOffset>-0.15</painOffset>
 		  <capMods>
 			<li>
               <capacity>BloodFiltration</capacity>
-              <offset>0.1</offset>
+              <offset>0.2</offset>
             </li>
             <li>
               <capacity>BloodPumping</capacity>
-              <offset>0.1</offset>
+              <offset>0.2</offset>
             </li>
           </capMods>
 		</li>
     </stages>
   </HediffDef>
+  
+  <ThoughtDef>
+    <defName>SmokeleafPillsBuzz</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>SmokeleafPillsHigh</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>took smokeleaf pills</label>
+        <description>I feel much better.</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
   
 </SmokeleafPills>

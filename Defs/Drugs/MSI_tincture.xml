@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <SmokeleafTincture>
 
-  <ThingDef ParentName="MSI_MakeablePharma">
+  <ThingDef ParentName="MSI_MakeableDrugPillBase">
     <defName>SmokeleafTincture</defName>
     <label>smokeleaf tincture</label>
     <description>A potent tincture that offers considerable pain relief. May cause drowsiness.</description>
@@ -34,7 +34,7 @@
     </recipeMaker>
     <costList>
       <CBD>1</CBD>
-	  <Neutroamine>1</Neutroamine>
+	  <HerbalMedicine>1</HerbalMedicine>
     </costList>
     <comps>
       <li Class="CompProperties_Drug">
@@ -60,10 +60,23 @@
     </comps>
     <stages>
         <li>
-		  <painOffset>-0.2</painOffset>
-		  <baseMoodEffect>5</baseMoodEffect>
+		  <painOffset>-0.25</painOffset>
 		</li>
     </stages>
   </HediffDef>
+  
+  <ThoughtDef>
+    <defName>TinctureBuzz</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>SmokeleafTinctureHigh</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>relaxed with tincture</label>
+        <description>These drops really help with my pain.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
   
 </SmokeleafTincture>
