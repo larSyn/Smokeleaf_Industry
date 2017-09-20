@@ -1,58 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--=== Edibles ===-->
+	<!--========== Edibles ==========-->
 
-  <ThingDef ParentName="MSI_MealEdibles">
-    <defName>SmokeleafChocolateBar</defName>
-    <label>smokeleaf chocolate bar</label>
-    <thingClass>ThingWithComps</thingClass>
-    <thingCategories>
-      <li>Foods</li>
-    </thingCategories>
-    <description>Chocolate and smokeleaf...what else is there to say?</description>
-    <graphicData>
-      <texPath>Things/Items/MSI_candyBar</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <socialPropernessMatters>true</socialPropernessMatters>
-    <statBases>
-		<MarketValue>20</MarketValue>
-		<Mass>0.018</Mass>
-		<WorkToMake>300</WorkToMake>
-    </statBases>
-    <ingestible>
-		<nutrition>0.2</nutrition>
-		<optimalityOffset>6</optimalityOffset>
-		<outcomeDoers>
-			<li Class="IngestionOutcomeDoer_GiveHediff">
-				<hediffDef>EdiblesHigh</hediffDef>
-				<severity>0.4</severity>
-				<toleranceChemical>Edibles</toleranceChemical>
-			</li>
-			<li Class="IngestionOutcomeDoer_OffsetNeed">
-				<need>Rest</need>
-				<offset>-0.1</offset>
-			</li>
-			<li Class="IngestionOutcomeDoer_GiveHediff">
-				<hediffDef>EdiblesTolerance</hediffDef>
-				<severity>0.030</severity>
-				<divideByBodySize>true</divideByBodySize>
-			</li>
-      </outcomeDoers>
-	</ingestible>
-	<comps>
-		<li Class="CompProperties_Drug">
-			<chemical>Edibles</chemical>
-			<addictiveness>0.02</addictiveness>
-			<minToleranceToAddict>0.2</minToleranceToAddict>
-			<existingAddictionSeverityOffset>0.06</existingAddictionSeverityOffset>
-			<needLevelOffset>1</needLevelOffset>
-			<listOrder>20</listOrder>
-		</li>
-     </comps>
-  </ThingDef>
-  
   <ThingDef ParentName="MSI_MealEdibles">
     <defName>SmokeleafBrownie</defName>
     <label>smokeleaf brownie</label>
@@ -109,10 +59,10 @@
     <thingCategories>
       <li>Foods</li>
     </thingCategories>
-    <description>A butter cookie. Get comfortable.</description>
+    <description>A smokeleaf butter cookie. Get comfortable.</description>
     <graphicData>
       <texPath>Things/Items/MSI_cookie</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
+      <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <socialPropernessMatters>true</socialPropernessMatters>
     <statBases>
@@ -125,7 +75,7 @@
 		<outcomeDoers>
 			<li Class="IngestionOutcomeDoer_GiveHediff">
 				<hediffDef>EdiblesHigh</hediffDef>
-				<severity>0.6</severity>
+				<severity>0.5</severity>
 				<toleranceChemical>Edibles</toleranceChemical>
 			</li>
 			<li Class="IngestionOutcomeDoer_OffsetNeed">
@@ -142,7 +92,7 @@
 	<comps>
       <li Class="CompProperties_Drug">
         <chemical>Edibles</chemical>
-        <addictiveness>0.02</addictiveness>
+        <addictiveness>0.01</addictiveness>
         <minToleranceToAddict>0.1</minToleranceToAddict>
         <existingAddictionSeverityOffset>0.06</existingAddictionSeverityOffset>
         <needLevelOffset>1</needLevelOffset>
@@ -151,7 +101,7 @@
     </comps>
   </ThingDef>
   
-  <!--=== Hediffs ===-->
+  <!--========== Hediffs ==========-->
 	
   <HediffDef>
     <defName>EdiblesHigh</defName>
@@ -172,11 +122,11 @@
           <capMods>
             <li>
               <capacity>Consciousness</capacity>
-              <offset>-0.25</offset>
+              <offset>-0.15</offset>
             </li>
             <li>
               <capacity>Moving</capacity>
-              <offset>-0.15</offset>
+              <offset>-0.1</offset>
             </li>
           </capMods>
         </li>
@@ -191,13 +141,13 @@
     <stages>
       <li>
         <label>high on edibles</label>
-        <description>Damn these are tasty.</description>
+        <description>Wow. These are tasty.</description>
         <baseMoodEffect>18</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>
   
-    <!--=== Edibles Addiction ===-->
+    <!--========== Edibles Addiction ==========-->
 
   <ChemicalDef>
     <defName>Edibles</defName>
@@ -211,7 +161,7 @@
     <defName>Chemical_Edibles</defName>
     <needClass>Need_Chemical</needClass>
     <label>edibles</label>
-    <description>Because edibles are so good, in more ways than one, this person needs to regularly consume the drug to avoid withdrawal symptoms.</description>
+    <description>Because edibles are so good, this person needs to regularly consume them to avoid withdrawal symptoms.</description>
     <listPriority>25</listPriority>
   </NeedDef>
   
@@ -220,7 +170,7 @@
     <label>edibles tolerance</label>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.015</severityPerDay>
+        <severityPerDay>0.015</severityPerDay>
       </li>
       <li Class="HediffCompProperties_DrugEffectFactor">
         <chemical>Edibles</chemical>
@@ -229,7 +179,7 @@
 		<hediffGivers>
 			<li Class="HediffGiver_RandomDrugEffect">
 				<hediff>EdibleSickness</hediff>
-				<baseMtbDays>2</baseMtbDays>
+				<baseMtbDays>0.25</baseMtbDays>
 				<minSeverity>0.25</minSeverity>
 				<countToAffect>1</countToAffect>
 			</li>
@@ -252,11 +202,11 @@
         <capMods>
           <li>
             <capacity>Consciousness</capacity>
-            <offset>-0.5</offset>
+            <offset>-0.1</offset>
           </li>
           <li>
             <capacity>Moving</capacity>
-            <offset>-0.5</offset>
+            <offset>-0.1</offset>
           </li>
         </capMods>
 		<mentalStateGivers>
@@ -286,8 +236,8 @@
     </stages>
   </ThoughtDef>
   
-	<!--=== Advanced Edibles ===-->
-
+	<!--========== Advanced Edibles ==========-->
+	
   <ThingDef ParentName="MSI_MealEdibles">
     <defName>SmokeleafDeEnergyDrink</defName>
     <label>smokeleaf de-energy drink</label>
@@ -379,7 +329,7 @@
 	<comps>
 		<li Class="CompProperties_Drug">
 			<chemical>AdvancedEdibles</chemical>
-			<addictiveness>0.15</addictiveness>
+			<addictiveness>0.03</addictiveness>
 			<minToleranceToAddict>0.25</minToleranceToAddict>
 			<existingAddictionSeverityOffset>0.06</existingAddictionSeverityOffset>
 			<needLevelOffset>1</needLevelOffset>
@@ -388,7 +338,7 @@
      </comps>
   </ThingDef>
   
-    	<!--=== Advanced Hediffs ===-->
+    	<!--========== Advanced Hediffs ==========-->
 	
   <HediffDef>
     <defName>AdvancedEdiblesHigh</defName>
@@ -409,7 +359,7 @@
           <capMods>
             <li>
               <capacity>Consciousness</capacity>
-              <offset>-0.3</offset>
+              <offset>-0.2</offset>
             </li>
             <li>
               <capacity>Moving</capacity>
@@ -434,7 +384,7 @@
     </stages>
   </ThoughtDef>
   
-    <!--=== Advanced Edibles Addiction ===-->
+    <!--========== Advanced Edibles Addiction ==========-->
 
   <ChemicalDef>
     <defName>AdvancedEdibles</defName>
@@ -448,7 +398,7 @@
     <defName>Chemical_AdvancedEdibles</defName>
     <needClass>Need_Chemical</needClass>
     <label>advanced edibles</label>
-    <description>Because edibles are so good, in more ways than one, this person needs to regularly consume the drug to avoid withdrawal symptoms.</description>
+    <description>Because edibles are so good, this person needs to regularly consume them to avoid withdrawal symptoms.</description>
     <listPriority>25</listPriority>
   </NeedDef>
   
@@ -466,7 +416,7 @@
 		<hediffGivers>
 			<li Class="HediffGiver_RandomDrugEffect">
 				<hediff>EdibleSickness</hediff>
-				<baseMtbDays>2</baseMtbDays>
+				<baseMtbDays>0.25</baseMtbDays>
 				<minSeverity>0.5</minSeverity>
 				<countToAffect>1</countToAffect>
 			</li>

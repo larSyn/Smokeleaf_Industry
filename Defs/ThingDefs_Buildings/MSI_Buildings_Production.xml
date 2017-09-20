@@ -19,13 +19,13 @@
 		</placeWorkers>
   </ThingDef>
 
-  <!--=== Work tables ===-->
+  <!--========== Work tables ==========-->
 
   <ThingDef ParentName="MSI_BenchBase">
     <DefName>PoweredCultivationBench</DefName>
     <label>cultivation bench</label>
     <ThingClass>Building_WorkTable</ThingClass>
-    <Description>A workbench with machinery for rapid Medicinal Smokeleaf production. Can work without electricity at a severly reduced speed.</Description>
+    <Description>A workbench designed specifically to process smokeleaf. Can work without electricity at a severly reduced speed.</Description>
     <graphicData>
       <texPath>Things/Production/MSI_poweredCultivationTable</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
@@ -38,10 +38,11 @@
         <cornerBR>Damage/Corner</cornerBR>
       </damageData>
     </graphicData>
-    <costStuffCount>75</costStuffCount>
+	<uiIconPath>Icons/MSI_CultivationTable_icon</uiIconPath>
+    <costStuffCount>50</costStuffCount>
     <CostList>
-      <Steel>100</Steel>
-      <Component>10</Component>
+      <Steel>75</Steel>
+      <Component>2</Component>
     </CostList>
     <stuffCategories>
       <li>Metallic</li>
@@ -52,8 +53,8 @@
     <useHitPoints>True</useHitPoints>
     <statBases>
       <WorkToBuild>3000</WorkToBuild>
-      <MaxHitPoints>180</MaxHitPoints>
-      <Flammability>0.8</Flammability>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0.9</Flammability>
     </statBases>
     <Size>(3,1)</Size>
     <Passability>PassThroughOnly</Passability>
@@ -96,7 +97,7 @@
     <DefName>MedicinalsLab</DefName>
     <label>medicinals lab</label>
     <ThingClass>Building_WorkTable</ThingClass>
-    <Description>A lab with state of the art equipment for the refing of smokeleaf into its most useful forms. Can work without electricity at a severly reduced speed.</Description>
+    <Description>A lab with state of the art equipment for the processing of smokeleaf into its most advanced forms. Can work without electricity at a severly reduced speed.</Description>
     <graphicData>
       <texPath>Things/Production/MSI_medicinalsTable</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
@@ -109,10 +110,11 @@
         <cornerBR>Damage/Corner</cornerBR>
       </damageData>
     </graphicData>
+	<uiIconPath>Icons/MSI_MedicinalsTable_icon</uiIconPath>
     <costStuffCount>75</costStuffCount>
     <CostList>
-      <Steel>100</Steel>
-      <Component>10</Component>
+      <Steel>75</Steel>
+      <Component>5</Component>
     </CostList>
     <stuffCategories>
       <li>Metallic</li>
@@ -163,12 +165,12 @@
 	<designationCategory>MSI</designationCategory>
   </ThingDef>
 
-  <!--=== Smokeleaf Auto Trimmer ===-->
+  <!--========== Smokeleaf Auto Trimmer ==========-->
 
   <ThingDef ParentName="MSI_BenchBase">
     <defName>SmokeleafAutoTrimmer</defName>
     <label>smokeleaf auto trimmer</label>
-    <description>Automatically processes raw Smokeleaf into usable products with an increased yeild.  Accepts raw Smokeleaf through a hopper.</description>
+    <description>Automatically processes raw smokeleaf into usable products with increased speed and yeild.</description>
     <thingClass>Building_WorkTable</thingClass>
     <graphicData>
       <texPath>Things/Production/MSI_autoTrimmer</texPath>
@@ -181,6 +183,7 @@
         <cornerBR>Damage/Corner</cornerBR>
       </damageData>
     </graphicData>
+	<uiIconPath>Icons/MSI_Autotrimmer_icon</uiIconPath>
 	<rotatable>true</rotatable>
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
@@ -200,7 +203,7 @@
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <startElectricalFires>true</startElectricalFires>
-        <basePowerConsumption>800</basePowerConsumption>
+        <basePowerConsumption>750</basePowerConsumption>
       </li>
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Breakdownable"/>
@@ -214,7 +217,7 @@
     <costList>
       <Steel>150</Steel>
       <Component>5</Component>
-	  <Plasteel>10</Plasteel>
+	  <Plasteel>25</Plasteel>
     </costList>
     <socialPropernessMatters>true</socialPropernessMatters>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>

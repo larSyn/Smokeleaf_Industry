@@ -4,9 +4,9 @@
   <ThingDef ParentName="MSI_MakeableDrugBase">
     <defName>CHO</defName>
     <label>chemfuel hash oil</label>
-    <description>Chemfuel Hash Oil is a smokeleaf extract prepared using Chemfuel. The drug improves mood, but also increases appetite, reduces focus and slows movement. C.H.O. use can produce a dependency.</description>
+    <description>Chemfuel Hash Oil is a smokeleaf extract prepared using Chemfuel. Since C.H.O. is vaporized, some of the harmful effects are reduced, but due to the method of it's extraction, others are increased.</description>
     <graphicData>
-      <texPath>Things/Items/MSI_shatter</texPath>
+      <texPath>Things/Items/MSI_CHO</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <rotatable>false</rotatable>
@@ -63,7 +63,7 @@
       </outcomeDoers>
     </ingestible>
     <recipeMaker>
-	  <researchPrerequisite>SmokeleafExtracts</researchPrerequisite>
+	  <researchPrerequisite>IndustrialSmokeleafCultivation</researchPrerequisite>
 	  <recipeUsers>
         <li>PoweredCultivationBench</li>
       </recipeUsers>
@@ -77,13 +77,13 @@
 	  </skillRequirements>
     </recipeMaker>
     <costList>
-      <SmokeleafBuds>3</SmokeleafBuds>
+      <SmokeleafBuds>4</SmokeleafBuds>
 	  <Chemfuel>1</Chemfuel>
     </costList>
     <comps>
       <li Class="CompProperties_Drug">
         <chemical>CHO</chemical>
-        <addictiveness>0.030</addictiveness>
+        <addictiveness>0.03</addictiveness>
         <minToleranceToAddict>0.2</minToleranceToAddict>
         <existingAddictionSeverityOffset>0.06</existingAddictionSeverityOffset>
         <needLevelOffset>1</needLevelOffset>
@@ -106,12 +106,12 @@
     </comps>
       <stages>
         <li>
-          <hungerRateFactor>1.3</hungerRateFactor>
+          <hungerRateFactor>1.2</hungerRateFactor>
           <painOffset>-0.4</painOffset>
           <capMods>
             <li>
               <capacity>Consciousness</capacity>
-              <offset>-0.3</offset>
+              <offset>-0.2</offset>
             </li>
             <li>
               <capacity>Moving</capacity>
@@ -136,7 +136,7 @@
     </stages>
   </ThoughtDef>
 
-  <!--=== CHO addiction ===-->
+  <!--========== CHO addiction ==========-->
 
   <ChemicalDef>
     <defName>CHO</defName>
@@ -169,7 +169,7 @@
 			<li Class="HediffGiver_RandomDrugEffect">
 				<hediff>Asthma</hediff>
 				<baseMtbDays>180</baseMtbDays>
-				<minSeverity>0.25</minSeverity>
+				<minSeverity>0.15</minSeverity>
 				<partsToAffect>
 					<li>LeftLung</li>
 					<li>RightLung</li>
@@ -179,7 +179,7 @@
 			<li Class="HediffGiver_RandomDrugEffect">
 				<hediff>Carcinoma</hediff>
 				<baseMtbDays>180</baseMtbDays>
-				<minSeverity>0.75</minSeverity>
+				<minSeverity>0.65</minSeverity>
 				<partsToAffect>
 					<li>LeftLung</li>
 					<li>RightLung</li>
@@ -221,7 +221,7 @@
 					</li>
 					<li>
 						<mentalState>BingingDrugMajor</mentalState>
-						<mtbDays>50</mtbDays>
+						<mtbDays>30</mtbDays>
 					</li>
 				</mentalStateGivers>
       </li>

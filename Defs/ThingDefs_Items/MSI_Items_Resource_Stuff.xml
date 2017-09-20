@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!--=== Hemp ===-->
+  <!--========== Hemp ==========-->
 
   <ThingDef ParentName="MSI_ResourceBase">
     <defName>HempFabric</defName>
@@ -14,7 +14,7 @@
     </graphicData>
     <statBases>
       <MaxHitPoints>90</MaxHitPoints>
-      <MarketValue>3.0</MarketValue>
+      <MarketValue>5.0</MarketValue>
       <Mass>0.05</Mass>
       <Flammability>1.0</Flammability>
       <DeteriorationRate>8</DeteriorationRate>
@@ -46,12 +46,12 @@
     </thingCategories>
   </ThingDef>
   
-    <!--=== Hemp Fiber ===-->
+    <!--========== Hemp Fiber ==========-->
 	
 	<ThingDef ParentName="MSI_ResourceBase">
     <defName>HempFiber</defName>
     <label>hemp fibers</label>
-    <description>Leftover stalks and leaves from processing the smokeleaf plant.</description>
+    <description>Leftover stalks and leaves from trimming the smokeleaf plant.</description>
     <graphicData>
       <texPath>Things/Items/MSI_hemp</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -64,11 +64,11 @@
       <DeteriorationRate>12</DeteriorationRate>
     </statBases>
     <thingCategories>
-      <li>Plant, Processed</li>
+      <li>PlantMatter</li>
     </thingCategories>
   </ThingDef>
   
-	<!--=== Smokeleaf Buds ===-->
+	<!--========== Smokeleaf Buds ==========-->
   
   <ThingDef ParentName="MSI_OrganicProductBase">
     <defName>SmokeleafBuds</defName>
@@ -90,18 +90,18 @@
     </thingCategories>
   </ThingDef>
   
-	<!--=== Smokeleaf Butter ===-->
+	<!--========== Smokeleaf Butter ==========-->
   
   <ThingDef ParentName="MSI_OrganicProductBase">
     <defName>SmokeleafButter</defName>
     <label>smokeleaf butter</label>
-    <description>The flower of the smokeleaf plant simmered with milk. Creates a potent base for edible medicinals.</description>
+    <description>Butter made from simmering smokeleaf buds with milk. Creates a potent base for edibles.</description>
     <graphicData>
       <texPath>Things/Items/MSI_butter</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>5.0</MarketValue>
+      <MarketValue>8.0</MarketValue>
       <Flammability>0.25</Flammability>
     </statBases>
     <thingCategories>
@@ -109,7 +109,7 @@
     </thingCategories>
   </ThingDef>
   
-  <!--=== Smokeleaf Seeds ===-->
+  <!--========== Smokeleaf Seeds ==========-->
   
   <ThingDef ParentName="MSI_OrganicProductBase">
     <defName>SmokeleafSeed</defName>
@@ -128,12 +128,12 @@
     </thingCategories>
   </ThingDef>
   
-  <!--=== Hemp Flour ===-->
+  <!--========== Hemp Flour ==========-->
   
   <ThingDef ParentName="MSI_PlantFoodRawBase">
     <defName>HempFlour</defName>
     <label>hemp flour</label>
-    <description>The seed of the smokeleaf plant can be processed into a flour for baking.</description>
+    <description>Smokeleaf seeds can be ground into a fine flour for baking.</description>
     <graphicData>
       <texPath>Things/Items/MSI_flour</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -144,7 +144,7 @@
     </statBases>
 	<ingestible>
       <foodType>Plant, Processed</foodType>
-	  <nutrition>0.15</nutrition>
+	  <nutrition>0.2</nutrition>
     </ingestible>
     <comps>
       <li Class="CompProperties_Rottable">
@@ -154,12 +154,12 @@
     </comps>
   </ThingDef>
   
-    <!--=== Hempoline ===-->
+    <!--========== Hempoline ==========-->
 	
   <ThingDef ParentName="MSI_OrganicProductBase">
     <defName>Hempoline</defName>
     <label>hempoline</label>
-    <description>A safe, stable fuel produced from refined smokeleaf stalks. Non-volatile, but goes bad eventually.</description>
+    <description>A safe, stable fuel produced from refined smokeleaf stalks or seeds. Non-volatile, but goes bad eventually.</description>
     <graphicData>
       <texPath>Things/Items/MSI_hempoline</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -184,82 +184,56 @@
     </thingCategories>
   </ThingDef>
   
-    <!--=== CBD ===-->
+  <!--========== CBD ==========-->
 	  
-  <ThingDef ParentName="MSI_OrganicProductBase">
+  <ThingDef ParentName="MSI_ResourceBase">
     <defName>CBD</defName>
     <label>CBD</label>
-    <description>A new compound identified in the smokeleaf plant that has vast medical potential.  Similar to neutroamine, it is useless on its own, but can be combined with other indgredients to make other drugs.</description>
+    <description>A compound identified in the smokeleaf plant that has vast medical potential. CBD can be used on it's own or combined with other medicine to create an even more effective form of treatment.</description>
+	<thingClass>Medicine</thingClass>
     <graphicData>
       <texPath>Things/Items/MSI_CBD</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <statBases>
-      <MarketValue>10</MarketValue>
-      <Flammability>0.5</Flammability>
-    </statBases>
-    <thingCategories>
-      <li>Manufactured</li>
-    </thingCategories>
-  </ThingDef>
-  
-    <!--=== Infused Medicine ===-->  
-  
-  <ThingDef ParentName="MSI_ResourceBase">
-    <defName>InfusedMedicine</defName>
-    <label>infused medicine</label>
-    <description>Medicine infused with CBD. More effective than regular medicine and provides a mild feeling of euphoria.</description>
-    <thingClass>Medicine</thingClass>
-    <graphicData>
-      <texPath>Things/Items/MSI_medicine</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Standard_Drop</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
     <statBases>
-      <MaxHitPoints>60</MaxHitPoints>
-      <MarketValue>25</MarketValue>
+      <MaxHitPoints>30</MaxHitPoints>
+      <MarketValue>30</MarketValue>
       <Mass>0.5</Mass>
       <Flammability>1.0</Flammability>
-      <MedicalPotency>1.50</MedicalPotency>
+      <MedicalPotency>0.75</MedicalPotency>
       <DeteriorationRate>6</DeteriorationRate>
-      <WorkToMake>750</WorkToMake>
+      <WorkToMake>1000</WorkToMake>
     </statBases>
     <thingCategories>
       <li>Medicine</li>
     </thingCategories>
     <costList>
-      <HerbalMedicine>1</HerbalMedicine>
-      <Neutroamine>1</Neutroamine>
-      <CBD>1</CBD>
+      <SmokeleafBuds>16</SmokeleafBuds>
     </costList>
     <recipeMaker>
       <workSpeedStat>DrugProductionSpeed</workSpeedStat>
-      <workSkill>Intellectual</workSkill>
+      <workSkill>Medicine</workSkill>
       <recipeUsers>
-        <li>DrugLab</li>
 		<li>MedicinalsLab</li>
       </recipeUsers>
       <researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
       <skillRequirements>
         <li>
           <skill>Medicine</skill>
-          <minLevel>8</minLevel>
-        </li>
-        <li>
-          <skill>Crafting</skill>
-          <minLevel>4</minLevel>
+          <minLevel>12</minLevel>
         </li>
       </skillRequirements>
     </recipeMaker>
   </ThingDef>
   
-  <!--=== Infused Meal ===--> 
+  <!--========== Infused Meal ==========--> 
 	  
   <ThingDef ParentName="MSI_MealRottable">
     <defName>MealInfused</defName>
     <label>infused meal</label>
-    <description>A filling dish that also gives a slight buzz.</description>
+    <description>A filling meal that also gives a slight buzz.</description>
     <graphicData>
       <texPath>Things/Items/MSI_meal</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -283,6 +257,52 @@
         </li>
 	  </outcomeDoers>
     </ingestible>
+  </ThingDef> 
+  
+  <!--========== Infused Medicine ==========-->  
+
+  <ThingDef ParentName="MSI_ResourceBase">
+    <defName>InfusedMedicine</defName>
+    <label>infused medicine</label>
+    <description>Medicine infused with CBD. More effective than regular medicine.</description>
+    <thingClass>Medicine</thingClass>
+    <graphicData>
+      <texPath>Things/Items/MSI_medicine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <MarketValue>50</MarketValue>
+      <Mass>0.5</Mass>
+      <Flammability>1.0</Flammability>
+      <MedicalPotency>1.50</MedicalPotency>
+      <DeteriorationRate>6</DeteriorationRate>
+      <WorkToMake>750</WorkToMake>
+    </statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+    <costList>
+      <Medicine>1</Medicine>
+	  <CBD>1</CBD>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>DrugProductionSpeed</workSpeedStat>
+      <workSkill>Medicine</workSkill>
+      <recipeUsers>
+        <li>DrugLab</li>
+		<li>MedicinalsLab</li>
+      </recipeUsers>
+      <researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
+      <skillRequirements>
+        <li>
+          <skill>Medicine</skill>
+          <minLevel>12</minLevel>
+        </li>
+      </skillRequirements>
+    </recipeMaker>
   </ThingDef>  
 	  
 </Defs>

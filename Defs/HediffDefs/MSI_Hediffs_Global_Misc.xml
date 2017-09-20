@@ -4,8 +4,10 @@
   <HediffDef Name="MSI_DiseaseBase" Abstract="True">
     <hediffClass>HediffWithComps</hediffClass>
     <defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
-    <initialSeverity>0.001</initialSeverity>
+    <initialSeverity>0.5</initialSeverity>
   </HediffDef>
+  
+  <!--==========  Edibles Hediffs  ==========-->
   
   <HediffDef ParentName="MSI_DiseaseBase">
     <defName>EdibleSickness</defName>
@@ -22,7 +24,7 @@
     </comps>
     <stages>
       <li>
-        <vomitMtbDays>0.5</vomitMtbDays>
+        <vomitMtbDays>0.8</vomitMtbDays>
         <capMods>
 			<li>
 				<capacity>Consciousness</capacity>
@@ -46,6 +48,7 @@
     <label>infused buzz</label>
     <makesSickThought>false</makesSickThought>
     <scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>false</isBad>
     <comps>
       <li Class="HediffCompProperties_Disappears">
         <disappearsAfterTicks>
@@ -56,7 +59,7 @@
     </comps>
     <stages>
       <li>
-		<painOffset>-0.5</painOffset>
+		<painOffset>-0.1</painOffset>
         <capMods>
 			<li>
 				<capacity>Consciousness</capacity>
