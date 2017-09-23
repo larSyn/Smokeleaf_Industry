@@ -62,7 +62,7 @@
 	  <skillRequirements>
 			<li>
 				<skill>Crafting</skill>
-				<minLevel>5</minLevel>
+				<minLevel>8</minLevel>
 			</li>
 	  </skillRequirements>
     </recipeMaker>

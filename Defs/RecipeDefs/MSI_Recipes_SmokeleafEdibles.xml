@@ -245,10 +245,10 @@
     <fixedIngredientFilter>
 		<thingDefs>
             <li>SmokeleafDistillate</li>
-         </thingDefs>
-      <disallowedSpecialFilters>
-        <li>AllowRotten</li>
-      </disallowedSpecialFilters>
+        </thingDefs>
+    <disallowedSpecialFilters>
+      <li>AllowRotten</li>
+    </disallowedSpecialFilters>
     </fixedIngredientFilter>
     <workSkill>Cooking</workSkill>
     <researchPrerequisite>AdvancedSmokeleafProcessing</researchPrerequisite>

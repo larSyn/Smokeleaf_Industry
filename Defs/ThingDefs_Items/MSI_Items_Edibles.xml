@@ -1,6 +1,52 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	<!--========== Smokeleaf Butter ==========-->
+  
+  <ThingDef ParentName="MSI_OrganicProductBase">
+    <defName>SmokeleafButter</defName>
+    <label>smokeleaf butter</label>
+    <description>Butter made from simmering smokeleaf buds with milk. Creates a potent base for edibles.</description>
+    <graphicData>
+      <texPath>Things/Items/MSI_butter</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>8.0</MarketValue>
+      <Flammability>0.25</Flammability>
+    </statBases>
+	<ingestible>
+		<nutrition>0.15</nutrition>
+		<optimalityOffset>6</optimalityOffset>
+		<baseIngestTicks>120</baseIngestTicks>
+		<chairSearchRadius>25</chairSearchRadius>
+		<ingestSound>Meal_Eat</ingestSound>
+		<ingestHoldUsesTable>false</ingestHoldUsesTable>
+		<useEatingSpeedStat>true</useEatingSpeedStat>
+		<ingestEffectEat>EatVegetarian</ingestEffectEat>
+		<preferability>NeverForNutrition</preferability>
+		<outcomeDoers>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+				<hediffDef>EdiblesHigh</hediffDef>
+				<severity>0.15</severity>
+				<toleranceChemical>Edibles</toleranceChemical>
+			</li>
+			<li Class="IngestionOutcomeDoer_OffsetNeed">
+				<need>Rest</need>
+				<offset>-0.01</offset>
+			</li>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+				<hediffDef>EdiblesTolerance</hediffDef>
+				<severity>0.005</severity>
+				<divideByBodySize>true</divideByBodySize>
+			</li>
+      </outcomeDoers>
+	</ingestible>
+    <thingCategories>
+      <li>Foods</li>
+    </thingCategories>
+  </ThingDef>
+
 	<!--========== Edibles ==========-->
 
   <ThingDef ParentName="MSI_MealEdibles">

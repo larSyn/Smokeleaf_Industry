@@ -25,7 +25,7 @@
     <DefName>PoweredCultivationBench</DefName>
     <label>cultivation bench</label>
     <ThingClass>Building_WorkTable</ThingClass>
-    <Description>A workbench designed specifically to process smokeleaf. Can work without electricity at a severly reduced speed.</Description>
+    <Description>A workbench designed specifically to process smokeleaf. New recreational drugs and bulk recipes have been added. Can work without electricity at a severly reduced speed.</Description>
     <graphicData>
       <texPath>Things/Production/MSI_poweredCultivationTable</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
@@ -170,7 +170,7 @@
   <ThingDef ParentName="MSI_BenchBase">
     <defName>SmokeleafAutoTrimmer</defName>
     <label>smokeleaf auto trimmer</label>
-    <description>Automatically processes raw smokeleaf into usable products with increased speed and yeild.</description>
+    <description>Process raw smokeleaf into usable products with increased speed and yeild.</description>
     <thingClass>Building_WorkTable</thingClass>
     <graphicData>
       <texPath>Things/Production/MSI_autoTrimmer</texPath>

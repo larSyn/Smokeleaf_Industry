@@ -31,9 +31,14 @@
 			<SmokeleafJoint>10</SmokeleafJoint>
 		</products>
 		<recipeUsers>
-			<li>DrugLab</li>
 			<li>PoweredCultivationBench</li>
 		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>5</minLevel>
+			</li>
+	  </skillRequirements>
 		<researchPrerequisite>IndustrialSmokeleafCultivation</researchPrerequisite>
 	</RecipeDef>
 	
@@ -69,6 +74,12 @@
 		<recipeUsers>
 			<li>PoweredCultivationBench</li>
 		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>8</minLevel>
+			</li>
+	  </skillRequirements>
 		<researchPrerequisite>IndustrialSmokeleafCultivation</researchPrerequisite>
 	</RecipeDef>
 	
@@ -113,6 +124,12 @@
 		<recipeUsers>
 			<li>PoweredCultivationBench</li>
 		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>10</minLevel>
+			</li>
+	  </skillRequirements>
 		<researchPrerequisite>IndustrialSmokeleafCultivation</researchPrerequisite>
 	</RecipeDef>
 	
@@ -148,6 +165,12 @@
 		<recipeUsers>
 			<li>MedicinalsLab</li>
 		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>12</minLevel>
+			</li>
+	  </skillRequirements>
 		<researchPrerequisite>AdvancedSmokeleafProcessing</researchPrerequisite>
 	</RecipeDef>	
 	
@@ -192,6 +215,12 @@
 		<recipeUsers>
 			<li>MedicinalsLab</li>
 		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>12</minLevel>
+			</li>
+	  </skillRequirements>
 		<researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
 	</RecipeDef>
 	
@@ -236,6 +265,12 @@
 		<recipeUsers>
 			<li>MedicinalsLab</li>
 		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>12</minLevel>
+			</li>
+	  </skillRequirements>
 		<researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
 	</RecipeDef>
 	
@@ -280,6 +315,12 @@
 		<recipeUsers>
 			<li>MedicinalsLab</li>
 		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>12</minLevel>
+			</li>
+	  </skillRequirements>
 		<researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
 	</RecipeDef>
 	

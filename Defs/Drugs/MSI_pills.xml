@@ -33,6 +33,14 @@
       <recipeUsers>
         <li>MedicinalsLab</li>
       </recipeUsers>
+	  <workSpeedStat>DrugProductionSpeed</workSpeedStat>
+	  <workSkill>Crafting</workSkill>
+	  <skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>12</minLevel>
+			</li>
+	  </skillRequirements>
     </recipeMaker>
     <costList>
       <CBD>2</CBD>
@@ -53,7 +61,7 @@
   <HediffDef>
     <defName>SmokeleafPillsHigh</defName>
     <hediffClass>HediffWithComps</hediffClass>
-    <label>smokeleaf tincture</label>
+    <label>smokeleaf pill sedation</label>
     <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
     <maxSeverity>1.0</maxSeverity>
     <comps>
@@ -63,7 +71,7 @@
     </comps>
     <stages>
         <li>
-		  <painOffset>-0.15</painOffset>
+		  <painOffset>-0.25</painOffset>
 		  <capMods>
 			<li>
               <capacity>BloodFiltration</capacity>
@@ -72,6 +80,10 @@
             <li>
               <capacity>BloodPumping</capacity>
               <offset>0.2</offset>
+            </li>
+			<li>
+              <capacity>Consciousness</capacity>
+              <offset>-0.1</offset>
             </li>
           </capMods>
 		</li>
