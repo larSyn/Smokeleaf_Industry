@@ -90,25 +90,6 @@
     </thingCategories>
   </ThingDef>
   
-	<!--========== Smokeleaf Butter ==========-->
-  
-  <ThingDef ParentName="MSI_OrganicProductBase">
-    <defName>SmokeleafButter</defName>
-    <label>smokeleaf butter</label>
-    <description>Butter made from simmering smokeleaf buds with milk. Creates a potent base for edibles.</description>
-    <graphicData>
-      <texPath>Things/Items/MSI_butter</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
-    </graphicData>
-    <statBases>
-      <MarketValue>8.0</MarketValue>
-      <Flammability>0.25</Flammability>
-    </statBases>
-    <thingCategories>
-      <li>Foods</li>
-    </thingCategories>
-  </ThingDef>
-  
   <!--========== Smokeleaf Seeds ==========-->
   
   <ThingDef ParentName="MSI_OrganicProductBase">
@@ -210,19 +191,23 @@
       <li>Medicine</li>
     </thingCategories>
     <costList>
-      <SmokeleafBuds>16</SmokeleafBuds>
+      <SmokeleafBuds>15</SmokeleafBuds>
     </costList>
     <recipeMaker>
       <workSpeedStat>DrugProductionSpeed</workSpeedStat>
-      <workSkill>Medicine</workSkill>
+      <workSkill>Crafting</workSkill>
       <recipeUsers>
 		<li>MedicinalsLab</li>
       </recipeUsers>
       <researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
       <skillRequirements>
         <li>
+          <skill>Crafting</skill>
+          <minLevel>10</minLevel>
+        </li>
+		<li>
           <skill>Medicine</skill>
-          <minLevel>12</minLevel>
+          <minLevel>6</minLevel>
         </li>
       </skillRequirements>
     </recipeMaker>
@@ -297,9 +282,13 @@
       </recipeUsers>
       <researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
       <skillRequirements>
+	  <li>
+          <skill>Crafting</skill>
+          <minLevel>12</minLevel>
+        </li>
         <li>
           <skill>Medicine</skill>
-          <minLevel>12</minLevel>
+          <minLevel>8</minLevel>
         </li>
       </skillRequirements>
     </recipeMaker>

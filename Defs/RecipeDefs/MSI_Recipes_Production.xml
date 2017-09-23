@@ -35,6 +35,12 @@
 		<recipeUsers>
 			<li>SmokeleafAutoTrimmer</li>
 		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>12</minLevel>
+			</li>
+	  </skillRequirements>
 		<researchPrerequisite>AdvancedSmokeleafCultivation</researchPrerequisite>
 	</RecipeDef>
 	
@@ -71,6 +77,12 @@
 			<li>DrugLab</li>
 			<li>PoweredCultivationBench</li>
 		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>3</minLevel>
+			</li>
+	  </skillRequirements>
 		<researchPrerequisite>SmokeleafCultivation</researchPrerequisite>
 	</RecipeDef>
 	
@@ -106,6 +118,12 @@
 		<recipeUsers>
 			<li>PoweredCultivationBench</li>
 		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>5</minLevel>
+			</li>
+	  </skillRequirements>
 		<researchPrerequisite>SmokeleafCultivation</researchPrerequisite>
 	</RecipeDef>
 	
@@ -153,7 +171,7 @@
 		
 	<RecipeDef>
 		<defName>BulkCraftHempFibers</defName>
-		<label>bulk craft hemp</label>
+		<label>bulk craft hemp fabric</label>
 		<description>Process hemp fibers into a durable fabric in larger quantities.</description>
 		<jobString>Crafting hemp fabric.</jobString>
 		<effectWorking>Tailor</effectWorking>
@@ -397,13 +415,13 @@
 	
 	<RecipeDef>
 		<defName>BulkExtractCBD</defName>
-		<label>extract CBD (bulk)</label>
-		<description>Extract more CBD from smokeleaf buds.</description>
+		<label>make CBD (bulk)</label>
+		<description>Extract CBD from smokeleaf buds in larger quantities.</description>
 		<jobString>Extracting CBD</jobString>
 		<effectWorking>BurnDrug</effectWorking>
 		<soundWorking>Recipe_Brewing</soundWorking>
 		<workAmount>800</workAmount>
-		<workSkill>Intellectual</workSkill>
+		<workSkill>Crafting</workSkill>
 		<ingredients>
 			<li>
 				<filter>
@@ -425,6 +443,16 @@
 		<recipeUsers>
 			<li>MedicinalsLab</li>
 		</recipeUsers>
+		<skillRequirements>
+			<li>
+			  <skill>Crafting</skill>
+			  <minLevel>10</minLevel>
+			</li>
+			<li>
+			  <skill>Medicine</skill>
+			  <minLevel>6</minLevel>
+			</li>
+		</skillRequirements>
 		<researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
 	</RecipeDef>
 

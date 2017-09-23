@@ -24,9 +24,6 @@
   </ThingDef>
 	
   <ThingDef Abstract="True" Name="MSI_OrganicProductBase" ParentName="MSI_ResourceBase">
-    <graphicData>
-		<graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
     <statBases>
 		<MaxHitPoints>60</MaxHitPoints>
 		<Flammability>1.0</Flammability>

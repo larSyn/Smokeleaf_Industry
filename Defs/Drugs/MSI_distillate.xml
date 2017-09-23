@@ -19,12 +19,6 @@
     <ingestible>
       <foodType>Plant, Processed</foodType>
       <joy>0.99</joy>
-      <baseIngestTicks>720</baseIngestTicks>
-      <nurseable>true</nurseable>
-      <drugCategory>Social</drugCategory>
-      <ingestSound>Ingest_Smoke</ingestSound>
-      <ingestEffect>Smoke_Joint</ingestEffect>
-	  <ingestEffectEat>EatVegetarian</ingestEffectEat>
       <ingestHoldOffsetStanding>
         <northDefault>
           <offset>(0.27,0,0.08)</offset>
@@ -38,13 +32,9 @@
         </south>
         <west>
           <offset>(-0.50,0,0.08)</offset>
-          <flip>true</flip>
+          <flip>false</flip>
         </west>
       </ingestHoldOffsetStanding>
-      <ingestHoldUsesTable>false</ingestHoldUsesTable>
-      <ingestCommandString>Smoke {0}</ingestCommandString>
-      <ingestReportString>Smoking {0}.</ingestReportString>
-      <useEatingSpeedStat>false</useEatingSpeedStat>
       <outcomeDoers>
         <li Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>SmokeleafDistillateHigh</hediffDef>
@@ -72,7 +62,7 @@
 	  <skillRequirements>
 			<li>
 				<skill>Crafting</skill>
-				<minLevel>10</minLevel>
+				<minLevel>12</minLevel>
 			</li>
 	  </skillRequirements>
     </recipeMaker>
