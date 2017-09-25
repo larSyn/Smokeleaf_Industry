@@ -73,11 +73,11 @@
     <comps>
       <li Class="CompProperties_Drug">
         <chemical>CHO</chemical>
-        <addictiveness>0.03</addictiveness>
-        <minToleranceToAddict>0.2</minToleranceToAddict>
+        <addictiveness>0.15</addictiveness>
+        <minToleranceToAddict>0.3</minToleranceToAddict>
         <existingAddictionSeverityOffset>0.06</existingAddictionSeverityOffset>
         <needLevelOffset>1</needLevelOffset>
-        <listOrder>20</listOrder>
+        <listOrder>10</listOrder>
       </li>
     </comps>
   </ThingDef>
@@ -91,7 +91,7 @@
     <maxSeverity>1.0</maxSeverity>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-1.15</severityPerDay>
+        <severityPerDay>-0.25</severityPerDay>
       </li>
     </comps>
       <stages>

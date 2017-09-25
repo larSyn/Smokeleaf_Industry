@@ -74,6 +74,9 @@
         <offMessage>Timer set for optimal growing.</offMessage>
       </li>
     </comps>
+	<building>
+      <defaultPlantToGrow>PlantSmokeleaf</defaultPlantToGrow>
+    </building>
 	<fertility>2.5</fertility>
 	<researchPrerequisites>
 	  <li>IndustrialSmokeleafCultivation</li>

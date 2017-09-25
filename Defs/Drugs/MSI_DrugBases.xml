@@ -40,18 +40,19 @@
       <effectWorking>Cook</effectWorking>
       <soundWorking>Recipe_CookMeal</soundWorking>
     </recipeMaker>
-	<ingestible>
-	  <baseIngestTicks>500</baseIngestTicks>
+	  <ingestible>
+	    <baseIngestTicks>720</baseIngestTicks>
       <nurseable>true</nurseable>
       <drugCategory>Social</drugCategory>
       <ingestSound>Ingest_Smoke</ingestSound>
       <ingestEffect>Smoke_Joint</ingestEffect>
-	  <ingestEffectEat>EatVegetarian</ingestEffectEat>
-	  <ingestHoldUsesTable>false</ingestHoldUsesTable>
+	    <ingestEffectEat>EatVegetarian</ingestEffectEat>
+	    <ingestHoldUsesTable>false</ingestHoldUsesTable>
       <ingestCommandString>Smoke {0}</ingestCommandString>
       <ingestReportString>Smoking {0}.</ingestReportString>
       <useEatingSpeedStat>false</useEatingSpeedStat>
-	</ingestible>
+      <drugCategory>Social</drugCategory>
+	  </ingestible>
   </ThingDef>
   
   <ThingDef Name="MSI_MakeableDrugPillBase" ParentName="MSI_DrugBase" Abstract="True">
@@ -70,6 +71,8 @@
       <ingestReportString>Taking {0}.</ingestReportString>
 	  <drugCategory>Medical</drugCategory>
 	  <nurseable>true</nurseable>
+	  <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+	  <drugCategory>Medical</drugCategory>
 	</ingestible>
     <socialPropernessMatters>true</socialPropernessMatters>
   </ThingDef>

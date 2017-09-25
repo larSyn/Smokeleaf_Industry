@@ -11,20 +11,22 @@
       <texPath>Things/Items/MSI_butter</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
+	<soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+	<socialPropernessMatters>true</socialPropernessMatters>
     <statBases>
-      <MarketValue>8.0</MarketValue>
-      <Flammability>0.25</Flammability>
+    <MarketValue>4.0</MarketValue>
+    <Flammability>0.5</Flammability>
     </statBases>
 	<ingestible>
-		<nutrition>0.15</nutrition>
-		<optimalityOffset>6</optimalityOffset>
+		<nutrition>0.1</nutrition>
+		<foodType>Processed</foodType>
 		<baseIngestTicks>120</baseIngestTicks>
 		<chairSearchRadius>25</chairSearchRadius>
 		<ingestSound>Meal_Eat</ingestSound>
-		<ingestHoldUsesTable>false</ingestHoldUsesTable>
 		<useEatingSpeedStat>true</useEatingSpeedStat>
-		<ingestEffectEat>EatVegetarian</ingestEffectEat>
-		<preferability>NeverForNutrition</preferability>
+		<ingestEffect>EatVegetarian</ingestEffect>
+		<preferability>DesperateOnly</preferability>
 		<outcomeDoers>
 			<li Class="IngestionOutcomeDoer_GiveHediff">
 				<hediffDef>EdiblesHigh</hediffDef>
@@ -63,7 +65,7 @@
     </graphicData>
     <socialPropernessMatters>true</socialPropernessMatters>
     <statBases>
-		<MarketValue>25</MarketValue>
+		<MarketValue>15</MarketValue>
 		<Mass>0.018</Mass>
     </statBases>
     <ingestible>
@@ -112,7 +114,7 @@
     </graphicData>
     <socialPropernessMatters>true</socialPropernessMatters>
     <statBases>
-		<MarketValue>25</MarketValue>
+		<MarketValue>12</MarketValue>
 		<Mass>0.018</Mass>
     </statBases>
     <ingestible>
@@ -298,7 +300,7 @@
     </graphicData>
     <socialPropernessMatters>true</socialPropernessMatters>
     <statBases>
-		<MarketValue>35</MarketValue>
+		<MarketValue>40</MarketValue>
 		<Mass>0.018</Mass>
 		<WorkToMake>300</WorkToMake>
     </statBases>

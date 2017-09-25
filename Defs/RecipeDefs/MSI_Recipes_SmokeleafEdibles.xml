@@ -102,6 +102,7 @@
 		<thingDefs>
             <li>SmokeleafButter</li>
 			<li>HempFlour</li>
+			<li>Chocolate</li>
          </thingDefs>
       <disallowedSpecialFilters>
         <li>AllowRotten</li>
@@ -148,6 +149,7 @@
     <fixedIngredientFilter>
 		<thingDefs>
             <li>SmokeleafBuds</li>
+			<li>Milk</li>
          </thingDefs>
       <disallowedSpecialFilters>
         <li>AllowRotten</li>
@@ -243,16 +245,18 @@
       <SmokeleafSmoothie>1</SmokeleafSmoothie>
     </products>
     <fixedIngredientFilter>
-		<thingDefs>
-            <li>SmokeleafDistillate</li>
-        </thingDefs>
-    <disallowedSpecialFilters>
+      <thingDefs>
+        <li>SmokeleafDistillate</li>
+        <li>RawBerries</li>
+        <li>RawAgave</li>
+      </thingDefs>
+      <disallowedSpecialFilters>
       <li>AllowRotten</li>
-    </disallowedSpecialFilters>
+      </disallowedSpecialFilters>
     </fixedIngredientFilter>
     <workSkill>Cooking</workSkill>
     <researchPrerequisite>AdvancedSmokeleafProcessing</researchPrerequisite>
-	<skillRequirements>
+	  <skillRequirements>
         <li>
           <skill>Cooking</skill>
           <minLevel>12</minLevel>

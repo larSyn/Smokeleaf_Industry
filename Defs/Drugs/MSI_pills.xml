@@ -13,14 +13,11 @@
     <rotatable>false</rotatable>
     <statBases>
       <WorkToMake>600</WorkToMake>
-      <MarketValue>60</MarketValue>
+      <MarketValue>65</MarketValue>
       <Mass>0.005</Mass>
     </statBases>
     <techLevel>Spacer</techLevel>
     <ingestible>
-	  <foodType>Fluid, Processed</foodType>
-	  <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
-	  <drugCategory>Medical</drugCategory>
       <outcomeDoers>
         <li Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>SmokeleafPillsHigh</hediffDef>
@@ -48,7 +45,7 @@
     </costList>
     <comps>
       <li Class="CompProperties_Drug">
-        <listOrder>1000</listOrder>
+        <listOrder>750</listOrder>
         <overdoseSeverityOffset>
           <min>0.08</min>
           <max>0.14</max>

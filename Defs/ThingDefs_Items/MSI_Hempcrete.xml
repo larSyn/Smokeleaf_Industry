@@ -10,11 +10,11 @@
     <soundDrop>Stone_Drop</soundDrop>
     <useHitPoints>false</useHitPoints>
     <statBases>
-	  <MaxHitPoints>100</MaxHitPoints>
-      <MarketValue>1.9</MarketValue>
-      <SharpDamageMultiplier>0.6</SharpDamageMultiplier>
-      <BluntDamageMultiplier>1.0</BluntDamageMultiplier>
-	  <Beauty>1</Beauty>
+	  <MaxHitPoints>150</MaxHitPoints>
+      <MarketValue>2</MarketValue>
+      <SharpDamageMultiplier>0.5</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
+	  <Beauty>-2</Beauty>
 	</statBases>
     <thingCategories>
       <li>StoneBlocks</li>
@@ -29,8 +29,7 @@
         <WorkToBuild>140</WorkToBuild>
       </statOffsets>
       <statFactors>
-	    <Beauty>1.0</Beauty>
-		<MarketValue>2.0</MarketValue>
+		<MarketValue>1.0</MarketValue>
         <Mass>1</Mass>
         <MaxHitPoints>0.8</MaxHitPoints>
         <Flammability>0</Flammability>

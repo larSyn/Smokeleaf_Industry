@@ -12,10 +12,10 @@
     <rotatable>false</rotatable>
     <statBases>
       <WorkToMake>750</WorkToMake>
-      <MarketValue>45</MarketValue>
+      <MarketValue>50</MarketValue>
       <Mass>0.05</Mass>
     </statBases>
-    <techLevel>Industrial</techLevel>
+    <techLevel>Spacer</techLevel>
     <ingestible>
       <foodType>Plant, Processed</foodType>
       <joy>0.99</joy>
@@ -72,11 +72,11 @@
     <comps>
       <li Class="CompProperties_Drug">
         <chemical>SmokeleafDistillate</chemical>
-        <addictiveness>0.01</addictiveness>
-        <minToleranceToAddict>0.1</minToleranceToAddict>
+        <addictiveness>0.05</addictiveness>
+        <minToleranceToAddict>0.5</minToleranceToAddict>
         <existingAddictionSeverityOffset>0.02</existingAddictionSeverityOffset>
         <needLevelOffset>1</needLevelOffset>
-        <listOrder>20</listOrder>
+        <listOrder>5</listOrder>
       </li>
     </comps>
   </ThingDef>

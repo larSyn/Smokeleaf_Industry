@@ -101,10 +101,11 @@
       <baseIngestTicks>120</baseIngestTicks>
       <chairSearchRadius>25</chairSearchRadius>
       <ingestSound>Meal_Eat</ingestSound>
-      <ingestHoldUsesTable>false</ingestHoldUsesTable>
 	  <useEatingSpeedStat>true</useEatingSpeedStat>
 	  <ingestEffectEat>EatVegetarian</ingestEffectEat>
 	  <preferability>NeverForNutrition</preferability>
+	  <joy>0.5</joy>
+      <joyKind>Chemical</joyKind>
 	  <ingestHoldOffsetStanding>
         <northDefault>
 			<offset>(0.27,0,0.08)</offset>

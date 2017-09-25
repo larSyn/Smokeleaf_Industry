@@ -18,6 +18,7 @@
     </statBases>
     <techLevel>Spacer</techLevel>
     <ingestible>
+	  <foodType>Fluid, Processed</foodType>
 	  <ingestSound>Ingest_Beer</ingestSound>
       <outcomeDoers>
         <li Class="IngestionOutcomeDoer_GiveHediff">
@@ -46,7 +47,7 @@
     </costList>
     <comps>
       <li Class="CompProperties_Drug">
-        <listOrder>1000</listOrder>
+        <listOrder>500</listOrder>
         <overdoseSeverityOffset>
           <min>0.08</min>
           <max>0.14</max>
