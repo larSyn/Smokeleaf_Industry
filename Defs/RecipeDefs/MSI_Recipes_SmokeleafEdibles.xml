@@ -245,18 +245,18 @@
       <SmokeleafSmoothie>1</SmokeleafSmoothie>
     </products>
     <fixedIngredientFilter>
-		<thingDefs>
-            <li>SmokeleafDistillate</li>
-			<li>RawBerries</li>
-			<li>RawAgave</li>
-        </thingDefs>
-    <disallowedSpecialFilters>
+      <thingDefs>
+        <li>SmokeleafDistillate</li>
+        <li>RawBerries</li>
+        <li>RawAgave</li>
+      </thingDefs>
+      <disallowedSpecialFilters>
       <li>AllowRotten</li>
-    </disallowedSpecialFilters>
+      </disallowedSpecialFilters>
     </fixedIngredientFilter>
     <workSkill>Cooking</workSkill>
     <researchPrerequisite>AdvancedSmokeleafProcessing</researchPrerequisite>
-	<skillRequirements>
+	  <skillRequirements>
         <li>
           <skill>Cooking</skill>
           <minLevel>12</minLevel>

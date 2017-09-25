@@ -486,7 +486,7 @@
 		<effectWorking>BurnDrug</effectWorking>
 		<soundWorking>Recipe_Brewing</soundWorking>
 		<workAmount>2000</workAmount>
-		<workSkill>Crafting</workSkill>
+    <workSkill>Crafting</workSkill>
 		<ingredients>
 			<li>
 				<filter>
