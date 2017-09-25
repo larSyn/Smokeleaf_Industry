@@ -24,9 +24,6 @@
   </ThingDef>
 	
   <ThingDef Abstract="True" Name="MSI_OrganicProductBase" ParentName="MSI_ResourceBase">
-    <graphicData>
-		<graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
     <statBases>
 		<MaxHitPoints>60</MaxHitPoints>
 		<Flammability>1.0</Flammability>
@@ -104,10 +101,11 @@
       <baseIngestTicks>120</baseIngestTicks>
       <chairSearchRadius>25</chairSearchRadius>
       <ingestSound>Meal_Eat</ingestSound>
-      <ingestHoldUsesTable>false</ingestHoldUsesTable>
 	  <useEatingSpeedStat>true</useEatingSpeedStat>
 	  <ingestEffectEat>EatVegetarian</ingestEffectEat>
 	  <preferability>NeverForNutrition</preferability>
+	  <joy>0.5</joy>
+      <joyKind>Chemical</joyKind>
 	  <ingestHoldOffsetStanding>
         <northDefault>
 			<offset>(0.27,0,0.08)</offset>

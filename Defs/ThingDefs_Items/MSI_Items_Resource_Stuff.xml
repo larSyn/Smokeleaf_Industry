@@ -14,7 +14,7 @@
     </graphicData>
     <statBases>
       <MaxHitPoints>90</MaxHitPoints>
-      <MarketValue>5.0</MarketValue>
+      <MarketValue>8</MarketValue>
       <Mass>0.05</Mass>
       <Flammability>1.0</Flammability>
       <DeteriorationRate>8</DeteriorationRate>
@@ -80,32 +80,13 @@
     </graphicData>
     <statBases>
       <MaxHitPoints>90</MaxHitPoints>
-      <MarketValue>3.5</MarketValue>
+      <MarketValue>2</MarketValue>
       <Mass>0.03</Mass>
       <Flammability>1.0</Flammability>
       <DeteriorationRate>8</DeteriorationRate>
     </statBases>
     <thingCategories>
       <li>PlantMatter</li>
-    </thingCategories>
-  </ThingDef>
-  
-	<!--========== Smokeleaf Butter ==========-->
-  
-  <ThingDef ParentName="MSI_OrganicProductBase">
-    <defName>SmokeleafButter</defName>
-    <label>smokeleaf butter</label>
-    <description>Butter made from simmering smokeleaf buds with milk. Creates a potent base for edibles.</description>
-    <graphicData>
-      <texPath>Things/Items/MSI_butter</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
-    </graphicData>
-    <statBases>
-      <MarketValue>8.0</MarketValue>
-      <Flammability>0.25</Flammability>
-    </statBases>
-    <thingCategories>
-      <li>Foods</li>
     </thingCategories>
   </ThingDef>
   
@@ -138,13 +119,23 @@
       <texPath>Things/Items/MSI_flour</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+	<soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+	<socialPropernessMatters>true</socialPropernessMatters>
     <statBases>
       <MarketValue>2.5</MarketValue>
       <Flammability>1.0</Flammability>
+      <DeteriorationRate>12</DeteriorationRate>
     </statBases>
 	<ingestible>
-      <foodType>Plant, Processed</foodType>
-	  <nutrition>0.2</nutrition>
+      <preferability>DesperateOnly</preferability>
+      <foodType>Processed</foodType>
+      <nutrition>0.1</nutrition>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+	  <useEatingSpeedStat>true</useEatingSpeedStat>
+	  <baseIngestTicks>120</baseIngestTicks>
+	  <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
     </ingestible>
     <comps>
       <li Class="CompProperties_Rottable">
@@ -169,7 +160,7 @@
 	<deepCountPerCell>300</deepCountPerCell>
 	<statBases>
 		<MaxHitPoints>50</MaxHitPoints>
-		<MarketValue>8</MarketValue>
+		<MarketValue>5</MarketValue>
 		<Mass>0.05</Mass>
 		<DeteriorationRate>1.0</DeteriorationRate>
 	</statBases>
@@ -210,19 +201,23 @@
       <li>Medicine</li>
     </thingCategories>
     <costList>
-      <SmokeleafBuds>16</SmokeleafBuds>
+      <SmokeleafBuds>15</SmokeleafBuds>
     </costList>
     <recipeMaker>
       <workSpeedStat>DrugProductionSpeed</workSpeedStat>
-      <workSkill>Medicine</workSkill>
+      <workSkill>Crafting</workSkill>
       <recipeUsers>
 		<li>MedicinalsLab</li>
       </recipeUsers>
       <researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
       <skillRequirements>
         <li>
+          <skill>Crafting</skill>
+          <minLevel>10</minLevel>
+        </li>
+		<li>
           <skill>Medicine</skill>
-          <minLevel>12</minLevel>
+          <minLevel>6</minLevel>
         </li>
       </skillRequirements>
     </recipeMaker>
@@ -274,7 +269,7 @@
     <soundDrop>Standard_Drop</soundDrop>
     <statBases>
       <MaxHitPoints>60</MaxHitPoints>
-      <MarketValue>50</MarketValue>
+      <MarketValue>36</MarketValue>
       <Mass>0.5</Mass>
       <Flammability>1.0</Flammability>
       <MedicalPotency>1.50</MedicalPotency>
@@ -297,9 +292,13 @@
       </recipeUsers>
       <researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
       <skillRequirements>
+	  <li>
+          <skill>Crafting</skill>
+          <minLevel>12</minLevel>
+        </li>
         <li>
           <skill>Medicine</skill>
-          <minLevel>12</minLevel>
+          <minLevel>8</minLevel>
         </li>
       </skillRequirements>
     </recipeMaker>

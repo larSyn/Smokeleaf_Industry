@@ -44,7 +44,7 @@
       </li>
       <li Class="CompProperties_Flickable" />
       <li Class="CompProperties_Refuelable">
-        <fuelConsumptionRate>11.0</fuelConsumptionRate>
+        <fuelConsumptionRate>16.5</fuelConsumptionRate>
         <fuelCapacity>150.0</fuelCapacity>
         <fuelFilter>
           <thingDefs>

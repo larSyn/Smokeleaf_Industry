@@ -12,7 +12,7 @@
     <rotatable>false</rotatable>
     <statBases>
       <WorkToMake>500</WorkToMake>
-      <MarketValue>30</MarketValue>
+      <MarketValue>18</MarketValue>
       <Mass>0.05</Mass>
     </statBases>
     <techLevel>Industrial</techLevel>
@@ -62,7 +62,7 @@
 	  <skillRequirements>
 			<li>
 				<skill>Crafting</skill>
-				<minLevel>5</minLevel>
+				<minLevel>8</minLevel>
 			</li>
 	  </skillRequirements>
     </recipeMaker>
@@ -73,10 +73,10 @@
       <li Class="CompProperties_Drug">
         <chemical>Hash</chemical>
         <addictiveness>0.15</addictiveness>
-        <minToleranceToAddict>0.2</minToleranceToAddict>
+        <minToleranceToAddict>0.25</minToleranceToAddict>
         <existingAddictionSeverityOffset>0.06</existingAddictionSeverityOffset>
         <needLevelOffset>1</needLevelOffset>
-        <listOrder>20</listOrder>
+        <listOrder>15</listOrder>
       </li>
     </comps>
   </ThingDef>
@@ -90,7 +90,7 @@
     <maxSeverity>1.0</maxSeverity>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-1.1</severityPerDay>
+        <severityPerDay>-0.1</severityPerDay>
       </li>
     </comps>
       <stages>

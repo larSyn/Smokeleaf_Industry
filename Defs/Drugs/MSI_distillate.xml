@@ -12,19 +12,13 @@
     <rotatable>false</rotatable>
     <statBases>
       <WorkToMake>750</WorkToMake>
-      <MarketValue>45</MarketValue>
+      <MarketValue>50</MarketValue>
       <Mass>0.05</Mass>
     </statBases>
-    <techLevel>Industrial</techLevel>
+    <techLevel>Spacer</techLevel>
     <ingestible>
       <foodType>Plant, Processed</foodType>
       <joy>0.99</joy>
-      <baseIngestTicks>720</baseIngestTicks>
-      <nurseable>true</nurseable>
-      <drugCategory>Social</drugCategory>
-      <ingestSound>Ingest_Smoke</ingestSound>
-      <ingestEffect>Smoke_Joint</ingestEffect>
-	  <ingestEffectEat>EatVegetarian</ingestEffectEat>
       <ingestHoldOffsetStanding>
         <northDefault>
           <offset>(0.27,0,0.08)</offset>
@@ -38,13 +32,9 @@
         </south>
         <west>
           <offset>(-0.50,0,0.08)</offset>
-          <flip>true</flip>
+          <flip>false</flip>
         </west>
       </ingestHoldOffsetStanding>
-      <ingestHoldUsesTable>false</ingestHoldUsesTable>
-      <ingestCommandString>Smoke {0}</ingestCommandString>
-      <ingestReportString>Smoking {0}.</ingestReportString>
-      <useEatingSpeedStat>false</useEatingSpeedStat>
       <outcomeDoers>
         <li Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>SmokeleafDistillateHigh</hediffDef>
@@ -72,7 +62,7 @@
 	  <skillRequirements>
 			<li>
 				<skill>Crafting</skill>
-				<minLevel>10</minLevel>
+				<minLevel>12</minLevel>
 			</li>
 	  </skillRequirements>
     </recipeMaker>
@@ -82,11 +72,11 @@
     <comps>
       <li Class="CompProperties_Drug">
         <chemical>SmokeleafDistillate</chemical>
-        <addictiveness>0.01</addictiveness>
-        <minToleranceToAddict>0.1</minToleranceToAddict>
+        <addictiveness>0.05</addictiveness>
+        <minToleranceToAddict>0.5</minToleranceToAddict>
         <existingAddictionSeverityOffset>0.02</existingAddictionSeverityOffset>
         <needLevelOffset>1</needLevelOffset>
-        <listOrder>20</listOrder>
+        <listOrder>5</listOrder>
       </li>
     </comps>
   </ThingDef>

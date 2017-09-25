@@ -7,7 +7,7 @@
 		<defName>SmokeleafCultivation</defName>
 		<label>smokeleaf cultivation</label>
 		<description>The process of seperating the parts of the smokeleaf plant. Produces smokeleaf buds, seeds and hemp fibers. Allows joints to be rolled.</description>
-		<baseCost>300</baseCost>
+		<baseCost>250</baseCost>
 		<techLevel>Industrial</techLevel>
 		<prerequisites>
 			<li>DrugProduction</li>
@@ -51,7 +51,7 @@
 		<defName>IndustrialSmokeleafProcessing</defName>
 		<label>industrial smokeleaf processing</label>
 		<description>A new fuel and building material are created from the fibers and seeds of smokeleaf.</description>
-		<baseCost>1200</baseCost>
+		<baseCost>1250</baseCost>
 		<techLevel>Industrial</techLevel>
 		<prerequisites>
 			<li>IndustrialSmokeleafCultivation</li>
@@ -85,7 +85,7 @@
 		<defName>SmokeleafPharmacology</defName>
 		<label>smokeleaf pharmacology</label>
 		<description>Researchers isolate the beneficial compounds of Smokeleaf and are able to apply them in modern medical methods with no ill side effects.</description>
-		<baseCost>1500</baseCost>
+		<baseCost>2000</baseCost>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
 			<li>AdvancedSmokeleafCultivation</li>
@@ -102,9 +102,9 @@
 	<ResearchProjectDef>
 		<defName>AdvancedSmokeleafProcessing</defName>
 		<label>advanced smokeleaf processing</label>
-		<description>New methods have been developed for extracting the beneficial compounds of smokeleaf. Because of this, new edibles and recreational forms are available.</description>
-		<baseCost>1500</baseCost>
-		<techLevel>Industrial</techLevel>
+		<description>New methods have been developed for extracting and concentraing the compounds of smokeleaf. Because of this, new edibles and recreational forms are available.</description>
+		<baseCost>1750</baseCost>
+		<techLevel>Spacer</techLevel>
 		<prerequisites>
 			<li>AdvancedSmokeleafCultivation</li>
 			<li>IndustrialSmokeleafProcessing</li>
