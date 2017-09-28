@@ -38,7 +38,7 @@
       <outcomeDoers>
         <li Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>SmokeleafDistillateHigh</hediffDef>
-          <severity>0.8</severity>
+          <severity>0.75</severity>
           <toleranceChemical>SmokeleafDistillate</toleranceChemical>
         </li>
         <li Class="IngestionOutcomeDoer_OffsetNeed">
@@ -47,13 +47,13 @@
         </li>
         <li Class="IngestionOutcomeDoer_GiveHediff">
 			<hediffDef>SmokeleafDistillateTolerance</hediffDef>
-			<severity>0.035</severity>
+			<severity>0.03</severity>
 			<divideByBodySize>true</divideByBodySize>
 		</li>
       </outcomeDoers>
     </ingestible>
     <recipeMaker>
-	  <researchPrerequisite>AdvancedSmokeleafProcessing</researchPrerequisite>
+	  <researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
 	  <recipeUsers>
         <li>MedicinalsLab</li>
       </recipeUsers>
@@ -72,7 +72,7 @@
     <comps>
       <li Class="CompProperties_Drug">
         <chemical>SmokeleafDistillate</chemical>
-        <addictiveness>0.05</addictiveness>
+        <addictiveness>0.005</addictiveness>
         <minToleranceToAddict>0.5</minToleranceToAddict>
         <existingAddictionSeverityOffset>0.02</existingAddictionSeverityOffset>
         <needLevelOffset>1</needLevelOffset>
@@ -90,25 +90,29 @@
     <maxSeverity>1.0</maxSeverity>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.75</severityPerDay>
+        <severityPerDay>-1.0</severityPerDay>
       </li>
     </comps>
-      <stages>
+    <stages>
         <li>
-          <hungerRateFactor>1.05</hungerRateFactor>
-          <painOffset>-0.5</painOffset>
+          <hungerRateFactor>0.9</hungerRateFactor>
+          <painOffset>-0.4</painOffset>
           <capMods>
             <li>
               <capacity>Consciousness</capacity>
-              <offset>-0.1</offset>
+              <offset>-0.2</offset>
             </li>
             <li>
               <capacity>Moving</capacity>
+              <offset>-0.1</offset>
+            </li>
+			<li>
+              <capacity>Manipulation</capacity>
               <offset>-0.05</offset>
             </li>
           </capMods>
         </li>
-      </stages>
+    </stages>
   </HediffDef>
   
   <ThoughtDef>
@@ -130,8 +134,8 @@
   <ChemicalDef>
     <defName>SmokeleafDistillate</defName>
     <label>smokeleaf distillate</label>
-    <addictionHediff>SmokeleafAddiction</addictionHediff>
-    <toleranceHediff>SmokeleafTolerance</toleranceHediff>
+    <addictionHediff>SmokeleafDistillateAddiction</addictionHediff>
+    <toleranceHediff>SmokeleafDistillateTolerance</toleranceHediff>
 		<onGeneratedAddictedToleranceChance>0.8</onGeneratedAddictedToleranceChance>
 	</ChemicalDef>
 
@@ -148,7 +152,7 @@
     <label>smokeleaf distillate tolerance</label>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.035</severityPerDay>
+        <severityPerDay>-0.0666</severityPerDay>
       </li>
       <li Class="HediffCompProperties_DrugEffectFactor">
         <chemical>SmokeleafDistillate</chemical>
@@ -168,13 +172,11 @@
     </comps>
     <stages>
       <li>
-      </li>
-      <li>
         <label>withdrawal</label>
         <capMods>
           <li>
             <capacity>Consciousness</capacity>
-            <offset>-0.1</offset>
+            <offset>-0.05</offset>
           </li>
           <li>
             <capacity>Moving</capacity>
@@ -183,8 +185,8 @@
         </capMods>
 		<mentalStateGivers>
 			<li>
-				<mentalState>BingingFood</mentalState>
-				<mtbDays>30</mtbDays>
+				<mentalState>WanderOwnRoom</mentalState>
+				<mtbDays>60</mtbDays>
 			</li>
 			<li>
 				<mentalState>BingingDrugMajor</mentalState>

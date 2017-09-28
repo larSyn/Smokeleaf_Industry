@@ -4,7 +4,7 @@
   <ThingDef ParentName="MSI_MakeableDrugPillBase">
     <defName>SmokeleafPills</defName>
     <label>smokeleaf pills</label>
-    <description>A pill form medicinal that offers excellent pain relief and improved blood flow. May cause drowsiness.</description>
+    <description>A pill form medicinal that offers preventative treatment, aids in recovery and provides mild pain relief.  May cause drowsiness.</description>
     <graphicData>
       <texPath>Things/Items/MSI_pill</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -63,12 +63,18 @@
     <maxSeverity>1.0</maxSeverity>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.5</severityPerDay>
+        <severityPerDay>-1.0</severityPerDay>
       </li>
     </comps>
     <stages>
+		<li>
+			<makeImmuneTo>
+				<li>Malaria</li>
+				<li>Plague</li>
+			</makeImmuneTo>
+		</li>
         <li>
-		  <painOffset>-0.25</painOffset>
+		  <painOffset>-0.05</painOffset>
 		  <capMods>
 			<li>
               <capacity>BloodFiltration</capacity>

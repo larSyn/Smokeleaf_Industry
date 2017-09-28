@@ -7,11 +7,8 @@
 		<defName>SmokeleafCultivation</defName>
 		<label>smokeleaf cultivation</label>
 		<description>The process of seperating the parts of the smokeleaf plant. Produces smokeleaf buds, seeds and hemp fibers. Allows joints to be rolled.</description>
-		<baseCost>250</baseCost>
-		<techLevel>Industrial</techLevel>
-		<prerequisites>
-			<li>DrugProduction</li>
-		</prerequisites>
+		<baseCost>400</baseCost>
+		<techLevel>Neolithic</techLevel>
 		<tab>MSI</tab>
 		<researchViewX>0</researchViewX>
 		<researchViewY>0</researchViewY>
@@ -20,9 +17,9 @@
 	<ResearchProjectDef>
 		<defName>SmokeleafProcessing</defName>
 		<label>smokeleaf processing</label>
-		<description>It has been noticed that the fibers of the smokeleaf plant can be used to make an excellent fabric. The cooks have also been experimenting...</description>
+		<description>The cooks have been experimenting...with some rather interesting results.  Edibles are now possible.  It has also been noticed that the fibers of the smokeleaf plant might be able to be used to make a some new materials, if we had the proper tools to use.</description>
 		<baseCost>500</baseCost>
-		<techLevel>Industrial</techLevel>
+		<techLevel>Neolithic</techLevel>
 		<prerequisites>
 			<li>SmokeleafCultivation</li>
 		</prerequisites>
@@ -40,6 +37,7 @@
 		<prerequisites>
 			<li>SmokeleafCultivation</li>
 			<li>Electricity</li>
+			<li>DrugProduction</li>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<tab>MSI</tab>
@@ -50,7 +48,7 @@
 	<ResearchProjectDef>
 		<defName>IndustrialSmokeleafProcessing</defName>
 		<label>industrial smokeleaf processing</label>
-		<description>A new fuel and building material are created from the fibers and seeds of smokeleaf.</description>
+		<description>A new fuel is created from the fibers and seeds of smokeleaf.</description>
 		<baseCost>1250</baseCost>
 		<techLevel>Industrial</techLevel>
 		<prerequisites>

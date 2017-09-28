@@ -39,7 +39,7 @@
 			</li>
 			<li Class="IngestionOutcomeDoer_GiveHediff">
 				<hediffDef>EdiblesTolerance</hediffDef>
-				<severity>0.005</severity>
+				<severity>0.03</severity>
 				<divideByBodySize>true</divideByBodySize>
 			</li>
       </outcomeDoers>
@@ -83,7 +83,7 @@
 			</li>
 			<li Class="IngestionOutcomeDoer_GiveHediff">
 				<hediffDef>EdiblesTolerance</hediffDef>
-				<severity>0.010</severity>
+				<severity>0.03</severity>
 				<divideByBodySize>true</divideByBodySize>
 			</li>
       </outcomeDoers>
@@ -91,8 +91,8 @@
 	<comps>
       <li Class="CompProperties_Drug">
         <chemical>Edibles</chemical>
-        <addictiveness>0.02</addictiveness>
-        <minToleranceToAddict>0.1</minToleranceToAddict>
+        <addictiveness>0.015</addictiveness>
+        <minToleranceToAddict>0.15</minToleranceToAddict>
         <existingAddictionSeverityOffset>0.06</existingAddictionSeverityOffset>
         <needLevelOffset>1</needLevelOffset>
         <listOrder>20</listOrder>
@@ -140,8 +140,8 @@
 	<comps>
       <li Class="CompProperties_Drug">
         <chemical>Edibles</chemical>
-        <addictiveness>0.01</addictiveness>
-        <minToleranceToAddict>0.1</minToleranceToAddict>
+        <addictiveness>0.015</addictiveness>
+        <minToleranceToAddict>0.15</minToleranceToAddict>
         <existingAddictionSeverityOffset>0.06</existingAddictionSeverityOffset>
         <needLevelOffset>1</needLevelOffset>
         <listOrder>20</listOrder>
@@ -165,8 +165,8 @@
     </comps>
       <stages>
         <li>
-          <hungerRateFactor>0.9</hungerRateFactor>
-          <painOffset>-0.4</painOffset>
+          <hungerRateFactor>0.8</hungerRateFactor>
+          <painOffset>-0.25</painOffset>
           <capMods>
             <li>
               <capacity>Consciousness</capacity>
@@ -174,7 +174,7 @@
             </li>
             <li>
               <capacity>Moving</capacity>
-              <offset>-0.1</offset>
+              <offset>-0.15</offset>
             </li>
           </capMods>
         </li>
@@ -218,7 +218,7 @@
     <label>edibles tolerance</label>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>0.015</severityPerDay>
+        <severityPerDay>-0.1333</severityPerDay>
       </li>
       <li Class="HediffCompProperties_DrugEffectFactor">
         <chemical>Edibles</chemical>
@@ -227,8 +227,8 @@
 		<hediffGivers>
 			<li Class="HediffGiver_RandomDrugEffect">
 				<hediff>EdibleSickness</hediff>
-				<baseMtbDays>0.25</baseMtbDays>
-				<minSeverity>0.25</minSeverity>
+				<baseMtbDays>0.5</baseMtbDays>
+				<minSeverity>0.5</minSeverity>
 				<countToAffect>1</countToAffect>
 			</li>
 		</hediffGivers>
@@ -241,7 +241,7 @@
     <causesNeed>Chemical_Edibles</causesNeed>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.001</severityPerDay>
+        <severityPerDay>-0.0666</severityPerDay>
       </li>
     </comps>
     <stages>
@@ -260,6 +260,10 @@
 		<mentalStateGivers>
 			<li>
 				<mentalState>WanderSad</mentalState>
+				<mtbDays>30</mtbDays>
+			</li>
+			<li>
+				<mentalState>BingingDrugMajor</mentalState>
 				<mtbDays>30</mtbDays>
 			</li>
 		</mentalStateGivers>
@@ -315,11 +319,11 @@
 			</li>
 			<li Class="IngestionOutcomeDoer_OffsetNeed">
 				<need>Rest</need>
-				<offset>-0.1</offset>
+				<offset>-0.2</offset>
 			</li>
 			<li Class="IngestionOutcomeDoer_GiveHediff">
 				<hediffDef>AdvancedEdiblesTolerance</hediffDef>
-				<severity>0.030</severity>
+				<severity>0.040</severity>
 				<divideByBodySize>true</divideByBodySize>
 			</li>
       </outcomeDoers>
@@ -327,8 +331,8 @@
 	<comps>
 		<li Class="CompProperties_Drug">
 			<chemical>AdvancedEdibles</chemical>
-			<addictiveness>0.05</addictiveness>
-			<minToleranceToAddict>0.25</minToleranceToAddict>
+			<addictiveness>0.025</addictiveness>
+			<minToleranceToAddict>0.15</minToleranceToAddict>
 			<existingAddictionSeverityOffset>0.06</existingAddictionSeverityOffset>
 			<needLevelOffset>1</needLevelOffset>
 			<listOrder>20</listOrder>
@@ -360,7 +364,7 @@
 		<outcomeDoers>
 			<li Class="IngestionOutcomeDoer_GiveHediff">
 				<hediffDef>AdvancedEdiblesHigh</hediffDef>
-				<severity>0.5</severity>
+				<severity>0.65</severity>
 				<toleranceChemical>AdvancedEdibles</toleranceChemical>
 			</li>
 			<li Class="IngestionOutcomeDoer_OffsetNeed">
@@ -377,7 +381,7 @@
 	<comps>
 		<li Class="CompProperties_Drug">
 			<chemical>AdvancedEdibles</chemical>
-			<addictiveness>0.03</addictiveness>
+			<addictiveness>0.025</addictiveness>
 			<minToleranceToAddict>0.25</minToleranceToAddict>
 			<existingAddictionSeverityOffset>0.06</existingAddictionSeverityOffset>
 			<needLevelOffset>1</needLevelOffset>
@@ -400,22 +404,22 @@
         <severityPerDay>-1.0</severityPerDay>
       </li>
     </comps>
-      <stages>
+    <stages>
         <li>
-          <hungerRateFactor>1.05</hungerRateFactor>
+          <hungerRateFactor>0.8</hungerRateFactor>
           <painOffset>-0.5</painOffset>
           <capMods>
             <li>
               <capacity>Consciousness</capacity>
-              <offset>-0.2</offset>
+              <offset>-0.4</offset>
             </li>
             <li>
               <capacity>Moving</capacity>
-              <offset>-0.2</offset>
+              <offset>-0.35</offset>
             </li>
           </capMods>
         </li>
-      </stages>
+    </stages>
   </HediffDef>
   
   <ThoughtDef>
@@ -455,7 +459,7 @@
     <label>advanced edibles tolerance</label>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.015</severityPerDay>
+        <severityPerDay>-0.1333</severityPerDay>
       </li>
       <li Class="HediffCompProperties_DrugEffectFactor">
         <chemical>AdvancedEdibles</chemical>
@@ -465,7 +469,7 @@
 			<li Class="HediffGiver_RandomDrugEffect">
 				<hediff>EdibleSickness</hediff>
 				<baseMtbDays>0.25</baseMtbDays>
-				<minSeverity>0.5</minSeverity>
+				<minSeverity>0.25</minSeverity>
 				<countToAffect>1</countToAffect>
 			</li>
 		</hediffGivers>
@@ -478,7 +482,7 @@
     <causesNeed>Chemical_AdvancedEdibles</causesNeed>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.001</severityPerDay>
+        <severityPerDay>-0.0666</severityPerDay>
       </li>
     </comps>
     <stages>
@@ -487,17 +491,21 @@
         <capMods>
           <li>
             <capacity>Consciousness</capacity>
-            <offset>-0.5</offset>
+            <offset>-0.35</offset>
           </li>
           <li>
             <capacity>Moving</capacity>
-            <offset>-0.5</offset>
+            <offset>-0.35</offset>
           </li>
         </capMods>
 		<mentalStateGivers>
 			<li>
 				<mentalState>WanderSad</mentalState>
-				<mtbDays>30</mtbDays>
+				<mtbDays>10</mtbDays>
+			</li>
+			<li>
+				<mentalState>BingingDrugMajor</mentalState>
+				<mtbDays>10</mtbDays>
 			</li>
 		</mentalStateGivers>
       </li>
@@ -515,8 +523,8 @@
       </li>
       <li>
         <label>advanced edibles withdrawal</label>
-        <description>Uuggnnh...more...please...</description>
-        <baseMoodEffect>-15</baseMoodEffect>
+        <description>...more...please...</description>
+        <baseMoodEffect>-35</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>

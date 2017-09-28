@@ -14,7 +14,7 @@
     </graphicData>
     <statBases>
       <MaxHitPoints>90</MaxHitPoints>
-      <MarketValue>8</MarketValue>
+      <MarketValue>6</MarketValue>
       <Mass>0.05</Mass>
       <Flammability>1.0</Flammability>
       <DeteriorationRate>8</DeteriorationRate>
@@ -26,17 +26,17 @@
       <color>(138,139,108)</color>
       <commonality>1.4</commonality>
 	  <statOffsets>
-        <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
-        <ArmorRating_Sharp>0.05</ArmorRating_Sharp>
-        <ArmorRating_Heat>0.1</ArmorRating_Heat>
-        <ArmorRating_Electric>0.05</ArmorRating_Electric>
+        <ArmorRating_Blunt>0.075</ArmorRating_Blunt>
+        <ArmorRating_Sharp>0.075</ArmorRating_Sharp>
+        <ArmorRating_Heat>0.25</ArmorRating_Heat>
+        <ArmorRating_Electric>0.15</ArmorRating_Electric>
       </statOffsets>
       <statFactors>
         <WorkToMake>1.3</WorkToMake>
         <ArmorRating_Blunt>1.5</ArmorRating_Blunt>
-        <ArmorRating_Sharp>2</ArmorRating_Sharp>
+        <ArmorRating_Sharp>2.5</ArmorRating_Sharp>
         <ArmorRating_Heat>1.5</ArmorRating_Heat>
-        <ArmorRating_Electric>2.5</ArmorRating_Electric>
+        <ArmorRating_Electric>4</ArmorRating_Electric>
 		<Insulation_Cold>2</Insulation_Cold>
         <Insulation_Heat>2</Insulation_Heat>
 	  </statFactors>	
@@ -44,11 +44,15 @@
     <thingCategories>
       <li>Textiles</li>
     </thingCategories>
+	<researchPrerequisites>
+		<li>SmokeleafProcessing</li>
+		<li>ComplexClothing</li>
+	</researchPrerequisites>
   </ThingDef>
   
     <!--========== Hemp Fiber ==========-->
 	
-	<ThingDef ParentName="MSI_ResourceBase">
+  <ThingDef ParentName="MSI_ResourceBase">
     <defName>HempFiber</defName>
     <label>hemp fibers</label>
     <description>Leftover stalks and leaves from trimming the smokeleaf plant.</description>
@@ -66,6 +70,9 @@
     <thingCategories>
       <li>PlantMatter</li>
     </thingCategories>
+	<researchPrerequisites>
+		<li>SmokeleafCultivation</li>
+	</researchPrerequisites>
   </ThingDef>
   
 	<!--========== Smokeleaf Buds ==========-->
@@ -88,6 +95,9 @@
     <thingCategories>
       <li>PlantMatter</li>
     </thingCategories>
+	<researchPrerequisites>
+		<li>SmokeleafCultivation</li>
+	</researchPrerequisites>
   </ThingDef>
   
   <!--========== Smokeleaf Seeds ==========-->
@@ -107,6 +117,9 @@
     <thingCategories>
       <li>PlantMatter</li>
     </thingCategories>
+	<researchPrerequisites>
+		<li>SmokeleafCultivation</li>
+	</researchPrerequisites>
   </ThingDef>
   
   <!--========== Hemp Flour ==========-->
@@ -143,6 +156,9 @@
 		<rotDestroys>true</rotDestroys>
       </li>
     </comps>
+	<researchPrerequisites>
+		<li>SmokeleafProcessing</li>
+	</researchPrerequisites>
   </ThingDef>
   
     <!--========== Hempoline ==========-->
@@ -173,6 +189,9 @@
     <thingCategories>
       <li>Manufactured</li>
     </thingCategories>
+	<researchPrerequisites>
+		<li>IndustrialSmokeleafProcessing</li>
+	</researchPrerequisites>
   </ThingDef>
   
   <!--========== CBD ==========-->
@@ -195,7 +214,7 @@
       <Flammability>1.0</Flammability>
       <MedicalPotency>0.75</MedicalPotency>
       <DeteriorationRate>6</DeteriorationRate>
-      <WorkToMake>1000</WorkToMake>
+      <WorkToMake>750</WorkToMake>
     </statBases>
     <thingCategories>
       <li>Medicine</li>
@@ -209,7 +228,6 @@
       <recipeUsers>
 		<li>MedicinalsLab</li>
       </recipeUsers>
-      <researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
       <skillRequirements>
         <li>
           <skill>Crafting</skill>
@@ -221,6 +239,9 @@
         </li>
       </skillRequirements>
     </recipeMaker>
+	<researchPrerequisites>
+		<li>SmokeleafPharmacology</li>
+	</researchPrerequisites>
   </ThingDef>
   
   <!--========== Infused Meal ==========--> 
@@ -252,6 +273,9 @@
         </li>
 	  </outcomeDoers>
     </ingestible>
+	<researchPrerequisites>
+		<li>AdvancedSmokeleafProcessing</li>
+	</researchPrerequisites>
   </ThingDef> 
   
   <!--========== Infused Medicine ==========-->  
@@ -281,16 +305,14 @@
     </thingCategories>
     <costList>
       <Medicine>1</Medicine>
-	  <CBD>1</CBD>
+	  <CBD>2</CBD>
     </costList>
     <recipeMaker>
       <workSpeedStat>DrugProductionSpeed</workSpeedStat>
       <workSkill>Medicine</workSkill>
       <recipeUsers>
-        <li>DrugLab</li>
 		<li>MedicinalsLab</li>
       </recipeUsers>
-      <researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
       <skillRequirements>
 	  <li>
           <skill>Crafting</skill>
@@ -302,6 +324,9 @@
         </li>
       </skillRequirements>
     </recipeMaker>
+	<researchPrerequisites>
+		<li>SmokeleafPharmacology</li>
+	</researchPrerequisites>
   </ThingDef>  
 	  
 </Defs>

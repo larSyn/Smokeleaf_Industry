@@ -64,12 +64,12 @@
     <comps>
 	  <li Class="HediffCompProperties_HealOldWounds" />
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.5</severityPerDay>
+        <severityPerDay>-1.0</severityPerDay>
       </li>
     </comps>
     <stages>
         <li>
-		  <painOffset>-0.15</painOffset>
+		  <painOffset>-0.25</painOffset>
 		  <capMods>
             <li>
               <capacity>Manipulation</capacity>

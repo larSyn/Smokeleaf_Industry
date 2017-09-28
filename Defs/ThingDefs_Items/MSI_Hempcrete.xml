@@ -55,6 +55,10 @@
       <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
       <stuffAdjective>hempcrete</stuffAdjective>
     </stuffProps>
+		<researchPrerequisites>
+			<li>SmokeleafProcessing</li>
+			<li>Stonecutting</li>
+		</researchPrerequisites>
   </ThingDef>
 
 </Defs>

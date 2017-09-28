@@ -1,34 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
-<Patch>
-
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationRemove">
-			<xpath>*/ThingDef[defName = "SmokeleafJoint"]/recipeMaker/recipeUsers</xpath>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>*/ThingDef[defName = "SmokeleafJoint"]/recipeMaker</xpath>
-				<value>
-					<recipeUsers />
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>*/ThingDef[defName = "SmokeleafJoint"]/recipeMaker/recipeUsers</xpath>
-					<value>
-						<li>DrugLab</li>
-					</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>*/ThingDef[defName = "SmokeleafJoint"]/recipeMaker/recipeUsers</xpath>
-					<value>
-						<li>PoweredCultivationBench</li>
-					</value>
-			</li>
-		</operations>
-	</Operation>
-
+<Patch>    
+		
 	<Operation Class="PatchOperationSequence">
 	    <success>Always</success>
 		<operations>
@@ -48,6 +21,49 @@
 				</value>
 			</li>
 		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/ThingDef[defName = "SmokeleafJoint"]/recipeMaker/recipeUsers</xpath>
+		<value>
+			<researchPrerequisite>SmokeleafCultivation</researchPrerequisite>
+		</value>
+	</Operation>
+	
+	
+	<Operation Class="PatchOperationReplace">
+	    <xpath>*/HediffDef[defName = "SmokeleafHigh"]/stages/li/painOffset</xpath>
+		<value>
+			<painOffset>-0.1</painOffset>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+	    <xpath>*/HediffDef[defName = "SmokeleafHigh"]/comps/li/severityPerDay</xpath>
+		<value>
+			<severityPerDay>-2.0</severityPerDay>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+	    <xpath>*/HediffDef[defName = "SmokeleafHigh"]/stages/li/capMods/li[1]/offset</xpath>
+		<value>
+			<offset>-0.15</offset>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+	    <xpath>*/HediffDef[defName = "SmokeleafHigh"]/stages/li/capMods/li[2]/offset</xpath>
+		<value>
+			<offset>-0.05</offset>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+	    <xpath>*/HediffDef[defName = "SmokeleafTolerance"]/comps/li[1]/severityPerDay</xpath>
+		<value>
+			<severityPerDay>-0.0666</severityPerDay>
+		</value>
 	</Operation>
 	
 </Patch>

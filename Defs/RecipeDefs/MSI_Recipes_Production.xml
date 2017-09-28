@@ -19,7 +19,7 @@
 						<li>SmokeleafLeaves</li>
 					</thingDefs>
 				</filter>
-				<count>25</count>
+				<count>20</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -28,9 +28,50 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<HempFiber>35</HempFiber>
-			<SmokeleafBuds>35</SmokeleafBuds>
-			<SmokeleafSeed>35</SmokeleafSeed>
+			<HempFiber>25</HempFiber>
+			<SmokeleafBuds>25</SmokeleafBuds>
+			<SmokeleafSeed>25</SmokeleafSeed>
+		</products>
+		<recipeUsers>
+			<li>SmokeleafAutoTrimmer</li>
+		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>12</minLevel>
+			</li>
+		</skillRequirements>
+		<researchPrerequisite>AdvancedSmokeleafCultivation</researchPrerequisite>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>BulkAutoTrimSmokeleaf</defName>
+		<label>auto trim smokeleaf (bulk)</label>
+		<description>Auto trim even larger amounts of smokeleaf with increased speed and yield.</description>
+		<jobString>Trimming Smokeleaf.</jobString>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<workAmount>3000</workAmount>
+		<workSkill>Crafting</workSkill>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SmokeleafLeaves</li>
+					</thingDefs>
+				</filter>
+				<count>60</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SmokeleafLeaves</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<HempFiber>75</HempFiber>
+			<SmokeleafBuds>75</SmokeleafBuds>
+			<SmokeleafSeed>75</SmokeleafSeed>
 		</products>
 		<recipeUsers>
 			<li>SmokeleafAutoTrimmer</li>
@@ -74,8 +115,7 @@
 			<SmokeleafSeed>1</SmokeleafSeed>
 		</products>
 		<recipeUsers>
-			<li>DrugLab</li>
-			<li>PoweredCultivationBench</li>
+			<li>CraftingSpot</li>
 		</recipeUsers>
 		<skillRequirements>
 			<li>
@@ -87,9 +127,50 @@
 	</RecipeDef>
 	
 	<RecipeDef>
-		<defName>BulkTrimSmokeleaf</defName>
-		<label>bulk trim smokeleaf</label>
+		<defName>BulkTrimSmokeleafCraftingSpot</defName>
+		<label>trim smokeleaf (x5)</label>
 		<description>Bulk trim smokeleaf into usable indgredients.</description>
+		<jobString>Trimming Smokeleaf.</jobString>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<workAmount>2000</workAmount>
+		<workSkill>Crafting</workSkill>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SmokeleafLeaves</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SmokeleafLeaves</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<HempFiber>5</HempFiber>
+			<SmokeleafBuds>5</SmokeleafBuds>
+			<SmokeleafSeed>5</SmokeleafSeed>
+		</products>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>5</minLevel>
+			</li>
+		</skillRequirements>
+		<researchPrerequisite>SmokeleafCultivation</researchPrerequisite>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>BulkTrimSmokeleafCultBench</defName>
+		<label>trim smokeleaf (x10)</label>
+		<description>The powered cultivation bench allows you to trim even more smokeleaf.</description>
 		<jobString>Trimming Smokeleaf.</jobString>
 		<effectWorking>Tailor</effectWorking>
 		<soundWorking>Recipe_Tailor</soundWorking>
@@ -124,7 +205,7 @@
 				<minLevel>5</minLevel>
 			</li>
 		</skillRequirements>
-		<researchPrerequisite>SmokeleafCultivation</researchPrerequisite>
+		<researchPrerequisite>IndustrialSmokeleafCultivation</researchPrerequisite>
 	</RecipeDef>
 	
 	<!--========== Craft Hemp Fabric ==========-->
@@ -151,7 +232,7 @@
 						<li>HempFiber</li>
 					</thingDefs>
 				</filter>
-				<count>1</count>
+				<count>2</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -166,12 +247,11 @@
 			<li>HandTailoringBench</li>
 			<li>ElectricTailoringBench</li>
 		</recipeUsers>
-		<researchPrerequisite>SmokeleafProcessing</researchPrerequisite>
 	</RecipeDef>
 		
 	<RecipeDef>
 		<defName>BulkCraftHempFibers</defName>
-		<label>bulk craft hemp fabric</label>
+		<label>craft hemp fabric (bulk)</label>
 		<description>Process hemp fibers into a durable fabric in larger quantities.</description>
 		<jobString>Crafting hemp fabric.</jobString>
 		<effectWorking>Tailor</effectWorking>
@@ -191,7 +271,7 @@
 						<li>HempFiber</li>
 					</thingDefs>
 				</filter>
-				<count>10</count>
+				<count>20</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -206,7 +286,6 @@
 			<li>HandTailoringBench</li>
 			<li>ElectricTailoringBench</li>
 		</recipeUsers>
-		<researchPrerequisite>IndustrialSmokeleafProcessing</researchPrerequisite>
 	</RecipeDef>
 	
 	<!--========== Craft Hemp Flour ==========-->
@@ -253,7 +332,7 @@
 	
 	<RecipeDef>
 		<defName>BulkCraftHempFlour</defName>
-		<label>bulk craft hemp flour</label>
+		<label>craft hemp flour (bulk)</label>
 		<description>Process smokeleaf seeds into flour for baking in larger quantities.</description>
 		<jobString>Crafting hemp flour.</jobString>
 		<effectWorking>Cook</effectWorking>
@@ -288,7 +367,7 @@
 			<li>FueledStove</li>
 			<li>ElectricStove</li>
 		</recipeUsers>
-		<researchPrerequisite>IndustrialSmokeleafProcessing</researchPrerequisite>
+		<researchPrerequisite>SmokeleafProcessing</researchPrerequisite>
 	</RecipeDef>
 	
 	<!--========== Refine Hempoline ==========-->	
@@ -431,14 +510,12 @@
 		<workSpeedStat>StonecuttingSpeed</workSpeedStat>
 		<workSkill>Crafting</workSkill>
 		<workSkillLearnFactor>0.3</workSkillLearnFactor>
-		<workAmount>1500</workAmount>
 		<effectWorking>CutStone</effectWorking>
 		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
 		<targetCountAdjustment>20</targetCountAdjustment>
 		<recipeUsers>
 			<li>TableStonecutter</li>
 		</recipeUsers>
-		<researchPrerequisite>IndustrialSmokeleafProcessing</researchPrerequisite>
 	</RecipeDef>
 
 	<RecipeDef ParentName="MSI_MakeHempcreteBlocksBase">
@@ -447,6 +524,7 @@
 		<description>Compress hemp products into hempcrete blocks.</description>
 		<workerCounterClass>RecipeWorkerCounter_MakeStoneBlocks</workerCounterClass>
 		<jobString>Making hempcrete blocks.</jobString>
+		<workAmount>1500</workAmount>
 		<ingredients>
 			<li>
 				<filter>
@@ -454,7 +532,7 @@
 						<li>HempFiber</li>
 					</thingDefs>
 				</filter>
-				<count>5</count>
+				<count>10</count>
 			</li>
 			<li>
 				<filter>
@@ -462,7 +540,7 @@
 						<li>SmokeleafSeed</li>
 					</thingDefs>
 				</filter>
-				<count>5</count>
+				<count>10</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -476,49 +554,40 @@
 		</products>
 	</RecipeDef>
 	
-	<!--========== Extract CBD ==========-->
-	
-	<RecipeDef>
-		<defName>BulkExtractCBD</defName>
-		<label>make CBD (bulk)</label>
-		<description>Extract CBD from smokeleaf buds in larger quantities.</description>
-		<jobString>Extracting CBD</jobString>
-		<effectWorking>BurnDrug</effectWorking>
-		<soundWorking>Recipe_Brewing</soundWorking>
-		<workAmount>2000</workAmount>
-    <workSkill>Crafting</workSkill>
+	<RecipeDef ParentName="MSI_MakeHempcreteBlocksBase">
+		<defName>MakeHempcreteBlocksBulk</defName>
+		<label>make hempcrete blocks (bulk)</label>
+		<description>Compress hemp products into hempcrete blocks.</description>
+		<workerCounterClass>RecipeWorkerCounter_MakeStoneBlocks</workerCounterClass>
+		<jobString>Making hempcrete blocks.</jobString>
+		<workAmount>3500</workAmount>
 		<ingredients>
 			<li>
 				<filter>
 					<thingDefs>
-						<li>SmokeleafBuds</li>
+						<li>HempFiber</li>
 					</thingDefs>
 				</filter>
-				<count>75</count>
+				<count>25</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SmokeleafSeed</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>SmokeleafBuds</li>
+				<li>HempFiber</li>
+				<li>SmokeleafSeed</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<CBD>5</CBD>
+			<BlocksHempcrete>50</BlocksHempcrete>
 		</products>
-		<recipeUsers>
-			<li>MedicinalsLab</li>
-		</recipeUsers>
-		<skillRequirements>
-			<li>
-			  <skill>Crafting</skill>
-			  <minLevel>10</minLevel>
-			</li>
-			<li>
-			  <skill>Medicine</skill>
-			  <minLevel>6</minLevel>
-			</li>
-		</skillRequirements>
-		<researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
 	</RecipeDef>
 
 </RecipeDefs>

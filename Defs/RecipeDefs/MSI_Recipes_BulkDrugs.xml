@@ -4,13 +4,52 @@
 	<!--========== Smokeleaf Joint Recipe ==========-->
 	
 	<RecipeDef>
-		<defName>BulkRollSmokeleafJoint</defName>
-		<label>make smokeleaf joints (bulk)</label>
+		<defName>BulkRollSmokeleafJointCraftingSpot</defName>
+		<label>make smokeleaf joints (x5)</label>
 		<description>Roll more joints at a time.</description>
 		<jobString>rolling smokeleaf joints</jobString>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
-		<workAmount>3000</workAmount>
+		<workAmount>1500</workAmount>
+		<workSkill>Crafting</workSkill>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SmokeleafBuds</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SmokeleafBuds</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<SmokeleafJoint>5</SmokeleafJoint>
+		</products>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>5</minLevel>
+			</li>
+	  </skillRequirements>
+		<researchPrerequisite>SmokeleafCultivation</researchPrerequisite>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>BulkRollSmokeleafJointCultBench</defName>
+		<label>make smokeleaf joints (x10)</label>
+		<description>Roll more joints at a time.</description>
+		<jobString>rolling smokeleaf joints</jobString>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>2500</workAmount>
 		<workSkill>Crafting</workSkill>
 		<ingredients>
 			<li>
@@ -321,6 +360,106 @@
 				<minLevel>12</minLevel>
 			</li>
 	  </skillRequirements>
+		<researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
+	</RecipeDef>
+	
+	<!--========== CBD Recipe ==========-->
+	
+	<RecipeDef>
+		<defName>BulkExtractCBD</defName>
+		<label>make CBD (bulk)</label>
+		<description>Extract CBD from smokeleaf buds in larger quantities.</description>
+		<jobString>Extracting CBD</jobString>
+		<effectWorking>BurnDrug</effectWorking>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<workAmount>3000</workAmount>
+		<workSkill>Crafting</workSkill>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SmokeleafBuds</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SmokeleafBuds</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<CBD>5</CBD>
+		</products>
+		<recipeUsers>
+			<li>MedicinalsLab</li>
+		</recipeUsers>
+		<skillRequirements>
+			<li>
+			  <skill>Crafting</skill>
+			  <minLevel>10</minLevel>
+			</li>
+			<li>
+			  <skill>Medicine</skill>
+			  <minLevel>6</minLevel>
+			</li>
+		</skillRequirements>
+		<researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
+	</RecipeDef>
+
+	
+	<!--========== Infused Medicine Recipe ==========-->
+	
+	<RecipeDef>
+		<defName>BulkInfusedMedicine</defName>
+		<label>make infused medicine (bulk)</label>
+		<description>Make infused medicine in larger quantities.</description>
+		<jobString>making infuse medicine</jobString>
+		<effectWorking>BurnDrug</effectWorking>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<workAmount>3000</workAmount>
+		<workSkill>Crafting</workSkill>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Medicine</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CBD</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Medicine</li>
+				<li>CBD</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<InfusedMedicine>5</InfusedMedicine>
+		</products>
+		<recipeUsers>
+			<li>MedicinalsLab</li>
+		</recipeUsers>
+		<skillRequirements>
+			<li>
+			  <skill>Crafting</skill>
+			  <minLevel>12</minLevel>
+			</li>
+			<li>
+			  <skill>Medicine</skill>
+			  <minLevel>8</minLevel>
+			</li>
+		</skillRequirements>
 		<researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
 	</RecipeDef>
 	

@@ -4,7 +4,7 @@
   <ThingDef ParentName="MSI_MakeableDrugBase">
     <defName>CHO</defName>
     <label>chemfuel hash oil</label>
-    <description>Chemfuel Hash Oil is a smokeleaf extract prepared using Chemfuel. Since C.H.O. is vaporized, some of the harmful effects are reduced, but due to the method of it's extraction, others are increased.</description>
+    <description>Chemfuel Hash Oil is a smokeleaf extract prepared using Chemfuel. Since C.H.O. is vaporized, some of the harmful effects are eliminated, but due to the method of it's extraction, other risks are increased.</description>
     <graphicData>
       <texPath>Things/Items/MSI_CHO</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -38,16 +38,16 @@
       <outcomeDoers>
         <li Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>CHOHigh</hediffDef>
-          <severity>0.7</severity>
+          <severity>0.5</severity>
           <toleranceChemical>CHO</toleranceChemical>
         </li>
         <li Class="IngestionOutcomeDoer_OffsetNeed">
           <need>Rest</need>
-          <offset>-0.3</offset>
+          <offset>-0.2</offset>
         </li>
         <li Class="IngestionOutcomeDoer_GiveHediff">
 			<hediffDef>CHOTolerance</hediffDef>
-			<severity>0.035</severity>
+			<severity>0.03</severity>
 			<divideByBodySize>true</divideByBodySize>
 		</li>
       </outcomeDoers>
@@ -73,7 +73,7 @@
     <comps>
       <li Class="CompProperties_Drug">
         <chemical>CHO</chemical>
-        <addictiveness>0.15</addictiveness>
+        <addictiveness>0.01</addictiveness>
         <minToleranceToAddict>0.3</minToleranceToAddict>
         <existingAddictionSeverityOffset>0.06</existingAddictionSeverityOffset>
         <needLevelOffset>1</needLevelOffset>
@@ -91,17 +91,17 @@
     <maxSeverity>1.0</maxSeverity>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.25</severityPerDay>
+        <severityPerDay>-1.5</severityPerDay>
       </li>
     </comps>
-      <stages>
+    <stages>
         <li>
-          <hungerRateFactor>1.2</hungerRateFactor>
-          <painOffset>-0.4</painOffset>
+          <hungerRateFactor>1.1</hungerRateFactor>
+          <painOffset>-0.3</painOffset>
           <capMods>
             <li>
               <capacity>Consciousness</capacity>
-              <offset>-0.2</offset>
+              <offset>-0.3</offset>
             </li>
             <li>
               <capacity>Moving</capacity>
@@ -109,7 +109,7 @@
             </li>
           </capMods>
         </li>
-      </stages>
+    </stages>
   </HediffDef>
   
   <ThoughtDef>
@@ -131,8 +131,8 @@
   <ChemicalDef>
     <defName>CHO</defName>
     <label>C.H.O.</label>
-    <addictionHediff>SmokeleafAddiction</addictionHediff>
-    <toleranceHediff>SmokeleafTolerance</toleranceHediff>
+    <addictionHediff>CHOAddiction</addictionHediff>
+    <toleranceHediff>CHOTolerance</toleranceHediff>
 		<onGeneratedAddictedToleranceChance>0.8</onGeneratedAddictedToleranceChance>
 	</ChemicalDef>
 
@@ -149,23 +149,13 @@
     <label>CHO tolerance</label>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.035</severityPerDay>
+        <severityPerDay>-0.0666</severityPerDay>
       </li>
       <li Class="HediffCompProperties_DrugEffectFactor">
         <chemical>CHO</chemical>
       </li>
     </comps>
 		<hediffGivers>
-			<li Class="HediffGiver_RandomDrugEffect">
-				<hediff>Asthma</hediff>
-				<baseMtbDays>180</baseMtbDays>
-				<minSeverity>0.15</minSeverity>
-				<partsToAffect>
-					<li>LeftLung</li>
-					<li>RightLung</li>
-				</partsToAffect>
-				<countToAffect>2</countToAffect>
-			</li>
 			<li Class="HediffGiver_RandomDrugEffect">
 				<hediff>Carcinoma</hediff>
 				<baseMtbDays>180</baseMtbDays>
@@ -191,27 +181,25 @@
     </comps>
     <stages>
       <li>
-      </li>
-      <li>
         <label>withdrawal</label>
         <capMods>
           <li>
             <capacity>Consciousness</capacity>
-            <offset>-0.4</offset>
+            <offset>-0.15</offset>
           </li>
           <li>
             <capacity>Moving</capacity>
-            <offset>-0.1</offset>
+            <offset>-0.15</offset>
           </li>
         </capMods>
 				<mentalStateGivers>
 					<li>
-						<mentalState>BingingFood</mentalState>
-						<mtbDays>30</mtbDays>
+						<mentalState>WanderOwnRoom</mentalState>
+						<mtbDays>50</mtbDays>
 					</li>
 					<li>
-						<mentalState>BingingDrugMajor</mentalState>
-						<mtbDays>30</mtbDays>
+						<mentalState>BingingFood</mentalState>
+						<mtbDays>70</mtbDays>
 					</li>
 				</mentalStateGivers>
       </li>

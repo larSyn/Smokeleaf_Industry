@@ -97,7 +97,7 @@
     <DefName>MedicinalsLab</DefName>
     <label>medicinals lab</label>
     <ThingClass>Building_WorkTable</ThingClass>
-    <Description>A lab with state of the art equipment for the processing of smokeleaf into its most advanced forms. Can work without electricity at a severly reduced speed.</Description>
+    <Description>A lab with Glitter-tech equipment for the processing of smokeleaf into its most advanced forms. Must have power to function.</Description>
     <graphicData>
       <texPath>Things/Production/MSI_medicinalsTable</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
@@ -139,7 +139,6 @@
     </inspectorTabs>
     <building>
       <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
-      <unpoweredWorkTableWorkSpeedFactor>0.3</unpoweredWorkTableWorkSpeedFactor>
 	</building>
     <comps>
       <li Class="CompProperties_Power">
@@ -159,7 +158,7 @@
       <li>PlaceWorker_ShowFacilitiesConnections</li>
     </placeWorkers>
     <researchPrerequisites>
-      <li>AdvancedSmokeleafCultivation</li>
+      <li>SmokeleafPharmacology</li>
 	  <li>Electricity</li>
     </researchPrerequisites>
 	<designationCategory>MSI</designationCategory>
