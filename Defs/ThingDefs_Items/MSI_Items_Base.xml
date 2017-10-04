@@ -42,9 +42,6 @@
 		<ingestSound>RawVegetable_Eat</ingestSound>
     </ingestible>
     <socialPropernessMatters>true</socialPropernessMatters>
-    <thingCategories>
-		<li>PlantFoodRaw</li>
-    </thingCategories>
     <comps>
 		<li Class="CompProperties_FoodPoisoningChance">
 			<humanlikeOnly>true</humanlikeOnly>

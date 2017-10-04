@@ -6,10 +6,6 @@
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
-		<recipeUsers>
-			<li>FueledStove</li>
-			<li>ElectricStove</li>
-		</recipeUsers>
 	</RecipeDef>
 
 	<!--========== Smokeleaf Cookies ==========-->
@@ -58,7 +54,11 @@
           <skill>Cooking</skill>
           <minLevel>5</minLevel>
         </li>
-      </skillRequirements>
+    </skillRequirements>
+	<recipeUsers>
+		<li>FueledStove</li>
+		<li>ElectricStove</li>
+	</recipeUsers>
   </RecipeDef>	
   
   <RecipeDef ParentName="MSI_CookMealBase">
@@ -105,7 +105,11 @@
           <skill>Cooking</skill>
           <minLevel>5</minLevel>
         </li>
-      </skillRequirements>
+    </skillRequirements>
+	<recipeUsers>
+		<li>FueledStove</li>
+		<li>ElectricStove</li>
+	</recipeUsers>
   </RecipeDef>
   
   	<!--========== Smokeleaf Brownies ==========-->
@@ -115,7 +119,7 @@
     <label>bake smokeleaf brownies</label>
     <description>Bake delicious "special" brownies.</description>
     <jobString>Baking brownies.</jobString>
-    <workAmount>400</workAmount>
+    <workAmount>600</workAmount>
     <requiredGiverWorkType>Cooking</requiredGiverWorkType>
     <allowMixingIngredients>true</allowMixingIngredients>
     <ingredients>
@@ -145,7 +149,7 @@
       </li>
     </ingredients>
     <products>
-      <SmokeleafBrownie>2</SmokeleafBrownie>
+      <SmokeleafBrownie>3</SmokeleafBrownie>
     </products>
     <fixedIngredientFilter>
 		<thingDefs>
@@ -163,7 +167,11 @@
           <skill>Cooking</skill>
           <minLevel>5</minLevel>
         </li>
-      </skillRequirements>
+    </skillRequirements>
+	<recipeUsers>
+		<li>FueledStove</li>
+		<li>ElectricStove</li>
+	</recipeUsers>
   </RecipeDef>
   
   <RecipeDef ParentName="MSI_CookMealBase">
@@ -201,7 +209,7 @@
       </li>
     </ingredients>
     <products>
-      <SmokeleafBrownie>10</SmokeleafBrownie>
+      <SmokeleafBrownie>15</SmokeleafBrownie>
     </products>
     <fixedIngredientFilter>
 		<thingDefs>
@@ -219,7 +227,11 @@
           <skill>Cooking</skill>
           <minLevel>5</minLevel>
         </li>
-      </skillRequirements>
+    </skillRequirements>
+	<recipeUsers>
+		<li>FueledStove</li>
+		<li>ElectricStove</li>
+	</recipeUsers>
   </RecipeDef>
   
   	<!--========== Smokeleaf Butter ==========-->
@@ -269,7 +281,11 @@
           <skill>Cooking</skill>
           <minLevel>5</minLevel>
         </li>
-      </skillRequirements>
+    </skillRequirements>
+	<recipeUsers>
+		<li>FueledStove</li>
+		<li>ElectricStove</li>
+	</recipeUsers>
   </RecipeDef>
   
   <RecipeDef ParentName="MSI_CookMealBase">
@@ -317,7 +333,11 @@
           <skill>Cooking</skill>
           <minLevel>5</minLevel>
         </li>
-      </skillRequirements>
+    </skillRequirements>
+	<recipeUsers>
+		<li>FueledStove</li>
+		<li>ElectricStove</li>
+	</recipeUsers>
   </RecipeDef>
   
 	<!--========== Smokeleaf De-Energy Drink ==========-->  
@@ -345,7 +365,7 @@
             <li>Ambrosia</li>
           </thingDefs>
         </filter>
-        <count>2</count>
+        <count>4</count>
       </li>
     </ingredients>
     <products>
@@ -367,6 +387,10 @@
           <minLevel>12</minLevel>
         </li>
     </skillRequirements>
+	<recipeUsers>
+		<li>FueledStove</li>
+		<li>ElectricStove</li>
+	</recipeUsers>
   </RecipeDef>
   
   <RecipeDef ParentName="MSI_CookMealBase">
@@ -414,6 +438,10 @@
           <minLevel>12</minLevel>
         </li>
     </skillRequirements>
+	<recipeUsers>
+		<li>FueledStove</li>
+		<li>ElectricStove</li>
+	</recipeUsers>
   </RecipeDef>
   
   	<!--========== Smokeleaf Smoothie ==========-->
@@ -466,6 +494,10 @@
           <minLevel>12</minLevel>
         </li>
     </skillRequirements>
+	<recipeUsers>
+		<li>FueledStove</li>
+		<li>ElectricStove</li>
+	</recipeUsers>
   </RecipeDef>
   
   <RecipeDef ParentName="MSI_CookMealBase">
@@ -516,6 +548,10 @@
           <minLevel>12</minLevel>
         </li>
     </skillRequirements>
+	<recipeUsers>
+		<li>FueledStove</li>
+		<li>ElectricStove</li>
+	</recipeUsers>
   </RecipeDef>
   
 	<!--========== MSI Meal ==========-->
@@ -553,6 +589,10 @@
 			</li>
 		</skillRequirements>
 		<researchPrerequisite>AdvancedSmokeleafProcessing</researchPrerequisite>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+		</recipeUsers>
   </RecipeDef>
   
   <RecipeDef ParentName="MSI_CookMealBase">
@@ -588,6 +628,10 @@
 			</li>
 		</skillRequirements>
 		<researchPrerequisite>AdvancedSmokeleafProcessing</researchPrerequisite>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+		</recipeUsers>
   </RecipeDef>
 
 </RecipeDefs>

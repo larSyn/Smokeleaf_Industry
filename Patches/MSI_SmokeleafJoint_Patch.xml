@@ -23,6 +23,14 @@
 		</operations>
 	</Operation>
 	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName = "SmokeleafJoint"]/recipeMaker/recipeUsers</xpath>
+		<value>
+			<li>DrugLab</li>
+			<li>PoweredCultivationBench</li>
+		</value>
+	</Operation>
+	
 	<Operation Class="PatchOperationInsert">
 		<xpath>*/ThingDef[defName = "SmokeleafJoint"]/recipeMaker/recipeUsers</xpath>
 		<value>
@@ -30,6 +38,19 @@
 		</value>
 	</Operation>
 	
+	<Operation Class="PatchOperationReplace">
+	    <xpath>*/ThingDef[defName = "SmokeleafJoint"]/recipeMaker/workSkill</xpath>
+		<value>
+			<workSkill>Crafting</workSkill>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+	    <xpath>*/ThingDef[defName = "SmokeleafJoint"]/recipeMaker/workSpeedStat</xpath>
+		<value>
+			<workSpeedStat>DrugProductionSpeed</workSpeedStat>
+		</value>
+	</Operation>
 	
 	<Operation Class="PatchOperationReplace">
 	    <xpath>*/HediffDef[defName = "SmokeleafHigh"]/stages/li/painOffset</xpath>
