@@ -190,27 +190,29 @@
     </comps>
     <stages>
       <li>
-        <label>withdrawal</label>
-        <capMods>
-          <li>
-            <capacity>Consciousness</capacity>
-            <offset>-0.2</offset>
-          </li>
-          <li>
-            <capacity>Moving</capacity>
-            <offset>-0.2</offset>
-          </li>
-        </capMods>
-		<mentalStateGivers>
-			<li>
-				<mentalState>BingingFood</mentalState>
-				<mtbDays>20</mtbDays>
-			</li>
-			<li>
-				<mentalState>BingingDrugMajor</mentalState>
-				<mtbDays>30</mtbDays>
-			</li>
-		</mentalStateGivers>
+      </li>
+      <li>
+			<label>withdrawal</label>
+			<capMods>
+			  <li>
+				<capacity>Consciousness</capacity>
+				<offset>-0.2</offset>
+			  </li>
+			  <li>
+				<capacity>Moving</capacity>
+				<offset>-0.2</offset>
+			  </li>
+			</capMods>
+			<mentalStateGivers>
+				<li>
+					<mentalState>BingingFood</mentalState>
+					<mtbDays>20</mtbDays>
+				</li>
+				<li>
+					<mentalState>BingingDrugMajor</mentalState>
+					<mtbDays>30</mtbDays>
+				</li>
+			</mentalStateGivers>
       </li>
     </stages>
   </HediffDef>

@@ -85,8 +85,10 @@
 		<researchPrerequisite>AdvancedSmokeleafCultivation</researchPrerequisite>
 	</RecipeDef>
 	
+	<!--========== Hand Trim Smokeleaf-Crafting Spot ==========-->
+	
 	<RecipeDef>
-		<defName>TrimSmokeleaf</defName>
+		<defName>TrimSmokeleafCraftingSpot</defName>
 		<label>trim smokeleaf</label>
 		<description>Trim smokeleaf into usable indgredients.</description>
 		<jobString>Trimming Smokeleaf.</jobString>
@@ -101,7 +103,7 @@
 						<li>SmokeleafLeaves</li>
 					</thingDefs>
 				</filter>
-				<count>1</count>
+				<count>4</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -142,7 +144,7 @@
 						<li>SmokeleafLeaves</li>
 					</thingDefs>
 				</filter>
-				<count>5</count>
+				<count>20</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -167,10 +169,54 @@
 		<researchPrerequisite>SmokeleafCultivation</researchPrerequisite>
 	</RecipeDef>
 	
+	<!--========== Hand Trim Smokeleaf-Drug Lab ==========-->
+	
 	<RecipeDef>
-		<defName>BulkTrimSmokeleafCultBench</defName>
-		<label>trim smokeleaf (x10)</label>
-		<description>The powered cultivation bench allows you to trim even more smokeleaf.</description>
+		<defName>TrimSmokeleafDrugLab</defName>
+		<label>trim smokeleaf</label>
+		<description>Trim smokeleaf into usable indgredients.</description>
+		<jobString>Trimming Smokeleaf.</jobString>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<workAmount>250</workAmount>
+		<workSkill>Crafting</workSkill>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SmokeleafLeaves</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SmokeleafLeaves</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<HempFiber>1</HempFiber>
+			<SmokeleafBuds>1</SmokeleafBuds>
+			<SmokeleafSeed>1</SmokeleafSeed>
+		</products>
+		<recipeUsers>
+			<li>DrugLab</li>
+			<li>PoweredCultivationBench</li>
+		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>5</minLevel>
+			</li>
+	  </skillRequirements>
+		<researchPrerequisite>SmokeleafCultivation</researchPrerequisite>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>BulkTrimSmokeleafDrugLab</defName>
+		<label>trim smokeleaf (x5)</label>
+		<description>Bulk trim smokeleaf into usable indgredients.</description>
 		<jobString>Trimming Smokeleaf.</jobString>
 		<effectWorking>Tailor</effectWorking>
 		<soundWorking>Recipe_Tailor</soundWorking>
@@ -192,20 +238,21 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<HempFiber>10</HempFiber>
-			<SmokeleafBuds>10</SmokeleafBuds>
-			<SmokeleafSeed>10</SmokeleafSeed>
+			<HempFiber>5</HempFiber>
+			<SmokeleafBuds>5</SmokeleafBuds>
+			<SmokeleafSeed>5</SmokeleafSeed>
 		</products>
 		<recipeUsers>
+			<li>DrugLab</li>
 			<li>PoweredCultivationBench</li>
 		</recipeUsers>
 		<skillRequirements>
 			<li>
 				<skill>Crafting</skill>
-				<minLevel>5</minLevel>
+				<minLevel>7</minLevel>
 			</li>
 		</skillRequirements>
-		<researchPrerequisite>IndustrialSmokeleafCultivation</researchPrerequisite>
+		<researchPrerequisite>SmokeleafCultivation</researchPrerequisite>
 	</RecipeDef>
 	
 	<!--========== Craft Hemp Fabric ==========-->
@@ -292,9 +339,9 @@
 	
 	<RecipeDef>
 		<defName>CraftHempFlour</defName>
-		<label>craft hemp flour</label>
+		<label>grind hemp flour</label>
 		<description>Process smokeleaf seeds into flour for baking.</description>
-		<jobString>Crafting hemp flour.</jobString>
+		<jobString>Grinding hemp flour.</jobString>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<workAmount>350</workAmount>
@@ -332,9 +379,9 @@
 	
 	<RecipeDef>
 		<defName>BulkCraftHempFlour</defName>
-		<label>craft hemp flour (bulk)</label>
+		<label>grinding hemp flour (bulk)</label>
 		<description>Process smokeleaf seeds into flour for baking in larger quantities.</description>
-		<jobString>Crafting hemp flour.</jobString>
+		<jobString>Grinding hemp flour.</jobString>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<workAmount>2000</workAmount>

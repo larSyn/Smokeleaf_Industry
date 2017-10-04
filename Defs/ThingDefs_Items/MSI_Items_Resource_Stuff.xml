@@ -156,6 +156,9 @@
 		<rotDestroys>true</rotDestroys>
       </li>
     </comps>
+    <thingCategories>
+		<li>PlantFoodRaw</li>
+    </thingCategories>
 	<researchPrerequisites>
 		<li>SmokeleafProcessing</li>
 	</researchPrerequisites>
