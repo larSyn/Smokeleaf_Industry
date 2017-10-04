@@ -57,6 +57,8 @@
   
   <ThingDef Name="MSI_MakeableDrugPillBase" ParentName="MSI_DrugBase" Abstract="True">
     <recipeMaker>
+      <workSpeedStat>DrugProductionSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
       <effectWorking>Cook</effectWorking>
       <soundWorking>Recipe_CookMeal</soundWorking>
     </recipeMaker>

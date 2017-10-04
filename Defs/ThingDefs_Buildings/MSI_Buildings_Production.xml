@@ -169,7 +169,7 @@
   <ThingDef ParentName="MSI_BenchBase">
     <defName>SmokeleafAutoTrimmer</defName>
     <label>smokeleaf auto trimmer</label>
-    <description>Process raw smokeleaf into usable products with increased speed and yeild.</description>
+    <description>Process raw smokeleaf into usable products with increased speed and yield.</description>
     <thingClass>Building_WorkTable</thingClass>
     <graphicData>
       <texPath>Things/Production/MSI_autoTrimmer</texPath>

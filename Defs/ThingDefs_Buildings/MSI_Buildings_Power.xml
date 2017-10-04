@@ -1,74 +1,74 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ThingDefs>
 
-	<!--=== Biodiesel Generator ===-->
+	<!--========== Hempoline Generator ==========-->
 
-  <ThingDef ParentName="MSI_BuildingBase">
-    <defName>HempolineGenerator</defName>
-    <label>hempoline generator</label>
-    <description>Produces power by burning hempoline. Must be fueled by hand.</description>
-    <thingClass>Building</thingClass>
-    <graphicData>
-      <texPath>Things/Buildings/MSI_biofuelGenerator</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(2,2)</drawSize>
-    </graphicData>
-	<uiIconPath>Icons/MSI_hGenerator_icon</uiIconPath>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-    <pathCost>150</pathCost>
-    <blockWind>true</blockWind>
-    <fillPercent>1.0</fillPercent>
-    <castEdgeShadows>false</castEdgeShadows>
-    <rotatable>false</rotatable>
-    <statBases>
-      <MaxHitPoints>350</MaxHitPoints>
-      <WorkToBuild>3000</WorkToBuild>
-      <Flammability>1.0</Flammability>
-    </statBases>
-    <tickerType>Normal</tickerType>
-    <canOverlapZones>false</canOverlapZones>
-    <size>(2,2)</size>
-    <building>
-      <ignoreNeedsPower>true</ignoreNeedsPower>
-    </building>
-    <costList>
-      <Steel>150</Steel>
-      <Component>3</Component>
-    </costList>
-    <comps>
-      <li Class="CompProperties_Power">
-        <compClass>CompPowerPlant</compClass>
-        <basePowerConsumption>-2000</basePowerConsumption>
-        <transmitsPower>true</transmitsPower>
-      </li>
-      <li Class="CompProperties_Flickable" />
-      <li Class="CompProperties_Refuelable">
-        <fuelConsumptionRate>16.5</fuelConsumptionRate>
-        <fuelCapacity>150.0</fuelCapacity>
-        <fuelFilter>
-          <thingDefs>
-            <li>Hempoline</li>
-          </thingDefs>
-        </fuelFilter>
-      </li>
-      <li Class="CompProperties_Glower">
-        <glowRadius>4</glowRadius>
-        <glowColor>(165,170,50,0)</glowColor>
-      </li>
-      <li Class="CompProperties_HeatPusher">
-        <compClass>CompHeatPusherPowered</compClass>
-        <heatPerSecond>2</heatPerSecond>
-      </li>
-      <li Class="CompProperties_Breakdownable"/>
-    </comps>
-    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-    <staticSunShadowHeight>0.5</staticSunShadowHeight>
-    <constructEffect>ConstructMetal</constructEffect>
-    <researchPrerequisites>
-      <li>IndustrialSmokeleafProcessing</li>
-    </researchPrerequisites>
-	<designationCategory>MSI</designationCategory>
-  </ThingDef>
+	<ThingDef ParentName="MSI_BuildingBase">
+		<defName>HempolineGenerator</defName>
+		<label>hempoline generator</label>
+		<description>Produces power by burning hempoline. Must be fueled by hand.</description>
+		<thingClass>Building</thingClass>
+		<graphicData>
+		  <texPath>Things/Buildings/MSI_hempolineGenerator</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>(2,2)</drawSize>
+		</graphicData>
+		<uiIconPath>Icons/MSI_hGenerator_icon</uiIconPath>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>150</pathCost>
+		<blockWind>true</blockWind>
+		<fillPercent>1.0</fillPercent>
+		<castEdgeShadows>false</castEdgeShadows>
+		<rotatable>false</rotatable>
+		<statBases>
+		  <MaxHitPoints>350</MaxHitPoints>
+		  <WorkToBuild>3000</WorkToBuild>
+		  <Flammability>1.0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<canOverlapZones>false</canOverlapZones>
+		<size>(2,2)</size>
+		<building>
+		  <ignoreNeedsPower>true</ignoreNeedsPower>
+		</building>
+		<costList>
+		  <Steel>150</Steel>
+		  <Component>3</Component>
+		</costList>
+		<comps>
+		  <li Class="CompProperties_Power">
+			<compClass>CompPowerPlant</compClass>
+			<basePowerConsumption>-2000</basePowerConsumption>
+			<transmitsPower>true</transmitsPower>
+		  </li>
+		  <li Class="CompProperties_Flickable" />
+		  <li Class="CompProperties_Refuelable">
+			<fuelConsumptionRate>18</fuelConsumptionRate>
+			<fuelCapacity>150.0</fuelCapacity>
+			<fuelFilter>
+			  <thingDefs>
+				<li>Hempoline</li>
+			  </thingDefs>
+			</fuelFilter>
+		  </li>
+		  <li Class="CompProperties_Glower">
+			<glowRadius>4</glowRadius>
+			<glowColor>(165,170,50,0)</glowColor>
+		  </li>
+		  <li Class="CompProperties_HeatPusher">
+			<compClass>CompHeatPusherPowered</compClass>
+			<heatPerSecond>2</heatPerSecond>
+		  </li>
+		  <li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<staticSunShadowHeight>0.5</staticSunShadowHeight>
+		<constructEffect>ConstructMetal</constructEffect>
+		<researchPrerequisites>
+		  <li>IndustrialSmokeleafProcessing</li>
+		</researchPrerequisites>
+		<designationCategory>MSI</designationCategory>
+	  </ThingDef>
   
-  </ThingDefs>
+ </ThingDefs>

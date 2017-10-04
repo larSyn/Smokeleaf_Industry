@@ -4,10 +4,88 @@
 	<!--========== Smokeleaf Joint Recipe ==========-->
 	
 	<RecipeDef>
+		<defName>RollSmokeleafJointCraftingSpot</defName>
+		<label>make smokeleaf joint</label>
+		<description>Roll more joints at a time.</description>
+		<jobString>making smokeleaf joints</jobString>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>500</workAmount>
+		<workSkill>Crafting</workSkill>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SmokeleafBuds</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SmokeleafBuds</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<SmokeleafJoint>1</SmokeleafJoint>
+		</products>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>3</minLevel>
+			</li>
+	  </skillRequirements>
+		<researchPrerequisite>SmokeleafCultivation</researchPrerequisite>
+	</RecipeDef>
+	
+	<RecipeDef>
 		<defName>BulkRollSmokeleafJointCraftingSpot</defName>
 		<label>make smokeleaf joints (x5)</label>
 		<description>Roll more joints at a time.</description>
-		<jobString>rolling smokeleaf joints</jobString>
+		<jobString>making smokeleaf joints</jobString>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>2000</workAmount>
+		<workSkill>Crafting</workSkill>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SmokeleafBuds</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SmokeleafBuds</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<SmokeleafJoint>5</SmokeleafJoint>
+		</products>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>4</minLevel>
+			</li>
+	  </skillRequirements>
+		<researchPrerequisite>SmokeleafCultivation</researchPrerequisite>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>BulkRollSmokeleafJointDrugLab</defName>
+		<label>make smokeleaf joints (x5)</label>
+		<description>Roll more joints at a time.</description>
+		<jobString>making smokeleaf joints</jobString>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<workAmount>1500</workAmount>
@@ -31,45 +109,7 @@
 			<SmokeleafJoint>5</SmokeleafJoint>
 		</products>
 		<recipeUsers>
-			<li>CraftingSpot</li>
-		</recipeUsers>
-		<skillRequirements>
-			<li>
-				<skill>Crafting</skill>
-				<minLevel>5</minLevel>
-			</li>
-	  </skillRequirements>
-		<researchPrerequisite>SmokeleafCultivation</researchPrerequisite>
-	</RecipeDef>
-	
-	<RecipeDef>
-		<defName>BulkRollSmokeleafJointCultBench</defName>
-		<label>make smokeleaf joints (x10)</label>
-		<description>Roll more joints at a time.</description>
-		<jobString>rolling smokeleaf joints</jobString>
-		<effectWorking>Cook</effectWorking>
-		<soundWorking>Recipe_CookMeal</soundWorking>
-		<workAmount>2500</workAmount>
-		<workSkill>Crafting</workSkill>
-		<ingredients>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>SmokeleafBuds</li>
-					</thingDefs>
-				</filter>
-				<count>20</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>SmokeleafBuds</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<products>
-			<SmokeleafJoint>10</SmokeleafJoint>
-		</products>
-		<recipeUsers>
+			<li>DrugLab</li>
 			<li>PoweredCultivationBench</li>
 		</recipeUsers>
 		<skillRequirements>
@@ -78,7 +118,7 @@
 				<minLevel>5</minLevel>
 			</li>
 	  </skillRequirements>
-		<researchPrerequisite>IndustrialSmokeleafCultivation</researchPrerequisite>
+		<researchPrerequisite>DrugProduction</researchPrerequisite>
 	</RecipeDef>
 	
 	<!--========== Smokeleaf Hash Recipe ==========-->	
