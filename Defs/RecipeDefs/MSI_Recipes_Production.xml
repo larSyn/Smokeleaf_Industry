@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <RecipeDefs>
 
 	<!--========== Trim Smokeleaf ==========-->
@@ -6,7 +6,7 @@
   <RecipeDef>
 		<defName>AutoTrimSmokeleaf</defName>
 		<label>auto trim smokeleaf</label>
-		<description>Auto trim large amounts of smokeleaf with increased speed and yield.</description>
+		<description>Trim large amounts of smokeleaf with increased speed and yield.</description>
 		<jobString>Trimming Smokeleaf.</jobString>
 		<effectWorking>Tailor</effectWorking>
 		<soundWorking>Recipe_Tailor</soundWorking>
@@ -47,7 +47,7 @@
 	<RecipeDef>
 		<defName>BulkAutoTrimSmokeleaf</defName>
 		<label>auto trim smokeleaf (bulk)</label>
-		<description>Auto trim even larger amounts of smokeleaf with increased speed and yield.</description>
+		<description>Trim even larger amounts of smokeleaf with increased speed and yield.</description>
 		<jobString>Trimming Smokeleaf.</jobString>
 		<effectWorking>Tailor</effectWorking>
 		<soundWorking>Recipe_Tailor</soundWorking>
@@ -90,7 +90,7 @@
 	<RecipeDef>
 		<defName>TrimSmokeleafCraftingSpot</defName>
 		<label>trim smokeleaf</label>
-		<description>Trim smokeleaf into usable indgredients.</description>
+		<description>Trim smokeleaf into usable ingredients.</description>
 		<jobString>Trimming Smokeleaf.</jobString>
 		<effectWorking>Tailor</effectWorking>
 		<soundWorking>Recipe_Tailor</soundWorking>
@@ -131,7 +131,7 @@
 	<RecipeDef>
 		<defName>BulkTrimSmokeleafCraftingSpot</defName>
 		<label>trim smokeleaf (x5)</label>
-		<description>Bulk trim smokeleaf into usable indgredients.</description>
+		<description>Bulk trim smokeleaf into usable ingredients.</description>
 		<jobString>Trimming Smokeleaf.</jobString>
 		<effectWorking>Tailor</effectWorking>
 		<soundWorking>Recipe_Tailor</soundWorking>
@@ -174,7 +174,7 @@
 	<RecipeDef>
 		<defName>TrimSmokeleafDrugLab</defName>
 		<label>trim smokeleaf</label>
-		<description>Trim smokeleaf into usable indgredients.</description>
+		<description>Trim smokeleaf into usable ingredients.</description>
 		<jobString>Trimming Smokeleaf.</jobString>
 		<effectWorking>Tailor</effectWorking>
 		<soundWorking>Recipe_Tailor</soundWorking>
@@ -216,7 +216,7 @@
 	<RecipeDef>
 		<defName>BulkTrimSmokeleafDrugLab</defName>
 		<label>trim smokeleaf (x5)</label>
-		<description>Bulk trim smokeleaf into usable indgredients.</description>
+		<description>Bulk trim smokeleaf into usable ingredients.</description>
 		<jobString>Trimming Smokeleaf.</jobString>
 		<effectWorking>Tailor</effectWorking>
 		<soundWorking>Recipe_Tailor</soundWorking>
