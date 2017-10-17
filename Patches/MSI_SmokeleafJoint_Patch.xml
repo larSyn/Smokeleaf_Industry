@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8" ?>
-
 <Patch>    
 		
 	<Operation Class="PatchOperationSequence">
@@ -23,13 +22,35 @@
 		</operations>
 	</Operation>
 	
-	<Operation Class="PatchOperationAdd">
+	<Operation Class="PatchOperationSequence">
+	    <success>Always</success>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[defName = "SmokeleafJoint"]/recipeMaker/recipeUsers</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName = "SmokeleafJoint"]/recipeMaker</xpath>
+				<value>
+					<recipeUsers />
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName = "SmokeleafJoint"]/recipeMaker/recipeUsers</xpath>
+				<value>
+					<li>DrugLab</li>
+					<li>PoweredCultivationBench</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!--<Operation Class="PatchOperationAdd">
 		<xpath>*/ThingDef[defName = "SmokeleafJoint"]/recipeMaker/recipeUsers</xpath>
 		<value>
 			<li>DrugLab</li>
 			<li>PoweredCultivationBench</li>
 		</value>
-	</Operation>
+	</Operation>-->
 	
 	<Operation Class="PatchOperationInsert">
 		<xpath>*/ThingDef[defName = "SmokeleafJoint"]/recipeMaker/recipeUsers</xpath>

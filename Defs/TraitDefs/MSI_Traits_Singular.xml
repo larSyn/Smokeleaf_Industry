@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TraitDefs>
+
+	<!--========== Traits ==========-->
+	
+	<TraitDef>
+		<defName>SmokeleafFarmer</defName>
+		<commonality>0.4</commonality>
+		<degreeDatas>
+			<li>
+				<label>smokeleaf farmer</label>
+				<description>NAME has a passion for gardening and smokeleaf. HECAP gets a mood bonus for every plant HE sows.</description>
+				<skillGains>
+					<li>
+						<key>Growing</key>
+						<value>5</value>
+					</li>
+				</skillGains>
+				<statOffsets>
+					<WorkSpeedGlobal>0.25</WorkSpeedGlobal>
+				</statOffsets>
+			</li>
+		</degreeDatas>
+		<requiredWorkTypes>
+			<li>Growing</li>
+			<li>PlantCutting</li>
+		</requiredWorkTypes>
+	</TraitDef>
+  
+	<TraitDef>
+		<defName>Stoner</defName>
+		<commonality>0.3</commonality>
+		<degreeDatas>
+			<li>
+				<label>stoner</label>
+				<description>NAME has a high tolerance for smokeleaf. HECAP rarely suffers any withdrawal effects.</description>
+				<disallowedMentalStates>
+					<li>BingingDrugMajor</li>
+					<li>BingingDrugExtreme</li>
+					<li>BingingFood</li>
+				</disallowedMentalStates>
+				<statOffsets>
+					<MentalBreakThreshold>-0.1</MentalBreakThreshold>
+				</statOffsets>
+			</li>
+		</degreeDatas>
+	</TraitDef>
+
+</TraitDefs>
