@@ -27,11 +27,12 @@
         <label>Hemp Floors</label>
         <description>Floors made frome hemp products.</description>
         <defNames>
-            <li>TileHempcrete</li>
+            <li>BrickHempcrete</li>
             <li>FlagstoneHempcrete</li>
             <li>Hempcrete</li>
             <li>HempcreteTile</li>
             <li>CarpetHemp</li>
+            <li>HempcretePlate</li>
         </defNames>
         <designationCategory>Floors</designationCategory>
     	<preview>false</preview>
@@ -45,16 +46,16 @@
     <Description>Refined, carefully-cut stone tiles for a castle feeling. Pretty to look at, but they take a long time to lay.</Description>
     <texturePath>Terrain/MSI_tileStone</texturePath>
     <statBases>
-      <WorkToBuild>1100</WorkToBuild>
-      <Beauty>1</Beauty>
+      <WorkToBuild>500</WorkToBuild>
+      <Beauty>2</Beauty>
     </statBases>
   </TerrainDef>
   
   <TerrainDef ParentName="MSI_TileStoneBase">
-    <DefName>TileHempcrete</DefName>
+    <DefName>BrickHempcrete</DefName>
     <label>hempcrete bricks</label>
     <CostList>
-      <BlocksHempcrete>4</BlocksHempcrete>
+      <BlocksHempcrete>5</BlocksHempcrete>
     </CostList>
   </TerrainDef>
   
@@ -78,7 +79,7 @@
 	  <DefName>FlagstoneHempcrete</DefName>
 	  <label>hempcrete flagstone</label>
 	  <CostList>
-		<BlocksHempcrete>4</BlocksHempcrete>
+		<BlocksHempcrete>3</BlocksHempcrete>
 	  </CostList>
 	</TerrainDef>
   
@@ -108,12 +109,32 @@
     <texturePath>Terrain/MSI_genericFloorTile</texturePath>
     <statBases>
 		<Cleanliness>0.1</Cleanliness>
-		<WorkToBuild>700</WorkToBuild>
+		<WorkToBuild>300</WorkToBuild>
 		<Beauty>1</Beauty>
+    </statBases>
+    <CostList>
+		<BlocksHempcrete>3</BlocksHempcrete>
+    </CostList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="MSI_FloorBase">
+    <DefName>HempcretePlate</DefName>
+    <label>hempcrete plate</label>
+    <RenderPrecedence>240</RenderPrecedence>
+    <Description>Large hempcrete tiles. Pretty, but labor and material-intensive.</Description>
+    <texturePath>Terrain/MSI_hempcretePlate</texturePath>
+    <statBases>
+		<Cleanliness>0.1</Cleanliness>
+		<WorkToBuild>500</WorkToBuild>
+		<Beauty>3</Beauty>
     </statBases>
     <CostList>
 		<BlocksHempcrete>7</BlocksHempcrete>
     </CostList>
+	<researchPrerequisites>
+      <li>IndustrialSmokeleafProcessing</li>
+	  <li>Stonecutting</li>
+    </researchPrerequisites>
   </TerrainDef>
 
   <!--========== Hemp Carpet ==========-->

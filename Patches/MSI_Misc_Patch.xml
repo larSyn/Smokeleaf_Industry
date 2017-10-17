@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!--========== Misc ==========-->
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[DefName = "DrugLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+		<value>
+			<li>TrimmingTools</li>
+		</value>
+	</Operation>
+
+</Patch>   

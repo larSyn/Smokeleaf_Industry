@@ -3,7 +3,7 @@
 
 	<!--========== Smokeleaf Butter ==========-->
   
-  <ThingDef ParentName="MSI_OrganicProductBase">
+  <ThingDef ParentName="MSI_MealRottable">
     <defName>SmokeleafButter</defName>
     <label>smokeleaf butter</label>
     <description>Butter made from simmering smokeleaf buds with milk. Creates a potent base for edibles.</description>
@@ -27,6 +27,8 @@
 		<useEatingSpeedStat>true</useEatingSpeedStat>
 		<ingestEffect>EatVegetarian</ingestEffect>
 		<preferability>DesperateOnly</preferability>
+		<joy>0.5</joy>
+		<joyKind>Chemical</joyKind>
 		<outcomeDoers>
 			<li Class="IngestionOutcomeDoer_GiveHediff">
 				<hediffDef>EdiblesHigh</hediffDef>
@@ -43,6 +45,40 @@
 				<divideByBodySize>true</divideByBodySize>
 			</li>
       </outcomeDoers>
+	</ingestible>
+    <thingCategories>
+      <li>Foods</li>
+    </thingCategories>
+  </ThingDef>
+
+	<!--========== Hemp Milk ==========-->
+  
+  <ThingDef ParentName="MSI_MealRottable">
+    <defName>HempMilk</defName>
+    <label>hemp milk</label>
+    <description>"Milk" made from smokeleaf seeds that are soaked and ground in water.</description>
+    <graphicData>
+      <texPath>Things/Items/MSI_milk</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+	<soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+	<socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+    <MarketValue>4.0</MarketValue>
+    <Flammability>0.5</Flammability>
+    </statBases>
+	<ingestible>
+		<nutrition>0.1</nutrition>
+		<foodType>Processed</foodType>
+		<baseIngestTicks>120</baseIngestTicks>
+		<chairSearchRadius>25</chairSearchRadius>
+		<ingestSound>Meal_Eat</ingestSound>
+		<useEatingSpeedStat>true</useEatingSpeedStat>
+		<ingestEffect>EatVegetarian</ingestEffect>
+		<preferability>DesperateOnly</preferability>
+		<joy>0.5</joy>
+		<joyKind>Chemical</joyKind>
 	</ingestible>
     <thingCategories>
       <li>Foods</li>
@@ -110,6 +146,55 @@
     <description>A smokeleaf butter cookie. Get comfortable.</description>
     <graphicData>
       <texPath>Things/Items/MSI_cookie</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+		<MarketValue>12</MarketValue>
+		<Mass>0.018</Mass>
+    </statBases>
+    <ingestible>
+		<nutrition>0.25</nutrition>
+		<optimalityOffset>6</optimalityOffset>
+		<outcomeDoers>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+				<hediffDef>EdiblesHigh</hediffDef>
+				<severity>0.5</severity>
+				<toleranceChemical>Edibles</toleranceChemical>
+			</li>
+			<li Class="IngestionOutcomeDoer_OffsetNeed">
+				<need>Rest</need>
+				<offset>-0.2</offset>
+			</li>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+				<hediffDef>EdiblesTolerance</hediffDef>
+				<severity>0.010</severity>
+				<divideByBodySize>true</divideByBodySize>
+			</li>
+      </outcomeDoers>
+	</ingestible>
+	<comps>
+      <li Class="CompProperties_Drug">
+        <chemical>Edibles</chemical>
+        <addictiveness>0.015</addictiveness>
+        <minToleranceToAddict>0.15</minToleranceToAddict>
+        <existingAddictionSeverityOffset>0.06</existingAddictionSeverityOffset>
+        <needLevelOffset>1</needLevelOffset>
+        <listOrder>20</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="MSI_MealEdibles">
+    <defName>SmokeleafNutriLeaf</defName>
+    <label>NutriLeaf bar</label>
+    <thingClass>ThingWithComps</thingClass>
+    <thingCategories>
+      <li>Foods</li>
+    </thingCategories>
+    <description>A chewy, fruit filled, smokeleaf infused snack bar.</description>
+    <graphicData>
+      <texPath>Things/Items/MSI_NutriLeaf</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <socialPropernessMatters>true</socialPropernessMatters>
@@ -245,6 +330,8 @@
       </li>
     </comps>
     <stages>
+      <li>
+      </li>
       <li>
         <label>withdrawal</label>
         <capMods>
@@ -486,6 +573,8 @@
       </li>
     </comps>
     <stages>
+      <li>
+      </li>
       <li>
         <label>withdrawal</label>
         <capMods>

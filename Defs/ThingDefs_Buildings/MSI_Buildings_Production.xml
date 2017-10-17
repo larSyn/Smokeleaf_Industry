@@ -79,6 +79,7 @@
       <li Class="CompProperties_AffectedByFacilities">
         <linkableFacilities>
           <li>ToolCabinet</li>
+		  <li>TrimmingTools</li>
         </linkableFacilities>
       </li>
       <li Class="CompProperties_Breakdownable"/>
@@ -150,6 +151,7 @@
       <li Class="CompProperties_AffectedByFacilities">
         <linkableFacilities>
           <li>ToolCabinet</li>
+		  <li>TrimmingTools</li>
         </linkableFacilities>
       </li>
       <li Class="CompProperties_Breakdownable"/>
@@ -209,6 +211,7 @@
 	  <li Class="CompProperties_AffectedByFacilities">
         <linkableFacilities>
           <li>ToolCabinet</li>
+		  <li>TrimmingTools</li>
         </linkableFacilities>
       </li>
     </comps>
@@ -229,6 +232,64 @@
     <researchPrerequisites>
       <li>AdvancedSmokeleafCultivation</li>
 	  <li>Electricity</li>
+    </researchPrerequisites>
+	<designationCategory>MSI</designationCategory>
+  </ThingDef>
+  
+  <!--========== Trimming Tools ==========-->
+  
+  <ThingDef ParentName="MSI_BuildingBase">
+    <defName>TrimmingTools</defName>
+    <label>trimming tools</label>
+    <graphicData>
+      <texPath>Things/Buildings/MSI_toolBox</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+      <drawSize>(1.25,1.25)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+	<pathCost>70</pathCost>
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>0.35</staticSunShadowHeight>
+    <fillPercent>0.5</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>1200</WorkToBuild>
+      <Mass>40</Mass>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <description>Increases work speed. Needs to be placed near workbench. One workbench can be simultaneously linked to only two tools cabinets.</description>
+    <size>(1,1)</size>
+	<costStuffCount>50</costStuffCount>
+    <costList>
+      <Steel>100</Steel>
+    </costList>
+	<stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <comps>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+          <WorkTableWorkSpeedFactor>0.1</WorkTableWorkSpeedFactor>
+        </statOffsets>
+        <maxSimultaneous>2</maxSimultaneous>
+      </li>
+    </comps>
+	<placeWorkers>
+		<li>PlaceWorker_ShowFacilitiesConnections</li>
+	</placeWorkers>
+    <researchPrerequisites>
+      <li>IndustrialSmokeleafCultivation</li>
     </researchPrerequisites>
 	<designationCategory>MSI</designationCategory>
   </ThingDef>

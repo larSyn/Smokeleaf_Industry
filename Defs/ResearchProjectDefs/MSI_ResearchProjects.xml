@@ -31,7 +31,7 @@
 	<ResearchProjectDef>
 		<defName>IndustrialSmokeleafCultivation</defName>
 		<label>industrial smokeleaf cultivation</label>
-		<description>The cultivation table is developed, letting workers process smokeleaf in larger quantities and in new forms. A new grow lamp is also invented that is a little easier on the electricity bill.</description>
+		<description>The cultivation table is developed, letting workers process smokeleaf in larger quantities and in new forms.  A storage facility is made for easier access to trimming tools. And a new grow lamp is also invented that is a little easier on the electricity bill.</description>
 		<baseCost>1000</baseCost>
 		<techLevel>Industrial</techLevel>
 		<prerequisites>
@@ -48,7 +48,7 @@
 	<ResearchProjectDef>
 		<defName>IndustrialSmokeleafProcessing</defName>
 		<label>industrial smokeleaf processing</label>
-		<description>A new fuel is created from the fibers and seeds of smokeleaf.</description>
+		<description>A new fuel is created from the fibers and seeds of smokeleaf.  The cooks have also learned a few new recipes.</description>
 		<baseCost>1250</baseCost>
 		<techLevel>Industrial</techLevel>
 		<prerequisites>

@@ -234,6 +234,132 @@
 	</recipeUsers>
   </RecipeDef>
   
+  <!--========== NutriLeaf Bar ==========-->
+
+  <RecipeDef ParentName="MSI_CookMealBase">
+    <defName>MakeSmokeleafNutriLeafBar</defName>
+    <label>make NutriLeaf bar</label>
+    <description>Make NutriLeaf bar.</description>
+    <jobString>Making NutriLeaf bar.</jobString>
+    <workAmount>700</workAmount>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RawBerries</li>
+			<li>RawAgave</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SmokeleafButter</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>HempFlour</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <SmokeleafNutriLeaf>3</SmokeleafNutriLeaf>
+    </products>
+    <fixedIngredientFilter>
+		<thingDefs>
+            <li>RawBerries</li>
+			<li>RawAgave</li>
+			<li>SmokeleafButter</li>
+			<li>HempFlour</li>
+         </thingDefs>
+      <disallowedSpecialFilters>
+        <li>AllowRotten</li>
+      </disallowedSpecialFilters>
+    </fixedIngredientFilter>
+    <researchPrerequisite>IndustrialSmokeleafProcessing</researchPrerequisite>
+	<skillRequirements>
+        <li>
+          <skill>Cooking</skill>
+          <minLevel>7</minLevel>
+        </li>
+    </skillRequirements>
+	<recipeUsers>
+		<li>FueledStove</li>
+		<li>ElectricStove</li>
+	</recipeUsers>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="MSI_CookMealBase">
+    <defName>MakeSmokeleafNutriLeafBarBulk</defName>
+    <label>make NutriLeaf bar (bulk)</label>
+    <description>Make NutriLeaf bars.</description>
+    <jobString>Making NutriLeaf bars.</jobString>
+    <workAmount>700</workAmount>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RawBerries</li>
+			<li>RawAgave</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SmokeleafButter</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>HempFlour</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <products>
+      <SmokeleafNutriLeaf>15</SmokeleafNutriLeaf>
+    </products>
+    <fixedIngredientFilter>
+		<thingDefs>
+            <li>RawBerries</li>
+			<li>RawAgave</li>
+			<li>SmokeleafButter</li>
+			<li>HempFlour</li>
+         </thingDefs>
+      <disallowedSpecialFilters>
+        <li>AllowRotten</li>
+      </disallowedSpecialFilters>
+    </fixedIngredientFilter>
+    <researchPrerequisite>IndustrialSmokeleafProcessing</researchPrerequisite>
+	<skillRequirements>
+        <li>
+          <skill>Cooking</skill>
+          <minLevel>7</minLevel>
+        </li>
+    </skillRequirements>
+	<recipeUsers>
+		<li>FueledStove</li>
+		<li>ElectricStove</li>
+	</recipeUsers>
+  </RecipeDef>
+  
   	<!--========== Smokeleaf Butter ==========-->
   
   <RecipeDef ParentName="MSI_CookMealBase">
@@ -249,6 +375,7 @@
         <filter>
           <thingDefs>
             <li>Milk</li>
+            <li>HempMilk</li>
           </thingDefs>
         </filter>
         <count>2</count>
@@ -269,6 +396,7 @@
 		<thingDefs>
             <li>SmokeleafBuds</li>
 			<li>Milk</li>
+            <li>HempMilk</li>
          </thingDefs>
       <disallowedSpecialFilters>
         <li>AllowRotten</li>
@@ -301,6 +429,7 @@
         <filter>
           <thingDefs>
             <li>Milk</li>
+            <li>HempMilk</li>
           </thingDefs>
         </filter>
         <count>10</count>
@@ -321,6 +450,7 @@
 		<thingDefs>
             <li>SmokeleafBuds</li>
 			<li>Milk</li>
+			<li>HempMilk</li>
          </thingDefs>
       <disallowedSpecialFilters>
         <li>AllowRotten</li>
@@ -332,6 +462,94 @@
         <li>
           <skill>Cooking</skill>
           <minLevel>5</minLevel>
+        </li>
+    </skillRequirements>
+	<recipeUsers>
+		<li>FueledStove</li>
+		<li>ElectricStove</li>
+	</recipeUsers>
+  </RecipeDef>
+  
+  	<!--========== Hemp Milk ==========-->
+  
+  <RecipeDef ParentName="MSI_CookMealBase">
+    <defName>MakeHempMilk</defName>
+    <label>make hemp milk</label>
+    <description>Grind seeds that have been soaking in water to make "milk".</description>
+    <jobString>Making milk.</jobString>
+    <workAmount>600</workAmount>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SmokeleafSeed</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <products>
+      <HempMilk>5</HempMilk>
+    </products>
+    <fixedIngredientFilter>
+		<thingDefs>
+            <li>SmokeleafSeed</li>
+         </thingDefs>
+      <disallowedSpecialFilters>
+        <li>AllowRotten</li>
+      </disallowedSpecialFilters>
+    </fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+    <researchPrerequisite>IndustrialSmokeleafProcessing</researchPrerequisite>
+	<skillRequirements>
+        <li>
+          <skill>Cooking</skill>
+          <minLevel>6</minLevel>
+        </li>
+    </skillRequirements>
+	<recipeUsers>
+		<li>FueledStove</li>
+		<li>ElectricStove</li>
+	</recipeUsers>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="MSI_CookMealBase">
+    <defName>MakeHempMilkBulk</defName>
+    <label>make hemp milk (bulk)</label>
+    <description>Grind a bunch of seeds that have been soaking in water to make "milk".</description>
+    <jobString>Making milk.</jobString>
+    <workAmount>1500</workAmount>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SmokeleafSeed</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+    </ingredients>
+    <products>
+      <HempMilk>15</HempMilk>
+    </products>
+    <fixedIngredientFilter>
+		<thingDefs>
+            <li>SmokeleafSeed</li>
+         </thingDefs>
+      <disallowedSpecialFilters>
+        <li>AllowRotten</li>
+      </disallowedSpecialFilters>
+    </fixedIngredientFilter>
+    <workSkill>Cooking</workSkill>
+    <researchPrerequisite>IndustrialSmokeleafProcessing</researchPrerequisite>
+	<skillRequirements>
+        <li>
+          <skill>Cooking</skill>
+          <minLevel>8</minLevel>
         </li>
     </skillRequirements>
 	<recipeUsers>

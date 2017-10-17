@@ -81,7 +81,7 @@
 				<skill>Crafting</skill>
 				<minLevel>12</minLevel>
 			</li>
-	  </skillRequirements>
+		</skillRequirements>
 		<researchPrerequisite>AdvancedSmokeleafCultivation</researchPrerequisite>
 	</RecipeDef>
 	
@@ -124,7 +124,7 @@
 				<skill>Crafting</skill>
 				<minLevel>3</minLevel>
 			</li>
-	  </skillRequirements>
+		</skillRequirements>
 		<researchPrerequisite>SmokeleafCultivation</researchPrerequisite>
 	</RecipeDef>
 	
@@ -209,7 +209,7 @@
 				<skill>Crafting</skill>
 				<minLevel>5</minLevel>
 			</li>
-	  </skillRequirements>
+		</skillRequirements>
 		<researchPrerequisite>SmokeleafCultivation</researchPrerequisite>
 	</RecipeDef>
 	
@@ -249,10 +249,51 @@
 		<skillRequirements>
 			<li>
 				<skill>Crafting</skill>
-				<minLevel>7</minLevel>
+				<minLevel>6</minLevel>
 			</li>
 		</skillRequirements>
 		<researchPrerequisite>SmokeleafCultivation</researchPrerequisite>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>BulkTrimSmokeleafCultBench</defName>
+		<label>trim smokeleaf (x10)</label>
+		<description>Bulk trim smokeleaf into usable ingredients.</description>
+		<jobString>Trimming Smokeleaf.</jobString>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<workAmount>3000</workAmount>
+		<workSkill>Crafting</workSkill>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SmokeleafLeaves</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SmokeleafLeaves</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<HempFiber>10</HempFiber>
+			<SmokeleafBuds>10</SmokeleafBuds>
+			<SmokeleafSeed>10</SmokeleafSeed>
+		</products>
+		<recipeUsers>
+			<li>PoweredCultivationBench</li>
+		</recipeUsers>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>8</minLevel>
+			</li>
+		</skillRequirements>
+		<researchPrerequisite>IndustrialSmokeleafCultivation</researchPrerequisite>
 	</RecipeDef>
 	
 	<!--========== Craft Hemp Fabric ==========-->
@@ -559,7 +600,6 @@
 		<workSkillLearnFactor>0.3</workSkillLearnFactor>
 		<effectWorking>CutStone</effectWorking>
 		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
-		<targetCountAdjustment>20</targetCountAdjustment>
 		<recipeUsers>
 			<li>TableStonecutter</li>
 		</recipeUsers>
@@ -569,7 +609,6 @@
 		<defName>MakeHempcreteBlocks</defName>
 		<label>make hempcrete blocks</label>
 		<description>Compress hemp products into hempcrete blocks.</description>
-		<workerCounterClass>RecipeWorkerCounter_MakeStoneBlocks</workerCounterClass>
 		<jobString>Making hempcrete blocks.</jobString>
 		<workAmount>1500</workAmount>
 		<ingredients>
@@ -605,7 +644,6 @@
 		<defName>MakeHempcreteBlocksBulk</defName>
 		<label>make hempcrete blocks (bulk)</label>
 		<description>Compress hemp products into hempcrete blocks.</description>
-		<workerCounterClass>RecipeWorkerCounter_MakeStoneBlocks</workerCounterClass>
 		<jobString>Making hempcrete blocks.</jobString>
 		<workAmount>3500</workAmount>
 		<ingredients>
@@ -636,5 +674,9 @@
 			<BlocksHempcrete>50</BlocksHempcrete>
 		</products>
 	</RecipeDef>
+	
+	<!--========== Animal Feed ==========-->
+	
+	
 
 </RecipeDefs>

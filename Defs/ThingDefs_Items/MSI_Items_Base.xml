@@ -65,9 +65,6 @@
     <stackLimit>75</stackLimit>
     <tickerType>Rare</tickerType>
     <socialPropernessMatters>true</socialPropernessMatters>
-    <thingCategories>
-      <li>FoodMeals</li>
-    </thingCategories>
     <alwaysHaulable>true</alwaysHaulable>
     <comps>
       <li Class="CompProperties_Forbiddable" />
@@ -78,7 +75,6 @@
     <resourceReadoutPriority>Last</resourceReadoutPriority>
     <drawGUIOverlay>true</drawGUIOverlay>
     <ingestible>
-      <foodType>Meal</foodType>
       <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
       <optimalityOffset>16</optimalityOffset>
     </ingestible>
@@ -95,6 +91,7 @@
   
   <ThingDef ParentName="MSI_MealRottable" Name="MSI_MealEdibles" Abstract="True">
     <ingestible>
+      <foodType>Meal</foodType>
       <baseIngestTicks>120</baseIngestTicks>
       <chairSearchRadius>25</chairSearchRadius>
       <ingestSound>Meal_Eat</ingestSound>
@@ -120,6 +117,9 @@
 		</west>
    	  </ingestHoldOffsetStanding>
 	</ingestible>
+    <thingCategories>
+      <li>FoodMeals</li>
+    </thingCategories>
   </ThingDef>
 	
 </Defs>
