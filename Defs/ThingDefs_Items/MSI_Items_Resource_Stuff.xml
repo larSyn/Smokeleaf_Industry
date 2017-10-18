@@ -175,8 +175,6 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <stackLimit>400</stackLimit>
-	<deepCommonality>2</deepCommonality>
-	<deepCountPerCell>300</deepCountPerCell>
 	<statBases>
 		<MaxHitPoints>50</MaxHitPoints>
 		<MarketValue>5</MarketValue>
