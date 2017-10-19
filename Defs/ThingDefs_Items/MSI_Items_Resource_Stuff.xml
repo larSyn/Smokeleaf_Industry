@@ -247,7 +247,7 @@
   
   <!--========== Infused Meal ==========--> 
 	  
-  <ThingDef ParentName="MSI_MealRottable">
+  <ThingDef ParentName="MSI_MealEdibles">
     <defName>MealInfused</defName>
     <label>infused meal</label>
     <description>A filling meal that also gives a slight buzz.</description>
