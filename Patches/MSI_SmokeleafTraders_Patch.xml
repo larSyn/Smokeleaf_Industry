@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <!--========== Smokeleaf Trader Patches ==========-->
+	
+	<Operation Class="PatchOperationSequence">
+	    <success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>*/TraderKindDef[defName = "Base_Outlander_Standard"]/stockGenerators</xpath>
+				<value>
+					<li Class="StockGenerator_SingleDef">
+						<thingDef>Hempoline</thingDef>
+						<countRange>
+							<min>300</min>
+							<max>500</max>
+						</countRange>
+					</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/TraderKindDef[defName = "Base_Outlander_Standard"]/stockGenerators</xpath>
+				<value>
+					<li Class="StockGenerator_SingleDef">
+						<thingDef>SmokeleafBuds</thingDef>
+						<countRange>
+							<min>75</min>
+							<max>500</max>
+						</countRange>
+					</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/TraderKindDef[defName = "Base_Outlander_Standard"]/stockGenerators</xpath>
+				<value>
+					<li Class="StockGenerator_SingleDef">
+						<thingDef>SmokeleafSeed</thingDef>
+						<countRange>
+							<min>75</min>
+							<max>500</max>
+						</countRange>
+					</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/TraderKindDef[defName = "Base_Outlander_Standard"]/stockGenerators</xpath>
+				<value>
+					<li Class="StockGenerator_SingleDef">
+						<thingDef>HempFiber</thingDef>
+						<countRange>
+							<min>75</min>
+							<max>500</max>
+						</countRange>
+					</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/TraderKindDef[defName = "Caravan_Outlander_BulkGoods"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Hempoline</thingDef>
+				<countRange>
+					<min>250</min>
+					<max>400</max>
+				</countRange>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/TraderKindDef[defName = "Caravan_Outlander_Exotic"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Hempoline</thingDef>
+				<countRange>
+					<min>200</min>
+					<max>400</max>
+				</countRange>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+	    <success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>*/TraderKindDef[defName = "Orbital_BulkGoods"]/stockGenerators</xpath>
+				<value>
+					<li Class="StockGenerator_SingleDef">
+						<thingDef>Hempoline</thingDef>
+						<countRange>
+							<min>200</min>
+							<max>800</max>
+						</countRange>
+					</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/TraderKindDef[defName = "Orbital_BulkGoods"]/stockGenerators</xpath>
+				<value>
+					<li Class="StockGenerator_SingleDef">
+						<thingDef>SmokeleafBuds</thingDef>
+						<countRange>
+							<min>75</min>
+							<max>1000</max>
+						</countRange>
+					</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/TraderKindDef[defName = "Orbital_BulkGoods"]/stockGenerators</xpath>
+				<value>
+					<li Class="StockGenerator_SingleDef">
+						<thingDef>SmokeleafSeed</thingDef>
+						<countRange>
+							<min>75</min>
+							<max>1000</max>
+						</countRange>
+					</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/TraderKindDef[defName = "Orbital_BulkGoods"]/stockGenerators</xpath>
+				<value>
+					<li Class="StockGenerator_SingleDef">
+						<thingDef>HempFiber</thingDef>
+						<countRange>
+							<min>75</min>
+							<max>1000</max>
+						</countRange>
+					</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/TraderKindDef[defName = "Orbital_PirateMerchant"]/stockGenerators</xpath>
+				<value>
+					<li Class="StockGenerator_SingleDef">
+						<thingDef>Hempoline</thingDef>
+						<countRange>
+							<min>250</min>
+							<max>500</max>
+						</countRange>
+					</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/TraderKindDef[defName = "Orbital_PirateMerchant"]/stockGenerators</xpath>
+				<value>
+					<li Class="StockGenerator_SingleDef">
+						<thingDef>SmokeleafBuds</thingDef>
+						<countRange>
+							<min>75</min>
+							<max>500</max>
+						</countRange>
+					</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/TraderKindDef[defName = "Orbital_PirateMerchant"]/stockGenerators</xpath>
+				<value>
+					<li Class="StockGenerator_SingleDef">
+						<thingDef>SmokeleafSeed</thingDef>
+						<countRange>
+							<min>75</min>
+							<max>500</max>
+						</countRange>
+					</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/TraderKindDef[defName = "Orbital_PirateMerchant"]/stockGenerators</xpath>
+				<value>
+					<li Class="StockGenerator_SingleDef">
+						<thingDef>HempFiber</thingDef>
+						<countRange>
+							<min>75</min>
+							<max>500</max>
+						</countRange>
+					</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/TraderKindDef[defName = "Orbital_Exotic"]/stockGenerators</xpath>
+				<value>
+					<li Class="StockGenerator_SingleDef">
+						<thingDef>Hempoline</thingDef>
+						<countRange>
+							<min>200</min>
+							<max>600</max>
+						</countRange>
+					</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/TraderKindDef[defName = "Orbital_Exotic"]/stockGenerators</xpath>
+				<value>
+					<li Class="StockGenerator_SingleDef">
+						<thingDef>SmokeleafBuds</thingDef>
+						<countRange>
+							<min>75</min>
+							<max>500</max>
+						</countRange>
+					</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/TraderKindDef[defName = "Orbital_Exotic"]/stockGenerators</xpath>
+				<value>
+					<li Class="StockGenerator_SingleDef">
+						<thingDef>SmokeleafSeed</thingDef>
+						<countRange>
+							<min>75</min>
+							<max>500</max>
+						</countRange>
+					</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/TraderKindDef[defName = "Orbital_Exotic"]/stockGenerators</xpath>
+				<value>
+					<li Class="StockGenerator_SingleDef">
+						<thingDef>HempFiber</thingDef>
+						<countRange>
+							<min>75</min>
+							<max>500</max>
+						</countRange>
+					</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>

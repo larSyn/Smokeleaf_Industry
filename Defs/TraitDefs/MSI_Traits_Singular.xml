@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<TraitDefs>
+<Defs>
 
 	<!--========== Traits ==========-->
 	
@@ -17,7 +17,7 @@
 					</li>
 				</skillGains>
 				<statOffsets>
-					<WorkSpeedGlobal>0.25</WorkSpeedGlobal>
+					<WorkSpeedGlobal>0.15</WorkSpeedGlobal>
 				</statOffsets>
 			</li>
 		</degreeDatas>
@@ -46,4 +46,4 @@
 		</degreeDatas>
 	</TraitDef>
 
-</TraitDefs>
+</Defs>

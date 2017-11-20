@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+  <!--========== Remove Biofuel As Bench Fuel ==========-->
+	
+	<Operation Class="PatchOperationSequence">
+	    <success>Always</success>
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>VGP Garden Gourmet</modName>
+				<yourMod>Smokeleaf Industry</yourMod>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[defName = "Oven"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter/thingDefs</xpath>
+					<value>
+						<thingDefs>
+							<li>WoodLog</li>
+							<li>VG_IronWoodLog</li>
+							<li>Bamboo</li>
+							<li>HempFiber</li>
+						</thingDefs>
+					</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+	    <success>Always</success>
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>VGP Garden Gourmet</modName>
+				<yourMod>Smokeleaf Industry</yourMod>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[defName = "HandCanningstove"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter/thingDefs</xpath>
+					<value>
+						<thingDefs>
+							<li>WoodLog</li>
+							<li>VG_IronWoodLog</li>
+							<li>Bamboo</li>
+							<li>HempFiber</li>
+						</thingDefs>
+					</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+	    <success>Always</success>
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>VGP Garden Gourmet</modName>
+				<yourMod>Smokeleaf Industry</yourMod>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[defName = "FueledCandyTable"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter/thingDefs</xpath>
+					<value>
+						<thingDefs>
+							<li>WoodLog</li>
+							<li>VG_IronWoodLog</li>
+							<li>Bamboo</li>
+							<li>HempFiber</li>
+						</thingDefs>
+					</value>
+			</li>
+		</operations>
+	</Operation>
+	
+</Patch>
+	
+	

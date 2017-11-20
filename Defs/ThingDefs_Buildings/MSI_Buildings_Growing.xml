@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Buildings>
+<Defs>
 
   <ThingDef Abstract="True" Name="MSI_LampBase" ParentName="MSI_BuildingBase">
     <category>Building</category>
@@ -148,4 +148,4 @@
 	<designationCategory>MSI</designationCategory>
   </ThingDef>	
   
-</Buildings>
+</Defs>

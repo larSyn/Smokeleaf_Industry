@@ -1,31 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<TerrainDefs>
+<Defs>
 
-  <TerrainDef Name="MSI_FloorBase" Abstract="True">
-	<layerable>true</layerable>
-    <affordances>
-		<li>Light</li>
-		<li>Heavy</li>
-		<li>SmoothHard</li>
-    </affordances>
-    <statBases>
-		<WorkToBuild>135</WorkToBuild>
-    </statBases>
-    <designationCategory>Floors</designationCategory>
-    <Fertility>0</Fertility>
-    <constructEffect>ConstructDirt</constructEffect>
-    <AcceptTerrainSourceFilth>True</AcceptTerrainSourceFilth>
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-	<researchPrerequisites>
-      <li>SmokeleafProcessing</li>
-	  <li>Stonecutting</li>
-    </researchPrerequisites>
-  </TerrainDef>
+	<TerrainDef Name="MSI_FloorBase" Abstract="True">
+		<layerable>true</layerable>
+		<affordances>
+			<li>Light</li>
+			<li>Heavy</li>
+			<li>SmoothHard</li>
+		</affordances>
+		<statBases>
+			<WorkToBuild>135</WorkToBuild>
+		</statBases>
+		<designationCategory>Floors</designationCategory>
+		<constructEffect>ConstructDirt</constructEffect>
+		<acceptTerrainSourceFilth>True</acceptTerrainSourceFilth>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<fertility>0</fertility>
+		<researchPrerequisites>
+			<li>SmokeleafProcessing</li>
+			<li>Stonecutting</li>
+		</researchPrerequisites>
+	</TerrainDef>
   
-  <ArchitectSense.DesignationSubCategoryDef>
+	<ArchitectSense.DesignationSubCategoryDef>
         <defName>MSI_FloorBase</defName>
         <label>Hemp Floors</label>
-        <description>Floors made frome hemp products.</description>
+        <description>Floors made from hemp products.</description>
         <defNames>
             <li>BrickHempcrete</li>
             <li>FlagstoneHempcrete</li>
@@ -33,6 +33,7 @@
             <li>HempcreteTile</li>
             <li>CarpetHemp</li>
             <li>HempcretePlate</li>
+            <li>HempStalkFloor</li>
         </defNames>
         <designationCategory>Floors</designationCategory>
     	<preview>false</preview>
@@ -41,127 +42,152 @@
   
   <!--========== HempBlock TileStoneBase ==========-->
   
-  <TerrainDef Abstract="True" ParentName="MSI_FloorBase" Name="MSI_TileStoneBase">
-    <RenderPrecedence>220</RenderPrecedence>
-    <Description>Refined, carefully-cut stone tiles for a castle feeling. Pretty to look at, but they take a long time to lay.</Description>
-    <texturePath>Terrain/MSI_tileStone</texturePath>
-    <statBases>
-      <WorkToBuild>500</WorkToBuild>
-      <Beauty>2</Beauty>
-    </statBases>
-  </TerrainDef>
+	<TerrainDef Abstract="True" ParentName="MSI_FloorBase" Name="MSI_TileStoneBase">
+		<renderPrecedence>220</renderPrecedence>
+		<description>Refined, carefully-cut stone tiles for a castle feeling. Pretty to look at, but they take a long time to lay.</description>
+		<texturePath>Terrain/MSI_tileStone</texturePath>
+		<statBases>
+			<WorkToBuild>500</WorkToBuild>
+			<Beauty>2</Beauty>
+		</statBases>
+	</TerrainDef>
   
-  <TerrainDef ParentName="MSI_TileStoneBase">
-    <DefName>BrickHempcrete</DefName>
-    <label>hempcrete bricks</label>
-    <CostList>
-      <BlocksHempcrete>5</BlocksHempcrete>
-    </CostList>
-  </TerrainDef>
+	<TerrainDef ParentName="MSI_TileStoneBase">
+		<defName>BrickHempcrete</defName>
+		<label>hempcrete bricks</label>
+		<costList>
+			<BlocksHempcrete>5</BlocksHempcrete>
+		</costList>
+	</TerrainDef>
   
   <!--========== HempBlock FlagStoneBase ==========-->
   
-  <TerrainDef Abstract="True" ParentName="MSI_FloorBase" Name="MSI_FlagstoneBase">
-	<RenderPrecedence>220</RenderPrecedence>
-	<Description>Roughly-cut stone tiles. Not super pretty, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources.</Description>
-	<texturePath>Terrain/MSI_flagstone</texturePath>
-	<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
-	<statBases>
-	    <WorkToBuild>500</WorkToBuild>
-		<Beauty>1</Beauty>
-	</statBases>
-    <tags>
-		<li>Road</li>
-    </tags>
+	<TerrainDef Abstract="True" ParentName="MSI_FloorBase" Name="MSI_FlagstoneBase">
+		<renderPrecedence>220</renderPrecedence>
+		<description>Roughly-cut stone tiles. Not super pretty, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources.</description>
+		<texturePath>Terrain/MSI_flagstone</texturePath>
+		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+		<statBases>
+			<WorkToBuild>500</WorkToBuild>
+			<Beauty>1</Beauty>
+		</statBases>
+		<tags>
+			<li>Road</li>
+		</tags>
 	</TerrainDef>
 
 	<TerrainDef ParentName="MSI_FlagstoneBase">
-	  <DefName>FlagstoneHempcrete</DefName>
-	  <label>hempcrete flagstone</label>
-	  <CostList>
-		<BlocksHempcrete>3</BlocksHempcrete>
-	  </CostList>
+		<defName>FlagstoneHempcrete</defName>
+		<label>hempcrete flagstone</label>
+		<costList>
+			<BlocksHempcrete>3</BlocksHempcrete>
+		</costList>
 	</TerrainDef>
   
   <!--========== HempBlock Misc Floors ==========-->
 
-  <TerrainDef ParentName="MSI_FloorBase">
-	<defName>Hempcrete</defName>
-	<label>hempcrete</label>
-	<Description>Smooth hempcrete floor. Fast to walk on, easy to clean.</Description>
-	<texturePath>Terrain/MSI_hempcrete</texturePath>
-	<EdgeType>Hard</EdgeType>
-	<RenderPrecedence>70</RenderPrecedence>
-	<statBases>
-		<Cleanliness>0.1</Cleanliness>
-		<WorkToBuild>100</WorkToBuild>
-	</statBases>
-	<CostList>
-		<BlocksHempcrete>1</BlocksHempcrete>
-	</CostList>
-  </TerrainDef>
+	<TerrainDef ParentName="MSI_FloorBase">
+		<defName>Hempcrete</defName>
+		<label>hempcrete</label>
+		<description>Smooth hempcrete floor. Fast to walk on, easy to clean.</description>
+		<texturePath>Terrain/MSI_hempcrete</texturePath>
+		<edgeType>Hard</edgeType>
+		<renderPrecedence>240</renderPrecedence>
+		<statBases>
+			<Cleanliness>0.1</Cleanliness>
+			<WorkToBuild>100</WorkToBuild>
+		</statBases>
+		<costList>
+			<BlocksHempcrete>1</BlocksHempcrete>
+		</costList>
+	</TerrainDef>
 	
-  <TerrainDef ParentName="MSI_FloorBase">
-    <DefName>HempcreteTile</DefName>
-    <label>hempcrete tile</label>
-    <RenderPrecedence>240</RenderPrecedence>
-    <Description>Large hempcrete tiles. Pretty, but labor and material-intensive.</Description>
-    <texturePath>Terrain/MSI_genericFloorTile</texturePath>
-    <statBases>
-		<Cleanliness>0.1</Cleanliness>
-		<WorkToBuild>300</WorkToBuild>
-		<Beauty>1</Beauty>
-    </statBases>
-    <CostList>
-		<BlocksHempcrete>3</BlocksHempcrete>
-    </CostList>
-  </TerrainDef>
+	<TerrainDef ParentName="MSI_FloorBase">
+		<defName>HempcreteTile</defName>
+		<label>hempcrete tile</label>
+		<renderPrecedence>240</renderPrecedence>
+		<description>Large hempcrete tiles. Pretty, but labor and material-intensive.</description>
+		<texturePath>Terrain/MSI_genericFloorTile</texturePath>
+		<edgeType>Hard</edgeType>
+		<statBases>
+			<Cleanliness>0.1</Cleanliness>
+			<WorkToBuild>300</WorkToBuild>
+			<Beauty>1</Beauty>
+		</statBases>
+		<costList>
+			<BlocksHempcrete>3</BlocksHempcrete>
+		</costList>
+	</TerrainDef>
   
-  <TerrainDef ParentName="MSI_FloorBase">
-    <DefName>HempcretePlate</DefName>
-    <label>hempcrete plate</label>
-    <RenderPrecedence>240</RenderPrecedence>
-    <Description>Large hempcrete tiles. Pretty, but labor and material-intensive.</Description>
-    <texturePath>Terrain/MSI_hempcretePlate</texturePath>
-    <statBases>
-		<Cleanliness>0.1</Cleanliness>
-		<WorkToBuild>500</WorkToBuild>
-		<Beauty>3</Beauty>
-    </statBases>
-    <CostList>
-		<BlocksHempcrete>7</BlocksHempcrete>
-    </CostList>
-	<researchPrerequisites>
-      <li>IndustrialSmokeleafProcessing</li>
-	  <li>Stonecutting</li>
-    </researchPrerequisites>
-  </TerrainDef>
+	<TerrainDef ParentName="MSI_FloorBase">
+		<defName>HempcretePlate</defName>
+		<label>hempcrete plate</label>
+		<renderPrecedence>240</renderPrecedence>
+		<description>Large hempcrete tiles. Pretty, but labor and material-intensive.</description>
+		<texturePath>Terrain/MSI_hempcretePlate</texturePath>
+		<statBases>
+			<Cleanliness>0.1</Cleanliness>
+			<WorkToBuild>500</WorkToBuild>
+			<Beauty>3</Beauty>
+		</statBases>
+		<costList>
+			<BlocksHempcrete>7</BlocksHempcrete>
+		</costList>
+		<researchPrerequisites>
+			<li>IndustrialSmokeleafProcessing</li>
+			<li>Stonecutting</li>
+		</researchPrerequisites>
+	</TerrainDef>
 
   <!--========== Hemp Carpet ==========-->
 
     <TerrainDef Name="MSI_CarpetBase" ParentName="MSI_FloorBase" Abstract="True">
-    <texturePath>Terrain/MSI_carpet</texturePath>
-    <researchPrerequisites>
-	  <li>CarpetMaking</li>
-	  <li>SmokeleafProcessing</li>
-	</researchPrerequisites>
-    <burnedDef>BurnedCarpet</burnedDef>
-    <statBases>
-      <Beauty>3</Beauty>
-      <Flammability>0.25</Flammability>
-    </statBases>
+		<texturePath>Terrain/MSI_carpet</texturePath>
+		<researchPrerequisites>
+			<li>CarpetMaking</li>
+			<li>SmokeleafProcessing</li>
+		</researchPrerequisites>
+		<burnedDef>BurnedCarpet</burnedDef>
+		<statBases>
+			<Beauty>3</Beauty>
+			<Flammability>0.25</Flammability>
+		</statBases>
     </TerrainDef>
   
-  <TerrainDef ParentName="MSI_CarpetBase">
-    <DefName>CarpetHemp</DefName>
-    <label>hemp carpet</label>
-    <CostList>
-      <HempFabric>7</HempFabric>
-    </CostList>
-    <RenderPrecedence>200</RenderPrecedence>
-    <Description>Durable carpet woven from hemp fibers. It is slightly flame resistant.</Description>
-    <color>(138,139,108)</color>
-  </TerrainDef>
+	<TerrainDef ParentName="MSI_CarpetBase">
+		<defName>CarpetHemp</defName>
+		<label>hemp carpet</label>
+		<costList>
+			<HempFabric>7</HempFabric>
+		</costList>
+		<renderPrecedence>300</renderPrecedence>
+		<description>Durable carpet woven from hemp fibers. It is slightly flame resistant.</description>
+		<color>(138,139,108)</color>
+	</TerrainDef>
 
+  <!--========== Hemp Stalk Floor ==========-->
 
-</TerrainDefs>
+    <TerrainDef Name="MSI_HempStalkBase" ParentName="MSI_FloorBase" Abstract="True">
+		<texturePath>Terrain/MSI_hempStalkFloor</texturePath>
+		<researchPrerequisites>
+			<li>IndustrialSmokeleafProcessing</li>
+		</researchPrerequisites>
+		<burnedDef>BurnedWoodPlankFloor</burnedDef>
+		<statBases>
+			<Cleanliness>0.1</Cleanliness>
+			<Beauty>3</Beauty>
+			<Flammability>1.0</Flammability>
+		</statBases>
+    </TerrainDef>
+  
+	<TerrainDef ParentName="MSI_HempStalkBase">
+		<defName>HempStalkFloor</defName>
+		<label>hemp stalk floor</label>
+		<costList>
+			<HempFiber>7</HempFiber>
+		</costList>
+		<renderPrecedence>200</renderPrecedence>
+		<description>Boards made from the stalks of smokeleaf make for a beautiful floor.  Be careful for fires.</description>
+	</TerrainDef>
+
+</Defs>

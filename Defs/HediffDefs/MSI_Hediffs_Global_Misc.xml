@@ -1,81 +1,81 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <HediffDef Name="MSI_DiseaseBase" Abstract="True">
-    <hediffClass>HediffWithComps</hediffClass>
-    <defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
-    <initialSeverity>0.5</initialSeverity>
-  </HediffDef>
+	<HediffDef Name="MSI_DiseaseBase" Abstract="True">
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
+		<initialSeverity>0.5</initialSeverity>
+	</HediffDef>
   
   <!--==========  Edibles Hediffs  ==========-->
   
-  <HediffDef ParentName="MSI_DiseaseBase">
-    <defName>EdibleSickness</defName>
-    <label>edible sickness</label>
-    <makesSickThought>true</makesSickThought>
-    <scenarioCanAdd>true</scenarioCanAdd>
-    <comps>
-      <li Class="HediffCompProperties_Disappears">
-        <disappearsAfterTicks>
-          <min>8000</min>
-          <max>24000</max>
-        </disappearsAfterTicks>
-      </li>
-    </comps>
-    <stages>
-      <li>
-        <vomitMtbDays>0.8</vomitMtbDays>
-        <capMods>
-			<li>
-				<capacity>Consciousness</capacity>
-				<offset>-0.5</offset>
+	<HediffDef ParentName="MSI_DiseaseBase">
+		<defName>EdibleSickness</defName>
+		<label>edible sickness</label>
+		<makesSickThought>true</makesSickThought>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>
+				<min>8000</min>
+				<max>24000</max>
+				</disappearsAfterTicks>
 			</li>
+		</comps>
+		<stages>
 			<li>
-				<capacity>Moving</capacity>
-				<offset>-0.25</offset>
+				<vomitMtbDays>0.8</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.5</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.25</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-0.3</offset>
+					</li>
+				</capMods>
 			</li>
-			<li>
-				<capacity>Manipulation</capacity>
-				<offset>-0.3</offset>
-			</li>
-        </capMods>
-      </li>
-    </stages>
+		</stages>
   </HediffDef>
   
-  <HediffDef ParentName="MSI_DiseaseBase">
-    <defName>InfusedBuzz</defName>
-    <label>infused buzz</label>
-    <makesSickThought>false</makesSickThought>
-    <scenarioCanAdd>false</scenarioCanAdd>
-	<isBad>false</isBad>
-    <comps>
-      <li Class="HediffCompProperties_Disappears">
-        <disappearsAfterTicks>
-          <min>4000</min>
-          <max>16000</max>
-        </disappearsAfterTicks>
-      </li>
-    </comps>
-    <stages>
-      <li>
-		<painOffset>-0.1</painOffset>
-        <capMods>
-			<li>
-				<capacity>Consciousness</capacity>
-				<offset>-0.05</offset>
+	<HediffDef ParentName="MSI_DiseaseBase">
+		<defName>InfusedBuzz</defName>
+		<label>infused buzz</label>
+		<makesSickThought>false</makesSickThought>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>
+				<min>4000</min>
+				<max>16000</max>
+				</disappearsAfterTicks>
 			</li>
+		</comps>
+		<stages>
 			<li>
-				<capacity>Moving</capacity>
-				<offset>-0.05</offset>
+				<painOffset>-0.1</painOffset>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.05</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.05</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-0.05</offset>
+					</li>
+				</capMods>
 			</li>
-			<li>
-				<capacity>Manipulation</capacity>
-				<offset>-0.05</offset>
-			</li>
-        </capMods>
-      </li>
-    </stages>
+		</stages>
   </HediffDef>
   
 </Defs>

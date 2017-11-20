@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+  <!--========== Vanilla Fuel ==========-->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName = "FueledStove"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter/thingDefs</xpath>
+		<value>
+			<thingDefs>
+				<li>WoodLog</li>
+				<li>HempFiber</li>
+			</thingDefs>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName = "FueledSmithy"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter/thingDefs</xpath>
+		<value>
+			<thingDefs>
+				<li>WoodLog</li>
+				<li>HempFiber</li>
+			</thingDefs>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName = "TorchLamp"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter/thingDefs</xpath>
+		<value>
+			<thingDefs>
+				<li>WoodLog</li>
+				<li>HempFiber</li>
+			</thingDefs>
+		</value>
+	</Operation>
+	
+</Patch>

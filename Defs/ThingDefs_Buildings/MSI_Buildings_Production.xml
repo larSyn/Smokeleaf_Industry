@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ThingDefs>
+<Defs>
 
   <ThingDef Name="MSI_BenchBase" ParentName="MSI_BuildingBase" Abstract="True">
     <castEdgeShadows>true</castEdgeShadows>
@@ -22,10 +22,10 @@
   <!--========== Work tables ==========-->
 
   <ThingDef ParentName="MSI_BenchBase">
-    <DefName>PoweredCultivationBench</DefName>
+    <defName>PoweredCultivationBench</defName>
     <label>cultivation bench</label>
-    <ThingClass>Building_WorkTable</ThingClass>
-    <Description>A workbench designed specifically to process smokeleaf. New recreational drugs and bulk recipes have been added. Can work without electricity at a severly reduced speed.</Description>
+    <thingClass>Building_WorkTable</thingClass>
+    <description>A workbench designed specifically to process smokeleaf. New recreational drugs and bulk recipes have been added. Can work without electricity at a severly reduced speed.</description>
     <graphicData>
       <texPath>Things/Production/MSI_poweredCultivationTable</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
@@ -40,24 +40,24 @@
     </graphicData>
 	<uiIconPath>Icons/MSI_CultivationTable_icon</uiIconPath>
     <costStuffCount>50</costStuffCount>
-    <CostList>
+    <costList>
       <Steel>75</Steel>
       <Component>2</Component>
-    </CostList>
+    </costList>
     <stuffCategories>
       <li>Metallic</li>
       <li>Woody</li>
     </stuffCategories>
-    <AltitudeLayer>Building</AltitudeLayer>
+    <altitudeLayer>Building</altitudeLayer>
     <fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
     <statBases>
       <WorkToBuild>2000</WorkToBuild>
       <MaxHitPoints>200</MaxHitPoints>
-      <Flammability>0.9</Flammability>
+      <Flammability>0.75</Flammability>
     </statBases>
-    <Size>(3,1)</Size>
-    <Passability>PassThroughOnly</Passability>
+    <size>(3,1)</size>
+    <passability>PassThroughOnly</passability>
     <pathCost>70</pathCost>
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
@@ -95,10 +95,10 @@
   </ThingDef>
   
   <ThingDef ParentName="MSI_BenchBase">
-    <DefName>MedicinalsLab</DefName>
+    <defName>MedicinalsLab</defName>
     <label>medicinals lab</label>
-    <ThingClass>Building_WorkTable</ThingClass>
-    <Description>A lab with Glitter-tech equipment for the processing of smokeleaf into its most advanced forms. Must have power to function.</Description>
+    <thingClass>Building_WorkTable</thingClass>
+    <description>A lab with Glitter-tech equipment for the processing of smokeleaf into its most advanced forms. Must have power to function.</description>
     <graphicData>
       <texPath>Things/Production/MSI_medicinalsTable</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
@@ -113,24 +113,25 @@
     </graphicData>
 	<uiIconPath>Icons/MSI_MedicinalsTable_icon</uiIconPath>
     <costStuffCount>75</costStuffCount>
-    <CostList>
+    <costList>
       <Steel>75</Steel>
       <Component>5</Component>
-    </CostList>
+    </costList>
     <stuffCategories>
       <li>Metallic</li>
       <li>Woody</li>
     </stuffCategories>
-    <AltitudeLayer>Building</AltitudeLayer>
+    <altitudeLayer>Building</altitudeLayer>
     <fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
     <statBases>
       <WorkToBuild>2500</WorkToBuild>
-      <MaxHitPoints>180</MaxHitPoints>
-      <Flammability>0.8</Flammability>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <Cleanliness>5</Cleanliness>
     </statBases>
-    <Size>(3,1)</Size>
-    <Passability>PassThroughOnly</Passability>
+    <size>(3,1)</size>
+    <passability>PassThroughOnly</passability>
     <pathCost>70</pathCost>
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
@@ -241,6 +242,7 @@
   <ThingDef ParentName="MSI_BuildingBase">
     <defName>TrimmingTools</defName>
     <label>trimming tools</label>
+    <description>Increases work speed. Needs to be placed near workbench. One workbench can be simultaneously linked to only two tools cabinets.</description>
     <graphicData>
       <texPath>Things/Buildings/MSI_toolBox</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -260,13 +262,13 @@
     <staticSunShadowHeight>0.35</staticSunShadowHeight>
     <fillPercent>0.5</fillPercent>
     <canOverlapZones>false</canOverlapZones>
+	<rotatable>false</rotatable>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
       <WorkToBuild>1200</WorkToBuild>
       <Mass>40</Mass>
       <Flammability>1.0</Flammability>
     </statBases>
-    <description>Increases work speed. Needs to be placed near workbench. One workbench can be simultaneously linked to only two tools cabinets.</description>
     <size>(1,1)</size>
 	<costStuffCount>50</costStuffCount>
     <costList>
@@ -294,4 +296,4 @@
 	<designationCategory>MSI</designationCategory>
   </ThingDef>
   
-</ThingDefs>
+</Defs>

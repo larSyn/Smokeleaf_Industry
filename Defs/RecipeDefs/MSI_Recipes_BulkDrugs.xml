@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<RecipeDefs>
+<Defs>
 
 	<!--========== Smokeleaf Joint Recipe ==========-->
 	
@@ -12,6 +12,10 @@
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<workAmount>500</workAmount>
 		<workSkill>Crafting</workSkill>
+		<skillRequirements>
+			<Crafting>3</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>SmokeleafCultivation</researchPrerequisite>
 		<ingredients>
 			<li>
 				<filter>
@@ -33,13 +37,6 @@
 		<recipeUsers>
 			<li>CraftingSpot</li>
 		</recipeUsers>
-		<skillRequirements>
-			<li>
-				<skill>Crafting</skill>
-				<minLevel>3</minLevel>
-			</li>
-	  </skillRequirements>
-		<researchPrerequisite>SmokeleafCultivation</researchPrerequisite>
 	</RecipeDef>
 	
 	<RecipeDef>
@@ -51,6 +48,10 @@
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<workAmount>2000</workAmount>
 		<workSkill>Crafting</workSkill>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>SmokeleafCultivation</researchPrerequisite>
 		<ingredients>
 			<li>
 				<filter>
@@ -72,13 +73,6 @@
 		<recipeUsers>
 			<li>CraftingSpot</li>
 		</recipeUsers>
-		<skillRequirements>
-			<li>
-				<skill>Crafting</skill>
-				<minLevel>4</minLevel>
-			</li>
-	  </skillRequirements>
-		<researchPrerequisite>SmokeleafCultivation</researchPrerequisite>
 	</RecipeDef>
 	
 	<RecipeDef>
@@ -90,6 +84,10 @@
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<workAmount>1500</workAmount>
 		<workSkill>Crafting</workSkill>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>DrugProduction</researchPrerequisite>
 		<ingredients>
 			<li>
 				<filter>
@@ -112,13 +110,42 @@
 			<li>DrugLab</li>
 			<li>PoweredCultivationBench</li>
 		</recipeUsers>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>BulkRollSmokeleafJointCultBench</defName>
+		<label>make smokeleaf joints (x10)</label>
+		<description>Roll more joints at a time.</description>
+		<jobString>making smokeleaf joints</jobString>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>1500</workAmount>
+		<workSkill>Crafting</workSkill>
 		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>IndustrialSmokeleafCultivation</researchPrerequisite>
+		<ingredients>
 			<li>
-				<skill>Crafting</skill>
-				<minLevel>5</minLevel>
+				<filter>
+					<thingDefs>
+						<li>SmokeleafBuds</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
 			</li>
-	  </skillRequirements>
-		<researchPrerequisite>DrugProduction</researchPrerequisite>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SmokeleafBuds</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<SmokeleafJoint>10</SmokeleafJoint>
+		</products>
+		<recipeUsers>
+			<li>PoweredCultivationBench</li>
+		</recipeUsers>
 	</RecipeDef>
 	
 	<!--========== Smokeleaf Hash Recipe ==========-->	
@@ -132,6 +159,10 @@
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<workAmount>3000</workAmount>
 		<workSkill>Crafting</workSkill>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>IndustrialSmokeleafCultivation</researchPrerequisite>
 		<ingredients>
 			<li>
 				<filter>
@@ -153,13 +184,6 @@
 		<recipeUsers>
 			<li>PoweredCultivationBench</li>
 		</recipeUsers>
-		<skillRequirements>
-			<li>
-				<skill>Crafting</skill>
-				<minLevel>8</minLevel>
-			</li>
-	  </skillRequirements>
-		<researchPrerequisite>IndustrialSmokeleafCultivation</researchPrerequisite>
 	</RecipeDef>
 	
 	<!--========== Smokeleaf CHO Recipe ==========-->	
@@ -173,6 +197,10 @@
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<workAmount>3000</workAmount>
 		<workSkill>Crafting</workSkill>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>IndustrialSmokeleafCultivation</researchPrerequisite>
 		<ingredients>
 			<li>
 				<filter>
@@ -203,13 +231,6 @@
 		<recipeUsers>
 			<li>PoweredCultivationBench</li>
 		</recipeUsers>
-		<skillRequirements>
-			<li>
-				<skill>Crafting</skill>
-				<minLevel>10</minLevel>
-			</li>
-	  </skillRequirements>
-		<researchPrerequisite>IndustrialSmokeleafCultivation</researchPrerequisite>
 	</RecipeDef>
 	
 	<!--========== Smokeleaf Distillate Recipe ==========-->	
@@ -223,6 +244,10 @@
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<workAmount>3000</workAmount>
 		<workSkill>Crafting</workSkill>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>AdvancedSmokeleafProcessing</researchPrerequisite>
 		<ingredients>
 			<li>
 				<filter>
@@ -244,13 +269,6 @@
 		<recipeUsers>
 			<li>MedicinalsLab</li>
 		</recipeUsers>
-		<skillRequirements>
-			<li>
-				<skill>Crafting</skill>
-				<minLevel>12</minLevel>
-			</li>
-	  </skillRequirements>
-		<researchPrerequisite>AdvancedSmokeleafProcessing</researchPrerequisite>
 	</RecipeDef>	
 	
 	<!--========== Smokeleaf Tincture Recipe ==========-->	
@@ -264,6 +282,10 @@
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<workAmount>3000</workAmount>
 		<workSkill>Crafting</workSkill>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
 		<ingredients>
 			<li>
 				<filter>
@@ -285,7 +307,7 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>CBD</li>
-				<li>Neutroamine</li>
+				<li>HerbalMedicine</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -294,13 +316,6 @@
 		<recipeUsers>
 			<li>MedicinalsLab</li>
 		</recipeUsers>
-		<skillRequirements>
-			<li>
-				<skill>Crafting</skill>
-				<minLevel>12</minLevel>
-			</li>
-	  </skillRequirements>
-		<researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
 	</RecipeDef>
 	
 	<!--========== Smokeleaf Pills Recipe ==========-->	
@@ -314,6 +329,10 @@
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<workAmount>3000</workAmount>
 		<workSkill>Crafting</workSkill>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
 		<ingredients>
 			<li>
 				<filter>
@@ -344,13 +363,6 @@
 		<recipeUsers>
 			<li>MedicinalsLab</li>
 		</recipeUsers>
-		<skillRequirements>
-			<li>
-				<skill>Crafting</skill>
-				<minLevel>12</minLevel>
-			</li>
-	  </skillRequirements>
-		<researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
 	</RecipeDef>
 	
 	<!--========== Smokeleaf Lotion Recipe ==========-->	
@@ -364,6 +376,10 @@
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<workAmount>3000</workAmount>
 		<workSkill>Crafting</workSkill>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
 		<ingredients>
 			<li>
 				<filter>
@@ -385,7 +401,7 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>CBD</li>
-				<li>Neutroamine</li>
+				<li>Medicine</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -394,13 +410,6 @@
 		<recipeUsers>
 			<li>MedicinalsLab</li>
 		</recipeUsers>
-		<skillRequirements>
-			<li>
-				<skill>Crafting</skill>
-				<minLevel>12</minLevel>
-			</li>
-	  </skillRequirements>
-		<researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
 	</RecipeDef>
 	
 	<!--========== CBD Recipe ==========-->
@@ -414,6 +423,11 @@
 		<soundWorking>Recipe_Brewing</soundWorking>
 		<workAmount>3000</workAmount>
 		<workSkill>Crafting</workSkill>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+			<Medicine>6</Medicine>
+		</skillRequirements>
+		<researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
 		<ingredients>
 			<li>
 				<filter>
@@ -435,17 +449,6 @@
 		<recipeUsers>
 			<li>MedicinalsLab</li>
 		</recipeUsers>
-		<skillRequirements>
-			<li>
-			  <skill>Crafting</skill>
-			  <minLevel>10</minLevel>
-			</li>
-			<li>
-			  <skill>Medicine</skill>
-			  <minLevel>6</minLevel>
-			</li>
-		</skillRequirements>
-		<researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
 	</RecipeDef>
 
 	
@@ -460,6 +463,11 @@
 		<soundWorking>Recipe_Brewing</soundWorking>
 		<workAmount>3000</workAmount>
 		<workSkill>Crafting</workSkill>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
 		<ingredients>
 			<li>
 				<filter>
@@ -490,17 +498,6 @@
 		<recipeUsers>
 			<li>MedicinalsLab</li>
 		</recipeUsers>
-		<skillRequirements>
-			<li>
-			  <skill>Crafting</skill>
-			  <minLevel>12</minLevel>
-			</li>
-			<li>
-			  <skill>Medicine</skill>
-			  <minLevel>8</minLevel>
-			</li>
-		</skillRequirements>
-		<researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
 	</RecipeDef>
 	
-</RecipeDefs>
+</Defs>
