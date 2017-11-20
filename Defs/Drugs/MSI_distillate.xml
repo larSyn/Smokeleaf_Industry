@@ -1,83 +1,81 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<SmokeleafDistillate>
+<Defs>
 
   <ThingDef ParentName="MSI_MakeableDrugBase">
     <defName>SmokeleafDistillate</defName>
     <label>smokeleaf distillate</label>
     <description>Smokeleaf distillate is the ultimate extract. Gives a clean high without the risks of other smokeleaf products. While not physically addictive, users may still develop a psychological dependence.</description>
     <graphicData>
-      <texPath>Things/Items/MSI_distillate</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
+		<texPath>Things/Items/MSI_distillate</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <rotatable>false</rotatable>
     <statBases>
-      <WorkToMake>750</WorkToMake>
-      <MarketValue>50</MarketValue>
-      <Mass>0.05</Mass>
+		<WorkToMake>750</WorkToMake>
+		<MarketValue>50</MarketValue>
+		<Mass>0.05</Mass>
+		<DeteriorationRate>6</DeteriorationRate>
     </statBases>
     <techLevel>Spacer</techLevel>
     <ingestible>
-      <foodType>Plant, Processed</foodType>
-      <joy>0.99</joy>
-      <ingestHoldOffsetStanding>
-        <northDefault>
-          <offset>(0.27,0,0.08)</offset>
-          <behind>true</behind>
-        </northDefault>
-        <east>
-          <offset>(0.45,0,0.08)</offset>
-        </east>
-        <south>
-          <offset>(0.27,0,0.08)</offset>
-        </south>
-        <west>
-          <offset>(-0.50,0,0.08)</offset>
-          <flip>false</flip>
-        </west>
-      </ingestHoldOffsetStanding>
-      <outcomeDoers>
-        <li Class="IngestionOutcomeDoer_GiveHediff">
-          <hediffDef>SmokeleafDistillateHigh</hediffDef>
-          <severity>0.75</severity>
-          <toleranceChemical>SmokeleafDistillate</toleranceChemical>
-        </li>
-        <li Class="IngestionOutcomeDoer_OffsetNeed">
-          <need>Rest</need>
-          <offset>-0.15</offset>
-        </li>
-        <li Class="IngestionOutcomeDoer_GiveHediff">
-			<hediffDef>SmokeleafDistillateTolerance</hediffDef>
-			<severity>0.03</severity>
-			<divideByBodySize>true</divideByBodySize>
-		</li>
+		<foodType>Plant, Processed</foodType>
+		<joy>0.99</joy>
+		<ingestHoldOffsetStanding>
+			<northDefault>
+				<offset>(0.27,0,0.08)</offset>
+				<behind>true</behind>
+			</northDefault>
+			<east>
+				<offset>(0.45,0,0.08)</offset>
+			</east>
+			<south>
+				<offset>(0.27,0,0.08)</offset>
+			</south>
+			<west>
+				<offset>(-0.50,0,0.08)</offset>
+				<flip>false</flip>
+			</west>
+		</ingestHoldOffsetStanding>
+		<outcomeDoers>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+				<hediffDef>SmokeleafDistillateHigh</hediffDef>
+				<severity>0.75</severity>
+				<toleranceChemical>SmokeleafDistillate</toleranceChemical>
+			</li>
+			<li Class="IngestionOutcomeDoer_OffsetNeed">
+				<need>Rest</need>
+				<offset>-0.15</offset>
+			</li>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+				<hediffDef>SmokeleafDistillateTolerance</hediffDef>
+				<severity>0.03</severity>
+				<divideByBodySize>true</divideByBodySize>
+			</li>
       </outcomeDoers>
     </ingestible>
     <recipeMaker>
-	  <researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
-	  <recipeUsers>
-        <li>MedicinalsLab</li>
-      </recipeUsers>
-	  <workSpeedStat>DrugProductionSpeed</workSpeedStat>
-	  <workSkill>Crafting</workSkill>
-	  <skillRequirements>
-			<li>
-				<skill>Crafting</skill>
-				<minLevel>12</minLevel>
-			</li>
-	  </skillRequirements>
+		<researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
+		<recipeUsers>
+			<li>MedicinalsLab</li>
+		</recipeUsers>
+		<workSpeedStat>DrugProductionSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+		</skillRequirements>
     </recipeMaker>
     <costList>
-      <SmokeleafHash>4</SmokeleafHash>
+		<SmokeleafHash>4</SmokeleafHash>
     </costList>
     <comps>
-      <li Class="CompProperties_Drug">
-        <chemical>SmokeleafDistillate</chemical>
-        <addictiveness>0.005</addictiveness>
-        <minToleranceToAddict>0.5</minToleranceToAddict>
-        <existingAddictionSeverityOffset>0.02</existingAddictionSeverityOffset>
-        <needLevelOffset>1</needLevelOffset>
-        <listOrder>5</listOrder>
-      </li>
+		<li Class="CompProperties_Drug">
+			<chemical>SmokeleafDistillate</chemical>
+			<addictiveness>0.005</addictiveness>
+			<minToleranceToAddict>0.5</minToleranceToAddict>
+			<existingAddictionSeverityOffset>0.02</existingAddictionSeverityOffset>
+			<needLevelOffset>1</needLevelOffset>
+			<listOrder>5</listOrder>
+		</li>
     </comps>
   </ThingDef>
 
@@ -216,4 +214,4 @@
     </stages>
   </ThoughtDef>
 
-</SmokeleafDistillate>
+</Defs>

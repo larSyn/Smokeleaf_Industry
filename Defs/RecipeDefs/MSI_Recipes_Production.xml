@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<RecipeDefs>
+<Defs>
 
 	<!--========== Trim Smokeleaf ==========-->
 
@@ -12,6 +12,10 @@
 		<soundWorking>Recipe_Tailor</soundWorking>
 		<workAmount>1500</workAmount>
 		<workSkill>Crafting</workSkill>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>AdvancedSmokeleafCultivation</researchPrerequisite>
 		<ingredients>
 			<li>
 				<filter>
@@ -35,13 +39,6 @@
 		<recipeUsers>
 			<li>SmokeleafAutoTrimmer</li>
 		</recipeUsers>
-		<skillRequirements>
-			<li>
-				<skill>Crafting</skill>
-				<minLevel>12</minLevel>
-			</li>
-		</skillRequirements>
-		<researchPrerequisite>AdvancedSmokeleafCultivation</researchPrerequisite>
 	</RecipeDef>
 	
 	<RecipeDef>
@@ -53,6 +50,10 @@
 		<soundWorking>Recipe_Tailor</soundWorking>
 		<workAmount>3000</workAmount>
 		<workSkill>Crafting</workSkill>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>AdvancedSmokeleafCultivation</researchPrerequisite>
 		<ingredients>
 			<li>
 				<filter>
@@ -76,13 +77,6 @@
 		<recipeUsers>
 			<li>SmokeleafAutoTrimmer</li>
 		</recipeUsers>
-		<skillRequirements>
-			<li>
-				<skill>Crafting</skill>
-				<minLevel>12</minLevel>
-			</li>
-		</skillRequirements>
-		<researchPrerequisite>AdvancedSmokeleafCultivation</researchPrerequisite>
 	</RecipeDef>
 	
 	<!--========== Hand Trim Smokeleaf-Crafting Spot ==========-->
@@ -96,6 +90,10 @@
 		<soundWorking>Recipe_Tailor</soundWorking>
 		<workAmount>250</workAmount>
 		<workSkill>Crafting</workSkill>
+		<skillRequirements>
+			<Crafting>3</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>SmokeleafCultivation</researchPrerequisite>
 		<ingredients>
 			<li>
 				<filter>
@@ -119,13 +117,6 @@
 		<recipeUsers>
 			<li>CraftingSpot</li>
 		</recipeUsers>
-		<skillRequirements>
-			<li>
-				<skill>Crafting</skill>
-				<minLevel>3</minLevel>
-			</li>
-		</skillRequirements>
-		<researchPrerequisite>SmokeleafCultivation</researchPrerequisite>
 	</RecipeDef>
 	
 	<RecipeDef>
@@ -135,8 +126,12 @@
 		<jobString>Trimming Smokeleaf.</jobString>
 		<effectWorking>Tailor</effectWorking>
 		<soundWorking>Recipe_Tailor</soundWorking>
-		<workAmount>2000</workAmount>
+		<workAmount>1250</workAmount>
 		<workSkill>Crafting</workSkill>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>SmokeleafCultivation</researchPrerequisite>
 		<ingredients>
 			<li>
 				<filter>
@@ -160,13 +155,6 @@
 		<recipeUsers>
 			<li>CraftingSpot</li>
 		</recipeUsers>
-		<skillRequirements>
-			<li>
-				<skill>Crafting</skill>
-				<minLevel>5</minLevel>
-			</li>
-		</skillRequirements>
-		<researchPrerequisite>SmokeleafCultivation</researchPrerequisite>
 	</RecipeDef>
 	
 	<!--========== Hand Trim Smokeleaf-Drug Lab ==========-->
@@ -180,6 +168,10 @@
 		<soundWorking>Recipe_Tailor</soundWorking>
 		<workAmount>250</workAmount>
 		<workSkill>Crafting</workSkill>
+		<skillRequirements>
+			<Crafting>3</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>SmokeleafCultivation</researchPrerequisite>
 		<ingredients>
 			<li>
 				<filter>
@@ -202,15 +194,7 @@
 		</products>
 		<recipeUsers>
 			<li>DrugLab</li>
-			<li>PoweredCultivationBench</li>
 		</recipeUsers>
-		<skillRequirements>
-			<li>
-				<skill>Crafting</skill>
-				<minLevel>5</minLevel>
-			</li>
-		</skillRequirements>
-		<researchPrerequisite>SmokeleafCultivation</researchPrerequisite>
 	</RecipeDef>
 	
 	<RecipeDef>
@@ -222,6 +206,10 @@
 		<soundWorking>Recipe_Tailor</soundWorking>
 		<workAmount>2000</workAmount>
 		<workSkill>Crafting</workSkill>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>SmokeleafCultivation</researchPrerequisite>
 		<ingredients>
 			<li>
 				<filter>
@@ -246,13 +234,6 @@
 			<li>DrugLab</li>
 			<li>PoweredCultivationBench</li>
 		</recipeUsers>
-		<skillRequirements>
-			<li>
-				<skill>Crafting</skill>
-				<minLevel>6</minLevel>
-			</li>
-		</skillRequirements>
-		<researchPrerequisite>SmokeleafCultivation</researchPrerequisite>
 	</RecipeDef>
 	
 	<RecipeDef>
@@ -264,6 +245,10 @@
 		<soundWorking>Recipe_Tailor</soundWorking>
 		<workAmount>3000</workAmount>
 		<workSkill>Crafting</workSkill>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>IndustrialSmokeleafCultivation</researchPrerequisite>
 		<ingredients>
 			<li>
 				<filter>
@@ -287,13 +272,6 @@
 		<recipeUsers>
 			<li>PoweredCultivationBench</li>
 		</recipeUsers>
-		<skillRequirements>
-			<li>
-				<skill>Crafting</skill>
-				<minLevel>8</minLevel>
-			</li>
-		</skillRequirements>
-		<researchPrerequisite>IndustrialSmokeleafCultivation</researchPrerequisite>
 	</RecipeDef>
 	
 	<!--========== Craft Hemp Fabric ==========-->
@@ -308,10 +286,7 @@
 		<workAmount>300</workAmount>
 		<workSkill>Crafting</workSkill>
 		<skillRequirements>
-			<li>
-				<skill>Crafting</skill>
-				<minLevel>5</minLevel>
-			</li>
+			<Crafting>5</Crafting>
 		</skillRequirements>
 		<ingredients>
 			<li>
@@ -347,10 +322,7 @@
 		<workAmount>2000</workAmount>
 		<workSkill>Crafting</workSkill>
 		<skillRequirements>
-			<li>
-				<skill>Crafting</skill>
-				<minLevel>8</minLevel>
-			</li>
+			<Crafting>8</Crafting>
 		</skillRequirements>
 		<ingredients>
 			<li>
@@ -388,10 +360,7 @@
 		<workAmount>350</workAmount>
 		<workSkill>Cooking</workSkill>
 		<skillRequirements>
-			<li>
-				<skill>Cooking</skill>
-				<minLevel>3</minLevel>
-			</li>
+			<Crafting>3</Crafting>
 		</skillRequirements>
 		<ingredients>
 			<li>
@@ -428,10 +397,7 @@
 		<workAmount>2000</workAmount>
 		<workSkill>Cooking</workSkill>
 		<skillRequirements>
-			<li>
-				<skill>Cooking</skill>
-				<minLevel>5</minLevel>
-			</li>
+			<Crafting>5</Crafting>
 		</skillRequirements>
 		<ingredients>
 			<li>
@@ -595,7 +561,6 @@
 	<!--========== Hempcrete Blocks ==========-->
 	
 	<RecipeDef Name="MSI_MakeHempcreteBlocksBase" Abstract="True">
-		<workSpeedStat>StonecuttingSpeed</workSpeedStat>
 		<workSkill>Crafting</workSkill>
 		<workSkillLearnFactor>0.3</workSkillLearnFactor>
 		<effectWorking>CutStone</effectWorking>
@@ -675,4 +640,4 @@
 		</products>
 	</RecipeDef>
 
-</RecipeDefs>
+</Defs>

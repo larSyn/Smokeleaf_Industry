@@ -1,47 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<SmokeleafPills>
+<Defs>
 
   <ThingDef ParentName="MSI_MakeableDrugPillBase">
     <defName>SmokeleafPills</defName>
     <label>smokeleaf pills</label>
     <description>A pill form medicinal that offers preventative treatment, aids in recovery and provides mild pain relief.  May cause drowsiness.</description>
     <graphicData>
-      <texPath>Things/Items/MSI_pill</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
+		<texPath>Things/Items/MSI_pill</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <socialPropernessMatters>false</socialPropernessMatters>
     <rotatable>false</rotatable>
     <statBases>
-      <WorkToMake>600</WorkToMake>
-      <MarketValue>65</MarketValue>
-      <Mass>0.005</Mass>
+		<WorkToMake>600</WorkToMake>
+		<MarketValue>65</MarketValue>
+		<Mass>0.01</Mass>
+		<DeteriorationRate>0.5</DeteriorationRate>
     </statBases>
     <techLevel>Spacer</techLevel>
     <ingestible>
-      <outcomeDoers>
-        <li Class="IngestionOutcomeDoer_GiveHediff">
-          <hediffDef>SmokeleafPillsHigh</hediffDef>
-          <severity>1.0</severity>
-        </li>
-      </outcomeDoers>
+		<outcomeDoers>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+				<hediffDef>SmokeleafPillsHigh</hediffDef>
+				<severity>1.0</severity>
+			</li>
+		</outcomeDoers>
     </ingestible>
     <recipeMaker>
-	  <researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
-      <recipeUsers>
-        <li>MedicinalsLab</li>
-      </recipeUsers>
-	  <workSpeedStat>DrugProductionSpeed</workSpeedStat>
-	  <workSkill>Crafting</workSkill>
-	  <skillRequirements>
-			<li>
-				<skill>Crafting</skill>
-				<minLevel>12</minLevel>
-			</li>
-	  </skillRequirements>
+		<researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
+		<recipeUsers>
+			<li>MedicinalsLab</li>
+		</recipeUsers>
+		<workSpeedStat>DrugProductionSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+		</skillRequirements>
     </recipeMaker>
     <costList>
-      <CBD>2</CBD>
-	  <Neutroamine>1</Neutroamine>
+		<CBD>2</CBD>
+		<Neutroamine>1</Neutroamine>
     </costList>
     <comps>
       <li Class="CompProperties_Drug">
@@ -105,4 +103,4 @@
     </stages>
   </ThoughtDef>
   
-</SmokeleafPills>
+</Defs>

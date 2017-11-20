@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <!--==========  Bulk Joint Recipe ==========-->
+
+	<Operation Class="PatchOperationSequence"> 
+	    <success>Always</success>
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>VGP Garden Medicine</modName>
+				<yourMod>Smokeleaf Industry</yourMod>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>*/RecipeDef[defName = "VG_BulkSmokeleafJoint"]</xpath>
+			</li>
+		</operations>
+	</Operation>
+	
+</Patch>

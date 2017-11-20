@@ -106,7 +106,7 @@
     </statBases>
     <ingestible>
 		<nutrition>0.25</nutrition>
-		<optimalityOffset>6</optimalityOffset>
+		<optimalityOffsetHumanlikes>6</optimalityOffsetHumanlikes>
 		<outcomeDoers>
 			<li Class="IngestionOutcomeDoer_GiveHediff">
 				<hediffDef>EdiblesHigh</hediffDef>
@@ -155,7 +155,7 @@
     </statBases>
     <ingestible>
 		<nutrition>0.25</nutrition>
-		<optimalityOffset>6</optimalityOffset>
+		<optimalityOffsetHumanlikes>6</optimalityOffsetHumanlikes>
 		<outcomeDoers>
 			<li Class="IngestionOutcomeDoer_GiveHediff">
 				<hediffDef>EdiblesHigh</hediffDef>
@@ -204,7 +204,7 @@
     </statBases>
     <ingestible>
 		<nutrition>0.25</nutrition>
-		<optimalityOffset>6</optimalityOffset>
+		<optimalityOffsetHumanlikes>6</optimalityOffsetHumanlikes>
 		<outcomeDoers>
 			<li Class="IngestionOutcomeDoer_GiveHediff">
 				<hediffDef>EdiblesHigh</hediffDef>
@@ -397,7 +397,7 @@
     </statBases>
     <ingestible>
 		<nutrition>0.05</nutrition>
-		<optimalityOffset>6</optimalityOffset>
+		<optimalityOffsetHumanlikes>6</optimalityOffsetHumanlikes>
 		<outcomeDoers>
 			<li Class="IngestionOutcomeDoer_GiveHediff">
 				<hediffDef>AdvancedEdiblesHigh</hediffDef>
@@ -447,7 +447,7 @@
     </statBases>
     <ingestible>
 		<nutrition>0.5</nutrition>
-		<optimalityOffset>6</optimalityOffset>
+		<optimalityOffsetHumanlikes>6</optimalityOffsetHumanlikes>
 		<outcomeDoers>
 			<li Class="IngestionOutcomeDoer_GiveHediff">
 				<hediffDef>AdvancedEdiblesHigh</hediffDef>

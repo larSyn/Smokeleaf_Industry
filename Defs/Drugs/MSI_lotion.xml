@@ -1,48 +1,46 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<SmokeleafLotion>
+<Defs>
 
   <ThingDef ParentName="MSI_MakeableDrugPillBase">
     <defName>SmokeleafLotion</defName>
     <label>smokeleaf lotion</label>
     <description>A topical lotion that can heal old scars, numb pain and restore some movement.</description>
     <graphicData>
-      <texPath>Things/Items/MSI_lotion</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
+		<texPath>Things/Items/MSI_lotion</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <socialPropernessMatters>false</socialPropernessMatters>
     <rotatable>false</rotatable>
     <statBases>
-      <WorkToMake>750</WorkToMake>
-      <MarketValue>75</MarketValue>
-      <Mass>0.005</Mass>
-	  <MedicalPotency>0.25</MedicalPotency>
+		<WorkToMake>750</WorkToMake>
+		<MarketValue>75</MarketValue>
+		<Mass>0.01</Mass>
+		<MedicalPotency>0.25</MedicalPotency>
+		<DeteriorationRate>0.5</DeteriorationRate>
     </statBases>
     <techLevel>Spacer</techLevel>
     <ingestible>
-      <outcomeDoers>
-        <li Class="IngestionOutcomeDoer_GiveHediff">
-          <hediffDef>SmokeleafLotionHigh</hediffDef>
-          <severity>1.0</severity>
-        </li>
-      </outcomeDoers>
+		<outcomeDoers>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+				<hediffDef>SmokeleafLotionHigh</hediffDef>
+				<severity>1.0</severity>
+			</li>
+		</outcomeDoers>
     </ingestible>
     <recipeMaker>
-	  <researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
-      <recipeUsers>
-        <li>MedicinalsLab</li>
-      </recipeUsers>
-	  <workSpeedStat>DrugProductionSpeed</workSpeedStat>
-	  <workSkill>Crafting</workSkill>
-	  <skillRequirements>
-			<li>
-				<skill>Crafting</skill>
-				<minLevel>12</minLevel>
-			</li>
-	  </skillRequirements>
+		<researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
+		<recipeUsers>
+			<li>MedicinalsLab</li>
+		</recipeUsers>
+		<workSpeedStat>DrugProductionSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+		</skillRequirements>
     </recipeMaker>
     <costList>
-      <CBD>2</CBD>
-	  <Medicine>1</Medicine>
+		<CBD>2</CBD>
+		<Medicine>1</Medicine>
     </costList>
     <comps>
       <li Class="CompProperties_Drug">
@@ -55,47 +53,47 @@
     </comps>
   </ThingDef>
   
-  <HediffDef>
-    <defName>SmokeleafLotionHigh</defName>
-    <hediffClass>HediffWithComps</hediffClass>
-    <label>smokeleaf lotion</label>
-    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
-    <maxSeverity>1.0</maxSeverity>
-    <comps>
-	  <li Class="HediffCompProperties_HealOldWounds" />
-      <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-1.0</severityPerDay>
-      </li>
-    </comps>
-    <stages>
-        <li>
-		  <painOffset>-0.25</painOffset>
-		  <capMods>
-            <li>
-              <capacity>Manipulation</capacity>
-              <offset>0.15</offset>
+	<HediffDef>
+		<defName>SmokeleafLotionHigh</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>smokeleaf lotion</label>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="HediffCompProperties_HealOldWounds" />
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1.0</severityPerDay>
 			</li>
+		</comps>
+		<stages>
 			<li>
-              <capacity>Moving</capacity>
-              <offset>0.1</offset>
-            </li>
-          </capMods>
-		</li>
-    </stages>
-  </HediffDef>
+				<painOffset>-0.25</painOffset>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.15</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.1</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
   
   <ThoughtDef>
-    <defName>SmokeleafLotionRelief</defName>
-    <workerClass>ThoughtWorker_Hediff</workerClass>
-    <hediff>SmokeleafLotionHigh</hediff>
-    <validWhileDespawned>true</validWhileDespawned>
-    <stages>
-      <li>
-        <label>used smokeleaf lotion</label>
-        <description>My aches and pains are all gone.</description>
-        <baseMoodEffect>15</baseMoodEffect>
-      </li>
-    </stages>
-  </ThoughtDef>
+		<defName>SmokeleafLotionRelief</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>SmokeleafLotionHigh</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>used smokeleaf lotion</label>
+				<description>My aches and pains are all gone.</description>
+				<baseMoodEffect>15</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
   
-</SmokeleafLotion>
+</Defs>

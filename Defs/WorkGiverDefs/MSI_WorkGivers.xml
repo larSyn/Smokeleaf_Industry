@@ -1,71 +1,71 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<WorkGivers>
+<Defs>
 
-  <!--========== Auto Trimmer ==========-->
+	<!--========== Auto Trimmer ==========-->
   
-  <WorkGiverDef>
-    <defName>DoBillsAutoTrimmer</defName>
-    <label>auto trim smokeleaf</label>
-    <giverClass>WorkGiver_DoBill</giverClass>
-    <workType>Crafting</workType>
-		<workTags>
-			<li>Crafting</li>
-		</workTags>
-    <priorityInType>95</priorityInType>
-    <fixedBillGiverDefs>
-      <li>SmokeleafAutoTrimmer</li>
-    </fixedBillGiverDefs>
-    <verb>trimming smokeleaf</verb>
-    <gerund>trimming smokeleaf at</gerund>
-    <requiredCapacities>
-      <li>Manipulation</li>
-    </requiredCapacities>
-    <prioritizeSustains>true</prioritizeSustains>
-  </WorkGiverDef>
+	  <WorkGiverDef>
+		<defName>DoBillsAutoTrimmer</defName>
+		<label>auto trim smokeleaf</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+			<workTags>
+				<li>Crafting</li>
+			</workTags>
+		<priorityInType>95</priorityInType>
+		<fixedBillGiverDefs>
+		  <li>SmokeleafAutoTrimmer</li>
+		</fixedBillGiverDefs>
+		<verb>trimming smokeleaf</verb>
+		<gerund>trimming smokeleaf at</gerund>
+		<requiredCapacities>
+		  <li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	  </WorkGiverDef>
 
   
-  <!--========== Cultivation Bench ==========-->
+	<!--========== Cultivation Bench ==========-->
   
-  <WorkGiverDef>
-    <defName>DoBillsCultivationBench</defName>
-    <label>produce smokeleaf products at the cultivation bench</label>
-    <giverClass>WorkGiver_DoBill</giverClass>
-    <workType>Crafting</workType>
-		<workTags>
-			<li>Crafting</li>
-		</workTags>
-    <priorityInType>95</priorityInType>
-    <fixedBillGiverDefs>
-      <li>PoweredCultivationBench</li>
-    </fixedBillGiverDefs>
-    <verb>produce smokeleaf products</verb>
-    <gerund>producing smokeleaf products at</gerund>
-    <requiredCapacities>
-      <li>Manipulation</li>
-    </requiredCapacities>
-    <prioritizeSustains>true</prioritizeSustains>
-  </WorkGiverDef>
+	  <WorkGiverDef>
+		<defName>DoBillsCultivationBench</defName>
+		<label>produce smokeleaf products at the cultivation bench</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+			<workTags>
+				<li>Crafting</li>
+			</workTags>
+		<priorityInType>95</priorityInType>
+		<fixedBillGiverDefs>
+		  <li>PoweredCultivationBench</li>
+		</fixedBillGiverDefs>
+		<verb>produce smokeleaf products</verb>
+		<gerund>producing smokeleaf products at</gerund>
+		<requiredCapacities>
+		  <li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	  </WorkGiverDef>
   
-  <!--========== Medicinals Lab ==========-->
+	<!--========== Medicinals Lab ==========-->
   
-  <WorkGiverDef>
-    <defName>DoBillsProduceMedicinals</defName>
-    <label>produce smokeleaf medicinals at medicinals lab</label>
-    <giverClass>WorkGiver_DoBill</giverClass>
-    <workType>Crafting</workType>
-		<workTags>
-			<li>Crafting</li>
-		</workTags>
-    <priorityInType>95</priorityInType>
-    <fixedBillGiverDefs>
-      <li>MedicinalsLab</li>
-    </fixedBillGiverDefs>
-    <verb>produce medicinals</verb>
-    <gerund>producing medicinals at</gerund>
-    <requiredCapacities>
-      <li>Manipulation</li>
-    </requiredCapacities>
-    <prioritizeSustains>true</prioritizeSustains>
-  </WorkGiverDef>
+	  <WorkGiverDef>
+		<defName>DoBillsProduceMedicinals</defName>
+		<label>produce smokeleaf medicinals at medicinals lab</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+			<workTags>
+				<li>Crafting</li>
+			</workTags>
+		<priorityInType>95</priorityInType>
+		<fixedBillGiverDefs>
+		  <li>MedicinalsLab</li>
+		</fixedBillGiverDefs>
+		<verb>produce medicinals</verb>
+		<gerund>producing medicinals at</gerund>
+		<requiredCapacities>
+		  <li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	  </WorkGiverDef>
   
-</WorkGivers>
+</Defs>

@@ -1,82 +1,80 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<SmokeleafHash>
+<Defs>
 
   <ThingDef ParentName="MSI_MakeableDrugBase">
     <defName>SmokeleafHash</defName>
     <label>smokeleaf hash</label>
     <description>Smokeleaf hash is a concentrated form of smokeleaf.</description>
     <graphicData>
-      <texPath>Things/Items/MSI_hash</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
+		<texPath>Things/Items/MSI_hash</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <rotatable>false</rotatable>
     <statBases>
-      <WorkToMake>500</WorkToMake>
-      <MarketValue>18</MarketValue>
-      <Mass>0.05</Mass>
+		<WorkToMake>500</WorkToMake>
+		<MarketValue>18</MarketValue>
+		<Mass>0.05</Mass>
+		<DeteriorationRate>6</DeteriorationRate>
     </statBases>
     <techLevel>Industrial</techLevel>
     <ingestible>
-	  <foodType>Plant, Processed</foodType>
-      <joy>0.9</joy>
-      <ingestHoldOffsetStanding>
-        <northDefault>
-          <offset>(0.27,0,0.08)</offset>
-          <behind>true</behind>
-        </northDefault>
-        <east>
-          <offset>(0.45,0,0.08)</offset>
-        </east>
-        <south>
-          <offset>(0.27,0,0.08)</offset>
-        </south>
-        <west>
-          <offset>(-0.50,0,0.08)</offset>
-          <flip>false</flip>
-        </west>
-      </ingestHoldOffsetStanding>
-      <outcomeDoers>
-        <li Class="IngestionOutcomeDoer_GiveHediff">
-          <hediffDef>HashHigh</hediffDef>
-          <severity>0.5</severity>
-          <toleranceChemical>Hash</toleranceChemical>
-        </li>
-        <li Class="IngestionOutcomeDoer_OffsetNeed">
-          <need>Rest</need>
-          <offset>-0.15</offset>
-        </li>
-        <li Class="IngestionOutcomeDoer_GiveHediff">
-			<hediffDef>HashTolerance</hediffDef>
-			<severity>0.03</severity>
-			<divideByBodySize>true</divideByBodySize>
-		</li>
-      </outcomeDoers>
+		<foodType>Plant, Processed</foodType>
+		<joy>0.9</joy>
+		<ingestHoldOffsetStanding>
+			<northDefault>
+				<offset>(0.27,0,0.08)</offset>
+				<behind>true</behind>
+			</northDefault>
+			<east>
+				<offset>(0.45,0,0.08)</offset>
+			</east>
+			<south>
+				<offset>(0.27,0,0.08)</offset>
+			</south>
+			<west>
+				<offset>(-0.50,0,0.08)</offset>
+				<flip>false</flip>
+			</west>
+		</ingestHoldOffsetStanding>
+		<outcomeDoers>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+				<hediffDef>HashHigh</hediffDef>
+				<severity>0.5</severity>
+				<toleranceChemical>Hash</toleranceChemical>
+			</li>
+			<li Class="IngestionOutcomeDoer_OffsetNeed">
+				<need>Rest</need>
+				<offset>-0.15</offset>
+			</li>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+				<hediffDef>HashTolerance</hediffDef>
+				<severity>0.03</severity>
+				<divideByBodySize>true</divideByBodySize>
+			</li>
+		</outcomeDoers>
     </ingestible>
     <recipeMaker>
-	  <researchPrerequisite>IndustrialSmokeleafCultivation</researchPrerequisite>
-	  <recipeUsers>
-        <li>PoweredCultivationBench</li>
-      </recipeUsers>
-	  <workSpeedStat>DrugProductionSpeed</workSpeedStat>
-	  <workSkill>Crafting</workSkill>
-	  <skillRequirements>
-			<li>
-				<skill>Crafting</skill>
-				<minLevel>8</minLevel>
-			</li>
-	  </skillRequirements>
+		<researchPrerequisite>IndustrialSmokeleafCultivation</researchPrerequisite>
+		<recipeUsers>
+			<li>PoweredCultivationBench</li>
+		</recipeUsers>
+		<workSpeedStat>DrugProductionSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
     </recipeMaker>
     <costList>
-      <SmokeleafBuds>4</SmokeleafBuds>
+		<SmokeleafBuds>4</SmokeleafBuds>
     </costList>
     <comps>
-      <li Class="CompProperties_Drug">
-        <chemical>Hash</chemical>
-        <addictiveness>0.015</addictiveness>
-        <minToleranceToAddict>0.15</minToleranceToAddict>
-        <existingAddictionSeverityOffset>0.06</existingAddictionSeverityOffset>
-        <needLevelOffset>1</needLevelOffset>
-        <listOrder>15</listOrder>
+		<li Class="CompProperties_Drug">
+			<chemical>Hash</chemical>
+			<addictiveness>0.015</addictiveness>
+			<minToleranceToAddict>0.15</minToleranceToAddict>
+			<existingAddictionSeverityOffset>0.06</existingAddictionSeverityOffset>
+			<needLevelOffset>1</needLevelOffset>
+			<listOrder>15</listOrder>
       </li>
     </comps>
   </ThingDef>
@@ -89,9 +87,9 @@
     <scenarioCanAdd>true</scenarioCanAdd>
     <maxSeverity>1.0</maxSeverity>
     <comps>
-      <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-1.5</severityPerDay>
-      </li>
+		<li Class="HediffCompProperties_SeverityPerDay">
+			<severityPerDay>-1.5</severityPerDay>
+		</li>
     </comps>
     <stages>
         <li>
@@ -234,4 +232,4 @@
     </stages>
   </ThoughtDef>
 
-</SmokeleafHash>
+</Defs>

@@ -1,70 +1,68 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<CHO>
+<Defs>
 
   <ThingDef ParentName="MSI_MakeableDrugBase">
     <defName>CHO</defName>
     <label>chemfuel hash oil</label>
     <description>Chemfuel Hash Oil is a smokeleaf extract prepared using Chemfuel. Since C.H.O. is vaporized, some of the harmful effects are eliminated, but due to the method of it's extraction, other risks are increased.</description>
     <graphicData>
-      <texPath>Things/Items/MSI_CHO</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
+		<texPath>Things/Items/MSI_CHO</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <rotatable>false</rotatable>
     <statBases>
-      <WorkToMake>750</WorkToMake>
-      <MarketValue>25</MarketValue>
-      <Mass>0.05</Mass>
+		<WorkToMake>750</WorkToMake>
+		<MarketValue>25</MarketValue>
+		<Mass>0.05</Mass>
+		<DeteriorationRate>6</DeteriorationRate>
     </statBases>
     <techLevel>Industrial</techLevel>
     <ingestible>
-      <foodType>Plant, Processed</foodType>
-      <joy>0.95</joy>
-      <ingestHoldOffsetStanding>
-        <northDefault>
-          <offset>(0.27,0,0.08)</offset>
-          <behind>true</behind>
-        </northDefault>
-        <east>
-          <offset>(0.45,0,0.08)</offset>
-        </east>
-        <south>
-          <offset>(0.27,0,0.08)</offset>
-        </south>
-        <west>
-          <offset>(-0.50,0,0.08)</offset>
-          <flip>false</flip>
-        </west>
-      </ingestHoldOffsetStanding>
-      <outcomeDoers>
-        <li Class="IngestionOutcomeDoer_GiveHediff">
-          <hediffDef>CHOHigh</hediffDef>
-          <severity>0.5</severity>
-          <toleranceChemical>CHO</toleranceChemical>
-        </li>
-        <li Class="IngestionOutcomeDoer_OffsetNeed">
-          <need>Rest</need>
-          <offset>-0.2</offset>
-        </li>
-        <li Class="IngestionOutcomeDoer_GiveHediff">
-			<hediffDef>CHOTolerance</hediffDef>
-			<severity>0.03</severity>
-			<divideByBodySize>true</divideByBodySize>
-		</li>
-      </outcomeDoers>
+		<foodType>Plant, Processed</foodType>
+		<joy>0.95</joy>
+		<ingestHoldOffsetStanding>
+			<northDefault>
+				<offset>(0.27,0,0.08)</offset>
+				<behind>true</behind>
+			</northDefault>
+			<east>
+				<offset>(0.45,0,0.08)</offset>
+			</east>
+			<south>
+				<offset>(0.27,0,0.08)</offset>
+			</south>
+			<west>
+				<offset>(-0.50,0,0.08)</offset>
+				<flip>false</flip>
+			</west>
+		</ingestHoldOffsetStanding>
+		<outcomeDoers>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+				<hediffDef>CHOHigh</hediffDef>
+				<severity>0.5</severity>
+				<toleranceChemical>CHO</toleranceChemical>
+			</li>
+			<li Class="IngestionOutcomeDoer_OffsetNeed">
+				<need>Rest</need>
+				<offset>-0.2</offset>
+			</li>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+				<hediffDef>CHOTolerance</hediffDef>
+				<severity>0.03</severity>
+				<divideByBodySize>true</divideByBodySize>
+			</li>
+		</outcomeDoers>
     </ingestible>
     <recipeMaker>
-	  <researchPrerequisite>IndustrialSmokeleafCultivation</researchPrerequisite>
-	  <recipeUsers>
-        <li>PoweredCultivationBench</li>
-      </recipeUsers>
-	  <workSpeedStat>DrugProductionSpeed</workSpeedStat>
-	  <workSkill>Crafting</workSkill>
-	  <skillRequirements>
-			<li>
-				<skill>Crafting</skill>
-				<minLevel>10</minLevel>
-			</li>
-	  </skillRequirements>
+		<researchPrerequisite>IndustrialSmokeleafCultivation</researchPrerequisite>
+		<recipeUsers>
+			<li>PoweredCultivationBench</li>
+		</recipeUsers>
+		<workSpeedStat>DrugProductionSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
     </recipeMaker>
     <costList>
       <SmokeleafBuds>4</SmokeleafBuds>
@@ -225,4 +223,4 @@
     </stages>
   </ThoughtDef>
 
-</CHO>
+</Defs>

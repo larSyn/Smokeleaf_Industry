@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <!--========== Bake Bread ==========-->
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>VGP Garden Gourmet</modName>
+				<yourMod>Smokeleaf Industry</yourMod>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "BakeBread"]/ingredients/li[1]/filter/thingDefs</xpath>
+				<value>
+					<li>HempFlour</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "BakeBread"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<li>HempFlour</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+  <!--========== Bake Sweet Roll ==========-->
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>VGP Garden Gourmet</modName>
+				<yourMod>Smokeleaf Industry</yourMod>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "Bakesweetroll"]/ingredients/li[1]/filter/thingDefs</xpath>
+				<value>
+					<li>HempFlour</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "Bakesweetroll"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<li>HempFlour</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+  <!--========== Bake Pizza ==========-->
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>VGP Garden Gourmet</modName>
+				<yourMod>Smokeleaf Industry</yourMod>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "Bakepizza"]/ingredients/li[1]/filter/thingDefs</xpath>
+				<value>
+					<li>HempFlour</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "Bakepizza"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<li>HempFlour</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+  <!--========== Bake Cookies ==========-->
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>VGP Garden Gourmet</modName>
+				<yourMod>Smokeleaf Industry</yourMod>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "BakeCookies"]/ingredients/li[4]/filter/thingDefs</xpath>
+				<value>
+					<li>HempFlour</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "BakeCookies"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<li>HempFlour</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+  <!--========== Bake Blueberry Pie ==========-->
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>VGP Garden Gourmet</modName>
+				<yourMod>Smokeleaf Industry</yourMod>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "BakeBlueberryPie"]/ingredients/li[1]/filter/thingDefs</xpath>
+				<value>
+					<li>HempFlour</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "BakeBlueberryPie"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<li>HempFlour</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+  <!--========== Bake Pumpkin Pie ==========-->
+	
+	<!--<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>VGP Garden Gourmet</modName>
+				<yourMod>Smokeleaf Industry</yourMod>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "BakePumpkinPie"]/ingredients/li[1]/filter/thingDefs</xpath>
+				<value>
+					<li>HempFlour</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "BakePumpkinPie"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<li>HempFlour</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>-->
+	
+  <!--========== Bake Polenta ==========-->
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>VGP Garden Gourmet</modName>
+				<yourMod>Smokeleaf Industry</yourMod>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "Bakepolenta"]/ingredients/li[1]/filter/thingDefs</xpath>
+				<value>
+					<li>HempFlour</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "Bakepolenta"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<li>HempFlour</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+  <!--========== Bake Corn Bread ==========-->
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>VGP Garden Gourmet</modName>
+				<yourMod>Smokeleaf Industry</yourMod>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "BakeCornbread"]/ingredients/li[1]/filter/thingDefs</xpath>
+				<value>
+					<li>HempFlour</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "BakeCornbread"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<li>HempFlour</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+  <!--========== Bake Corn Bread Muffin ==========-->
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>VGP Garden Gourmet</modName>
+				<yourMod>Smokeleaf Industry</yourMod>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "BakeCornbread"]/ingredients/li[1]/filter/thingDefs</xpath>
+				<value>
+					<li>HempFlour</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "BakeCornbreadmuffin"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<li>HempFlour</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+  <!--========== Bake Muffin ==========-->
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>VGP Garden Gourmet</modName>
+				<yourMod>Smokeleaf Industry</yourMod>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "Bakemuffin"]/ingredients/li[1]/filter/thingDefs</xpath>
+				<value>
+					<li>HempFlour</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "Bakemuffin"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<li>HempFlour</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "Bakemuffin"]/defaultIngredientFilter/thingDefs</xpath>
+				<value>
+					<li>HempFlour</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+  <!--========== Bake Meat Pie ==========-->
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>VGP Garden Gourmet</modName>
+				<yourMod>Smokeleaf Industry</yourMod>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "BakeMeatPie"]/ingredients/li[1]/filter/thingDefs</xpath>
+				<value>
+					<li>HempFlour</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "BakeMeatPie"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<li>HempFlour</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "BakeMeatPie"]/defaultIngredientFilter/thingDefs</xpath>
+				<value>
+					<li>HempFlour</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+  <!--========== Bake Chocolate Muffin ==========-->
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>VGP Garden Gourmet</modName>
+				<yourMod>Smokeleaf Industry</yourMod>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "Bakechocomuffin"]/ingredients/li[1]/filter/thingDefs</xpath>
+				<value>
+					<li>HempFlour</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "Bakechocomuffin"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<li>HempFlour</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "Bakechocomuffin"]/defaultIngredientFilter/thingDefs</xpath>
+				<value>
+					<li>HempFlour</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+  <!--========== Chocolate Milk ==========-->
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success> 
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>VGP Garden Gourmet</modName>
+				<yourMod>Smokeleaf Industry</yourMod>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "MakeChocolatemilk"]/ingredients/li[2]/filter/thingDefs</xpath>
+				<value>
+					<li>HempMilk</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "MakeChocolatemilk"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<li>HempMilk</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+  <!--========== Ice Cream ==========-->
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success> 
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>VGP Garden Gourmet</modName>
+				<yourMod>Smokeleaf Industry</yourMod>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "MakeIcecream"]/ingredients/li[3]/filter/thingDefs</xpath>
+				<value>
+					<li>HempMilk</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "MakeIcecream"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<li>HempMilk</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+  <!--========== Yogurt ==========-->
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success> 
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>VGP Garden Gourmet</modName>
+				<yourMod>Smokeleaf Industry</yourMod>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "MakeYogurt"]/ingredients/li[1]/filter/thingDefs</xpath>
+				<value>
+					<li>HempMilk</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "MakeYogurt"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<li>HempMilk</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+  <!--========== Smoothie ==========-->
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success> 
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>VGP Garden Gourmet</modName>
+				<yourMod>Smokeleaf Industry</yourMod>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "MakeSmoothie"]/ingredients/li[1]/filter/thingDefs</xpath>
+				<value>
+					<li>HempMilk</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "MakeSmoothie"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<li>HempMilk</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+  <!--========== Cheese ==========-->
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success> 
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>VGP Garden Gourmet</modName>
+				<yourMod>Smokeleaf Industry</yourMod>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "Makesoycheese"]/ingredients/li[1]/filter/thingDefs</xpath>
+				<value>
+					<li>HempMilk</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "Makesoycheese"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<li>HempMilk</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+</Patch>

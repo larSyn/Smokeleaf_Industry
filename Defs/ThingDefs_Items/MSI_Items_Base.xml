@@ -76,7 +76,7 @@
     <drawGUIOverlay>true</drawGUIOverlay>
     <ingestible>
       <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
-      <optimalityOffset>16</optimalityOffset>
+      <optimalityOffsetHumanlikes>16</optimalityOffsetHumanlikes>
     </ingestible>
   </ThingDef>
 

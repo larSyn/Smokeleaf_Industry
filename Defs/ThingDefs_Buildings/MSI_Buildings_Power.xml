@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ThingDefs>
+<Defs>
 
 	<!--========== Hempoline Generator ==========-->
 
@@ -29,9 +29,6 @@
 		<tickerType>Normal</tickerType>
 		<canOverlapZones>false</canOverlapZones>
 		<size>(2,2)</size>
-		<building>
-		  <ignoreNeedsPower>true</ignoreNeedsPower>
-		</building>
 		<costList>
 		  <Steel>150</Steel>
 		  <Component>3</Component>
@@ -71,4 +68,4 @@
 		<designationCategory>MSI</designationCategory>
 	</ThingDef>
   
- </ThingDefs>
+ </Defs>

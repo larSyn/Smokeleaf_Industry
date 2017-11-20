@@ -37,7 +37,7 @@
 		<WorkToMake>1.1</WorkToMake>
         <DoorOpenSpeed>1.25</DoorOpenSpeed>
         <BedRestEffectiveness>1.0</BedRestEffectiveness>
-        <MeleeWeapon_Cooldown>1.35</MeleeWeapon_Cooldown>
+        <MeleeWeapon_CooldownMultiplier>1.35</MeleeWeapon_CooldownMultiplier>
       </statFactors>
     </stuffProps>
   </ThingDef>

@@ -1,49 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<SmokeleafTincture>
+<Defs>
 
   <ThingDef ParentName="MSI_MakeableDrugPillBase">
     <defName>SmokeleafTincture</defName>
     <label>smokeleaf tincture</label>
     <description>A potent tincture that offers considerable pain relief. May cause drowsiness.</description>
     <graphicData>
-      <texPath>Things/Items/MSI_tincture</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
+		<texPath>Things/Items/MSI_tincture</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <socialPropernessMatters>false</socialPropernessMatters>
     <rotatable>false</rotatable>
     <statBases>
-      <WorkToMake>500</WorkToMake>
-      <MarketValue>50</MarketValue>
-      <Mass>0.005</Mass>
+		<WorkToMake>500</WorkToMake>
+		<MarketValue>50</MarketValue>
+		<Mass>0.01</Mass>
+		<DeteriorationRate>0.5</DeteriorationRate>
     </statBases>
     <techLevel>Spacer</techLevel>
     <ingestible>
-	  <foodType>Fluid, Processed</foodType>
-	  <ingestSound>Ingest_Beer</ingestSound>
-      <outcomeDoers>
-        <li Class="IngestionOutcomeDoer_GiveHediff">
-          <hediffDef>SmokeleafTinctureHigh</hediffDef>
-          <severity>1.0</severity>
-        </li>
-      </outcomeDoers>
+		<foodType>Fluid, Processed</foodType>
+		<ingestSound>Ingest_Beer</ingestSound>
+		<outcomeDoers>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+				<hediffDef>SmokeleafTinctureHigh</hediffDef>
+				<severity>1.0</severity>
+			</li>
+		</outcomeDoers>
     </ingestible>
     <recipeMaker>
-	  <researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
-      <recipeUsers>
-        <li>MedicinalsLab</li>
-      </recipeUsers>
-	  <workSpeedStat>DrugProductionSpeed</workSpeedStat>
-	  <workSkill>Crafting</workSkill>
-	  <skillRequirements>
-			<li>
-				<skill>Crafting</skill>
-				<minLevel>12</minLevel>
-			</li>
-	  </skillRequirements>
+		<researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
+		<recipeUsers>
+			<li>MedicinalsLab</li>
+		</recipeUsers>
+		<workSpeedStat>DrugProductionSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+		</skillRequirements>
     </recipeMaker>
     <costList>
-      <CBD>1</CBD>
-	  <HerbalMedicine>1</HerbalMedicine>
+		<CBD>1</CBD>
+		<HerbalMedicine>1</HerbalMedicine>
     </costList>
     <comps>
       <li Class="CompProperties_Drug">
@@ -98,4 +96,4 @@
     </stages>
   </ThoughtDef>
   
-</SmokeleafTincture>
+</Defs>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<RecipeDefs>
+<Defs>
 
   <RecipeDef Name="MSI_CookMealBase" Abstract="True">
 		<workSkill>Cooking</workSkill>
@@ -16,6 +16,10 @@
     <description>Bake delicious "special" cookies.</description>
     <jobString>Baking cookies.</jobString>
     <workAmount>400</workAmount>
+	<skillRequirements>
+		<Cooking>5</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>SmokeleafProcessing</researchPrerequisite>
     <requiredGiverWorkType>Cooking</requiredGiverWorkType>
     <allowMixingIngredients>true</allowMixingIngredients>
     <ingredients>
@@ -48,13 +52,6 @@
         <li>AllowRotten</li>
       </disallowedSpecialFilters>
     </fixedIngredientFilter>
-    <researchPrerequisite>SmokeleafProcessing</researchPrerequisite>
-	<skillRequirements>
-        <li>
-          <skill>Cooking</skill>
-          <minLevel>5</minLevel>
-        </li>
-    </skillRequirements>
 	<recipeUsers>
 		<li>FueledStove</li>
 		<li>ElectricStove</li>
@@ -67,6 +64,10 @@
     <description>Bake delicious "special" cookies.</description>
     <jobString>Baking cookies.</jobString>
     <workAmount>1500</workAmount>
+	<skillRequirements>
+		<Cooking>5</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>SmokeleafProcessing</researchPrerequisite>
     <requiredGiverWorkType>Cooking</requiredGiverWorkType>
     <allowMixingIngredients>true</allowMixingIngredients>
     <ingredients>
@@ -99,13 +100,6 @@
         <li>AllowRotten</li>
       </disallowedSpecialFilters>
     </fixedIngredientFilter>
-    <researchPrerequisite>SmokeleafProcessing</researchPrerequisite>
-	<skillRequirements>
-        <li>
-          <skill>Cooking</skill>
-          <minLevel>5</minLevel>
-        </li>
-    </skillRequirements>
 	<recipeUsers>
 		<li>FueledStove</li>
 		<li>ElectricStove</li>
@@ -119,7 +113,11 @@
     <label>bake smokeleaf brownies</label>
     <description>Bake delicious "special" brownies.</description>
     <jobString>Baking brownies.</jobString>
-    <workAmount>600</workAmount>
+    <workAmount>500</workAmount>
+	<skillRequirements>
+		<Cooking>5</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>SmokeleafProcessing</researchPrerequisite>
     <requiredGiverWorkType>Cooking</requiredGiverWorkType>
     <allowMixingIngredients>true</allowMixingIngredients>
     <ingredients>
@@ -161,13 +159,6 @@
         <li>AllowRotten</li>
       </disallowedSpecialFilters>
     </fixedIngredientFilter>
-    <researchPrerequisite>SmokeleafProcessing</researchPrerequisite>
-	<skillRequirements>
-        <li>
-          <skill>Cooking</skill>
-          <minLevel>5</minLevel>
-        </li>
-    </skillRequirements>
 	<recipeUsers>
 		<li>FueledStove</li>
 		<li>ElectricStove</li>
@@ -180,6 +171,10 @@
     <description>Bake delicious "special" brownies.</description>
     <jobString>Baking brownies.</jobString>
     <workAmount>1500</workAmount>
+	<skillRequirements>
+		<Cooking>5</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>SmokeleafProcessing</researchPrerequisite>
     <requiredGiverWorkType>Cooking</requiredGiverWorkType>
     <allowMixingIngredients>true</allowMixingIngredients>
     <ingredients>
@@ -221,13 +216,6 @@
         <li>AllowRotten</li>
       </disallowedSpecialFilters>
     </fixedIngredientFilter>
-    <researchPrerequisite>SmokeleafProcessing</researchPrerequisite>
-	<skillRequirements>
-        <li>
-          <skill>Cooking</skill>
-          <minLevel>5</minLevel>
-        </li>
-    </skillRequirements>
 	<recipeUsers>
 		<li>FueledStove</li>
 		<li>ElectricStove</li>
@@ -241,7 +229,11 @@
     <label>make NutriLeaf bar</label>
     <description>Make NutriLeaf bar.</description>
     <jobString>Making NutriLeaf bar.</jobString>
-    <workAmount>700</workAmount>
+    <workAmount>600</workAmount>
+	<skillRequirements>
+		<Cooking>7</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>IndustrialSmokeleafProcessing</researchPrerequisite>
     <requiredGiverWorkType>Cooking</requiredGiverWorkType>
     <allowMixingIngredients>true</allowMixingIngredients>
     <ingredients>
@@ -285,13 +277,6 @@
         <li>AllowRotten</li>
       </disallowedSpecialFilters>
     </fixedIngredientFilter>
-    <researchPrerequisite>IndustrialSmokeleafProcessing</researchPrerequisite>
-	<skillRequirements>
-        <li>
-          <skill>Cooking</skill>
-          <minLevel>7</minLevel>
-        </li>
-    </skillRequirements>
 	<recipeUsers>
 		<li>FueledStove</li>
 		<li>ElectricStove</li>
@@ -303,7 +288,11 @@
     <label>make NutriLeaf bar (bulk)</label>
     <description>Make NutriLeaf bars.</description>
     <jobString>Making NutriLeaf bars.</jobString>
-    <workAmount>700</workAmount>
+    <workAmount>1500</workAmount>
+	<skillRequirements>
+		<Cooking>7</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>IndustrialSmokeleafProcessing</researchPrerequisite>
     <requiredGiverWorkType>Cooking</requiredGiverWorkType>
     <allowMixingIngredients>true</allowMixingIngredients>
     <ingredients>
@@ -347,13 +336,6 @@
         <li>AllowRotten</li>
       </disallowedSpecialFilters>
     </fixedIngredientFilter>
-    <researchPrerequisite>IndustrialSmokeleafProcessing</researchPrerequisite>
-	<skillRequirements>
-        <li>
-          <skill>Cooking</skill>
-          <minLevel>7</minLevel>
-        </li>
-    </skillRequirements>
 	<recipeUsers>
 		<li>FueledStove</li>
 		<li>ElectricStove</li>
@@ -368,6 +350,10 @@
     <description>Simmer milk and smokeleaf buds to make infused butter.</description>
     <jobString>Making butter.</jobString>
     <workAmount>400</workAmount>
+	<skillRequirements>
+		<Cooking>5</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>SmokeleafProcessing</researchPrerequisite>
     <requiredGiverWorkType>Cooking</requiredGiverWorkType>
     <allowMixingIngredients>true</allowMixingIngredients>
     <ingredients>
@@ -402,14 +388,6 @@
         <li>AllowRotten</li>
       </disallowedSpecialFilters>
     </fixedIngredientFilter>
-    <workSkill>Cooking</workSkill>
-    <researchPrerequisite>SmokeleafProcessing</researchPrerequisite>
-	<skillRequirements>
-        <li>
-          <skill>Cooking</skill>
-          <minLevel>5</minLevel>
-        </li>
-    </skillRequirements>
 	<recipeUsers>
 		<li>FueledStove</li>
 		<li>ElectricStove</li>
@@ -421,7 +399,11 @@
     <label>make smokeleaf butter (bulk)</label>
     <description>Simmer milk and smokeleaf buds to make infused butter.</description>
     <jobString>Making butter.</jobString>
-    <workAmount>1500</workAmount>
+    <workAmount>2000</workAmount>
+	<skillRequirements>
+		<Cooking>5</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>SmokeleafProcessing</researchPrerequisite>
     <requiredGiverWorkType>Cooking</requiredGiverWorkType>
     <allowMixingIngredients>true</allowMixingIngredients>
     <ingredients>
@@ -456,14 +438,6 @@
         <li>AllowRotten</li>
       </disallowedSpecialFilters>
     </fixedIngredientFilter>
-    <workSkill>Cooking</workSkill>
-    <researchPrerequisite>SmokeleafProcessing</researchPrerequisite>
-	<skillRequirements>
-        <li>
-          <skill>Cooking</skill>
-          <minLevel>5</minLevel>
-        </li>
-    </skillRequirements>
 	<recipeUsers>
 		<li>FueledStove</li>
 		<li>ElectricStove</li>
@@ -477,7 +451,11 @@
     <label>make hemp milk</label>
     <description>Grind seeds that have been soaking in water to make "milk".</description>
     <jobString>Making milk.</jobString>
-    <workAmount>600</workAmount>
+    <workAmount>750</workAmount>
+	<skillRequirements>
+		<Cooking>7</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>IndustrialSmokeleafProcessing</researchPrerequisite>
     <requiredGiverWorkType>Cooking</requiredGiverWorkType>
     <allowMixingIngredients>true</allowMixingIngredients>
     <ingredients>
@@ -501,14 +479,6 @@
         <li>AllowRotten</li>
       </disallowedSpecialFilters>
     </fixedIngredientFilter>
-    <workSkill>Cooking</workSkill>
-    <researchPrerequisite>IndustrialSmokeleafProcessing</researchPrerequisite>
-	<skillRequirements>
-        <li>
-          <skill>Cooking</skill>
-          <minLevel>6</minLevel>
-        </li>
-    </skillRequirements>
 	<recipeUsers>
 		<li>FueledStove</li>
 		<li>ElectricStove</li>
@@ -521,6 +491,10 @@
     <description>Grind a bunch of seeds that have been soaking in water to make "milk".</description>
     <jobString>Making milk.</jobString>
     <workAmount>1500</workAmount>
+	<skillRequirements>
+		<Cooking>7</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>IndustrialSmokeleafProcessing</researchPrerequisite>
     <requiredGiverWorkType>Cooking</requiredGiverWorkType>
     <allowMixingIngredients>true</allowMixingIngredients>
     <ingredients>
@@ -544,14 +518,6 @@
         <li>AllowRotten</li>
       </disallowedSpecialFilters>
     </fixedIngredientFilter>
-    <workSkill>Cooking</workSkill>
-    <researchPrerequisite>IndustrialSmokeleafProcessing</researchPrerequisite>
-	<skillRequirements>
-        <li>
-          <skill>Cooking</skill>
-          <minLevel>8</minLevel>
-        </li>
-    </skillRequirements>
 	<recipeUsers>
 		<li>FueledStove</li>
 		<li>ElectricStove</li>
@@ -566,6 +532,10 @@
     <description>A smokeleaf drink Ricky's been working on...he calls it 5 hour de-energy. It's probably pretty potent.</description>
     <jobString>Making De-Energy drink.</jobString>
     <workAmount>500</workAmount>
+	<skillRequirements>
+		<Cooking>12</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>AdvancedSmokeleafProcessing</researchPrerequisite>
     <requiredGiverWorkType>Cooking</requiredGiverWorkType>
     <allowMixingIngredients>true</allowMixingIngredients>
     <ingredients>
@@ -598,13 +568,6 @@
         <li>AllowRotten</li>
       </disallowedSpecialFilters>
     </fixedIngredientFilter>
-    <researchPrerequisite>AdvancedSmokeleafProcessing</researchPrerequisite>
-	<skillRequirements>
-        <li>
-          <skill>Cooking</skill>
-          <minLevel>12</minLevel>
-        </li>
-    </skillRequirements>
 	<recipeUsers>
 		<li>FueledStove</li>
 		<li>ElectricStove</li>
@@ -617,6 +580,10 @@
     <description>A smokeleaf drink Ricky's been working on...he calls it 5 hour de-energy. It's probably pretty potent.</description>
     <jobString>Making De-Energy drink.</jobString>
     <workAmount>2000</workAmount>
+	<skillRequirements>
+		<Cooking>12</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>AdvancedSmokeleafProcessing</researchPrerequisite>
     <requiredGiverWorkType>Cooking</requiredGiverWorkType>
     <allowMixingIngredients>true</allowMixingIngredients>
     <ingredients>
@@ -649,13 +616,6 @@
         <li>AllowRotten</li>
       </disallowedSpecialFilters>
     </fixedIngredientFilter>
-    <researchPrerequisite>AdvancedSmokeleafProcessing</researchPrerequisite>
-	<skillRequirements>
-        <li>
-          <skill>Cooking</skill>
-          <minLevel>12</minLevel>
-        </li>
-    </skillRequirements>
 	<recipeUsers>
 		<li>FueledStove</li>
 		<li>ElectricStove</li>
@@ -670,6 +630,10 @@
     <description>Berries blended with distillate to make a delicious smokeleaf smoothie.</description>
     <jobString>Making smokeleaf smoothie.</jobString>
     <workAmount>500</workAmount>
+	<skillRequirements>
+		<Cooking>12</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>AdvancedSmokeleafProcessing</researchPrerequisite>
     <requiredGiverWorkType>Cooking</requiredGiverWorkType>
     <allowMixingIngredients>true</allowMixingIngredients>
     <ingredients>
@@ -688,30 +652,33 @@
 			<li>RawAgave</li>
           </thingDefs>
         </filter>
-        <count>8</count>
+        <count>6</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>Milk</li>
+			<li>HempMilk</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
       </li>
     </ingredients>
     <products>
-      <SmokeleafSmoothie>1</SmokeleafSmoothie>
+      <SmokeleafSmoothie>2</SmokeleafSmoothie>
     </products>
     <fixedIngredientFilter>
       <thingDefs>
         <li>SmokeleafDistillate</li>
         <li>RawBerries</li>
         <li>RawAgave</li>
+        <li>Milk</li>
+		<li>HempMilk</li>
       </thingDefs>
       <disallowedSpecialFilters>
       <li>AllowRotten</li>
       </disallowedSpecialFilters>
     </fixedIngredientFilter>
-    <workSkill>Cooking</workSkill>
-    <researchPrerequisite>AdvancedSmokeleafProcessing</researchPrerequisite>
-	  <skillRequirements>
-        <li>
-          <skill>Cooking</skill>
-          <minLevel>12</minLevel>
-        </li>
-    </skillRequirements>
 	<recipeUsers>
 		<li>FueledStove</li>
 		<li>ElectricStove</li>
@@ -724,6 +691,10 @@
     <description>Berries blended with distillate to make a delicious smokeleaf smoothie.</description>
     <jobString>Making smokeleaf smoothie.</jobString>
     <workAmount>2000</workAmount>
+	<skillRequirements>
+		<Cooking>12</Cooking>
+    </skillRequirements>
+    <researchPrerequisite>AdvancedSmokeleafProcessing</researchPrerequisite>
     <requiredGiverWorkType>Cooking</requiredGiverWorkType>
     <allowMixingIngredients>true</allowMixingIngredients>
     <ingredients>
@@ -742,30 +713,33 @@
 			<li>RawAgave</li>
           </thingDefs>
         </filter>
-        <count>40</count>
+        <count>30</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>Milk</li>
+			<li>HempMilk</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
       </li>
     </ingredients>
     <products>
-      <SmokeleafSmoothie>5</SmokeleafSmoothie>
+      <SmokeleafSmoothie>10</SmokeleafSmoothie>
     </products>
     <fixedIngredientFilter>
       <thingDefs>
         <li>SmokeleafDistillate</li>
         <li>RawBerries</li>
         <li>RawAgave</li>
+		<li>Milk</li>
+		<li>HempMilk</li>
       </thingDefs>
       <disallowedSpecialFilters>
       <li>AllowRotten</li>
       </disallowedSpecialFilters>
     </fixedIngredientFilter>
-    <workSkill>Cooking</workSkill>
-    <researchPrerequisite>AdvancedSmokeleafProcessing</researchPrerequisite>
-	  <skillRequirements>
-        <li>
-          <skill>Cooking</skill>
-          <minLevel>12</minLevel>
-        </li>
-    </skillRequirements>
 	<recipeUsers>
 		<li>FueledStove</li>
 		<li>ElectricStove</li>
@@ -779,6 +753,11 @@
 		<label>cook infused meal</label>
 		<description>Add some smokeleaf butter to a meal to make it happy.</description>
 		<jobString>Cooking infused meal.</jobString>
+		<workAmount>500</workAmount>
+		<skillRequirements>
+			<Cooking>10</Cooking>
+		</skillRequirements>
+		<researchPrerequisite>AdvancedSmokeleafProcessing</researchPrerequisite>
 		<ingredients>
 			<li>
 				<filter>
@@ -794,19 +773,21 @@
 						<li>SmokeleafButter</li>
 					</thingDefs>
 				</filter>
-				<count>2</count>
+				<count>4</count>
 			</li>
 		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>MealSimple</li>
+				<li>SmokeleafButter</li>
+			</thingDefs>
+			<disallowedSpecialFilters>
+				<li>AllowRotten</li>
+			</disallowedSpecialFilters>
+		</fixedIngredientFilter>
 		<products>
 			<MealInfused>1</MealInfused>
 		</products>
-		<skillRequirements>
-			<li>
-				<skill>Cooking</skill>
-				<minLevel>8</minLevel>
-			</li>
-		</skillRequirements>
-		<researchPrerequisite>AdvancedSmokeleafProcessing</researchPrerequisite>
 		<recipeUsers>
 			<li>FueledStove</li>
 			<li>ElectricStove</li>
@@ -818,6 +799,11 @@
 		<label>cook infused meal (bulk)</label>
 		<description>Add some smokeleaf butter to a meal to make it happy. For five.</description>
 		<jobString>Cooking infused meal.</jobString>
+		<workAmount>1500</workAmount>
+		<skillRequirements>
+			<Cooking>10</Cooking>
+		</skillRequirements>
+		<researchPrerequisite>AdvancedSmokeleafProcessing</researchPrerequisite>
 		<ingredients>
 			<li>
 				<filter>
@@ -833,23 +819,25 @@
 						<li>SmokeleafButter</li>
 					</thingDefs>
 				</filter>
-				<count>10</count>
+				<count>20</count>
 			</li>
 		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>MealSimple</li>
+				<li>SmokeleafButter</li>
+			</thingDefs>
+			<disallowedSpecialFilters>
+				<li>AllowRotten</li>
+			</disallowedSpecialFilters>
+		</fixedIngredientFilter>
 		<products>
 			<MealInfused>5</MealInfused>
 		</products>
-		<skillRequirements>
-			<li>
-				<skill>Cooking</skill>
-				<minLevel>10</minLevel>
-			</li>
-		</skillRequirements>
-		<researchPrerequisite>AdvancedSmokeleafProcessing</researchPrerequisite>
 		<recipeUsers>
 			<li>FueledStove</li>
 			<li>ElectricStove</li>
 		</recipeUsers>
   </RecipeDef>
 
-</RecipeDefs>
+</Defs>
