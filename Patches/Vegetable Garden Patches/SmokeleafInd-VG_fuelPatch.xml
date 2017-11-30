@@ -10,15 +10,10 @@
 				<modName>VGP Garden Gourmet</modName>
 				<yourMod>Smokeleaf Industry</yourMod>
 			</li>
-			<li Class="PatchOperationReplace">
+			<li Class="PatchOperationAdd">
 				<xpath>*/ThingDef[defName = "Oven"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter/thingDefs</xpath>
 					<value>
-						<thingDefs>
-							<li>WoodLog</li>
-							<li>VG_IronWoodLog</li>
-							<li>Bamboo</li>
-							<li>HempFiber</li>
-						</thingDefs>
+						<li>HempFiber</li>
 					</value>
 			</li>
 		</operations>
@@ -31,15 +26,10 @@
 				<modName>VGP Garden Gourmet</modName>
 				<yourMod>Smokeleaf Industry</yourMod>
 			</li>
-			<li Class="PatchOperationReplace">
+			<li Class="PatchOperationAdd">
 				<xpath>*/ThingDef[defName = "HandCanningstove"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter/thingDefs</xpath>
 					<value>
-						<thingDefs>
-							<li>WoodLog</li>
-							<li>VG_IronWoodLog</li>
-							<li>Bamboo</li>
-							<li>HempFiber</li>
-						</thingDefs>
+						<li>HempFiber</li>
 					</value>
 			</li>
 		</operations>
@@ -52,15 +42,10 @@
 				<modName>VGP Garden Gourmet</modName>
 				<yourMod>Smokeleaf Industry</yourMod>
 			</li>
-			<li Class="PatchOperationReplace">
+			<li Class="PatchOperationAdd">
 				<xpath>*/ThingDef[defName = "FueledCandyTable"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter/thingDefs</xpath>
 					<value>
-						<thingDefs>
-							<li>WoodLog</li>
-							<li>VG_IronWoodLog</li>
-							<li>Bamboo</li>
-							<li>HempFiber</li>
-						</thingDefs>
+						<li>HempFiber</li>
 					</value>
 			</li>
 		</operations>

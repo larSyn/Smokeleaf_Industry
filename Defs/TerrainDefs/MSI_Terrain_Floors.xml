@@ -14,7 +14,7 @@
 		<designationCategory>Floors</designationCategory>
 		<constructEffect>ConstructDirt</constructEffect>
 		<acceptTerrainSourceFilth>True</acceptTerrainSourceFilth>
-		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<fertility>0</fertility>
 		<researchPrerequisites>
 			<li>SmokeleafProcessing</li>
@@ -34,9 +34,10 @@
             <li>CarpetHemp</li>
             <li>HempcretePlate</li>
             <li>HempStalkFloor</li>
+            <li>HempcretePath</li>
         </defNames>
         <designationCategory>Floors</designationCategory>
-    	<preview>false</preview>
+    	<preview>true</preview>
         <debug>true</debug>
     </ArchitectSense.DesignationSubCategoryDef>  
   
@@ -84,7 +85,7 @@
 		</costList>
 	</TerrainDef>
   
-  <!--========== HempBlock Misc Floors ==========-->
+  <!--========== Hempcrete Misc Floors ==========-->
 
 	<TerrainDef ParentName="MSI_FloorBase">
 		<defName>Hempcrete</defName>
@@ -137,6 +138,22 @@
 			<li>IndustrialSmokeleafProcessing</li>
 			<li>Stonecutting</li>
 		</researchPrerequisites>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="MSI_FloorBase">
+		<defName>HempcretePath</defName>
+		<label>hempcrete path</label>
+		<renderPrecedence>220</renderPrecedence>
+		<description>A random looking path made from smooth hempcrete chunks. </description>
+		<texturePath>Terrain/MSI_hempcretePath</texturePath>
+		<statBases>
+			<Cleanliness>0.1</Cleanliness>
+			<WorkToBuild>300</WorkToBuild>
+			<Beauty>1</Beauty>
+		</statBases>
+		<costList>
+			<BlocksHempcrete>3</BlocksHempcrete>
+		</costList>
 	</TerrainDef>
 
   <!--========== Hemp Carpet ==========-->

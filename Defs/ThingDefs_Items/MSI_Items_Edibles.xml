@@ -11,44 +11,86 @@
       <texPath>Things/Items/MSI_butter</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
-	<soundInteract>Standard_Drop</soundInteract>
-    <soundDrop>Standard_Drop</soundDrop>
-	<socialPropernessMatters>true</socialPropernessMatters>
+  	<soundInteract>Standard_Drop</soundInteract>
+      <soundDrop>Standard_Drop</soundDrop>
+  	<socialPropernessMatters>true</socialPropernessMatters>
     <statBases>
-    <MarketValue>4.0</MarketValue>
-    <Flammability>0.5</Flammability>
+      <MarketValue>4.0</MarketValue>
+      <Flammability>0.5</Flammability>
     </statBases>
-	<ingestible>
-		<nutrition>0.1</nutrition>
-		<foodType>Processed</foodType>
-		<baseIngestTicks>120</baseIngestTicks>
-		<chairSearchRadius>25</chairSearchRadius>
-		<ingestSound>Meal_Eat</ingestSound>
-		<useEatingSpeedStat>true</useEatingSpeedStat>
-		<ingestEffect>EatVegetarian</ingestEffect>
-		<preferability>DesperateOnly</preferability>
-		<joy>0.5</joy>
-		<joyKind>Chemical</joyKind>
-		<outcomeDoers>
-			<li Class="IngestionOutcomeDoer_GiveHediff">
-				<hediffDef>EdiblesHigh</hediffDef>
-				<severity>0.15</severity>
-				<toleranceChemical>Edibles</toleranceChemical>
-			</li>
-			<li Class="IngestionOutcomeDoer_OffsetNeed">
-				<need>Rest</need>
-				<offset>-0.01</offset>
-			</li>
-			<li Class="IngestionOutcomeDoer_GiveHediff">
-				<hediffDef>EdiblesTolerance</hediffDef>
-				<severity>0.03</severity>
-				<divideByBodySize>true</divideByBodySize>
-			</li>
-      </outcomeDoers>
-	</ingestible>
+  	<ingestible>
+  		<nutrition>0.1</nutrition>
+  		<foodType>Processed</foodType>
+  		<baseIngestTicks>120</baseIngestTicks>
+  		<chairSearchRadius>25</chairSearchRadius>
+  		<ingestSound>Meal_Eat</ingestSound>
+  		<useEatingSpeedStat>true</useEatingSpeedStat>
+  		<ingestEffect>EatVegetarian</ingestEffect>
+  		<preferability>DesperateOnly</preferability>
+  		<joy>0.5</joy>
+  		<joyKind>Chemical</joyKind>
+  		<outcomeDoers>
+  			<li Class="IngestionOutcomeDoer_GiveHediff">
+  				<hediffDef>EdiblesHigh</hediffDef>
+  				<severity>0.15</severity>
+  				<toleranceChemical>Edibles</toleranceChemical>
+  			</li>
+  			<li Class="IngestionOutcomeDoer_OffsetNeed">
+  				<need>Rest</need>
+  				<offset>-0.01</offset>
+  			</li>
+  			<li Class="IngestionOutcomeDoer_GiveHediff">
+  				<hediffDef>EdiblesTolerance</hediffDef>
+  				<severity>0.03</severity>
+  				<divideByBodySize>true</divideByBodySize>
+  			</li>
+        </outcomeDoers>
+  	</ingestible>
     <thingCategories>
-      <li>Foods</li>
+      <li>SmokeleafIndCatEdibles</li>
     </thingCategories>
+  </ThingDef>
+  
+  <!--========== Hemp Flour ==========-->
+  
+  <ThingDef ParentName="MSI_PlantFoodRawBase">
+    <defName>HempFlour</defName>
+    <label>hemp flour</label>
+    <description>Smokeleaf seeds can be ground into a fine flour for baking.</description>
+    <graphicData>
+      <texPath>Things/Items/MSI_flour</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MarketValue>2.5</MarketValue>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>12</DeteriorationRate>
+    </statBases>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+      <foodType>Processed</foodType>
+      <nutrition>0.1</nutrition>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      <useEatingSpeedStat>true</useEatingSpeedStat>
+      <baseIngestTicks>120</baseIngestTicks>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>120</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <thingCategories>
+      <li>SmokeleafIndCatEdibles</li>
+    </thingCategories>
+    <researchPrerequisites>
+      <li>SmokeleafProcessing</li>
+    </researchPrerequisites>
   </ThingDef>
 
 	<!--========== Hemp Milk ==========-->
@@ -61,27 +103,57 @@
       <texPath>Things/Items/MSI_milk</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
-	<soundInteract>Standard_Drop</soundInteract>
-    <soundDrop>Standard_Drop</soundDrop>
-	<socialPropernessMatters>true</socialPropernessMatters>
+  	<soundInteract>Standard_Drop</soundInteract>
+      <soundDrop>Standard_Drop</soundDrop>
+  	<socialPropernessMatters>true</socialPropernessMatters>
     <statBases>
-    <MarketValue>4.0</MarketValue>
-    <Flammability>0.5</Flammability>
+      <MarketValue>4.0</MarketValue>
+      <Flammability>0.5</Flammability>
     </statBases>
-	<ingestible>
-		<nutrition>0.1</nutrition>
-		<foodType>Processed</foodType>
-		<baseIngestTicks>120</baseIngestTicks>
-		<chairSearchRadius>25</chairSearchRadius>
-		<ingestSound>Meal_Eat</ingestSound>
-		<useEatingSpeedStat>true</useEatingSpeedStat>
-		<ingestEffect>EatVegetarian</ingestEffect>
-		<preferability>DesperateOnly</preferability>
-		<joy>0.5</joy>
-		<joyKind>Chemical</joyKind>
-	</ingestible>
+  	<ingestible>
+  		<nutrition>0.05</nutrition>
+  		<foodType>Processed</foodType>
+  		<baseIngestTicks>120</baseIngestTicks>
+  		<chairSearchRadius>25</chairSearchRadius>
+  		<ingestSound>Meal_Eat</ingestSound>
+  		<useEatingSpeedStat>true</useEatingSpeedStat>
+  		<ingestEffect>EatVegetarian</ingestEffect>
+  		<preferability>DesperateOnly</preferability>
+  	</ingestible>
     <thingCategories>
-      <li>Foods</li>
+      <li>SmokeleafIndCatEdibles</li>
+    </thingCategories>
+  </ThingDef>
+
+  <!--========== Smokeleaf Seed Oil ==========-->
+  
+  <ThingDef ParentName="MSI_MealRottable">
+    <defName>SmokeleafSeedOil</defName>
+    <label>smokeleaf seed oil</label>
+    <description>Oils pressed from smokeleaf seeds. While seed oil does not possess any medicinal qualities, it has many various uses.</description>
+    <graphicData>
+      <texPath>Things/Items/MSI_hempSeedOil</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+      <soundDrop>Standard_Drop</soundDrop>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MarketValue>4.0</MarketValue>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <ingestible>
+      <nutrition>0.05</nutrition>
+      <foodType>Processed</foodType>
+      <baseIngestTicks>120</baseIngestTicks>
+      <chairSearchRadius>25</chairSearchRadius>
+      <ingestSound>Meal_Eat</ingestSound>
+      <useEatingSpeedStat>true</useEatingSpeedStat>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <preferability>DesperateOnly</preferability>
+    </ingestible>
+    <thingCategories>
+      <li>SmokeleafIndCatEdibles</li>
     </thingCategories>
   </ThingDef>
 
@@ -92,7 +164,7 @@
     <label>smokeleaf brownie</label>
     <thingClass>ThingWithComps</thingClass>
     <thingCategories>
-      <li>Foods</li>
+      <li>SmokeleafIndCatEdibles</li>
     </thingCategories>
     <description>The infamous "special" brownie.</description>
     <graphicData>
@@ -101,39 +173,39 @@
     </graphicData>
     <socialPropernessMatters>true</socialPropernessMatters>
     <statBases>
-		<MarketValue>15</MarketValue>
-		<Mass>0.018</Mass>
+  		<MarketValue>13</MarketValue>
+  		<Mass>0.018</Mass>
     </statBases>
     <ingestible>
-		<nutrition>0.25</nutrition>
-		<optimalityOffsetHumanlikes>6</optimalityOffsetHumanlikes>
-		<outcomeDoers>
-			<li Class="IngestionOutcomeDoer_GiveHediff">
-				<hediffDef>EdiblesHigh</hediffDef>
-				<severity>0.6</severity>
-				<toleranceChemical>Edibles</toleranceChemical>
-			</li>
-			<li Class="IngestionOutcomeDoer_OffsetNeed">
-				<need>Rest</need>
-				<offset>-0.2</offset>
-			</li>
-			<li Class="IngestionOutcomeDoer_GiveHediff">
-				<hediffDef>EdiblesTolerance</hediffDef>
-				<severity>0.03</severity>
-				<divideByBodySize>true</divideByBodySize>
-			</li>
+  		<nutrition>0.15</nutrition>
+  		<optimalityOffsetHumanlikes>6</optimalityOffsetHumanlikes>
+  		<outcomeDoers>
+  			<li Class="IngestionOutcomeDoer_GiveHediff">
+  				<hediffDef>EdiblesHigh</hediffDef>
+  				<severity>0.6</severity>
+  				<toleranceChemical>Edibles</toleranceChemical>
+  			</li>
+  			<li Class="IngestionOutcomeDoer_OffsetNeed">
+  				<need>Rest</need>
+  				<offset>-0.2</offset>
+  			</li>
+  			<li Class="IngestionOutcomeDoer_GiveHediff">
+  				<hediffDef>EdiblesTolerance</hediffDef>
+  				<severity>0.03</severity>
+  				<divideByBodySize>true</divideByBodySize>
+  			</li>
       </outcomeDoers>
-	</ingestible>
-	<comps>
-      <li Class="CompProperties_Drug">
-        <chemical>Edibles</chemical>
-        <addictiveness>0.015</addictiveness>
-        <minToleranceToAddict>0.15</minToleranceToAddict>
-        <existingAddictionSeverityOffset>0.06</existingAddictionSeverityOffset>
-        <needLevelOffset>1</needLevelOffset>
-        <listOrder>20</listOrder>
-      </li>
-    </comps>
+  	</ingestible>
+  	<comps>
+        <li Class="CompProperties_Drug">
+          <chemical>Edibles</chemical>
+          <addictiveness>0.015</addictiveness>
+          <minToleranceToAddict>0.15</minToleranceToAddict>
+          <existingAddictionSeverityOffset>0.06</existingAddictionSeverityOffset>
+          <needLevelOffset>1</needLevelOffset>
+          <listOrder>20</listOrder>
+        </li>
+      </comps>
   </ThingDef>
   
   <ThingDef ParentName="MSI_MealEdibles">
@@ -141,7 +213,7 @@
     <label>smokeleaf cookie</label>
     <thingClass>ThingWithComps</thingClass>
     <thingCategories>
-      <li>Foods</li>
+      <li>SmokeleafIndCatEdibles</li>
     </thingCategories>
     <description>A smokeleaf butter cookie. Get comfortable.</description>
     <graphicData>
@@ -150,39 +222,39 @@
     </graphicData>
     <socialPropernessMatters>true</socialPropernessMatters>
     <statBases>
-		<MarketValue>12</MarketValue>
-		<Mass>0.018</Mass>
+  		<MarketValue>10</MarketValue>
+  		<Mass>0.018</Mass>
     </statBases>
     <ingestible>
-		<nutrition>0.25</nutrition>
-		<optimalityOffsetHumanlikes>6</optimalityOffsetHumanlikes>
-		<outcomeDoers>
-			<li Class="IngestionOutcomeDoer_GiveHediff">
-				<hediffDef>EdiblesHigh</hediffDef>
-				<severity>0.5</severity>
-				<toleranceChemical>Edibles</toleranceChemical>
-			</li>
-			<li Class="IngestionOutcomeDoer_OffsetNeed">
-				<need>Rest</need>
-				<offset>-0.2</offset>
-			</li>
-			<li Class="IngestionOutcomeDoer_GiveHediff">
-				<hediffDef>EdiblesTolerance</hediffDef>
-				<severity>0.010</severity>
-				<divideByBodySize>true</divideByBodySize>
-			</li>
+  		<nutrition>0.15</nutrition>
+  		<optimalityOffsetHumanlikes>6</optimalityOffsetHumanlikes>
+  		<outcomeDoers>
+  			<li Class="IngestionOutcomeDoer_GiveHediff">
+  				<hediffDef>EdiblesHigh</hediffDef>
+  				<severity>0.5</severity>
+  				<toleranceChemical>Edibles</toleranceChemical>
+  			</li>
+  			<li Class="IngestionOutcomeDoer_OffsetNeed">
+  				<need>Rest</need>
+  				<offset>-0.2</offset>
+  			</li>
+  			<li Class="IngestionOutcomeDoer_GiveHediff">
+  				<hediffDef>EdiblesTolerance</hediffDef>
+  				<severity>0.010</severity>
+  				<divideByBodySize>true</divideByBodySize>
+  			</li>
       </outcomeDoers>
-	</ingestible>
-	<comps>
-      <li Class="CompProperties_Drug">
-        <chemical>Edibles</chemical>
-        <addictiveness>0.015</addictiveness>
-        <minToleranceToAddict>0.15</minToleranceToAddict>
-        <existingAddictionSeverityOffset>0.06</existingAddictionSeverityOffset>
-        <needLevelOffset>1</needLevelOffset>
-        <listOrder>20</listOrder>
-      </li>
-    </comps>
+  	</ingestible>
+  	<comps>
+        <li Class="CompProperties_Drug">
+          <chemical>Edibles</chemical>
+          <addictiveness>0.015</addictiveness>
+          <minToleranceToAddict>0.15</minToleranceToAddict>
+          <existingAddictionSeverityOffset>0.06</existingAddictionSeverityOffset>
+          <needLevelOffset>1</needLevelOffset>
+          <listOrder>20</listOrder>
+        </li>
+      </comps>
   </ThingDef>
   
   <ThingDef ParentName="MSI_MealEdibles">
@@ -190,7 +262,7 @@
     <label>NutriLeaf bar</label>
     <thingClass>ThingWithComps</thingClass>
     <thingCategories>
-      <li>Foods</li>
+      <li>SmokeleafIndCatEdibles</li>
     </thingCategories>
     <description>A chewy, fruit filled, smokeleaf infused snack bar.</description>
     <graphicData>
@@ -199,39 +271,39 @@
     </graphicData>
     <socialPropernessMatters>true</socialPropernessMatters>
     <statBases>
-		<MarketValue>12</MarketValue>
-		<Mass>0.018</Mass>
+  		<MarketValue>15</MarketValue>
+  		<Mass>0.018</Mass>
     </statBases>
     <ingestible>
-		<nutrition>0.25</nutrition>
-		<optimalityOffsetHumanlikes>6</optimalityOffsetHumanlikes>
-		<outcomeDoers>
-			<li Class="IngestionOutcomeDoer_GiveHediff">
-				<hediffDef>EdiblesHigh</hediffDef>
-				<severity>0.5</severity>
-				<toleranceChemical>Edibles</toleranceChemical>
-			</li>
-			<li Class="IngestionOutcomeDoer_OffsetNeed">
-				<need>Rest</need>
-				<offset>-0.2</offset>
-			</li>
-			<li Class="IngestionOutcomeDoer_GiveHediff">
-				<hediffDef>EdiblesTolerance</hediffDef>
-				<severity>0.010</severity>
-				<divideByBodySize>true</divideByBodySize>
-			</li>
+  		<nutrition>0.5</nutrition>
+  		<optimalityOffsetHumanlikes>6</optimalityOffsetHumanlikes>
+  		<outcomeDoers>
+  			<li Class="IngestionOutcomeDoer_GiveHediff">
+  				<hediffDef>EdiblesHigh</hediffDef>
+  				<severity>0.5</severity>
+  				<toleranceChemical>Edibles</toleranceChemical>
+  			</li>
+  			<li Class="IngestionOutcomeDoer_OffsetNeed">
+  				<need>Rest</need>
+  				<offset>-0.2</offset>
+  			</li>
+  			<li Class="IngestionOutcomeDoer_GiveHediff">
+  				<hediffDef>EdiblesTolerance</hediffDef>
+  				<severity>0.010</severity>
+  				<divideByBodySize>true</divideByBodySize>
+  			</li>
       </outcomeDoers>
-	</ingestible>
-	<comps>
-      <li Class="CompProperties_Drug">
-        <chemical>Edibles</chemical>
-        <addictiveness>0.015</addictiveness>
-        <minToleranceToAddict>0.15</minToleranceToAddict>
-        <existingAddictionSeverityOffset>0.06</existingAddictionSeverityOffset>
-        <needLevelOffset>1</needLevelOffset>
-        <listOrder>20</listOrder>
-      </li>
-    </comps>
+  	</ingestible>
+  	<comps>
+        <li Class="CompProperties_Drug">
+          <chemical>Edibles</chemical>
+          <addictiveness>0.015</addictiveness>
+          <minToleranceToAddict>0.15</minToleranceToAddict>
+          <existingAddictionSeverityOffset>0.06</existingAddictionSeverityOffset>
+          <needLevelOffset>1</needLevelOffset>
+          <listOrder>20</listOrder>
+        </li>
+      </comps>
   </ThingDef>
   
   <!--========== Hediffs ==========-->
@@ -250,16 +322,16 @@
     </comps>
       <stages>
         <li>
-          <hungerRateFactor>0.8</hungerRateFactor>
+          <hungerRateFactor>0.95</hungerRateFactor>
           <painOffset>-0.25</painOffset>
           <capMods>
             <li>
               <capacity>Consciousness</capacity>
-              <offset>-0.15</offset>
+              <offset>-0.05</offset>
             </li>
             <li>
               <capacity>Moving</capacity>
-              <offset>-0.15</offset>
+              <offset>-0.05</offset>
             </li>
           </capMods>
         </li>
@@ -275,7 +347,7 @@
       <li>
         <label>high on edibles</label>
         <description>Wow. These are tasty.</description>
-        <baseMoodEffect>18</baseMoodEffect>
+        <baseMoodEffect>15</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>
@@ -287,7 +359,7 @@
     <label>edibles</label>
     <addictionHediff>EdiblesAddiction</addictionHediff>
     <toleranceHediff>EdiblesTolerance</toleranceHediff>
-	<onGeneratedAddictedToleranceChance>0.8</onGeneratedAddictedToleranceChance>
+	  <onGeneratedAddictedToleranceChance>0.8</onGeneratedAddictedToleranceChance>
   </ChemicalDef>
 
   <NeedDef ParentName="MSI_DrugAddictionNeedBase">
@@ -382,7 +454,7 @@
     <label>smokeleaf de-energy drink</label>
     <thingClass>ThingWithComps</thingClass>
     <thingCategories>
-      <li>Foods</li>
+      <li>SmokeleafIndCatEdibles</li>
     </thingCategories>
     <description>Don't make plans for 5 hours.</description>
     <graphicData>
@@ -391,40 +463,40 @@
     </graphicData>
     <socialPropernessMatters>true</socialPropernessMatters>
     <statBases>
-		<MarketValue>40</MarketValue>
-		<Mass>0.018</Mass>
-		<WorkToMake>300</WorkToMake>
+  		<MarketValue>40</MarketValue>
+  		<Mass>0.018</Mass>
+  		<WorkToMake>300</WorkToMake>
     </statBases>
     <ingestible>
-		<nutrition>0.05</nutrition>
-		<optimalityOffsetHumanlikes>6</optimalityOffsetHumanlikes>
-		<outcomeDoers>
-			<li Class="IngestionOutcomeDoer_GiveHediff">
-				<hediffDef>AdvancedEdiblesHigh</hediffDef>
-				<severity>0.75</severity>
-				<toleranceChemical>Edibles</toleranceChemical>
-			</li>
-			<li Class="IngestionOutcomeDoer_OffsetNeed">
-				<need>Rest</need>
-				<offset>-0.2</offset>
-			</li>
-			<li Class="IngestionOutcomeDoer_GiveHediff">
-				<hediffDef>AdvancedEdiblesTolerance</hediffDef>
-				<severity>0.040</severity>
-				<divideByBodySize>true</divideByBodySize>
-			</li>
+  		<nutrition>0.1</nutrition>
+  		<optimalityOffsetHumanlikes>6</optimalityOffsetHumanlikes>
+  		<outcomeDoers>
+  			<li Class="IngestionOutcomeDoer_GiveHediff">
+  				<hediffDef>AdvancedEdiblesHigh</hediffDef>
+  				<severity>0.75</severity>
+  				<toleranceChemical>Edibles</toleranceChemical>
+  			</li>
+  			<li Class="IngestionOutcomeDoer_OffsetNeed">
+  				<need>Rest</need>
+  				<offset>-0.2</offset>
+  			</li>
+  			<li Class="IngestionOutcomeDoer_GiveHediff">
+  				<hediffDef>AdvancedEdiblesTolerance</hediffDef>
+  				<severity>0.040</severity>
+  				<divideByBodySize>true</divideByBodySize>
+  			</li>
       </outcomeDoers>
-	</ingestible>
-	<comps>
-		<li Class="CompProperties_Drug">
-			<chemical>AdvancedEdibles</chemical>
-			<addictiveness>0.025</addictiveness>
-			<minToleranceToAddict>0.15</minToleranceToAddict>
-			<existingAddictionSeverityOffset>0.06</existingAddictionSeverityOffset>
-			<needLevelOffset>1</needLevelOffset>
-			<listOrder>20</listOrder>
-		</li>
-     </comps>
+  	</ingestible>
+  	<comps>
+  		<li Class="CompProperties_Drug">
+  			<chemical>AdvancedEdibles</chemical>
+  			<addictiveness>0.025</addictiveness>
+  			<minToleranceToAddict>0.15</minToleranceToAddict>
+  			<existingAddictionSeverityOffset>0.06</existingAddictionSeverityOffset>
+  			<needLevelOffset>1</needLevelOffset>
+  			<listOrder>20</listOrder>
+  		</li>
+    </comps>
   </ThingDef>
   
   <ThingDef ParentName="MSI_MealEdibles">
@@ -432,7 +504,7 @@
     <label>smokeleaf smoothie</label>
     <thingClass>ThingWithComps</thingClass>
     <thingCategories>
-      <li>Foods</li>
+      <li>SmokeleafIndCatEdibles</li>
     </thingCategories>
     <description>A delicious fruit smoothie with a smokeleaf kick.</description>
     <graphicData>
@@ -441,39 +513,89 @@
     </graphicData>
     <socialPropernessMatters>true</socialPropernessMatters>
     <statBases>
-		<MarketValue>32</MarketValue>
-		<Mass>0.018</Mass>
-		<WorkToMake>300</WorkToMake>
+  		<MarketValue>35</MarketValue>
+  		<Mass>0.018</Mass>
+  		<WorkToMake>300</WorkToMake>
     </statBases>
     <ingestible>
-		<nutrition>0.5</nutrition>
-		<optimalityOffsetHumanlikes>6</optimalityOffsetHumanlikes>
-		<outcomeDoers>
-			<li Class="IngestionOutcomeDoer_GiveHediff">
-				<hediffDef>AdvancedEdiblesHigh</hediffDef>
-				<severity>0.65</severity>
-				<toleranceChemical>AdvancedEdibles</toleranceChemical>
-			</li>
-			<li Class="IngestionOutcomeDoer_OffsetNeed">
-				<need>Rest</need>
-				<offset>-0.2</offset>
-			</li>
-			<li Class="IngestionOutcomeDoer_GiveHediff">
-				<hediffDef>AdvancedEdiblesTolerance</hediffDef>
-				<severity>0.030</severity>
-				<divideByBodySize>true</divideByBodySize>
-			</li>
+  		<nutrition>0.75</nutrition>
+  		<optimalityOffsetHumanlikes>6</optimalityOffsetHumanlikes>
+  		<outcomeDoers>
+  			<li Class="IngestionOutcomeDoer_GiveHediff">
+  				<hediffDef>AdvancedEdiblesHigh</hediffDef>
+  				<severity>0.65</severity>
+  				<toleranceChemical>AdvancedEdibles</toleranceChemical>
+  			</li>
+  			<li Class="IngestionOutcomeDoer_OffsetNeed">
+  				<need>Rest</need>
+  				<offset>-0.2</offset>
+  			</li>
+  			<li Class="IngestionOutcomeDoer_GiveHediff">
+  				<hediffDef>AdvancedEdiblesTolerance</hediffDef>
+  				<severity>0.030</severity>
+  				<divideByBodySize>true</divideByBodySize>
+  			</li>
       </outcomeDoers>
-	</ingestible>
-	<comps>
-		<li Class="CompProperties_Drug">
-			<chemical>AdvancedEdibles</chemical>
-			<addictiveness>0.025</addictiveness>
-			<minToleranceToAddict>0.25</minToleranceToAddict>
-			<existingAddictionSeverityOffset>0.06</existingAddictionSeverityOffset>
-			<needLevelOffset>1</needLevelOffset>
-			<listOrder>20</listOrder>
-		</li>
+  	</ingestible>
+  	<comps>
+  		<li Class="CompProperties_Drug">
+  			<chemical>AdvancedEdibles</chemical>
+  			<addictiveness>0.025</addictiveness>
+  			<minToleranceToAddict>0.25</minToleranceToAddict>
+  			<existingAddictionSeverityOffset>0.06</existingAddictionSeverityOffset>
+  			<needLevelOffset>1</needLevelOffset>
+  			<listOrder>20</listOrder>
+  		</li>
+     </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="MSI_MealEdibles">
+    <defName>SmokeleafCandy</defName>
+    <label>smokeleaf candy</label>
+    <thingClass>ThingWithComps</thingClass>
+    <thingCategories>
+      <li>SmokeleafIndCatEdibles</li>
+    </thingCategories>
+    <description>A tasty fruit flavored infused confection.</description>
+    <graphicData>
+      <texPath>Things/Items/MSI_candy</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MarketValue>20</MarketValue>
+      <Mass>0.018</Mass>
+      <WorkToMake>300</WorkToMake>
+    </statBases>
+    <ingestible>
+      <nutrition>0.1</nutrition>
+      <optimalityOffsetHumanlikes>6</optimalityOffsetHumanlikes>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AdvancedEdiblesHigh</hediffDef>
+          <severity>0.50</severity>
+          <toleranceChemical>AdvancedEdibles</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_OffsetNeed">
+          <need>Rest</need>
+          <offset>-0.1</offset>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AdvancedEdiblesTolerance</hediffDef>
+          <severity>0.030</severity>
+          <divideByBodySize>true</divideByBodySize>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>AdvancedEdibles</chemical>
+        <addictiveness>0.01</addictiveness>
+        <minToleranceToAddict>0.15</minToleranceToAddict>
+        <existingAddictionSeverityOffset>0.05</existingAddictionSeverityOffset>
+        <needLevelOffset>1</needLevelOffset>
+        <listOrder>20</listOrder>
+      </li>
      </comps>
   </ThingDef>
   
@@ -493,16 +615,16 @@
     </comps>
     <stages>
         <li>
-          <hungerRateFactor>0.8</hungerRateFactor>
-          <painOffset>-0.5</painOffset>
+          <hungerRateFactor>0.9</hungerRateFactor>
+          <painOffset>-0.35</painOffset>
           <capMods>
             <li>
               <capacity>Consciousness</capacity>
-              <offset>-0.4</offset>
+              <offset>-0.15</offset>
             </li>
             <li>
               <capacity>Moving</capacity>
-              <offset>-0.35</offset>
+              <offset>-0.15</offset>
             </li>
           </capMods>
         </li>
@@ -530,7 +652,7 @@
     <label>advanced edibles</label>
     <addictionHediff>AdvancedEdiblesAddiction</addictionHediff>
     <toleranceHediff>AdvancedEdiblesTolerance</toleranceHediff>
-	<onGeneratedAddictedToleranceChance>0.8</onGeneratedAddictedToleranceChance>
+	  <onGeneratedAddictedToleranceChance>0.8</onGeneratedAddictedToleranceChance>
   </ChemicalDef>
 
   <NeedDef ParentName="MSI_DrugAddictionNeedBase">
@@ -617,5 +739,39 @@
       </li>
     </stages>
   </ThoughtDef>
+  
+  <!--========== Infused Meal ==========--> 
+    
+  <ThingDef ParentName="MSI_MealEdibles">
+    <defName>MealInfused</defName>
+    <label>infused meal</label>
+    <description>A filling meal that also gives a slight buzz.</description>
+    <graphicData>
+      <texPath>Things/Items/MSI_meal</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>27</MarketValue>
+      <WorkToMake>450</WorkToMake>
+    </statBases>
+    <ingestible>
+      <preferability>MealFine</preferability>
+      <tasteThought>AteInfusedMeal</tasteThought>
+      <nutrition>0.95</nutrition>
+      <joy>0.85</joy>
+      <joyKind>Chemical</joyKind>   
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>InfusedBuzz</hediffDef>
+          <severity>0.5</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <researchPrerequisites>
+      <li>AdvancedSmokeleafProcessing</li>
+    </researchPrerequisites>
+  </ThingDef> 
 
 </Defs>

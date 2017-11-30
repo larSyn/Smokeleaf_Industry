@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThoughtDef>
+	    <defName>AteInfusedMeal</defName>
+	    <durationDays>0.5</durationDays>
+	    <stackLimit>1</stackLimit>
+	    <stages>
+	      <li>
+	        <label>ate infused meal</label>
+	        <description>That meal was delicious! I feel great!</description>
+	        <baseMoodEffect>10</baseMoodEffect>
+	      </li>
+	    </stages>
+    </ThoughtDef>
+
+</Defs>

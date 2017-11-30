@@ -4,7 +4,7 @@
   <ThingDef ParentName="MSI_MakeableDrugBase">
     <defName>CHO</defName>
     <label>chemfuel hash oil</label>
-    <description>Chemfuel Hash Oil is a smokeleaf extract prepared using Chemfuel. Since C.H.O. is vaporized, some of the harmful effects are eliminated, but due to the method of it's extraction, other risks are increased.</description>
+    <description>Chemfuel Hash Oil is a smokeleaf extract prepared using Chemfuel. Since C.H.O. is vaporized, some of the harmful effects are eliminated, but due to the method of it's extraction, other risks are increased. While not physically addictive, users may still develop a psychological dependence.</description>
     <graphicData>
 		<texPath>Things/Items/MSI_CHO</texPath>
 		<graphicClass>Graphic_StackCount</graphicClass>
@@ -18,40 +18,40 @@
     </statBases>
     <techLevel>Industrial</techLevel>
     <ingestible>
-		<foodType>Plant, Processed</foodType>
-		<joy>0.95</joy>
-		<ingestHoldOffsetStanding>
-			<northDefault>
-				<offset>(0.27,0,0.08)</offset>
-				<behind>true</behind>
-			</northDefault>
-			<east>
-				<offset>(0.45,0,0.08)</offset>
-			</east>
-			<south>
-				<offset>(0.27,0,0.08)</offset>
-			</south>
-			<west>
-				<offset>(-0.50,0,0.08)</offset>
-				<flip>false</flip>
-			</west>
-		</ingestHoldOffsetStanding>
-		<outcomeDoers>
-			<li Class="IngestionOutcomeDoer_GiveHediff">
-				<hediffDef>CHOHigh</hediffDef>
-				<severity>0.5</severity>
-				<toleranceChemical>CHO</toleranceChemical>
-			</li>
-			<li Class="IngestionOutcomeDoer_OffsetNeed">
-				<need>Rest</need>
-				<offset>-0.2</offset>
-			</li>
-			<li Class="IngestionOutcomeDoer_GiveHediff">
-				<hediffDef>CHOTolerance</hediffDef>
-				<severity>0.03</severity>
-				<divideByBodySize>true</divideByBodySize>
-			</li>
-		</outcomeDoers>
+  		<foodType>Plant, Processed</foodType>
+  		<joy>0.85</joy>
+  		<ingestHoldOffsetStanding>
+  			<northDefault>
+  				<offset>(0.27,0,0.08)</offset>
+  				<behind>true</behind>
+  			</northDefault>
+  			<east>
+  				<offset>(0.45,0,0.08)</offset>
+  			</east>
+  			<south>
+  				<offset>(0.27,0,0.08)</offset>
+  			</south>
+  			<west>
+  				<offset>(-0.50,0,0.08)</offset>
+  				<flip>false</flip>
+  			</west>
+  		</ingestHoldOffsetStanding>
+  		<outcomeDoers>
+  			<li Class="IngestionOutcomeDoer_GiveHediff">
+  				<hediffDef>CHOHigh</hediffDef>
+  				<severity>0.5</severity>
+  				<toleranceChemical>CHO</toleranceChemical>
+  			</li>
+  			<li Class="IngestionOutcomeDoer_OffsetNeed">
+  				<need>Rest</need>
+  				<offset>-0.2</offset>
+  			</li>
+  			<li Class="IngestionOutcomeDoer_GiveHediff">
+  				<hediffDef>CHOTolerance</hediffDef>
+  				<severity>0.03</severity>
+  				<divideByBodySize>true</divideByBodySize>
+  			</li>
+  		</outcomeDoers>
     </ingestible>
     <recipeMaker>
 		<researchPrerequisite>IndustrialSmokeleafCultivation</researchPrerequisite>
@@ -66,7 +66,7 @@
     </recipeMaker>
     <costList>
       <SmokeleafBuds>4</SmokeleafBuds>
-	  <Chemfuel>1</Chemfuel>
+	   <Chemfuel>1</Chemfuel>
     </costList>
     <comps>
       <li Class="CompProperties_Drug">
@@ -89,21 +89,21 @@
     <maxSeverity>1.0</maxSeverity>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-1.5</severityPerDay>
+        <severityPerDay>-1.0</severityPerDay>
       </li>
     </comps>
     <stages>
         <li>
           <hungerRateFactor>1.1</hungerRateFactor>
-          <painOffset>-0.3</painOffset>
+          <painOffset>-0.25</painOffset>
           <capMods>
             <li>
               <capacity>Consciousness</capacity>
-              <offset>-0.3</offset>
+              <offset>-0.25</offset>
             </li>
             <li>
               <capacity>Moving</capacity>
-              <offset>-0.2</offset>
+              <offset>-0.15</offset>
             </li>
           </capMods>
         </li>

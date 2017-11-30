@@ -87,6 +87,7 @@
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
 			<li>AdvancedSmokeleafCultivation</li>
+			<li>AdvancedSmokeleafProcessing</li>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<requiredResearchFacilities>

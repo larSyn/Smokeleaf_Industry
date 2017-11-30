@@ -1,54 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-  <!--========== Hemp ==========-->
-
-	<ThingDef ParentName="MSI_ResourceBase">
-		<defName>HempFabric</defName>
-		<label>hemp fabric</label>
-		<description>Fabric woven from hemp fibers.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/Cloth</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<color>(138,139,108)</color>
-		</graphicData>
-		<statBases>
-			<MaxHitPoints>90</MaxHitPoints>
-			<MarketValue>6</MarketValue>
-			<Mass>0.05</Mass>
-			<Flammability>1.0</Flammability>
-			<DeteriorationRate>8</DeteriorationRate>
-		</statBases>
-		<stuffProps>
-			<categories>
-				<li>Fabric</li>
-			</categories>
-			<color>(138,139,108)</color>
-			<commonality>1.4</commonality>
-			<statOffsets>
-				<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
-				<ArmorRating_Sharp>0.075</ArmorRating_Sharp>
-				<ArmorRating_Heat>0.025</ArmorRating_Heat>
-				<ArmorRating_Electric>0.015</ArmorRating_Electric>
-			</statOffsets>
-			<statFactors>
-				<WorkToMake>1.3</WorkToMake>
-				<ArmorRating_Blunt>1.5</ArmorRating_Blunt>
-				<ArmorRating_Sharp>2.0</ArmorRating_Sharp>
-				<ArmorRating_Heat>1.5</ArmorRating_Heat>
-				<ArmorRating_Electric>0.5</ArmorRating_Electric>
-				<Insulation_Cold>1.5</Insulation_Cold>
-				<Insulation_Heat>1.5</Insulation_Heat>
-			</statFactors>	
-		</stuffProps>
-		<thingCategories>
-			<li>Textiles</li>
-		</thingCategories>
-		<researchPrerequisites>
-			<li>SmokeleafProcessing</li>
-			<li>ComplexClothing</li>
-		</researchPrerequisites>
-	</ThingDef>
   
     <!--========== Hemp Fiber ==========-->
 	
@@ -66,6 +17,8 @@
 			<Mass>0.25</Mass>
 			<Flammability>1.0</Flammability>
 			<DeteriorationRate>12</DeteriorationRate>
+      		<SharpDamageMultiplier>0.2</SharpDamageMultiplier>
+      		<BluntDamageMultiplier>0.75</BluntDamageMultiplier>
 		</statBases>
 		<stuffProps>
 			<stuffAdjective>hemp</stuffAdjective>
@@ -73,7 +26,7 @@
 				<li>Woody</li>
 			</categories>
 			<commonality>1.00</commonality>
-			<color>(138,139,108)</color>
+			<color>(138,139,95)</color>
 			<constructEffect>ConstructWood</constructEffect>
 			<appearance>Planks</appearance>
 			<soundImpactStuff>BulletImpactWood</soundImpactStuff>
@@ -86,7 +39,7 @@
 				<WorkToMake>0.75</WorkToMake>
 				<WorkToBuild>0.75</WorkToBuild>
 				<DoorOpenSpeed>1.25</DoorOpenSpeed>
-				<MeleeWeapon_CooldownMultiplier>0.9</MeleeWeapon_CooldownMultiplier>
+				<MeleeWeapon_CooldownMultiplier>0.95</MeleeWeapon_CooldownMultiplier>
 			</statFactors>
 		</stuffProps>
 		<tools>
@@ -94,8 +47,8 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>8</power>
-				<cooldownTime>1.5</cooldownTime>
+				<power>6</power>
+				<cooldownTime>1.25</cooldownTime>
 			</li>
 		</tools>
 		<stackLimit>400</stackLimit>
@@ -155,46 +108,99 @@
 			<li>SmokeleafCultivation</li>
 		</researchPrerequisites>
 	</ThingDef>
-  
-  <!--========== Hemp Flour ==========-->
-  
-	<ThingDef ParentName="MSI_PlantFoodRawBase">
-		<defName>HempFlour</defName>
-		<label>hemp flour</label>
-		<description>Smokeleaf seeds can be ground into a fine flour for baking.</description>
+
+  <!--========== Hemp ==========-->
+
+	<ThingDef ParentName="MSI_ResourceBase">
+		<defName>HempFabric</defName>
+		<label>hemp fabric</label>
+		<description>Fabric woven from hemp fibers.</description>
 		<graphicData>
-			<texPath>Things/Items/MSI_flour</texPath>
+			<texPath>Things/Item/Resource/Cloth</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<color>(138,139,95)</color>
 		</graphicData>
-		<soundInteract>Standard_Drop</soundInteract>
-		<soundDrop>Standard_Drop</soundDrop>
-		<socialPropernessMatters>true</socialPropernessMatters>
 		<statBases>
-			<MarketValue>2.5</MarketValue>
+			<MaxHitPoints>90</MaxHitPoints>
+			<MarketValue>6</MarketValue>
+			<Mass>0.05</Mass>
 			<Flammability>1.0</Flammability>
-			<DeteriorationRate>12</DeteriorationRate>
+			<DeteriorationRate>8</DeteriorationRate>
 		</statBases>
-		<ingestible>
-			<preferability>DesperateOnly</preferability>
-			<foodType>Processed</foodType>
-			<nutrition>0.1</nutrition>
-			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
-			<useEatingSpeedStat>true</useEatingSpeedStat>
-			<baseIngestTicks>120</baseIngestTicks>
-			<ingestEffect>EatVegetarian</ingestEffect>
-			<ingestSound>Meal_Eat</ingestSound>
-		</ingestible>
-		<comps>
-			<li Class="CompProperties_Rottable">
-				<daysToRotStart>120</daysToRotStart>
-				<rotDestroys>true</rotDestroys>
-			</li>
-		</comps>
+		<stuffProps>
+			<categories>
+				<li>Fabric</li>
+			</categories>
+			<color>(138,139,108)</color>
+			<commonality>1.4</commonality>
+			<statOffsets>
+				<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+				<ArmorRating_Sharp>0.075</ArmorRating_Sharp>
+				<ArmorRating_Heat>0.05</ArmorRating_Heat>
+				<ArmorRating_Electric>0.025</ArmorRating_Electric>
+			</statOffsets>
+			<statFactors>
+				<WorkToMake>1.3</WorkToMake>
+				<ArmorRating_Blunt>1.25</ArmorRating_Blunt>
+				<ArmorRating_Sharp>3.0</ArmorRating_Sharp>
+				<ArmorRating_Heat>1.25</ArmorRating_Heat>
+				<ArmorRating_Electric>1.5</ArmorRating_Electric>
+				<Insulation_Cold>1.0</Insulation_Cold>
+				<Insulation_Heat>1.5</Insulation_Heat>
+			</statFactors>	
+		</stuffProps>
 		<thingCategories>
-			<li>PlantFoodRaw</li>
+			<li>Textiles</li>
 		</thingCategories>
 		<researchPrerequisites>
 			<li>SmokeleafProcessing</li>
+			<li>ComplexClothing</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+  <!--========== Hemp Biocomposite ==========-->
+
+	<ThingDef ParentName="MSI_ResourceBase">
+		<defName>HempBiocomposite</defName>
+		<label>hemp biocomposite</label>
+		<description>A biocomposite material made from hemp fibers and hemp fabric. Useful as a cheap, sustainable alternative for metals.</description>
+		<graphicData>
+			<texPath>Things/Items/MSI_bioComp</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(130,130,100)</color>
+		</graphicData>
+    	<soundInteract>Metal_Drop</soundInteract>
+    	<soundDrop>Metal_Drop</soundDrop>
+    	<useHitPoints>false</useHitPoints>
+		<statBases>
+			<MarketValue>8</MarketValue>
+			<Mass>0.25</Mass>
+      		<SharpDamageMultiplier>0.55</SharpDamageMultiplier>
+      		<BluntDamageMultiplier>0.85</BluntDamageMultiplier>
+		</statBases>
+		<stuffProps>
+			<categories>
+				<li>Metallic</li>
+			</categories>
+			<color>(130,130,100)</color>
+			<commonality>1.4</commonality>
+      		<soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      		<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      		<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<statFactors>
+        		<MaxHitPoints>0.9</MaxHitPoints>
+				<WorkToMake>1.3</WorkToMake>
+       			<Flammability>0.25</Flammability>
+        		<MeleeWeapon_CooldownMultiplier>0.75</MeleeWeapon_CooldownMultiplier>
+			    <ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+			    <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+			</statFactors>	
+		</stuffProps>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<researchPrerequisites>
+			<li>AdvancedSmokeleafProcessing</li>
 		</researchPrerequisites>
 	</ThingDef>
   
@@ -252,7 +258,7 @@
 			<WorkToMake>750</WorkToMake>
 		</statBases>
 		<thingCategories>
-			<li>Medicine</li>
+			<li>SmokeleafIndCatDrugs</li>
 		</thingCategories>
 		<costList>
 			<SmokeleafBuds>15</SmokeleafBuds>
@@ -272,40 +278,6 @@
 			<li>SmokeleafPharmacology</li>
 		</researchPrerequisites>
 	</ThingDef>
-  
-  <!--========== Infused Meal ==========--> 
-	  
-	<ThingDef ParentName="MSI_MealEdibles">
-		<defName>MealInfused</defName>
-		<label>infused meal</label>
-		<description>A filling meal that also gives a slight buzz.</description>
-		<graphicData>
-			<texPath>Things/Items/MSI_meal</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<statBases>
-			<MarketValue>27</MarketValue>
-			<WorkToMake>450</WorkToMake>
-		</statBases>
-		<ingestible>
-			<preferability>MealFine</preferability>
-			<tasteThought>AteFineMeal</tasteThought>
-			<nutrition>0.95</nutrition>
-			<joy>0.8</joy>
-			<joyKind>Chemical</joyKind>	  
-			<ingestEffect>EatVegetarian</ingestEffect>
-			<ingestSound>Meal_Eat</ingestSound>
-			<outcomeDoers>
-				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>InfusedBuzz</hediffDef>
-					<severity>0.5</severity>
-				</li>
-			</outcomeDoers>
-		</ingestible>
-		<researchPrerequisites>
-			<li>AdvancedSmokeleafProcessing</li>
-		</researchPrerequisites>
-	</ThingDef> 
   
   <!--========== Infused Medicine ==========-->  
 

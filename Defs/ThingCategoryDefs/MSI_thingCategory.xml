@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--==========  Thimg Category  ==========-->
+
+  	<ThingCategoryDef>
+      <defName>SmokeleafIndCatDrugs</defName>
+      <label>Smokeleaf Drugs</label>
+      <parent>Drugs</parent>
+      <resourceReadoutRoot>true</resourceReadoutRoot>
+      <iconPath>Icons/MSI_thingCat_drugs_icon</iconPath>
+    </ThingCategoryDef>
+
+  	<ThingCategoryDef>
+      <defName>SmokeleafIndCatEdibles</defName>
+      <label>Smokeleaf Edibles</label>
+      <parent>Foods</parent>
+      <resourceReadoutRoot>true</resourceReadoutRoot>
+      <iconPath>Icons/MSI_thingCat_edibles_icon</iconPath>
+    </ThingCategoryDef>
+
+</Defs>

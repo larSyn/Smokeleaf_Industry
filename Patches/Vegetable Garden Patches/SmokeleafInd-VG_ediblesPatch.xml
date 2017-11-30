@@ -28,6 +28,8 @@
 			</li>
 		</operations>
 	</Operation>
+
+  <!--========== Make Hemp Milk ==========-->
 	
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
@@ -37,11 +39,21 @@
 				<yourMod>Smokeleaf Industry</yourMod>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>*/ThingDef[defName = "HempFlour"]/thingCategories</xpath>
+				<xpath>*/RecipeDef[defName = "MakeHempMilk"]/recipeUsers</xpath>
 				<value>
-					<thingCategories>
-						<li>CookingSupplies</li>
-					</thingCategories>
+					<recipeUsers>
+						<li>HandCanningstove</li>
+						<li>Canningstove</li>
+					</recipeUsers>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName = "MakeHempMilkBulk"]/recipeUsers</xpath>
+				<value>
+					<recipeUsers>
+						<li>HandCanningstove</li>
+						<li>Canningstove</li>
+					</recipeUsers>
 				</value>
 			</li>
 		</operations>
@@ -86,6 +98,8 @@
 			</li>
 		</operations>
 	</Operation>-->
+
+  <!--========== Make Smokeleaf Butter ==========-->
 	
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
@@ -114,6 +128,38 @@
 			</li>
 		</operations>
 	</Operation>
+
+  <!--========== Press Smokeleaf Seed Oil ==========-->
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>VGP Garden Gourmet</modName>
+				<yourMod>Smokeleaf Industry</yourMod>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName = "CraftSmokeleafSeedOil"]/recipeUsers</xpath>
+				<value>
+					<recipeUsers>
+						<li>HandCanningstove</li>
+						<li>Canningstove</li>
+					</recipeUsers>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName = "BulkCraftSmokeleafSeedOil"]/recipeUsers</xpath>
+				<value>
+					<recipeUsers>
+						<li>HandCanningstove</li>
+						<li>Canningstove</li>
+					</recipeUsers>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+  <!--========== Move Edibles Bases to "Ingredients" ==========-->
 	
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success> 
@@ -123,7 +169,23 @@
 				<yourMod>Smokeleaf Industry</yourMod>
 			</li>
 			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[defName = "HempFlour"]/thingCategories</xpath>
+				<value>
+					<thingCategories>
+						<li>CookingSupplies</li>
+					</thingCategories>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
 				<xpath>*/ThingDef[defName = "HempMilk"]/thingCategories</xpath>
+				<value>
+					<thingCategories>
+						<li>CookingSupplies</li>
+					</thingCategories>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[defName = "SmokeleafSeedOil"]/thingCategories</xpath>
 				<value>
 					<thingCategories>
 						<li>CookingSupplies</li>
@@ -136,34 +198,6 @@
 					<thingCategories>
 						<li>CookingSupplies</li>
 					</thingCategories>
-				</value>
-			</li>
-		</operations>
-	</Operation>
-	
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="ModCheck.isModLoaded">
-				<modName>VGP Garden Gourmet</modName>
-				<yourMod>Smokeleaf Industry</yourMod>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>*/RecipeDef[defName = "MakeHempMilk"]/recipeUsers</xpath>
-				<value>
-					<recipeUsers>
-						<li>HandCanningstove</li>
-						<li>Canningstove</li>
-					</recipeUsers>
-				</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>*/RecipeDef[defName = "MakeHempMilkBulk"]/recipeUsers</xpath>
-				<value>
-					<recipeUsers>
-						<li>HandCanningstove</li>
-						<li>Canningstove</li>
-					</recipeUsers>
 				</value>
 			</li>
 		</operations>
@@ -670,6 +704,162 @@
 						<li>FueledCandyTable</li>
 						<li>CandyTable</li>
 					</recipeUsers>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+  <!--========== Smokeleaf Candy ==========-->
+  
+	<Operation Class="PatchOperationSequence">
+	    <success>Always</success>
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>VGP Garden Gourmet</modName>
+				<yourMod>Smokeleaf Industry</yourMod>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName = "MakeSmokeleafCandy"]/recipeUsers</xpath>
+				<value>
+					<recipeUsers>
+						<li>FueledCandyTable</li>
+						<li>CandyTable</li>
+					</recipeUsers>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName = "MakeSmokeleafCandyBulk"]/recipeUsers</xpath>
+				<value>
+					<recipeUsers>
+						<li>FueledCandyTable</li>
+						<li>CandyTable</li>
+					</recipeUsers>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+	    <success>Always</success>
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>VGP Garden Gourmet</modName>
+				<yourMod>Smokeleaf Industry</yourMod>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName = "MakeSmokeleafCandy"]/ingredients/li[3]/filter/thingDefs</xpath>
+				<value>
+					<thingDefs>
+						<li>Sugar</li>
+					</thingDefs>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName = "MakeSmokeleafCandy"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<thingDefs>
+				        <li>SmokeleafDistillate</li>
+				        <li>RawBerries</li>
+				        <li>RawAgave</li>
+						<li>Sugar</li>
+					</thingDefs>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName = "MakeSmokeleafCandyBulk"]/ingredients/li[3]/filter/thingDefs</xpath>
+				<value>
+					<thingDefs>
+						<li>Sugar</li>
+					</thingDefs>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName = "MakeSmokeleafCandyBulk"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<thingDefs>
+				        <li>SmokeleafDistillate</li>
+				        <li>RawBerries</li>
+				        <li>RawAgave</li>
+						<li>Sugar</li>
+					</thingDefs>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>VGP Vegetable Garden</modName>
+				<yourMod>Smokeleaf Industry</yourMod>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "MakeSmokeleafCandy"]/ingredients/li[2]/filter/thingDefs</xpath>
+				<value>
+					<li>Rawapple</li>
+					<li>Rawbanana</li>
+					<li>Rawgrape</li>
+					<li>Raworange</li>
+					<li>Rawpeach</li>
+					<li>Rawpineapple</li>
+					<li>Rawblueberry</li>
+					<li>Rawwatermelon</li>
+					<li>Rawgooseberry</li>
+					<li>Rawcloudberry</li>
+					<li>RawCherry</li>
+					<li>RawCoconut</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "MakeSmokeleafCandy"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<li>Rawapple</li>
+					<li>Rawbanana</li>
+					<li>Rawgrape</li>
+					<li>Raworange</li>
+					<li>Rawpeach</li>
+					<li>Rawpineapple</li>
+					<li>Rawblueberry</li>
+					<li>Rawwatermelon</li>
+					<li>Rawgooseberry</li>
+					<li>Rawcloudberry</li>
+					<li>RawCherry</li>
+					<li>RawCoconut</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "MakeSmokeleafCandyBulk"]/ingredients/li[2]/filter/thingDefs</xpath>
+				<value>
+					<li>Rawapple</li>
+					<li>Rawbanana</li>
+					<li>Rawgrape</li>
+					<li>Raworange</li>
+					<li>Rawpeach</li>
+					<li>Rawpineapple</li>
+					<li>Rawblueberry</li>
+					<li>Rawwatermelon</li>
+					<li>Rawgooseberry</li>
+					<li>Rawcloudberry</li>
+					<li>RawCherry</li>
+					<li>RawCoconut</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/RecipeDef[defName = "MakeSmokeleafCandyBulk"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<li>Rawapple</li>
+					<li>Rawbanana</li>
+					<li>Rawgrape</li>
+					<li>Raworange</li>
+					<li>Rawpeach</li>
+					<li>Rawpineapple</li>
+					<li>Rawblueberry</li>
+					<li>Rawwatermelon</li>
+					<li>Rawgooseberry</li>
+					<li>Rawcloudberry</li>
+					<li>RawCherry</li>
+					<li>RawCoconut</li>
 				</value>
 			</li>
 		</operations>

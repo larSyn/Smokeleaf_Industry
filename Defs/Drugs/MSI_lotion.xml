@@ -15,7 +15,6 @@
 		<WorkToMake>750</WorkToMake>
 		<MarketValue>75</MarketValue>
 		<Mass>0.01</Mass>
-		<MedicalPotency>0.25</MedicalPotency>
 		<DeteriorationRate>0.5</DeteriorationRate>
     </statBases>
     <techLevel>Spacer</techLevel>
