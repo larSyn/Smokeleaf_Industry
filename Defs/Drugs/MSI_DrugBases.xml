@@ -15,7 +15,7 @@
 		<altitudeLayer>Item</altitudeLayer>
 		<stackLimit>400</stackLimit>
 		<thingCategories>
-			<li>Drugs</li>
+			<li>SmokeleafIndCatDrugs</li>
 		</thingCategories>
 		<alwaysHaulable>true</alwaysHaulable>
 		<comps>

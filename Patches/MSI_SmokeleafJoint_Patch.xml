@@ -7,6 +7,12 @@
 	    <success>Always</success>
 		<operations>
 			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[defName = "SmokeleafJoint"]/description</xpath>
+				<value>
+					<description>Smokeleaf buds broken up and rolled into a joint. The drug improves mood, but also increases appetite, reduces focus and slows movement. While not physically addictive, users may still develop a psychological dependence.</description>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
 				<xpath>*/ThingDef[defName = "SmokeleafJoint"]/costList</xpath>
 				<value>
 					<costList>
@@ -88,13 +94,10 @@
 	
 	<!--========== Misc Patches ==========-->
 	
-	<Operation Class="PatchOperationReplace">
+	<Operation Class="PatchOperationAdd">
 		<xpath>*/ThingDef[defName = "DrugLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 		<value>
-			<linkableFacilities>
-				<li>ToolCabinet</li>
-				<li>TrimmingTools</li>
-			</linkableFacilities>
+			<li>TrimmingTools</li>
 		</value>
 	</Operation>
 	

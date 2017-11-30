@@ -1,0 +1,180 @@
+----------------------------------------------------------------------------------------------------------------------------------
+
+Updated to b18 v1.6
+
+Smokeleaf Industry
+Changelog:
+
+	-Updated ModCheck to v1.4
+	-Fixed Fuel patch.  (Thanks Sixdd!)
+	-Added new Trimming Tools rotatable multi texture.
+	-Added new floor: Hempcrete Path
+	-Added renewable metallic material: Hemp Biocomposite 	(Crafted at a Smithy. It is weaker than steel.)
+	-Added new ingredient: Smokeleaf Seed Oil (Crafted at a 	Stove.  It is used in some edibles recipes and as an 	ingredient for biocomposite.)
+	-Added new edible: Smokeleaf Candy (Crafted at a Stove. It 	is a slightly cheaper advanced edible.)
+	-Added Thing Categories for Smokeleaf Drugs and Edibles.
+	-Various tweaks to drugs, recipes and edibles.
+	-Slight tweak to colors for things made with Hemp, 	Hemprete, and Hemp biocomposite.
+	-Words
+	-Balancing
+
+MSI-VG Patch v1.3
+Changelog:
+	
+	-Added Smokeleaf Seed Oil to Ingredients category.
+	-Added Smokeleaf Seed Oil recipe to Food Prep Tables.
+	-Added Smokeleaf Candy to Sweets Tables.  
+	-Replaced Smokeleaf Seed Oil in Smokeleaf Candy recipe 	with VG Sugar. 
+	-Added VG Fruits to Smokeleaf Candy recipe.
+
+----------------------------------------------------------------------------------------------------------------------------------
+Updated to b18 v1.5
+
+Smokeleaf Industry
+Changelog:
+	
+	-ModCheck added.  Thanks Nightingale!
+	-Compatibility patches included with main mod now.
+	-Stack limit for drugs increased to 400.
+	-Stack limit for Fibers, Buds, and Seeds increased to 400.
+	-Adjusted Hemp Fabric stats.
+	-New Trimming Tools texture.
+	-Hemp Fiber is now "Woody" stuff and can be used in corresponding recipes.
+	-Hemp Fiber can be used as a fuel, similar to wood logs.
+	-Hemp Fiber moved to Raw Resources.
+	-Added some base items to Outlander and Orbital traders.
+	-Added Hemp Stalk Flooring.
+	-Various small fixes.
+
+
+MSI-VG Patch v1.2
+Changelog:
+
+	-Updated for new VG modules.
+	-Moved Smokeleaf Butter and Hemp Milk recipes to Food Prep Tables.
+	-Added Hemp Fabric to Electric Loom.
+	-Added Smokeleaf Brownie/Cookie recipes to Electric Oven.
+	-Removed VG's Bulk Joint recipe.
+
+MSI-VG Patch v1.1
+Changelog:
+
+	-Added all VG Fruits to the NutriLeaf Bar recipe.
+	-Added SI Hemp Milk to all VG milk using recipes (ie: 	cheese, ice cream, etc.)
+
+MSI-VG Patch v1.0
+Changelog:
+
+	-Removed VG's Hemp Cloth and it's recipe. (Note=This 	causes a def-linked translation error in the log. It 	doesn't seem to affect anything, though. For another 	example of this, see Fertile Fields. It's VG compatibility 	patch uses 
+	the same method to remove items, and it doesn't appear to 	have added any problems. If it does, please report it.)
+	-Hemp Fabric must now be made at the Loom.
+
+	-Added VG "Flour" to all SI "Hemp Flour" using recipes (ie: 	cookies, brownies).
+	-Added SI "Hemp Flour" to all VG "Flour" using recipes (ie: 	Bread, Piza, etc.).
+	-Moved Hemp Flour to the "Ingredients" category.
+	-Hemp Flour must now be ground at the Milling Stone.
+
+	-Added all VG fruits to the Smokeleaf Smoothie recipe.
+
+	-Added Sugar to the Smokeleaf Cookie recipe.
+	-Increased cookie output to 3 (regular recipe) and 15 (bulk 	recipe).
+	-Smokeleaf Cookies and Brownies must now be baked in the 	Oven.
+
+	-Changed Biofuel recipe to be equivalent to Hempoline's 	recipe.
+	-Added a bulk recipe for Biofuel.
+	-Added Biofuel as a compatible fuel to the Hempoline 	Generator.
+	-Removed Biofuel as a fuel source from all workbenches.
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+Updated to v1.4
+
+Changelog:
+
+	-Fixed Hempoline being mineable.  (thanks ptx and Kori)
+	-Fixed total stone block count being used for hempcrete blocks.
+	-Fixed Edibles addiction bug.  (thanks Vlad0mi3r)
+	-Fixed Crafting Spot recipes.
+	-Adjusted Terrain costs/workToBuild.
+	-Added new Terrain type. Hempcrete Plate (requires Industrial Smokeleaf Processing)
+	-Added new Facility type for trimming stations (including the Drug Lab).  Trimming Tools  (requires Industrial Smokeleaf Cultivation) 
+	-Added Hemp Milk.  Added to any recipe requiring Milk.  (requires Industrial Smokeleaf Processing)
+	-Added new edible. Nutrileaf Bar  (requires Industrial Smokeleaf Processing)
+	-Smokeleaf Butter and Hemp Milk require refrigeration.
+	-10x Trimming recipe re-added to Cultivation Bench.
+	-Added 2 new traits: Stoner - Resistant to effects of 								   addiction.
+				     Smokeleaf Farmer - Growing and 								   workSpeed boost.
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+Updated to v1.3b
+
+Changelog:	
+	
+	-Moved some things around in order to make the Vegetable Garden Patch a little easier to make.
+	-Doubled smokeleaf trimming recipes ( ie: 2 smokeleaves = 1 bud, seed and fiber, etc).
+	-Doubled smokeleaf rolling and trimming recipes at the Crafting Spot (ie: 4 buds = 1 joint, etc). I think this better represents the Neolithic level of knowledge. There would be some extra waste until they perfected all their methods (Drug Production research).
+	-Re-added smokeleaf rolling and trimming recipes to the Drug Lab and Cultivation Bench at the normal recipe. (ie: 2 buds = 1 joint, etc).
+	-Fixed some spelling mistakes. (thanks Orion TH)
+	-Fixed a strange bug where an empty list was necessary in the drug addiction def. (thanks ttamttam, this would have taken me forever to figure out.)
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+Updated to v1.3: The Return of the Crafting Spot
+
+Changelog:
+
+Made compatible with tribal starts:
+	-Research Smokeleaf Cultivation and Smokeleaf Processing 	tech level set to Neolithic
+	-Returned joint recipe to the Crafting Spot and added a (x5) 	recipe.
+	-Removed all joint recipes from Drug Lab.
+	-Added smokeleaf trimming recipe to the Crafting Spot and 	added a (x5) recipe.
+	-Hempcrete now requires Smokeleaf Processing and Stone 	Cutting to be researched.
+	-Stone terrain now requires Smokeleaf Processing and Stone 	Cutting to be researched.
+	-Hemp fabric now requires Smokeleaf Processing and Complex 	Clothing to be researched.
+	-Hemp carpet now requires Smokeleaf Processing, Complex 	Clothing, and Carpet Making to be researched.
+
+Fixed drug tolerances/addictions:
+	-All drugs should have about a 7 day tolerance stage loss 	time and 30 days of addiction (vanilla settings for all 	drugs).
+	-All Edibles should have about a 3-4 day tolerance stage 	loss time and 15 days of addiction.
+	(Let me know if there are still problems with this, but it 	has been pretty consistent in my tests.)
+	
+Other fixes:
+	-Lots of recipe adjustments.  Mostly small tweaks to try and 	prevent late game stockpile issues.
+	-Added (x10) trimming and rolling jobs to the Cultivation 	Bench.
+	-Medicinals Lab is now unlocked by researching Smokeleaf 	Pharmacology.
+	-Space Bucket power raised to 350.
+	-Grow lamp power lowered to 1250.
+	-Added (bulk) recipes for everything.
+	-Changed (bulk) recipe research requirements to be the same 	as the single recipe.
+	-Adjusted smokeleaf medicines to make each a bit more 	useful.
+	-Adjusted drugs balance, including smokeleaf joints.
+	-Other things I didn't write down...
+	
+Note: The Grow Lamp default plant can't be changed as far as I can tell. So...that's not working and probably won't.
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+Updated to v1.2
+
+Changelog:
+
+	-Adjusted market values
+	-Added Workgiver for Cultivation Bench (smh...)
+	-Made Grow Lamps default plant Smokeleaves
+	-Tweaked and added recipes
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+Updated to v1.1
+
+Changelog:
+
+	-fixed crafting requirements
+	-moved some things around
+	-fixed some descriptions
+	-fixed smokeleaf butter, now it's edible
+	-tweaked generator
+	-fixed smoking animation orientations
+	-fixed research requirements
+	-tweaked some recipes

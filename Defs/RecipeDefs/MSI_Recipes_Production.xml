@@ -348,80 +348,114 @@
 		</recipeUsers>
 	</RecipeDef>
 	
-	<!--========== Craft Hemp Flour ==========-->
+	<!--========== Craft Hemp Biocomposite ==========-->
 	
 	<RecipeDef>
-		<defName>CraftHempFlour</defName>
-		<label>grind hemp flour</label>
-		<description>Process smokeleaf seeds into flour for baking.</description>
-		<jobString>Grinding hemp flour.</jobString>
-		<effectWorking>Cook</effectWorking>
-		<soundWorking>Recipe_CookMeal</soundWorking>
+		<defName>CraftHempBiocomposite</defName>
+		<label>craft hemp biocomposite</label>
+		<description>Process hemp fibers and hemp fabric into a lightweight biocomposite.</description>
+		<jobString>Crafting hemp biocomposite.</jobString>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
 		<workAmount>350</workAmount>
-		<workSkill>Cooking</workSkill>
+		<workSkill>Crafting</workSkill>
 		<skillRequirements>
-			<Crafting>3</Crafting>
+			<Crafting>10</Crafting>
 		</skillRequirements>
 		<ingredients>
 			<li>
 				<filter>
 					<thingDefs>
-						<li>SmokeleafSeed</li>
+						<li>HempFiber</li>
 					</thingDefs>
 				</filter>
-				<count>2</count>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>HempFabric</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SmokeleafSeedOil</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>SmokeleafSeed</li>
+				<li>HempFiber</li>
+				<li>HempFabric</li>
+				<li>SmokeleafSeedOil</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<HempFlour>1</HempFlour>
+			<HempBiocomposite>1</HempBiocomposite>
 		</products>
 		<recipeUsers>
-			<li>FueledStove</li>
-			<li>ElectricStove</li>
+			<li>FueledSmithy</li>
+			<li>ElectricSmithy</li>
 		</recipeUsers>
-		<researchPrerequisite>SmokeleafProcessing</researchPrerequisite>
 	</RecipeDef>
-	
+		
 	<RecipeDef>
-		<defName>BulkCraftHempFlour</defName>
-		<label>grinding hemp flour (bulk)</label>
-		<description>Process smokeleaf seeds into flour for baking in larger quantities.</description>
-		<jobString>Grinding hemp flour.</jobString>
-		<effectWorking>Cook</effectWorking>
-		<soundWorking>Recipe_CookMeal</soundWorking>
-		<workAmount>2000</workAmount>
-		<workSkill>Cooking</workSkill>
+		<defName>BulkCraftHempBiocomposite</defName>
+		<label>craft hemp biocomposite (bulk)</label>
+		<description>Process hemp fibers and hemp seed oil into a lightweight biocomposite in larger quantities.</description>
+		<jobString>Crafting hemp biocomposite.</jobString>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<workAmount>2500</workAmount>
+		<workSkill>Crafting</workSkill>
 		<skillRequirements>
-			<Crafting>5</Crafting>
+			<Crafting>10</Crafting>
 		</skillRequirements>
 		<ingredients>
 			<li>
 				<filter>
 					<thingDefs>
-						<li>SmokeleafSeed</li>
+						<li>HempFiber</li>
 					</thingDefs>
 				</filter>
-				<count>20</count>
+				<count>40</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>HempFabric</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SmokeleafSeedOil</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>SmokeleafSeed</li>
+				<li>HempFiber</li>
+				<li>HempFiber</li>
+				<li>SmokeleafSeedOil</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<HempFlour>10</HempFlour>
+			<HempBiocomposite>10</HempBiocomposite>
 		</products>
 		<recipeUsers>
-			<li>FueledStove</li>
-			<li>ElectricStove</li>
+			<li>FueledSmithy</li>
+			<li>ElectricSmithy</li>
 		</recipeUsers>
-		<researchPrerequisite>SmokeleafProcessing</researchPrerequisite>
 	</RecipeDef>
 	
 	<!--========== Refine Hempoline ==========-->	

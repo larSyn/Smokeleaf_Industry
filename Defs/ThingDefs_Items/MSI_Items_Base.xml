@@ -83,7 +83,7 @@
   <ThingDef ParentName="MSI_MealBase" Name="MSI_MealRottable" Abstract="True">
     <comps>
       <li Class="CompProperties_Rottable">
-        <daysToRotStart>4</daysToRotStart>
+        <daysToRotStart>7</daysToRotStart>
         <rotDestroys>true</rotDestroys>
       </li>
     </comps>

@@ -17,8 +17,8 @@
 		<comps>
 			<li Class="HediffCompProperties_Disappears">
 				<disappearsAfterTicks>
-				<min>8000</min>
-				<max>24000</max>
+				<min>7500</min>
+				<max>30000</max>
 				</disappearsAfterTicks>
 			</li>
 		</comps>
@@ -28,15 +28,15 @@
 				<capMods>
 					<li>
 						<capacity>Consciousness</capacity>
-						<offset>-0.5</offset>
+						<offset>-0.35</offset>
 					</li>
 					<li>
 						<capacity>Moving</capacity>
-						<offset>-0.25</offset>
+						<offset>-0.35</offset>
 					</li>
 					<li>
 						<capacity>Manipulation</capacity>
-						<offset>-0.3</offset>
+						<offset>-0.35</offset>
 					</li>
 				</capMods>
 			</li>
@@ -52,26 +52,26 @@
 		<comps>
 			<li Class="HediffCompProperties_Disappears">
 				<disappearsAfterTicks>
-				<min>4000</min>
-				<max>16000</max>
+				<min>7500</min>
+				<max>30000</max>
 				</disappearsAfterTicks>
 			</li>
 		</comps>
 		<stages>
 			<li>
-				<painOffset>-0.1</painOffset>
+				<painOffset>-0.15</painOffset>
 				<capMods>
 					<li>
 						<capacity>Consciousness</capacity>
-						<offset>-0.05</offset>
+						<offset>-0.02</offset>
 					</li>
 					<li>
 						<capacity>Moving</capacity>
-						<offset>-0.05</offset>
+						<offset>-0.02</offset>
 					</li>
 					<li>
 						<capacity>Manipulation</capacity>
-						<offset>-0.05</offset>
+						<offset>-0.02</offset>
 					</li>
 				</capMods>
 			</li>
