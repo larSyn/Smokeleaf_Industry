@@ -68,42 +68,6 @@
 		</operations>
 	</Operation>
 	
-	<!--<Operation Class="PatchOperationSequence">
-	    <success>Always</success>
-		<operations>
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/HediffDef[defName = "SmokeleafHigh"]/comps/li[@Class="HediffCompProperties_SeverityPerDay"]/severityPerDay</xpath>
-				<value>
-					<severityPerDay>-2.0</severityPerDay>
-				</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/HediffDef[defName = "SmokeleafHigh"]/stages/li/painOffset</xpath>
-				<value>
-					<painOffset>-0.1</painOffset>
-				</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/HediffDef[defName = "SmokeleafHigh"]/stages/li/capMods/li[1]/offset</xpath>
-				<value>
-					<offset>-0.15</offset>
-				</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/HediffDef[defName = "SmokeleafHigh"]/stages/li/capMods/li[2]/offset</xpath>
-				<value>
-					<offset>-0.05</offset>
-				</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/HediffDef[defName = "SmokeleafTolerance"]/comps/li[@Class="HediffCompProperties_SeverityPerDay"]/severityPerDay</xpath>
-				<value>
-					<severityPerDay>-0.0666</severityPerDay>
-				</value>
-			</li>
-		</operations>
-	</Operation>-->
-	
 	<!--========== Misc Patches ==========-->
 	
 	<Operation Class="PatchOperationSequence">
