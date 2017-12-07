@@ -11,13 +11,13 @@
 				<yourMod>Smokeleaf Industry</yourMod>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>*/RecipeDef[defName = "BakeBread"]/ingredients/li[1]/filter/thingDefs</xpath>
+				<xpath>Defs/RecipeDef[defName = "BakeBread"]/ingredients/li[1]/filter/thingDefs</xpath>
 				<value>
 					<li>HempFlour</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>*/RecipeDef[defName = "BakeBread"]/fixedIngredientFilter/thingDefs</xpath>
+				<xpath>Defs/RecipeDef[defName = "BakeBread"]/fixedIngredientFilter/thingDefs</xpath>
 				<value>
 					<li>HempFlour</li>
 				</value>
@@ -35,13 +35,13 @@
 				<yourMod>Smokeleaf Industry</yourMod>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>*/RecipeDef[defName = "Bakesweetroll"]/ingredients/li[1]/filter/thingDefs</xpath>
+				<xpath>Defs/RecipeDef[defName = "Bakesweetroll"]/ingredients/li[1]/filter/thingDefs</xpath>
 				<value>
 					<li>HempFlour</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>*/RecipeDef[defName = "Bakesweetroll"]/fixedIngredientFilter/thingDefs</xpath>
+				<xpath>Defs/RecipeDef[defName = "Bakesweetroll"]/fixedIngredientFilter/thingDefs</xpath>
 				<value>
 					<li>HempFlour</li>
 				</value>
@@ -59,13 +59,13 @@
 				<yourMod>Smokeleaf Industry</yourMod>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>*/RecipeDef[defName = "Bakepizza"]/ingredients/li[1]/filter/thingDefs</xpath>
+				<xpath>Defs/RecipeDef[defName = "Bakepizza"]/ingredients/li[1]/filter/thingDefs</xpath>
 				<value>
 					<li>HempFlour</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>*/RecipeDef[defName = "Bakepizza"]/fixedIngredientFilter/thingDefs</xpath>
+				<xpath>Defs/RecipeDef[defName = "Bakepizza"]/fixedIngredientFilter/thingDefs</xpath>
 				<value>
 					<li>HempFlour</li>
 				</value>
@@ -83,13 +83,13 @@
 				<yourMod>Smokeleaf Industry</yourMod>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>*/RecipeDef[defName = "BakeCookies"]/ingredients/li[4]/filter/thingDefs</xpath>
+				<xpath>Defs/RecipeDef[defName = "BakeCookies"]/ingredients/li[4]/filter/thingDefs</xpath>
 				<value>
 					<li>HempFlour</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>*/RecipeDef[defName = "BakeCookies"]/fixedIngredientFilter/thingDefs</xpath>
+				<xpath>Defs/RecipeDef[defName = "BakeCookies"]/fixedIngredientFilter/thingDefs</xpath>
 				<value>
 					<li>HempFlour</li>
 				</value>
@@ -107,13 +107,13 @@
 				<yourMod>Smokeleaf Industry</yourMod>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>*/RecipeDef[defName = "BakeBlueberryPie"]/ingredients/li[1]/filter/thingDefs</xpath>
+				<xpath>Defs/RecipeDef[defName = "BakeBlueberryPie"]/ingredients/li[1]/filter/thingDefs</xpath>
 				<value>
 					<li>HempFlour</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>*/RecipeDef[defName = "BakeBlueberryPie"]/fixedIngredientFilter/thingDefs</xpath>
+				<xpath>Defs/RecipeDef[defName = "BakeBlueberryPie"]/fixedIngredientFilter/thingDefs</xpath>
 				<value>
 					<li>HempFlour</li>
 				</value>
@@ -131,13 +131,13 @@
 				<yourMod>Smokeleaf Industry</yourMod>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>*/RecipeDef[defName = "BakePumpkinPie"]/ingredients/li[1]/filter/thingDefs</xpath>
+				<xpath>Defs/RecipeDef[defName = "BakePumpkinPie"]/ingredients/li[1]/filter/thingDefs</xpath>
 				<value>
 					<li>HempFlour</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>*/RecipeDef[defName = "BakePumpkinPie"]/fixedIngredientFilter/thingDefs</xpath>
+				<xpath>Defs/RecipeDef[defName = "BakePumpkinPie"]/fixedIngredientFilter/thingDefs</xpath>
 				<value>
 					<li>HempFlour</li>
 				</value>
@@ -155,13 +155,13 @@
 				<yourMod>Smokeleaf Industry</yourMod>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>*/RecipeDef[defName = "Bakepolenta"]/ingredients/li[1]/filter/thingDefs</xpath>
+				<xpath>Defs/RecipeDef[defName = "Bakepolenta"]/ingredients/li[1]/filter/thingDefs</xpath>
 				<value>
 					<li>HempFlour</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>*/RecipeDef[defName = "Bakepolenta"]/fixedIngredientFilter/thingDefs</xpath>
+				<xpath>Defs/RecipeDef[defName = "Bakepolenta"]/fixedIngredientFilter/thingDefs</xpath>
 				<value>
 					<li>HempFlour</li>
 				</value>
@@ -179,13 +179,13 @@
 				<yourMod>Smokeleaf Industry</yourMod>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>*/RecipeDef[defName = "BakeCornbread"]/ingredients/li[1]/filter/thingDefs</xpath>
+				<xpath>Defs/RecipeDef[defName = "BakeCornbread"]/ingredients/li[1]/filter/thingDefs</xpath>
 				<value>
 					<li>HempFlour</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>*/RecipeDef[defName = "BakeCornbread"]/fixedIngredientFilter/thingDefs</xpath>
+				<xpath>Defs/RecipeDef[defName = "BakeCornbread"]/fixedIngredientFilter/thingDefs</xpath>
 				<value>
 					<li>HempFlour</li>
 				</value>
@@ -203,13 +203,13 @@
 				<yourMod>Smokeleaf Industry</yourMod>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>*/RecipeDef[defName = "BakeCornbread"]/ingredients/li[1]/filter/thingDefs</xpath>
+				<xpath>Defs/RecipeDef[defName = "BakeCornbread"]/ingredients/li[1]/filter/thingDefs</xpath>
 				<value>
 					<li>HempFlour</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>*/RecipeDef[defName = "BakeCornbreadmuffin"]/fixedIngredientFilter/thingDefs</xpath>
+				<xpath>Defs/RecipeDef[defName = "BakeCornbreadmuffin"]/fixedIngredientFilter/thingDefs</xpath>
 				<value>
 					<li>HempFlour</li>
 				</value>
@@ -227,19 +227,19 @@
 				<yourMod>Smokeleaf Industry</yourMod>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>*/RecipeDef[defName = "Bakemuffin"]/ingredients/li[1]/filter/thingDefs</xpath>
+				<xpath>Defs/RecipeDef[defName = "Bakemuffin"]/ingredients/li[1]/filter/thingDefs</xpath>
 				<value>
 					<li>HempFlour</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>*/RecipeDef[defName = "Bakemuffin"]/fixedIngredientFilter/thingDefs</xpath>
+				<xpath>Defs/RecipeDef[defName = "Bakemuffin"]/fixedIngredientFilter/thingDefs</xpath>
 				<value>
 					<li>HempFlour</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>*/RecipeDef[defName = "Bakemuffin"]/defaultIngredientFilter/thingDefs</xpath>
+				<xpath>Defs/RecipeDef[defName = "Bakemuffin"]/defaultIngredientFilter/thingDefs</xpath>
 				<value>
 					<li>HempFlour</li>
 				</value>
@@ -257,19 +257,19 @@
 				<yourMod>Smokeleaf Industry</yourMod>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>*/RecipeDef[defName = "BakeMeatPie"]/ingredients/li[1]/filter/thingDefs</xpath>
+				<xpath>Defs/RecipeDef[defName = "BakeMeatPie"]/ingredients/li[1]/filter/thingDefs</xpath>
 				<value>
 					<li>HempFlour</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>*/RecipeDef[defName = "BakeMeatPie"]/fixedIngredientFilter/thingDefs</xpath>
+				<xpath>Defs/RecipeDef[defName = "BakeMeatPie"]/fixedIngredientFilter/thingDefs</xpath>
 				<value>
 					<li>HempFlour</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>*/RecipeDef[defName = "BakeMeatPie"]/defaultIngredientFilter/thingDefs</xpath>
+				<xpath>Defs/RecipeDef[defName = "BakeMeatPie"]/defaultIngredientFilter/thingDefs</xpath>
 				<value>
 					<li>HempFlour</li>
 				</value>
@@ -287,19 +287,19 @@
 				<yourMod>Smokeleaf Industry</yourMod>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>*/RecipeDef[defName = "Bakechocomuffin"]/ingredients/li[1]/filter/thingDefs</xpath>
+				<xpath>Defs/RecipeDef[defName = "Bakechocomuffin"]/ingredients/li[1]/filter/thingDefs</xpath>
 				<value>
 					<li>HempFlour</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>*/RecipeDef[defName = "Bakechocomuffin"]/fixedIngredientFilter/thingDefs</xpath>
+				<xpath>Defs/RecipeDef[defName = "Bakechocomuffin"]/fixedIngredientFilter/thingDefs</xpath>
 				<value>
 					<li>HempFlour</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>*/RecipeDef[defName = "Bakechocomuffin"]/defaultIngredientFilter/thingDefs</xpath>
+				<xpath>Defs/RecipeDef[defName = "Bakechocomuffin"]/defaultIngredientFilter/thingDefs</xpath>
 				<value>
 					<li>HempFlour</li>
 				</value>
@@ -317,13 +317,13 @@
 				<yourMod>Smokeleaf Industry</yourMod>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>*/RecipeDef[defName = "MakeChocolatemilk"]/ingredients/li[2]/filter/thingDefs</xpath>
+				<xpath>Defs/RecipeDef[defName = "MakeChocolatemilk"]/ingredients/li[2]/filter/thingDefs</xpath>
 				<value>
 					<li>HempMilk</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>*/RecipeDef[defName = "MakeChocolatemilk"]/fixedIngredientFilter/thingDefs</xpath>
+				<xpath>Defs/RecipeDef[defName = "MakeChocolatemilk"]/fixedIngredientFilter/thingDefs</xpath>
 				<value>
 					<li>HempMilk</li>
 				</value>
@@ -341,13 +341,13 @@
 				<yourMod>Smokeleaf Industry</yourMod>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>*/RecipeDef[defName = "MakeIcecream"]/ingredients/li[3]/filter/thingDefs</xpath>
+				<xpath>Defs/RecipeDef[defName = "MakeIcecream"]/ingredients/li[3]/filter/thingDefs</xpath>
 				<value>
 					<li>HempMilk</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>*/RecipeDef[defName = "MakeIcecream"]/fixedIngredientFilter/thingDefs</xpath>
+				<xpath>Defs/RecipeDef[defName = "MakeIcecream"]/fixedIngredientFilter/thingDefs</xpath>
 				<value>
 					<li>HempMilk</li>
 				</value>
@@ -365,13 +365,13 @@
 				<yourMod>Smokeleaf Industry</yourMod>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>*/RecipeDef[defName = "MakeYogurt"]/ingredients/li[1]/filter/thingDefs</xpath>
+				<xpath>Defs/RecipeDef[defName = "MakeYogurt"]/ingredients/li[1]/filter/thingDefs</xpath>
 				<value>
 					<li>HempMilk</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>*/RecipeDef[defName = "MakeYogurt"]/fixedIngredientFilter/thingDefs</xpath>
+				<xpath>Defs/RecipeDef[defName = "MakeYogurt"]/fixedIngredientFilter/thingDefs</xpath>
 				<value>
 					<li>HempMilk</li>
 				</value>
@@ -389,13 +389,13 @@
 				<yourMod>Smokeleaf Industry</yourMod>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>*/RecipeDef[defName = "MakeSmoothie"]/ingredients/li[1]/filter/thingDefs</xpath>
+				<xpath>Defs/RecipeDef[defName = "MakeSmoothie"]/ingredients/li[1]/filter/thingDefs</xpath>
 				<value>
 					<li>HempMilk</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>*/RecipeDef[defName = "MakeSmoothie"]/fixedIngredientFilter/thingDefs</xpath>
+				<xpath>Defs/RecipeDef[defName = "MakeSmoothie"]/fixedIngredientFilter/thingDefs</xpath>
 				<value>
 					<li>HempMilk</li>
 				</value>
@@ -413,13 +413,13 @@
 				<yourMod>Smokeleaf Industry</yourMod>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>*/RecipeDef[defName = "Makesoycheese"]/ingredients/li[1]/filter/thingDefs</xpath>
+				<xpath>Defs/RecipeDef[defName = "Makesoycheese"]/ingredients/li[1]/filter/thingDefs</xpath>
 				<value>
 					<li>HempMilk</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>*/RecipeDef[defName = "Makesoycheese"]/fixedIngredientFilter/thingDefs</xpath>
+				<xpath>Defs/RecipeDef[defName = "Makesoycheese"]/fixedIngredientFilter/thingDefs</xpath>
 				<value>
 					<li>HempMilk</li>
 				</value>

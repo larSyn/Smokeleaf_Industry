@@ -1,5 +1,30 @@
 ----------------------------------------------------------------------------------------------------------------------------------
 
+Updated to v1.7
+
+Smokeleaf Industry
+Changelog:
+
+	-Added support for Architect Icons.
+	-Added support for Mod Sync Ninja.
+	-Updated ModCheck to v1.5.
+	-Optimized patches for speed, thanks to Nightinggale's and kaptain_kavern's tests.
+	-Adjusted Hemp Fabric stats.
+	-Added "Devilsleaf Fabric" - A Hemp Fabric/Devilstrand blended fabric.
+	-Adjusted skill gain for most things.  
+	-Changed drug work skill to "Intellectual" from "Crafting" to keep in line with vanilla drug production.
+	-Removed crafting requirements for drugs to keep in line with vanilla drug production.
+	-Reworked skill requirements for medicinal products.
+	-Adjusted work amounts for most recipes.
+	-Added more items to traders.
+
+MSI-VG Patch v1.4
+Changelog:
+
+	-Moved Devilsleaf Fabric to Looms.
+
+----------------------------------------------------------------------------------------------------------------------------------
+
 Updated to b18 v1.6
 
 Smokeleaf Industry
@@ -21,9 +46,9 @@ Changelog:
 MSI-VG Patch v1.3
 Changelog:
 	
-	-Added Smokeleaf Seed Oil to Ingredients category.
-	-Added Smokeleaf Seed Oil recipe to Food Prep Tables.
-	-Added Smokeleaf Candy to Sweets Tables.  
+	-Moved Smokeleaf Seed Oil to Ingredients category.
+	-Moved Smokeleaf Seed Oil recipe to Food Prep Tables.
+	-Moved Smokeleaf Candy to Sweets Tables.  
 	-Replaced Smokeleaf Seed Oil in Smokeleaf Candy recipe 	with VG Sugar. 
 	-Added VG Fruits to Smokeleaf Candy recipe.
 
@@ -52,8 +77,8 @@ Changelog:
 
 	-Updated for new VG modules.
 	-Moved Smokeleaf Butter and Hemp Milk recipes to Food Prep Tables.
-	-Added Hemp Fabric to Electric Loom.
-	-Added Smokeleaf Brownie/Cookie recipes to Electric Oven.
+	-Moved Hemp Fabric to Electric Loom.
+	-Moved Smokeleaf Brownie/Cookie recipes to Electric Oven.
 	-Removed VG's Bulk Joint recipe.
 
 MSI-VG Patch v1.1
@@ -65,8 +90,7 @@ Changelog:
 MSI-VG Patch v1.0
 Changelog:
 
-	-Removed VG's Hemp Cloth and it's recipe. (Note=This 	causes a def-linked translation error in the log. It 	doesn't seem to affect anything, though. For another 	example of this, see Fertile Fields. It's VG compatibility 	patch uses 
-	the same method to remove items, and it doesn't appear to 	have added any problems. If it does, please report it.)
+	-Removed VG's Hemp Cloth and it's recipe.
 	-Hemp Fabric must now be made at the Loom.
 
 	-Added VG "Flour" to all SI "Hemp Flour" using recipes (ie: 	cookies, brownies).

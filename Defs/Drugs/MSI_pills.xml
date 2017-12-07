@@ -6,8 +6,8 @@
     <label>smokeleaf pills</label>
     <description>A pill form medicinal that offers preventative treatment, aids in recovery and provides mild pain relief.  May cause drowsiness.</description>
     <graphicData>
-		<texPath>Things/Items/MSI_pill</texPath>
-		<graphicClass>Graphic_StackCount</graphicClass>
+  		<texPath>Things/Items/MSI_pill</texPath>
+  		<graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <socialPropernessMatters>false</socialPropernessMatters>
     <rotatable>false</rotatable>
@@ -31,11 +31,10 @@
   		<recipeUsers>
   			<li>MedicinalsLab</li>
   		</recipeUsers>
-  		<workSpeedStat>DrugProductionSpeed</workSpeedStat>
-  		<workSkill>Crafting</workSkill>
-  		<skillRequirements>
-  			<Crafting>12</Crafting>
-  		</skillRequirements>
+      <skillRequirements>
+        <Medicine>6</Medicine>
+        <Crafting>4</Crafting>
+      </skillRequirements>
     </recipeMaker>
     <costList>
 		  <CBD>2</CBD>

@@ -6,15 +6,15 @@
     <label>chemfuel hash oil</label>
     <description>Chemfuel Hash Oil is a smokeleaf extract prepared using Chemfuel. Since C.H.O. is vaporized, some of the harmful effects are eliminated, but due to the method of it's extraction, other risks are increased. While not physically addictive, users may still develop a psychological dependence.</description>
     <graphicData>
-		<texPath>Things/Items/MSI_CHO</texPath>
-		<graphicClass>Graphic_StackCount</graphicClass>
+  		<texPath>Things/Items/MSI_CHO</texPath>
+  		<graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <rotatable>false</rotatable>
     <statBases>
-		<WorkToMake>750</WorkToMake>
-		<MarketValue>25</MarketValue>
-		<Mass>0.05</Mass>
-		<DeteriorationRate>6</DeteriorationRate>
+  		<WorkToMake>750</WorkToMake>
+  		<MarketValue>25</MarketValue>
+  		<Mass>0.05</Mass>
+  		<DeteriorationRate>6</DeteriorationRate>
     </statBases>
     <techLevel>Industrial</techLevel>
     <ingestible>
@@ -54,15 +54,10 @@
   		</outcomeDoers>
     </ingestible>
     <recipeMaker>
-		<researchPrerequisite>IndustrialSmokeleafCultivation</researchPrerequisite>
-		<recipeUsers>
-			<li>PoweredCultivationBench</li>
-		</recipeUsers>
-		<workSpeedStat>DrugProductionSpeed</workSpeedStat>
-		<workSkill>Crafting</workSkill>
-		<skillRequirements>
-			<Crafting>10</Crafting>
-		</skillRequirements>
+  		<researchPrerequisite>IndustrialSmokeleafCultivation</researchPrerequisite>
+  		<recipeUsers>
+  			<li>PoweredCultivationBench</li>
+  		</recipeUsers>
     </recipeMaker>
     <costList>
       <SmokeleafBuds>4</SmokeleafBuds>

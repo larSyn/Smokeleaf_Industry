@@ -6,8 +6,8 @@
     <label>smokeleaf tincture</label>
     <description>A potent tincture that offers considerable pain relief. May cause drowsiness.</description>
     <graphicData>
-		<texPath>Things/Items/MSI_tincture</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
+  		<texPath>Things/Items/MSI_tincture</texPath>
+  		<graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <socialPropernessMatters>false</socialPropernessMatters>
     <rotatable>false</rotatable>
@@ -33,11 +33,10 @@
   		<recipeUsers>
   			<li>MedicinalsLab</li>
   		</recipeUsers>
-  		<workSpeedStat>DrugProductionSpeed</workSpeedStat>
-  		<workSkill>Crafting</workSkill>
-  		<skillRequirements>
-  			<Crafting>12</Crafting>
-  		</skillRequirements>
+      <skillRequirements>
+        <Medicine>5</Medicine>
+        <Crafting>3</Crafting>
+      </skillRequirements>
     </recipeMaker>
     <costList>
 		  <CBD>2</CBD>

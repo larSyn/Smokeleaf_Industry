@@ -8,7 +8,7 @@
       <label>Smokeleaf Drugs</label>
       <parent>Drugs</parent>
       <resourceReadoutRoot>true</resourceReadoutRoot>
-      <iconPath>Icons/MSI_thingCat_drugs_icon</iconPath>
+      <iconPath>UI/Icons/MSI_thingCat_drugs_icon</iconPath>
     </ThingCategoryDef>
 
   	<ThingCategoryDef>
@@ -16,7 +16,7 @@
       <label>Smokeleaf Edibles</label>
       <parent>Foods</parent>
       <resourceReadoutRoot>true</resourceReadoutRoot>
-      <iconPath>Icons/MSI_thingCat_edibles_icon</iconPath>
+      <iconPath>UI/Icons/MSI_thingCat_edibles_icon</iconPath>
     </ThingCategoryDef>
 
 </Defs>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <!--========== MSI-VG Patch ==========-->
+  
+	<Operation Class="PatchOperationSequence">
+	    <success>Always</success>
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>VGP Vegetable Garden</modName>
+				<altModNames>
+					<li>VGP Garden Gourmet</li>
+					<li>VGP Garden Fabrics</li>
+					<li>VGP Garden Medicine</li>
+				</altModNames>
+				<yourMod>Smokeleaf Industry</yourMod>
+			</li>
+			<li Class="ModCheck.loadOrder">
+				<modName>VGP Vegetable Garden</modName>
+				<altModNames>
+					<li>VGP Garden Gourmet</li>
+					<li>VGP Garden Fabrics</li>
+					<li>VGP Garden Medicine</li>
+				</altModNames>
+				<yourMod>Smokeleaf Industry</yourMod>
+				<errorOnFail>true</errorOnFail>
+				<customMessageFail>*Load Smokeleaf Industry after all Vegetable Garden modules.*</customMessageFail>
+			</li>
+		</operations>
+	</Operation>
+
+  <!--========== MSI-ArchitectSense Load Order Patch ==========-->
+  
+	<Operation Class="PatchOperationSequence">
+	    <success>Always</success>
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>Architect Sense</modName>
+				<yourMod>Smokeleaf Industry</yourMod>
+			</li>
+			<li Class="ModCheck.loadOrder">
+				<modName>Architect Sense</modName>
+				<yourMod>Smokeleaf Industry</yourMod>
+				<errorOnFail>true</errorOnFail>
+				<customMessageFail>*Architect Sense MUST be loaded BEFORE Smokeleaf Industry!*</customMessageFail>
+			</li>
+		</operations>
+	</Operation>
+	
+</Patch>

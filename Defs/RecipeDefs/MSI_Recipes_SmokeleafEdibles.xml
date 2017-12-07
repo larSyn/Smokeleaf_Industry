@@ -3,6 +3,7 @@
 
   <RecipeDef Name="MSI_CookMealBase" Abstract="True">
 		<workSkill>Cooking</workSkill>
+    <workSkillLearnFactor>1.75</workSkillLearnFactor>
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
@@ -15,7 +16,7 @@
     <label>make hemp milk</label>
     <description>Grind seeds that have been soaking in water to make "milk".</description>
     <jobString>Making milk.</jobString>
-    <workAmount>750</workAmount>
+    <workAmount>500</workAmount>
     <skillRequirements>
       <Cooking>7</Cooking>
     </skillRequirements>
@@ -54,7 +55,7 @@
     <label>make hemp milk (bulk)</label>
     <description>Grind a bunch of seeds that have been soaking in water to make "milk".</description>
     <jobString>Making milk.</jobString>
-    <workAmount>1500</workAmount>
+    <workAmount>1000</workAmount>
     <skillRequirements>
       <Cooking>7</Cooking>
     </skillRequirements>
@@ -90,7 +91,7 @@
   
   <!--========== Craft Hemp Flour ==========-->
   
-  <RecipeDef>
+  <RecipeDef ParentName="MSI_CookMealBase">
     <defName>CraftHempFlour</defName>
     <label>grind hemp flour</label>
     <description>Process smokeleaf seeds into flour for baking.</description>
@@ -127,7 +128,7 @@
     <researchPrerequisite>SmokeleafProcessing</researchPrerequisite>
   </RecipeDef>
   
-  <RecipeDef>
+  <RecipeDef ParentName="MSI_CookMealBase">
     <defName>BulkCraftHempFlour</defName>
     <label>grinding hemp flour (bulk)</label>
     <description>Process smokeleaf seeds into flour for baking in larger quantities.</description>
@@ -166,7 +167,7 @@
   
   <!--========== Craft Smokeleaf Seed Oil ==========-->
   
-  <RecipeDef>
+  <RecipeDef ParentName="MSI_CookMealBase">
     <defName>CraftSmokeleafSeedOil</defName>
     <label>press smokeleleaf seed oil</label>
     <description>Press smokeleaf seeds into oil.</description>
@@ -203,7 +204,7 @@
     <researchPrerequisite>IndustrialSmokeleafProcessing</researchPrerequisite>
   </RecipeDef>
   
-  <RecipeDef>
+  <RecipeDef ParentName="MSI_CookMealBase">
     <defName>BulkCraftSmokeleafSeedOil</defName>
     <label>press smokeleleaf seed oil (bulk)</label>
     <description>Press smokeleaf seeds into oil in larger quantities.</description>
@@ -299,7 +300,7 @@
     <label>make smokeleaf butter (bulk)</label>
     <description>Simmer milk and smokeleaf buds to make infused butter.</description>
     <jobString>Making butter.</jobString>
-    <workAmount>2000</workAmount>
+    <workAmount>1500</workAmount>
     <skillRequirements>
       <Cooking>5</Cooking>
     </skillRequirements>
@@ -567,7 +568,7 @@
     <label>make NutriLeaf bar</label>
     <description>Make NutriLeaf bar.</description>
     <jobString>Making NutriLeaf bar.</jobString>
-    <workAmount>600</workAmount>
+    <workAmount>500</workAmount>
 	  <skillRequirements>
 		  <Cooking>7</Cooking>
     </skillRequirements>
@@ -579,7 +580,7 @@
         <filter>
           <thingDefs>
             <li>RawBerries</li>
-			<li>RawAgave</li>
+			      <li>RawAgave</li>
           </thingDefs>
         </filter>
         <count>4</count>
@@ -688,8 +689,8 @@
     <description>A smokeleaf drink Ricky's been working on...he calls it 5 hour de-energy. It's probably pretty potent.</description>
     <jobString>Making De-Energy drink.</jobString>
     <workAmount>500</workAmount>
-	<skillRequirements>
-		<Cooking>12</Cooking>
+	  <skillRequirements>
+		  <Cooking>12</Cooking>
     </skillRequirements>
     <researchPrerequisite>AdvancedSmokeleafProcessing</researchPrerequisite>
     <requiredGiverWorkType>Cooking</requiredGiverWorkType>
@@ -724,10 +725,10 @@
         <li>AllowRotten</li>
       </disallowedSpecialFilters>
     </fixedIngredientFilter>
-	<recipeUsers>
-		<li>FueledStove</li>
-		<li>ElectricStove</li>
-	</recipeUsers>
+  	<recipeUsers>
+  		<li>FueledStove</li>
+  		<li>ElectricStove</li>
+  	</recipeUsers>
   </RecipeDef>
   
   <RecipeDef ParentName="MSI_CookMealBase">
@@ -735,9 +736,9 @@
     <label>make smokeleaf de-energy drink (bulk)</label>
     <description>A smokeleaf drink Ricky's been working on...he calls it 5 hour de-energy. It's probably pretty potent.</description>
     <jobString>Making De-Energy drink.</jobString>
-    <workAmount>2000</workAmount>
-	<skillRequirements>
-		<Cooking>12</Cooking>
+    <workAmount>2500</workAmount>
+	  <skillRequirements>
+		  <Cooking>12</Cooking>
     </skillRequirements>
     <researchPrerequisite>AdvancedSmokeleafProcessing</researchPrerequisite>
     <requiredGiverWorkType>Cooking</requiredGiverWorkType>
@@ -772,10 +773,10 @@
         <li>AllowRotten</li>
       </disallowedSpecialFilters>
     </fixedIngredientFilter>
-	<recipeUsers>
-		<li>FueledStove</li>
-		<li>ElectricStove</li>
-	</recipeUsers>
+  	<recipeUsers>
+  		<li>FueledStove</li>
+  		<li>ElectricStove</li>
+  	</recipeUsers>
   </RecipeDef>
   
   <!--========== Smokeleaf Smoothie ==========-->
@@ -846,7 +847,7 @@
     <label>make smokeleaf smoothie (bulk)</label>
     <description>Berries blended with distillate to make a delicious smokeleaf smoothie.</description>
     <jobString>Making smokeleaf smoothie.</jobString>
-    <workAmount>2000</workAmount>
+    <workAmount>2500</workAmount>
 	<skillRequirements>
 		<Cooking>12</Cooking>
     </skillRequirements>
@@ -909,7 +910,7 @@
     <label>make smokeleaf candy</label>
     <description>Fruit juices, distillate and seed oil are simmered into a syrup and formed into hard candies.</description>
     <jobString>Making smokeleaf candy.</jobString>
-    <workAmount>500</workAmount>
+    <workAmount>400</workAmount>
     <skillRequirements>
       <Cooking>12</Cooking>
     </skillRequirements>
@@ -968,7 +969,7 @@
     <label>make smokeleaf candy (bulk)</label>
     <description>Fruit juices, distillate and seed oil are simmered into a syrup and formed into hard candies in larger quantities.</description>
     <jobString>Making smokeleaf smoothie.</jobString>
-    <workAmount>2500</workAmount>
+    <workAmount>2000</workAmount>
     <skillRequirements>
       <Cooking>12</Cooking>
     </skillRequirements>
@@ -1029,7 +1030,7 @@
 		<label>cook infused meal</label>
 		<description>Add some smokeleaf butter to a meal to make it happy.</description>
 		<jobString>Cooking infused meal.</jobString>
-		<workAmount>500</workAmount>
+		<workAmount>600</workAmount>
 		<skillRequirements>
 			<Cooking>10</Cooking>
 		</skillRequirements>

@@ -13,7 +13,7 @@
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <drawSize>(2,2)</drawSize>
 		</graphicData>
-		<uiIconPath>Icons/MSI_hGenerator_icon</uiIconPath>
+		<uiIconPath>UI/Icons/MSI_hGenerator_icon</uiIconPath>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<pathCost>150</pathCost>

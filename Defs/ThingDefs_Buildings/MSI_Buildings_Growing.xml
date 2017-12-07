@@ -42,7 +42,7 @@
     <graphicData>
       <texPath>Things/Buildings/MSI_growLamp</texPath>
     </graphicData>
-	<uiIconPath>Icons/MSI_growLamp_icon</uiIconPath>
+	<uiIconPath>UI/Icons/MSI_growLamp_icon</uiIconPath>
     <blockWind>true</blockWind>
     <tickerType>Rare</tickerType>
     <statBases>
@@ -65,7 +65,7 @@
         <compClass>CompPowerTrader</compClass>
         <startElectricalFires>true</startElectricalFires>
 		<shortCircuitInRain>true</shortCircuitInRain>
-        <basePowerConsumption>1250</basePowerConsumption>
+        <basePowerConsumption>1000</basePowerConsumption>
       </li>
       <li Class="CompProperties_Schedule">
         <!-- Match plant growing times -->
@@ -90,7 +90,7 @@
   <ThingDef ParentName="MSI_BuildingBase">
     <defName>SpaceBucket</defName>
     <label>space bucket</label>
-	<description>A self-contained growing system. Uses a fair amount of power for a single plant, but grows plants very quickly. Ideal for growing in confined spaces.  Requires heat.</description>
+	  <description>A self-contained growing system. Uses a fair amount of power for a single plant, but grows plants very quickly. Ideal for growing in confined spaces.  Requires heat.</description>
     <thingClass>Building_PlantGrower</thingClass>
     <graphicData>
       <texPath>Things/Buildings/MSI_spaceBucket</texPath>
@@ -103,10 +103,10 @@
         <rect>(0.2,0.2,0.6,0.6)</rect>
       </damageData>
     </graphicData>
-	<uiIconPath>Icons/MSI_spaceBucket_icon</uiIconPath>
+	  <uiIconPath>UI/Icons/MSI_spaceBucket_icon</uiIconPath>
     <altitudeLayer>FloorEmplacement</altitudeLayer>
     <passability>PassThroughOnly</passability>
-	<pathCost>40</pathCost>
+	  <pathCost>40</pathCost>
     <fillPercent>0.25</fillPercent>
     <statBases>
       <MaxHitPoints>250</MaxHitPoints>
@@ -118,8 +118,8 @@
       <li>Metallic</li>
     </stuffCategories>
     <costStuffCount>50</costStuffCount>
-	<costList>
-	  <Steel>25</Steel>
+	  <costList>
+	    <Steel>25</Steel>
       <Component>1</Component>
     </costList>
     <comps>
@@ -141,11 +141,11 @@
       <defaultPlantToGrow>PlantSmokeleaf</defaultPlantToGrow>
       <sowTag>Hydroponic</sowTag>
     </building>
-	<researchPrerequisites>
-	  <li>AdvancedSmokeleafCultivation</li>
-	</researchPrerequisites>
-    <rotatable>false</rotatable>
-	<designationCategory>MSI</designationCategory>
+  	<researchPrerequisites>
+  	  <li>AdvancedSmokeleafCultivation</li>
+  	</researchPrerequisites>
+      <rotatable>false</rotatable>
+  	<designationCategory>MSI</designationCategory>
   </ThingDef>	
   
 </Defs>

@@ -6,15 +6,15 @@
     <label>smokeleaf hash</label>
     <description>Smokeleaf hash is a concentrated form of smokeleaf.  While not physically addictive, users may still develop a psychological dependence.</description>
     <graphicData>
-		<texPath>Things/Items/MSI_hash</texPath>
-		<graphicClass>Graphic_StackCount</graphicClass>
+  		<texPath>Things/Items/MSI_hash</texPath>
+  		<graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <rotatable>false</rotatable>
     <statBases>
-		<WorkToMake>500</WorkToMake>
-		<MarketValue>18</MarketValue>
-		<Mass>0.05</Mass>
-		<DeteriorationRate>6</DeteriorationRate>
+  		<WorkToMake>500</WorkToMake>
+  		<MarketValue>18</MarketValue>
+  		<Mass>0.05</Mass>
+  		<DeteriorationRate>6</DeteriorationRate>
     </statBases>
     <techLevel>Industrial</techLevel>
     <ingestible>
@@ -54,15 +54,10 @@
   		</outcomeDoers>
     </ingestible>
     <recipeMaker>
-		<researchPrerequisite>IndustrialSmokeleafCultivation</researchPrerequisite>
-		<recipeUsers>
-			<li>PoweredCultivationBench</li>
-		</recipeUsers>
-		<workSpeedStat>DrugProductionSpeed</workSpeedStat>
-		<workSkill>Crafting</workSkill>
-		<skillRequirements>
-			<Crafting>8</Crafting>
-		</skillRequirements>
+  		<researchPrerequisite>IndustrialSmokeleafCultivation</researchPrerequisite>
+  		<recipeUsers>
+  			<li>PoweredCultivationBench</li>
+  		</recipeUsers>
     </recipeMaker>
     <costList>
 		  <SmokeleafBuds>4</SmokeleafBuds>
