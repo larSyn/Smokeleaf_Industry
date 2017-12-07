@@ -6,15 +6,15 @@
     <label>smokeleaf distillate</label>
     <description>Smokeleaf distillate is the ultimate extract. Gives a clean high without the risks of other smokeleaf products. While not physically addictive, users may still develop a psychological dependence.</description>
     <graphicData>
-		<texPath>Things/Items/MSI_distillate</texPath>
-		<graphicClass>Graphic_StackCount</graphicClass>
+  		<texPath>Things/Items/MSI_distillate</texPath>
+  		<graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <rotatable>false</rotatable>
     <statBases>
-		<WorkToMake>750</WorkToMake>
-		<MarketValue>50</MarketValue>
-		<Mass>0.05</Mass>
-		<DeteriorationRate>6</DeteriorationRate>
+  		<WorkToMake>750</WorkToMake>
+  		<MarketValue>50</MarketValue>
+  		<Mass>0.05</Mass>
+  		<DeteriorationRate>6</DeteriorationRate>
     </statBases>
     <techLevel>Spacer</techLevel>
     <ingestible>
@@ -58,11 +58,6 @@
   		<recipeUsers>
   			<li>MedicinalsLab</li>
   		</recipeUsers>
-  		<workSpeedStat>DrugProductionSpeed</workSpeedStat>
-  		<workSkill>Crafting</workSkill>
-  		<skillRequirements>
-  			<Crafting>12</Crafting>
-  		</skillRequirements>
     </recipeMaker>
     <costList>
 		  <SmokeleafHash>4</SmokeleafHash>

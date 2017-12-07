@@ -31,10 +31,9 @@
 		<recipeUsers>
 			<li>MedicinalsLab</li>
 		</recipeUsers>
-		<workSpeedStat>DrugProductionSpeed</workSpeedStat>
-		<workSkill>Crafting</workSkill>
 		<skillRequirements>
-			<Crafting>12</Crafting>
+			<Medicine>8</Medicine>
+			<Crafting>4</Crafting>
 		</skillRequirements>
     </recipeMaker>
     <costList>

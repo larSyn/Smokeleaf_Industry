@@ -7,13 +7,13 @@
 	    <success>Always</success>
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>*/ThingDef[defName = "SmokeleafJoint"]/description</xpath>
+				<xpath>Defs/ThingDef[defName = "SmokeleafJoint"]/description</xpath>
 				<value>
 					<description>Smokeleaf buds broken up and rolled into a joint. The drug improves mood, but also increases appetite, reduces focus and slows movement. While not physically addictive, users may still develop a psychological dependence.</description>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>*/ThingDef[defName = "SmokeleafJoint"]/costList</xpath>
+				<xpath>Defs/ThingDef[defName = "SmokeleafJoint"]/costList</xpath>
 				<value>
 					<costList>
 						<SmokeleafBuds>2</SmokeleafBuds>
@@ -21,7 +21,7 @@
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>*/ThingDef[defName = "SmokeleafJoint"]/recipeMaker/recipeUsers</xpath>
+				<xpath>Defs/ThingDef[defName = "SmokeleafJoint"]/recipeMaker/recipeUsers</xpath>
 				<value>
 					<recipeUsers>
 						<li>DrugLab</li>
@@ -29,62 +29,38 @@
 					</recipeUsers>
 				</value>
 			</li>
-		</operations>
-	</Operation>
-	
-	<Operation Class="PatchOperationSequence">
-	    <success>Always</success>
-		<operations>
 			<li Class="PatchOperationAdd">
-				<xpath>*/ThingDef[defName = "SmokeleafJoint"]/recipeMaker</xpath>
+				<xpath>Defs/ThingDef[defName = "SmokeleafJoint"]/recipeMaker</xpath>
 					<value>
 						<researchPrerequisite>SmokeleafCultivation</researchPrerequisite>
 					</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>*/ThingDef[defName = "SmokeleafJoint"]/recipeMaker/workSkill</xpath>
-				<value>
-					<workSkill>Crafting</workSkill>
-				</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>*/ThingDef[defName = "SmokeleafJoint"]/recipeMaker/workSpeedStat</xpath>
-				<value>
-					<workSpeedStat>DrugProductionSpeed</workSpeedStat>
-				</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>*/HediffDef[defName = "SmokeleafHigh"]/stages/li/painOffset</xpath>
-				<value>
-					<painOffset>-0.1</painOffset>
-				</value>
-			</li>
-		</operations>
-	</Operation>
-	
-	<Operation Class="PatchOperationSequence">
-	    <success>Always</success>
-		<operations>
-			<li Class="PatchOperationReplace">
-				<xpath>*/HediffDef[defName = "SmokeleafHigh"]/comps/li[@Class="HediffCompProperties_SeverityPerDay"]/severityPerDay</xpath>
+				<xpath>Defs/HediffDef[defName = "SmokeleafHigh"]/comps/li[@Class="HediffCompProperties_SeverityPerDay"]/severityPerDay</xpath>
 				<value>
 					<severityPerDay>-2.0</severityPerDay>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>*/HediffDef[defName = "SmokeleafHigh"]/stages/li/capMods/li[1]/offset</xpath>
+				<xpath>Defs/HediffDef[defName = "SmokeleafHigh"]/stages/li/painOffset</xpath>
+				<value>
+					<painOffset>-0.1</painOffset>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/HediffDef[defName = "SmokeleafHigh"]/stages/li/capMods/li[1]/offset</xpath>
 				<value>
 					<offset>-0.15</offset>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>*/HediffDef[defName = "SmokeleafHigh"]/stages/li/capMods/li[2]/offset</xpath>
+				<xpath>Defs/HediffDef[defName = "SmokeleafHigh"]/stages/li/capMods/li[2]/offset</xpath>
 				<value>
 					<offset>-0.05</offset>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>*/HediffDef[defName = "SmokeleafTolerance"]/comps/li[@Class="HediffCompProperties_SeverityPerDay"]/severityPerDay</xpath>
+				<xpath>Defs/HediffDef[defName = "SmokeleafTolerance"]/comps/li[@Class="HediffCompProperties_SeverityPerDay"]/severityPerDay</xpath>
 				<value>
 					<severityPerDay>-0.0666</severityPerDay>
 				</value>
@@ -92,13 +68,57 @@
 		</operations>
 	</Operation>
 	
+	<!--<Operation Class="PatchOperationSequence">
+	    <success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/HediffDef[defName = "SmokeleafHigh"]/comps/li[@Class="HediffCompProperties_SeverityPerDay"]/severityPerDay</xpath>
+				<value>
+					<severityPerDay>-2.0</severityPerDay>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/HediffDef[defName = "SmokeleafHigh"]/stages/li/painOffset</xpath>
+				<value>
+					<painOffset>-0.1</painOffset>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/HediffDef[defName = "SmokeleafHigh"]/stages/li/capMods/li[1]/offset</xpath>
+				<value>
+					<offset>-0.15</offset>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/HediffDef[defName = "SmokeleafHigh"]/stages/li/capMods/li[2]/offset</xpath>
+				<value>
+					<offset>-0.05</offset>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/HediffDef[defName = "SmokeleafTolerance"]/comps/li[@Class="HediffCompProperties_SeverityPerDay"]/severityPerDay</xpath>
+				<value>
+					<severityPerDay>-0.0666</severityPerDay>
+				</value>
+			</li>
+		</operations>
+	</Operation>-->
+	
 	<!--========== Misc Patches ==========-->
 	
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/ThingDef[defName = "DrugLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-		<value>
-			<li>TrimmingTools</li>
-		</value>
+	<Operation Class="PatchOperationSequence">
+	    <success>Always</success>
+	    <operations>
+		    <li Class="PatchOperationTest">
+		        <xpath>Defs/ThingDef[defName = "DrugLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+		    </li>
+	    	<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "DrugLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+				<value>
+					<li>TrimmingTools</li>
+				</value>
+			</li>
+		</operations>
 	</Operation>
 	
 </Patch>

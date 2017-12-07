@@ -11,7 +11,7 @@
 				<yourMod>Smokeleaf Industry</yourMod>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>*/ThingDef[defName = "HempolineGenerator"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter/thingDefs</xpath>
+				<xpath>Defs/ThingDef[defName = "HempolineGenerator"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter/thingDefs</xpath>
 				<value>
 					<li>VG_Biofuel</li>
 				</value>
@@ -27,13 +27,13 @@
 				<yourMod>Smokeleaf Industry</yourMod>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>*/RecipeDef[defName = "VG_MakeBiofuel"]/ingredients/li/count</xpath>
+				<xpath>Defs/RecipeDef[defName = "VG_MakeBiofuel"]/ingredients/li/count</xpath>
 				<value>
 					<count>1.25</count>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>*/RecipeDef[defName = "VG_MakeBiofuel"]/products/VG_Biofuel</xpath>
+				<xpath>Defs/RecipeDef[defName = "VG_MakeBiofuel"]/products/VG_Biofuel</xpath>
 				<value>
 					<VG_Biofuel>5</VG_Biofuel>
 				</value>
@@ -49,7 +49,7 @@
 				<yourMod>Smokeleaf Industry</yourMod>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs</xpath>
+				<xpath>Defs</xpath>
 				<value>
 					<RecipeDef>
 						<defName>MSI-VG_MakeBiofuel</defName>

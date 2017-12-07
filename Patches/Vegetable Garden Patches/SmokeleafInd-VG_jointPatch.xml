@@ -11,7 +11,7 @@
 				<yourMod>Smokeleaf Industry</yourMod>
 			</li>
 			<li Class="PatchOperationRemove">
-				<xpath>*/RecipeDef[defName = "VG_BulkSmokeleafJoint"]</xpath>
+				<xpath>Defs/RecipeDef[defName = "VG_BulkSmokeleafJoint"]</xpath>
 			</li>
 		</operations>
 	</Operation>

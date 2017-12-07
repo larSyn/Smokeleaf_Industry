@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	<RecipeDef Name="MSI_CraftBulkDrugs" Abstract="True">
+		<workSkill>Intellectual</workSkill>
+    	<workSkillLearnFactor>1.75</workSkillLearnFactor>
+		<workSpeedStat>DrugProductionSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+	</RecipeDef>
+
 	<!--========== Smokeleaf Joint Recipe ==========-->
 	
-	<RecipeDef>
+	<RecipeDef ParentName="MSI_CraftBulkDrugs">
 		<defName>RollSmokeleafJointCraftingSpot</defName>
 		<label>make smokeleaf joint</label>
 		<description>Roll more joints at a time.</description>
@@ -11,10 +19,6 @@
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<workAmount>500</workAmount>
-		<workSkill>Crafting</workSkill>
-		<skillRequirements>
-			<Crafting>3</Crafting>
-		</skillRequirements>
 		<researchPrerequisite>SmokeleafCultivation</researchPrerequisite>
 		<ingredients>
 			<li>
@@ -39,7 +43,7 @@
 		</recipeUsers>
 	</RecipeDef>
 	
-	<RecipeDef>
+	<RecipeDef ParentName="MSI_CraftBulkDrugs">
 		<defName>BulkRollSmokeleafJointCraftingSpot</defName>
 		<label>make smokeleaf joints (x5)</label>
 		<description>Roll more joints at a time.</description>
@@ -47,10 +51,6 @@
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<workAmount>2000</workAmount>
-		<workSkill>Crafting</workSkill>
-		<skillRequirements>
-			<Crafting>5</Crafting>
-		</skillRequirements>
 		<researchPrerequisite>SmokeleafCultivation</researchPrerequisite>
 		<ingredients>
 			<li>
@@ -75,7 +75,7 @@
 		</recipeUsers>
 	</RecipeDef>
 	
-	<RecipeDef>
+	<RecipeDef ParentName="MSI_CraftBulkDrugs">
 		<defName>BulkRollSmokeleafJointDrugLab</defName>
 		<label>make smokeleaf joints (x5)</label>
 		<description>Roll more joints at a time.</description>
@@ -83,10 +83,6 @@
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<workAmount>1500</workAmount>
-		<workSkill>Crafting</workSkill>
-		<skillRequirements>
-			<Crafting>5</Crafting>
-		</skillRequirements>
 		<researchPrerequisite>DrugProduction</researchPrerequisite>
 		<ingredients>
 			<li>
@@ -112,7 +108,7 @@
 		</recipeUsers>
 	</RecipeDef>
 	
-	<RecipeDef>
+	<RecipeDef ParentName="MSI_CraftBulkDrugs">
 		<defName>BulkRollSmokeleafJointCultBench</defName>
 		<label>make smokeleaf joints (x10)</label>
 		<description>Roll more joints at a time.</description>
@@ -120,10 +116,6 @@
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<workAmount>1500</workAmount>
-		<workSkill>Crafting</workSkill>
-		<skillRequirements>
-			<Crafting>8</Crafting>
-		</skillRequirements>
 		<researchPrerequisite>IndustrialSmokeleafCultivation</researchPrerequisite>
 		<ingredients>
 			<li>
@@ -150,7 +142,7 @@
 	
 	<!--========== Smokeleaf Hash Recipe ==========-->	
 	
-	<RecipeDef>
+	<RecipeDef ParentName="MSI_CraftBulkDrugs">
 		<defName>BulkMakeSmokeleafHash</defName>
 		<label>make smokeleaf hash (bulk)</label>
 		<description>Make smokeleaf hash in larger quantities.</description>
@@ -158,10 +150,6 @@
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<workAmount>3000</workAmount>
-		<workSkill>Crafting</workSkill>
-		<skillRequirements>
-			<Crafting>8</Crafting>
-		</skillRequirements>
 		<researchPrerequisite>IndustrialSmokeleafCultivation</researchPrerequisite>
 		<ingredients>
 			<li>
@@ -188,7 +176,7 @@
 	
 	<!--========== Smokeleaf CHO Recipe ==========-->	
 	
-	<RecipeDef>
+	<RecipeDef ParentName="MSI_CraftBulkDrugs">
 		<defName>BulkMakeCHO</defName>
 		<label>make chemfuel hash oil (bulk)</label>
 		<description>Make chemfuel hash oil in larger quantities.</description>
@@ -196,10 +184,6 @@
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<workAmount>3000</workAmount>
-		<workSkill>Crafting</workSkill>
-		<skillRequirements>
-			<Crafting>10</Crafting>
-		</skillRequirements>
 		<researchPrerequisite>IndustrialSmokeleafCultivation</researchPrerequisite>
 		<ingredients>
 			<li>
@@ -235,7 +219,7 @@
 	
 	<!--========== Smokeleaf Distillate Recipe ==========-->	
 	
-	<RecipeDef>
+	<RecipeDef ParentName="MSI_CraftBulkDrugs">
 		<defName>BulkMakeSmokeleafDistillate</defName>
 		<label>make smokeleaf distillate (bulk)</label>
 		<description>Make smokeleaf distillate in larger quantities.</description>
@@ -244,9 +228,6 @@
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<workAmount>3000</workAmount>
 		<workSkill>Crafting</workSkill>
-		<skillRequirements>
-			<Crafting>12</Crafting>
-		</skillRequirements>
 		<researchPrerequisite>AdvancedSmokeleafProcessing</researchPrerequisite>
 		<ingredients>
 			<li>
@@ -273,7 +254,7 @@
 	
 	<!--========== Smokeleaf Tincture Recipe ==========-->	
 	
-	<RecipeDef>
+	<RecipeDef ParentName="MSI_CraftBulkDrugs">
 		<defName>BulkMakeSmokeleafTincture</defName>
 		<label>make smokeleaf tincture (bulk)</label>
 		<description>Make smokeleaf tincture in larger quantities.</description>
@@ -281,9 +262,9 @@
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<workAmount>3000</workAmount>
-		<workSkill>Crafting</workSkill>
 		<skillRequirements>
-			<Crafting>12</Crafting>
+			<Medicine>5</Medicine>
+			<Crafting>3</Crafting>
 		</skillRequirements>
 		<researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
 		<ingredients>
@@ -320,7 +301,7 @@
 	
 	<!--========== Smokeleaf Pills Recipe ==========-->	
 	
-	<RecipeDef>
+	<RecipeDef ParentName="MSI_CraftBulkDrugs">
 		<defName>BulkMakeSmokeleafPills</defName>
 		<label>make smokeleaf pills (bulk)</label>
 		<description>Make smokeleaf pills in larger quantities.</description>
@@ -328,9 +309,9 @@
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<workAmount>3000</workAmount>
-		<workSkill>Crafting</workSkill>
 		<skillRequirements>
-			<Crafting>12</Crafting>
+			<Medicine>6</Medicine>
+			<Crafting>4</Crafting>
 		</skillRequirements>
 		<researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
 		<ingredients>
@@ -367,7 +348,7 @@
 	
 	<!--========== Smokeleaf Lotion Recipe ==========-->	
 	
-	<RecipeDef>
+	<RecipeDef ParentName="MSI_CraftBulkDrugs">
 		<defName>BulkMakeSmokeleafLotion</defName>
 		<label>make smokeleaf lotion (bulk)</label>
 		<description>Make smokeleaf lotion in larger quantities.</description>
@@ -375,9 +356,9 @@
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<workAmount>3000</workAmount>
-		<workSkill>Crafting</workSkill>
 		<skillRequirements>
-			<Crafting>12</Crafting>
+			<Medicine>8</Medicine>
+			<Crafting>4</Crafting>
 		</skillRequirements>
 		<researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
 		<ingredients>
@@ -414,7 +395,7 @@
 	
 	<!--========== CBD Recipe ==========-->
 	
-	<RecipeDef>
+	<RecipeDef ParentName="MSI_CraftBulkDrugs">
 		<defName>BulkExtractCBD</defName>
 		<label>make CBD (bulk)</label>
 		<description>Extract CBD from smokeleaf buds in larger quantities.</description>
@@ -422,10 +403,9 @@
 		<effectWorking>BurnDrug</effectWorking>
 		<soundWorking>Recipe_Brewing</soundWorking>
 		<workAmount>3000</workAmount>
-		<workSkill>Crafting</workSkill>
 		<skillRequirements>
-			<Crafting>10</Crafting>
-			<Medicine>6</Medicine>
+			<Crafting>3</Crafting>
+			<Medicine>5</Medicine>
 		</skillRequirements>
 		<researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
 		<ingredients>
@@ -454,7 +434,7 @@
 	
 	<!--========== Infused Medicine Recipe ==========-->
 	
-	<RecipeDef>
+	<RecipeDef ParentName="MSI_CraftBulkDrugs">
 		<defName>BulkInfusedMedicine</defName>
 		<label>make infused medicine (bulk)</label>
 		<description>Make infused medicine in larger quantities.</description>
@@ -462,10 +442,9 @@
 		<effectWorking>BurnDrug</effectWorking>
 		<soundWorking>Recipe_Brewing</soundWorking>
 		<workAmount>3000</workAmount>
-		<workSkill>Crafting</workSkill>
 		<skillRequirements>
-			<Crafting>12</Crafting>
-			<Medicine>8</Medicine>
+			<Crafting>6</Crafting>
+			<Medicine>12</Medicine>
 		</skillRequirements>
 		<researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
 		<ingredients>

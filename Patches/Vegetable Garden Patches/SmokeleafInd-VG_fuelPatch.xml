@@ -11,7 +11,7 @@
 				<yourMod>Smokeleaf Industry</yourMod>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>*/ThingDef[defName = "Oven"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter/thingDefs</xpath>
+				<xpath>Defs/ThingDef[defName = "Oven"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter/thingDefs</xpath>
 					<value>
 						<li>HempFiber</li>
 					</value>
@@ -27,7 +27,7 @@
 				<yourMod>Smokeleaf Industry</yourMod>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>*/ThingDef[defName = "HandCanningstove"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter/thingDefs</xpath>
+				<xpath>Defs/ThingDef[defName = "HandCanningstove"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter/thingDefs</xpath>
 					<value>
 						<li>HempFiber</li>
 					</value>
@@ -43,7 +43,7 @@
 				<yourMod>Smokeleaf Industry</yourMod>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>*/ThingDef[defName = "FueledCandyTable"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter/thingDefs</xpath>
+				<xpath>Defs/ThingDef[defName = "FueledCandyTable"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter/thingDefs</xpath>
 					<value>
 						<li>HempFiber</li>
 					</value>

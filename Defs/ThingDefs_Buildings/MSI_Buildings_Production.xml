@@ -38,7 +38,7 @@
         <cornerBR>Damage/Corner</cornerBR>
       </damageData>
     </graphicData>
-	<uiIconPath>Icons/MSI_CultivationTable_icon</uiIconPath>
+	  <uiIconPath>UI/Icons/MSI_CultivationTable_icon</uiIconPath>
     <costStuffCount>50</costStuffCount>
     <costList>
       <Steel>75</Steel>
@@ -111,7 +111,7 @@
         <cornerBR>Damage/Corner</cornerBR>
       </damageData>
     </graphicData>
-	<uiIconPath>Icons/MSI_MedicinalsTable_icon</uiIconPath>
+	  <uiIconPath>UI/Icons/MSI_MedicinalsTable_icon</uiIconPath>
     <costStuffCount>75</costStuffCount>
     <costList>
       <Steel>75</Steel>
@@ -141,7 +141,7 @@
     </inspectorTabs>
     <building>
       <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
-	</building>
+	  </building>
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
@@ -164,7 +164,7 @@
       <li>SmokeleafPharmacology</li>
 	  <li>Electricity</li>
     </researchPrerequisites>
-	<designationCategory>MSI</designationCategory>
+	  <designationCategory>MSI</designationCategory>
   </ThingDef>
 
   <!--========== Smokeleaf Auto Trimmer ==========-->
@@ -185,21 +185,21 @@
         <cornerBR>Damage/Corner</cornerBR>
       </damageData>
     </graphicData>
-	<uiIconPath>Icons/MSI_Autotrimmer_icon</uiIconPath>
-	<rotatable>true</rotatable>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-	<pathCost>70</pathCost>
-    <blockWind>true</blockWind>
-    <fillPercent>1</fillPercent>
-    <statBases>
-      <WorkToBuild>3500</WorkToBuild>
-      <MaxHitPoints>350</MaxHitPoints>
-      <Flammability>1.0</Flammability>
-    </statBases>
-	<building>
-		<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
-		<soundDispense>Grain_Drop</soundDispense>
+  	<uiIconPath>UI/Icons/MSI_Autotrimmer_icon</uiIconPath>
+  	<rotatable>true</rotatable>
+      <altitudeLayer>Building</altitudeLayer>
+      <passability>PassThroughOnly</passability>
+  	<pathCost>70</pathCost>
+      <blockWind>true</blockWind>
+      <fillPercent>1</fillPercent>
+      <statBases>
+        <WorkToBuild>3500</WorkToBuild>
+        <MaxHitPoints>350</MaxHitPoints>
+        <Flammability>1.0</Flammability>
+      </statBases>
+  	<building>
+  		<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+  		<soundDispense>Grain_Drop</soundDispense>
     </building>
     <comps>
       <li Class="CompProperties_Power">
@@ -254,6 +254,7 @@
         <cornerBR>Damage/Corner</cornerBR>
       </damageData>
     </graphicData>
+    <uiIconPath>UI/Icons/MSI_trimmingTools_icon</uiIconPath>
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
 	  <pathCost>70</pathCost>
@@ -263,9 +264,9 @@
     <canOverlapZones>false</canOverlapZones>
   	<rotatable>true</rotatable>
     <statBases>
-      <MaxHitPoints>100</MaxHitPoints>
+      <MaxHitPoints>250</MaxHitPoints>
       <WorkToBuild>1200</WorkToBuild>
-      <Mass>40</Mass>
+      <Mass>10</Mass>
       <Flammability>1.0</Flammability>
     </statBases>
     <size>(1,1)</size>

@@ -55,12 +55,12 @@
     <useHitPoints>true</useHitPoints>
     <selectable>true</selectable>
     <statBases>
-		<MaxHitPoints>50</MaxHitPoints>
-		<Flammability>1.0</Flammability>
-		<Beauty>-4</Beauty>
-		<Mass>0.44</Mass>
-		<DeteriorationRate>10</DeteriorationRate>
-	</statBases>
+  		<MaxHitPoints>50</MaxHitPoints>
+  		<Flammability>1.0</Flammability>
+  		<Beauty>-4</Beauty>
+  		<Mass>0.44</Mass>
+  		<DeteriorationRate>10</DeteriorationRate>
+	  </statBases>
     <altitudeLayer>Item</altitudeLayer>
     <stackLimit>75</stackLimit>
     <tickerType>Rare</tickerType>
@@ -117,9 +117,6 @@
 		</west>
    	  </ingestHoldOffsetStanding>
 	</ingestible>
-    <thingCategories>
-      <li>FoodMeals</li>
-    </thingCategories>
   </ThingDef>
 	
 </Defs>

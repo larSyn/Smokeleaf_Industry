@@ -121,7 +121,7 @@
 			<color>(138,139,95)</color>
 		</graphicData>
 		<statBases>
-			<MaxHitPoints>90</MaxHitPoints>
+			<MaxHitPoints>110</MaxHitPoints>
 			<MarketValue>6</MarketValue>
 			<Mass>0.05</Mass>
 			<Flammability>1.0</Flammability>
@@ -142,9 +142,9 @@
 			<statFactors>
 				<WorkToMake>1.3</WorkToMake>
 				<ArmorRating_Blunt>1.25</ArmorRating_Blunt>
-				<ArmorRating_Sharp>3.0</ArmorRating_Sharp>
-				<ArmorRating_Heat>1.25</ArmorRating_Heat>
-				<ArmorRating_Electric>1.5</ArmorRating_Electric>
+				<ArmorRating_Sharp>1.75</ArmorRating_Sharp>
+				<ArmorRating_Heat>1.5</ArmorRating_Heat>
+				<ArmorRating_Electric>1.0</ArmorRating_Electric>
 				<Insulation_Cold>1.0</Insulation_Cold>
 				<Insulation_Heat>1.5</Insulation_Heat>
 			</statFactors>	
@@ -154,6 +154,55 @@
 		</thingCategories>
 		<researchPrerequisites>
 			<li>SmokeleafProcessing</li>
+			<li>ComplexClothing</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+  <!--========== Devilsleaf Fabric ==========-->
+
+	<ThingDef ParentName="MSI_ResourceBase">
+		<defName>DevilsleafFabric</defName>
+		<label>devilsleaf fabric</label>
+		<description>Hemp fabric blended with devilstrand to make a new textile with the best qualities of each material.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Cloth</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(97,33,26)</color>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<MarketValue>12</MarketValue>
+			<Mass>0.05</Mass>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>8</DeteriorationRate>
+		</statBases>
+		<stuffProps>
+			<categories>
+				<li>Fabric</li>
+			</categories>
+			<color>(97,33,26)</color>
+			<commonality>1.4</commonality>
+			<statOffsets>
+				<ArmorRating_Blunt>0.075</ArmorRating_Blunt>
+				<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+				<ArmorRating_Heat>0.05</ArmorRating_Heat>
+				<ArmorRating_Electric>0.05</ArmorRating_Electric>
+			</statOffsets>
+			<statFactors>
+				<WorkToMake>1.3</WorkToMake>
+				<ArmorRating_Blunt>1.5</ArmorRating_Blunt>
+				<ArmorRating_Sharp>3.0</ArmorRating_Sharp>
+				<ArmorRating_Heat>1.5</ArmorRating_Heat>
+				<ArmorRating_Electric>2.5</ArmorRating_Electric>
+				<Insulation_Cold>1.25</Insulation_Cold>
+				<Insulation_Heat>1.5</Insulation_Heat>
+			</statFactors>	
+		</stuffProps>
+		<thingCategories>
+			<li>Textiles</li>
+		</thingCategories>
+		<researchPrerequisites>
+			<li>IndustrialSmokeleafProcessing</li>
 			<li>ComplexClothing</li>
 		</researchPrerequisites>
 	</ThingDef>
@@ -265,13 +314,13 @@
 		</costList>
 		<recipeMaker>
 			<workSpeedStat>DrugProductionSpeed</workSpeedStat>
-			<workSkill>Crafting</workSkill>
+			<workSkill>Intellectual</workSkill>
 			<recipeUsers>
 				<li>MedicinalsLab</li>
 			</recipeUsers>
 			<skillRequirements>
-				<Crafting>10</Crafting>
-				<Medicine>6</Medicine>
+				<Crafting>3</Crafting>
+				<Medicine>5</Medicine>
 			</skillRequirements>
 		</recipeMaker>
 		<researchPrerequisites>
@@ -310,13 +359,13 @@
 		</costList>
 		<recipeMaker>
 			<workSpeedStat>DrugProductionSpeed</workSpeedStat>
-			<workSkill>Medicine</workSkill>
+			<workSkill>Intellectual</workSkill>
 			<recipeUsers>
 				<li>MedicinalsLab</li>
 			</recipeUsers>
 			<skillRequirements>
-				<Crafting>12</Crafting>
-				<Medicine>8</Medicine>
+				<Crafting>6</Crafting>
+				<Medicine>12</Medicine>
 			</skillRequirements>
 		</recipeMaker>
 		<researchPrerequisites>

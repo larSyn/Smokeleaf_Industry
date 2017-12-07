@@ -11,7 +11,9 @@
 		<effectWorking>Tailor</effectWorking>
 		<soundWorking>Recipe_Tailor</soundWorking>
 		<workAmount>1500</workAmount>
+  		<workSpeedStat>SmithingSpeed</workSpeedStat>
 		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>2.0</workSkillLearnFactor>
 		<skillRequirements>
 			<Crafting>12</Crafting>
 		</skillRequirements>
@@ -49,7 +51,9 @@
 		<effectWorking>Tailor</effectWorking>
 		<soundWorking>Recipe_Tailor</soundWorking>
 		<workAmount>3000</workAmount>
+  		<workSpeedStat>SmithingSpeed</workSpeedStat>
 		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>2.0</workSkillLearnFactor>
 		<skillRequirements>
 			<Crafting>12</Crafting>
 		</skillRequirements>
@@ -88,8 +92,10 @@
 		<jobString>Trimming Smokeleaf.</jobString>
 		<effectWorking>Tailor</effectWorking>
 		<soundWorking>Recipe_Tailor</soundWorking>
-		<workAmount>250</workAmount>
+		<workAmount>350</workAmount>
+  		<workSpeedStat>SmithingSpeed</workSpeedStat>
 		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>2.5</workSkillLearnFactor>
 		<skillRequirements>
 			<Crafting>3</Crafting>
 		</skillRequirements>
@@ -126,8 +132,10 @@
 		<jobString>Trimming Smokeleaf.</jobString>
 		<effectWorking>Tailor</effectWorking>
 		<soundWorking>Recipe_Tailor</soundWorking>
-		<workAmount>1250</workAmount>
+		<workAmount>1400</workAmount>
+  		<workSpeedStat>SmithingSpeed</workSpeedStat>
 		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>2.0</workSkillLearnFactor>
 		<skillRequirements>
 			<Crafting>5</Crafting>
 		</skillRequirements>
@@ -167,7 +175,9 @@
 		<effectWorking>Tailor</effectWorking>
 		<soundWorking>Recipe_Tailor</soundWorking>
 		<workAmount>250</workAmount>
+  		<workSpeedStat>SmithingSpeed</workSpeedStat>
 		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>2.5</workSkillLearnFactor>
 		<skillRequirements>
 			<Crafting>3</Crafting>
 		</skillRequirements>
@@ -204,8 +214,10 @@
 		<jobString>Trimming Smokeleaf.</jobString>
 		<effectWorking>Tailor</effectWorking>
 		<soundWorking>Recipe_Tailor</soundWorking>
-		<workAmount>2000</workAmount>
+		<workAmount>1000</workAmount>
+  		<workSpeedStat>SmithingSpeed</workSpeedStat>
 		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>2.0</workSkillLearnFactor>
 		<skillRequirements>
 			<Crafting>5</Crafting>
 		</skillRequirements>
@@ -243,8 +255,10 @@
 		<jobString>Trimming Smokeleaf.</jobString>
 		<effectWorking>Tailor</effectWorking>
 		<soundWorking>Recipe_Tailor</soundWorking>
-		<workAmount>3000</workAmount>
+		<workAmount>2000</workAmount>
+  		<workSpeedStat>SmithingSpeed</workSpeedStat>
 		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>2.0</workSkillLearnFactor>
 		<skillRequirements>
 			<Crafting>8</Crafting>
 		</skillRequirements>
@@ -284,7 +298,9 @@
 		<effectWorking>Tailor</effectWorking>
 		<soundWorking>Recipe_Tailor</soundWorking>
 		<workAmount>300</workAmount>
+  		<workSpeedStat>TailoringSpeed</workSpeedStat>
 		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>2.5</workSkillLearnFactor>
 		<skillRequirements>
 			<Crafting>5</Crafting>
 		</skillRequirements>
@@ -320,9 +336,11 @@
 		<effectWorking>Tailor</effectWorking>
 		<soundWorking>Recipe_Tailor</soundWorking>
 		<workAmount>2000</workAmount>
+  		<workSpeedStat>TailoringSpeed</workSpeedStat>
 		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>2.0</workSkillLearnFactor>
 		<skillRequirements>
-			<Crafting>8</Crafting>
+			<Crafting>5</Crafting>
 		</skillRequirements>
 		<ingredients>
 			<li>
@@ -348,6 +366,100 @@
 		</recipeUsers>
 	</RecipeDef>
 	
+	<!--========== Craft Devilsleaf Fabric ==========-->
+	
+	<RecipeDef>
+		<defName>CraftDevilsleafFibers</defName>
+		<label>craft devilsleaf fabric</label>
+		<description>Process hemp fibers and devilstrand into an extrememly durable fabric.</description>
+		<jobString>Crafting devilsleaf fabric.</jobString>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<workAmount>500</workAmount>
+  		<workSpeedStat>TailoringSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>2.5</workSkillLearnFactor>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>HempFiber</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DevilstrandCloth</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>HempFiber</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<DevilsleafFabric>1</DevilsleafFabric>
+		</products>
+		<recipeUsers>
+			<li>HandTailoringBench</li>
+			<li>ElectricTailoringBench</li>
+		</recipeUsers>
+	</RecipeDef>
+		
+	<RecipeDef>
+		<defName>BulkCraftDevilsleafFibers</defName>
+		<label>craft devilsleaf fabric (bulk)</label>
+		<description>Process hemp fibers and devilstrand into an extrememly durable fabric in larger quantities.</description>
+		<jobString>Crafting devilsleaf fabric.</jobString>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<workAmount>3000</workAmount>
+  		<workSpeedStat>TailoringSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>2.0</workSkillLearnFactor>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>HempFiber</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DevilstrandCloth</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>HempFiber</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<DevilsleafFabric>10</DevilsleafFabric>
+		</products>
+		<recipeUsers>
+			<li>HandTailoringBench</li>
+			<li>ElectricTailoringBench</li>
+		</recipeUsers>
+	</RecipeDef>
+	
 	<!--========== Craft Hemp Biocomposite ==========-->
 	
 	<RecipeDef>
@@ -358,7 +470,9 @@
 		<effectWorking>Tailor</effectWorking>
 		<soundWorking>Recipe_Tailor</soundWorking>
 		<workAmount>350</workAmount>
+  		<workSpeedStat>SmithingSpeed</workSpeedStat>
 		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>2.5</workSkillLearnFactor>
 		<skillRequirements>
 			<Crafting>10</Crafting>
 		</skillRequirements>
@@ -412,7 +526,9 @@
 		<effectWorking>Tailor</effectWorking>
 		<soundWorking>Recipe_Tailor</soundWorking>
 		<workAmount>2500</workAmount>
+  		<workSpeedStat>SmithingSpeed</workSpeedStat>
 		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>2.0</workSkillLearnFactor>
 		<skillRequirements>
 			<Crafting>10</Crafting>
 		</skillRequirements>
@@ -468,7 +584,9 @@
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
 		<workAmount>1000</workAmount>
+  		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>2.0</workSkillLearnFactor>
 		<ingredients>
 			<li>
 				<filter>
@@ -501,7 +619,9 @@
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
 		<workAmount>2000</workAmount>
+  		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>2.0</workSkillLearnFactor>
 		<ingredients>
 			<li>
 				<filter>
@@ -530,11 +650,13 @@
 		<defName>MakeHempolineFromSmokeleafSeeds</defName>
 		<label>make hempoline from smokeleaf seeds</label>
 		<description>Make a batch of hempoline by refining oils from smokeleaf seeds.</description>
-		<jobString>Refining hempoline from hemp fibers.</jobString>
+		<jobString>Refining hempoline from smokeleaf seeds.</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
 		<workAmount>2000</workAmount>
+  		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>2.0</workSkillLearnFactor>
 		<ingredients>
 			<li>
 				<filter>
@@ -563,11 +685,13 @@
 		<defName>MakeBulkHempolineFromSmokeleafSeeds</defName>
 		<label>make hempoline from smokeleaf seeds (bulk)</label>
 		<description>Make a batch of hempoline by refining oils from smokeleaf seeds.</description>
-		<jobString>Refining hempoline from hemp fibers.</jobString>
+		<jobString>Refining hempoline from smokeleaf seeds.</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
 		<workAmount>2000</workAmount>
+  		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>2.0</workSkillLearnFactor>
 		<ingredients>
 			<li>
 				<filter>
@@ -596,7 +720,7 @@
 	
 	<RecipeDef Name="MSI_MakeHempcreteBlocksBase" Abstract="True">
 		<workSkill>Crafting</workSkill>
-		<workSkillLearnFactor>0.3</workSkillLearnFactor>
+		<workSkillLearnFactor>1.75</workSkillLearnFactor>
 		<effectWorking>CutStone</effectWorking>
 		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
 		<recipeUsers>
@@ -609,7 +733,8 @@
 		<label>make hempcrete blocks</label>
 		<description>Compress hemp products into hempcrete blocks.</description>
 		<jobString>Making hempcrete blocks.</jobString>
-		<workAmount>1500</workAmount>
+		<workAmount>1000</workAmount>
+  		<workSpeedStat>SmithingSpeed</workSpeedStat>
 		<ingredients>
 			<li>
 				<filter>
@@ -644,7 +769,8 @@
 		<label>make hempcrete blocks (bulk)</label>
 		<description>Compress hemp products into hempcrete blocks.</description>
 		<jobString>Making hempcrete blocks.</jobString>
-		<workAmount>3500</workAmount>
+		<workAmount>2500</workAmount>
+  		<workSpeedStat>SmithingSpeed</workSpeedStat> 
 		<ingredients>
 			<li>
 				<filter>
