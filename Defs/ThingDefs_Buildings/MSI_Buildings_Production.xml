@@ -19,7 +19,7 @@
 		</placeWorkers>
   </ThingDef>
 
-  <!--========== Work tables ==========-->
+  <!--========== Smokeleaf Cultivation Bench ==========-->
 
   <ThingDef ParentName="MSI_BenchBase">
     <defName>PoweredCultivationBench</defName>
@@ -68,7 +68,7 @@
     <building>
       <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
       <unpoweredWorkTableWorkSpeedFactor>0.2</unpoweredWorkTableWorkSpeedFactor>
-	</building>
+	  </building>
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
@@ -89,10 +89,12 @@
     </placeWorkers>
     <researchPrerequisites>
       <li>IndustrialSmokeleafCultivation</li>
-	  <li>Electricity</li>
+	    <li>Electricity</li>
     </researchPrerequisites>
-	<designationCategory>MSI</designationCategory>
+	  <designationCategory>MSI</designationCategory>
   </ThingDef>
+
+  <!--========== Smokeleaf Medicinals Lab ==========-->
   
   <ThingDef ParentName="MSI_BenchBase">
     <defName>MedicinalsLab</defName>
@@ -172,7 +174,7 @@
   <ThingDef ParentName="MSI_BenchBase">
     <defName>SmokeleafAutoTrimmer</defName>
     <label>smokeleaf auto trimmer</label>
-    <description>Process raw smokeleaf into usable products with increased speed and yield.</description>
+    <description>Processes raw smokeleaf into usable products with increased speed and reduced power usage in large quantities.</description>
     <thingClass>Building_WorkTable</thingClass>
     <graphicData>
       <texPath>Things/Production/MSI_autoTrimmer</texPath>
@@ -205,14 +207,14 @@
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <startElectricalFires>true</startElectricalFires>
-        <basePowerConsumption>750</basePowerConsumption>
+        <basePowerConsumption>250</basePowerConsumption>
       </li>
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Breakdownable"/>
 	  <li Class="CompProperties_AffectedByFacilities">
         <linkableFacilities>
           <li>ToolCabinet</li>
-		  <li>TrimmingTools</li>
+		      <li>TrimmingTools</li>
         </linkableFacilities>
       </li>
     </comps>
@@ -220,12 +222,12 @@
     <costList>
       <Steel>150</Steel>
       <Component>5</Component>
-	  <Plasteel>25</Plasteel>
+	    <Plasteel>25</Plasteel>
     </costList>
     <socialPropernessMatters>true</socialPropernessMatters>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <hasInteractionCell>true</hasInteractionCell>
-	<inspectorTabs>
+	  <inspectorTabs>
       <li>ITab_Bills</li>
     </inspectorTabs>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>

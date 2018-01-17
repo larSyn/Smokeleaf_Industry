@@ -64,7 +64,7 @@
 	<ResearchProjectDef>
 		<defName>AdvancedSmokeleafCultivation</defName>
 		<label>advanced smokeleaf cultivation</label>
-		<description>Our engineers have developed new machinery to aid in the growth and processing of smokeleaf.</description>
+		<description>Our engineers have developed new machinery to aid in the growth and processing of smokeleaf. We also learned of a new way to smoke.</description>
 		<baseCost>1500</baseCost>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>

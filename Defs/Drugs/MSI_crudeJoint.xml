@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="MSI_MakeableDrugBase">
+    <defName>CrudeSmokeleafJoint</defName>
+    <label>crude smokeleaf joint</label>
+    <description>Smokeleaf buds clumsily rolled in leaves for smoking. The drug improves mood, but also increases appetite, reduces focus and slows movement. Can be produced without equipment, at a crafting spot. While not physically addictive, users may still develop a psychological dependence.</description>
+    <graphicData>
+      <texPath>Things/Items/MSI_crudeJoint</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <MarketValue>3</MarketValue>
+      <Mass>0.05</Mass>
+			<DeteriorationRate>3</DeteriorationRate>
+    </statBases>
+    <techLevel>Neolithic</techLevel>
+    <ingestible>
+      <foodType>Plant, Processed</foodType>
+      <joy>0.60</joy>
+      <baseIngestTicks>720</baseIngestTicks>
+      <nurseable>true</nurseable>
+      <drugCategory>Social</drugCategory>
+      <ingestSound>Ingest_Smoke</ingestSound>
+      <ingestEffect>Smoke_Joint</ingestEffect>
+			<ingestEffectEat>EatVegetarian</ingestEffectEat>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.27,0,0.08)</offset>
+          <behind>true</behind>
+        </northDefault>
+        <east>
+          <offset>(0.45,0,0.08)</offset>
+        </east>
+        <south>
+          <offset>(0.27,0,0.08)</offset>
+        </south>
+        <west>
+          <offset>(-0.50,0,0.08)</offset>
+          <flip>true</flip>
+        </west>
+      </ingestHoldOffsetStanding>
+      <ingestHoldUsesTable>false</ingestHoldUsesTable>
+      <ingestCommandString>Smoke {0}</ingestCommandString>
+      <ingestReportString>Smoking {0}.</ingestReportString>
+      <ingestReportStringEat>Consuming {0}.</ingestReportStringEat>
+      <useEatingSpeedStat>false</useEatingSpeedStat>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>CrudeJointHigh</hediffDef>
+          <severity>0.75</severity>
+          <toleranceChemical>Smokeleaf</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_OffsetNeed">
+          <need>Rest</need>
+          <offset>-0.25</offset>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>CrudeJointTolerance</hediffDef>
+          <severity>0.040</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>SmokeleafCultivation</researchPrerequisite>
+			<recipeUsers>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+			<workSpeedStat></workSpeedStat>
+			<workSkill></workSkill>
+    </recipeMaker>
+    <costList>
+      <SmokeleafBuds>8</SmokeleafBuds>
+      <SmokeleafLeaves>2</SmokeleafLeaves>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>CrudeJoint</chemical>
+        <addictiveness>0.035</addictiveness>
+        <minToleranceToAddict>0.15</minToleranceToAddict>
+        <existingAddictionSeverityOffset>0.06</existingAddictionSeverityOffset>
+        <needLevelOffset>1</needLevelOffset>
+        <listOrder>20</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>CrudeJointHigh</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>stoned on crude smokeleaf joint</label>
+    <labelNoun>a smokeleaf high</labelNoun>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_Effecter">
+        <stateEffecter>High</stateEffecter>
+        <!--<severityIndices>
+          <min>1</min>
+          <max>5</max>
+        </severityIndices>-->
+      </li>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-2.0</severityPerDay>
+      </li>
+    </comps>
+      <stages>
+        <li>
+          <hungerRateFactorOffset>0.5</hungerRateFactorOffset>
+          <painOffset>-0.05</painOffset>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <offset>-0.35</offset>
+            </li>
+            <li>
+              <capacity>Moving</capacity>
+              <offset>-0.2</offset>
+            </li>
+          </capMods>
+        </li>
+      </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>CrudeJointHigh</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>CrudeJointHigh</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>high on crude smokeleaf joint</label>
+        <description>This is giving me a headache.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- Smokeleaf addiction -->
+
+  <ChemicalDef>
+    <defName>CrudeJoint</defName>
+    <label>Crude Smokeleaf Joint</label>
+    <addictionHediff>CrudeJointAddiction</addictionHediff>
+    <toleranceHediff>CrudeJointTolerance</toleranceHediff>
+		<onGeneratedAddictedToleranceChance>0.8</onGeneratedAddictedToleranceChance>
+	</ChemicalDef>
+
+  <NeedDef ParentName="DrugAddictionNeedBase">
+    <defName>Chemical_CrudeJoint</defName>
+    <needClass>Need_Chemical</needClass>
+    <label>crude smokeleaf joint</label>
+    <description>Because of a developed Smokeleaf dependence, this person needs to regularly consume the drug to avoid withdrawal symptoms.</description>
+    <listPriority>25</listPriority>
+  </NeedDef>
+  
+  <HediffDef ParentName="DrugToleranceBase">
+    <defName>CrudeJointTolerance</defName>
+    <label>crude smokeleaf joint tolerance</label>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.015</severityPerDay>
+      </li>
+      <li Class="HediffCompProperties_DrugEffectFactor">
+        <chemical>Smokeleaf</chemical>
+      </li>
+    </comps>
+		<hediffGivers>
+			<li Class="HediffGiver_RandomDrugEffect">
+				<hediff>Asthma</hediff>
+				<baseMtbDays>180</baseMtbDays>
+				<minSeverity>0.75</minSeverity>
+				<partsToAffect>
+					<li>LeftLung</li>
+					<li>RightLung</li>
+				</partsToAffect>
+				<countToAffect>2</countToAffect>
+			</li>
+			<li Class="HediffGiver_RandomDrugEffect">
+				<hediff>Carcinoma</hediff>
+				<baseMtbDays>180</baseMtbDays>
+				<minSeverity>0.60</minSeverity>
+				<partsToAffect>
+					<li>LeftLung</li>
+					<li>RightLung</li>
+				</partsToAffect>
+				<countToAffect>1</countToAffect>
+			</li>
+		</hediffGivers>
+	</HediffDef>
+
+  <HediffDef ParentName="AddictionBase">
+    <defName>CrudeJointAddiction</defName>
+    <hediffClass>Hediff_Addiction</hediffClass>
+    <label>crude smokeleaf joint dependence</label>
+    <causesNeed>Chemical_CrudeJoint</causesNeed>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.0333</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+      </li>
+      <li>
+        <label>withdrawal</label>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.2</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.2</offset>
+          </li>
+        </capMods>
+				<mentalStateGivers>
+					<li>
+						<mentalState>BingingFood</mentalState>
+						<mtbDays>15</mtbDays>
+					</li>
+					<li>
+						<mentalState>BingingDrugMajor</mentalState>
+						<mtbDays>25</mtbDays>
+					</li>
+				</mentalStateGivers>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>CrudeJointWithdrawal</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>CrudeJointAddiction</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>Crude smokeleaf joint withdrawal</label>
+        <description>I really wish I could smoke.</description>
+        <baseMoodEffect>-20</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

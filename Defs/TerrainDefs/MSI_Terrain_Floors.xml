@@ -32,6 +32,7 @@
             <li>Hempcrete</li>
             <li>HempcreteTile</li>
             <li>CarpetHemp</li>
+            <li>CarpetDevilsleaf</li>
             <li>HempcretePlate</li>
             <li>HempStalkFloor</li>
             <li>HempcretePath</li>
@@ -159,7 +160,6 @@
   <!--========== Hemp Carpet ==========-->
 
     <TerrainDef Name="MSI_CarpetBase" ParentName="MSI_FloorBase" Abstract="True">
-		<texturePath>Terrain/MSI_carpet</texturePath>
 		<researchPrerequisites>
 			<li>CarpetMaking</li>
 			<li>SmokeleafProcessing</li>
@@ -173,6 +173,7 @@
   
 	<TerrainDef ParentName="MSI_CarpetBase">
 		<defName>CarpetHemp</defName>
+		<texturePath>Terrain/MSI_carpet</texturePath>
 		<label>hemp carpet</label>
 		<costList>
 			<HempFabric>7</HempFabric>
@@ -180,6 +181,18 @@
 		<renderPrecedence>300</renderPrecedence>
 		<description>Durable carpet woven from hemp fibers. It is slightly flame resistant.</description>
 		<color>(138,139,108)</color>
+	</TerrainDef>
+
+  	<TerrainDef ParentName="MSI_CarpetBase">
+		<defName>CarpetDevilsleaf</defName>
+		<texturePath>Terrain/MSI_devilsleafCarpet</texturePath>
+		<label>devilsleaf carpet</label>
+		<costList>
+			<DevilsleafFabric>7</DevilsleafFabric>
+		</costList>
+		<renderPrecedence>300</renderPrecedence>
+		<description>Carpet woven from devilsleaf fibers. It is slightly flame resistant.</description>
+		<color>(97,33,26)</color>
 	</TerrainDef>
 
   <!--========== Hemp Stalk Floor ==========-->

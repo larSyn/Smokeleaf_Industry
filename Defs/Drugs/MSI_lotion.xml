@@ -13,7 +13,7 @@
     <rotatable>false</rotatable>
     <statBases>
 		<WorkToMake>750</WorkToMake>
-		<MarketValue>75</MarketValue>
+		<MarketValue>80</MarketValue>
 		<Mass>0.01</Mass>
 		<DeteriorationRate>0.5</DeteriorationRate>
     </statBases>
@@ -58,9 +58,9 @@
 		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
 		<maxSeverity>1.0</maxSeverity>
 		<comps>
-			<li Class="HediffCompProperties_HealOldWounds" />
+			<li Class="HealRandomOldWound.HediffCompProperties_HealRandomOldWound" />
 			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>-1.0</severityPerDay>
+				<severityPerDay>-0.8</severityPerDay>
 			</li>
 		</comps>
 		<stages>

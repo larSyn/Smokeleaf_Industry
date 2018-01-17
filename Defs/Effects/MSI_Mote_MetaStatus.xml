@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef Name="MSI_MoteBase" Abstract="True">
+      <thingClass>MoteThrown</thingClass>
+      <label>Mote</label>
+      <category>Mote</category>
+      <graphicData>
+        <graphicClass>Graphic_Mote</graphicClass>
+        <shaderType>Mote</shaderType>
+      </graphicData>
+      <altitudeLayer>MoteLow</altitudeLayer>
+      <tickerType>Normal</tickerType>
+      <useHitPoints>false</useHitPoints>
+      <isSaveable>false</isSaveable>
+      <rotatable>false</rotatable>
+    </ThingDef>
+
+  <!--================= Pawn states ===================-->
+
+  	<ThingDef ParentName="MSI_MoteBase">
+    	<defName>Mote_StonedCloud</defName>
+    	<graphicData>
+     	    <texPath>Things/Mote/MSI_mote_StonedCloud</texPath>
+    	</graphicData>
+    	<thingClass>MoteThrownAttached</thingClass>
+    	<altitudeLayer>MetaOverlays</altitudeLayer>
+    	<mote>
+      		<fadeInTime>0.50</fadeInTime>
+      		<solidTime>1.5</solidTime>
+      		<fadeOutTime>2</fadeOutTime>
+      		<attachedDrawOffset>(0.2, 0, 0.2)</attachedDrawOffset>
+    	</mote>
+  	</ThingDef>
+
+</Defs>

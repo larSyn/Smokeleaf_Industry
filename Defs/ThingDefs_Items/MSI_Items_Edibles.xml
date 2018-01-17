@@ -26,7 +26,7 @@
   		<ingestSound>Meal_Eat</ingestSound>
   		<useEatingSpeedStat>true</useEatingSpeedStat>
   		<ingestEffect>EatVegetarian</ingestEffect>
-  		<preferability>DesperateOnly</preferability>
+  		<preferability>RawBad</preferability>
   		<joy>0.5</joy>
   		<joyKind>Chemical</joyKind>
   		<outcomeDoers>
@@ -70,7 +70,7 @@
       <DeteriorationRate>12</DeteriorationRate>
     </statBases>
     <ingestible>
-      <preferability>DesperateOnly</preferability>
+      <preferability>NeverForNutrition</preferability>
       <foodType>Processed</foodType>
       <nutrition>0.1</nutrition>
       <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
@@ -118,10 +118,42 @@
   		<ingestSound>Meal_Eat</ingestSound>
   		<useEatingSpeedStat>true</useEatingSpeedStat>
   		<ingestEffect>EatVegetarian</ingestEffect>
-  		<preferability>DesperateOnly</preferability>
+  		<preferability>RawBad</preferability>
   	</ingestible>
     <thingCategories>
       <li>SmokeleafIndCatEdibles</li>
+    </thingCategories>
+  </ThingDef>
+
+  <!--========== Hemp Protein ==========-->
+  
+  <ThingDef ParentName="MSI_MealRottable">
+    <defName>HempProtein</defName>
+    <label>hemp Protein</label>
+    <description>A protein powder made from crushed smokeleaf seeds.</description>
+    <graphicData>
+      <texPath>Things/Items/MSI_hempProtein</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+      <soundDrop>Standard_Drop</soundDrop>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MarketValue>12</MarketValue>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <ingestible>
+      <nutrition>0.05</nutrition>
+      <foodType>Meat</foodType>
+      <baseIngestTicks>120</baseIngestTicks>
+      <chairSearchRadius>25</chairSearchRadius>
+      <ingestSound>Meal_Eat</ingestSound>
+      <useEatingSpeedStat>true</useEatingSpeedStat>
+      <ingestEffect>EatMeat</ingestEffect>
+      <preferability>RawBad</preferability>
+    </ingestible>
+    <thingCategories>
+      <li>MeatRaw</li>
     </thingCategories>
   </ThingDef>
 
@@ -150,7 +182,7 @@
       <ingestSound>Meal_Eat</ingestSound>
       <useEatingSpeedStat>true</useEatingSpeedStat>
       <ingestEffect>EatVegetarian</ingestEffect>
-      <preferability>DesperateOnly</preferability>
+      <preferability>RawBad</preferability>
     </ingestible>
     <thingCategories>
       <li>SmokeleafIndCatEdibles</li>
@@ -295,15 +327,15 @@
       </outcomeDoers>
   	</ingestible>
   	<comps>
-        <li Class="CompProperties_Drug">
-          <chemical>Edibles</chemical>
-          <addictiveness>0.015</addictiveness>
-          <minToleranceToAddict>0.15</minToleranceToAddict>
-          <existingAddictionSeverityOffset>0.06</existingAddictionSeverityOffset>
-          <needLevelOffset>1</needLevelOffset>
-          <listOrder>20</listOrder>
-        </li>
-      </comps>
+      <li Class="CompProperties_Drug">
+        <chemical>Edibles</chemical>
+        <addictiveness>0.015</addictiveness>
+        <minToleranceToAddict>0.15</minToleranceToAddict>
+        <existingAddictionSeverityOffset>0.06</existingAddictionSeverityOffset>
+        <needLevelOffset>1</needLevelOffset>
+        <listOrder>20</listOrder>
+      </li>
+    </comps>
   </ThingDef>
   
   <!--========== Hediffs ==========-->
@@ -316,6 +348,13 @@
     <scenarioCanAdd>true</scenarioCanAdd>
     <maxSeverity>1.0</maxSeverity>
     <comps>
+      <li Class="HediffCompProperties_Effecter">
+        <stateEffecter>High</stateEffecter>
+        <severityIndices>
+          <min>1</min>
+          <max>5</max>
+        </severityIndices>
+      </li>
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-1.0</severityPerDay>
       </li>
@@ -609,6 +648,13 @@
     <scenarioCanAdd>true</scenarioCanAdd>
     <maxSeverity>1.0</maxSeverity>
     <comps>
+      <li Class="HediffCompProperties_Effecter">
+        <stateEffecter>High</stateEffecter>
+        <severityIndices>
+          <min>1</min>
+          <max>5</max>
+        </severityIndices>
+      </li>
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-1.0</severityPerDay>
       </li>
@@ -769,6 +815,9 @@
         </li>
       </outcomeDoers>
     </ingestible>
+    <thingCategories>
+      <li>FoodMeals</li>
+    </thingCategories>
     <researchPrerequisites>
       <li>AdvancedSmokeleafProcessing</li>
     </researchPrerequisites>

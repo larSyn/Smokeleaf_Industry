@@ -12,7 +12,7 @@
     <rotatable>false</rotatable>
     <statBases>
   		<WorkToMake>750</WorkToMake>
-  		<MarketValue>25</MarketValue>
+  		<MarketValue>18</MarketValue>
   		<Mass>0.05</Mass>
   		<DeteriorationRate>6</DeteriorationRate>
     </statBases>
@@ -54,14 +54,16 @@
   		</outcomeDoers>
     </ingestible>
     <recipeMaker>
+      <effectWorking>BurnDrug</effectWorking>
+      <soundWorking>Recipe_Brewing</soundWorking>
   		<researchPrerequisite>IndustrialSmokeleafCultivation</researchPrerequisite>
   		<recipeUsers>
   			<li>PoweredCultivationBench</li>
   		</recipeUsers>
     </recipeMaker>
     <costList>
-      <SmokeleafBuds>4</SmokeleafBuds>
-	   <Chemfuel>1</Chemfuel>
+      <SmokeleafBuds>8</SmokeleafBuds>
+	    <Chemfuel>2</Chemfuel>
     </costList>
     <comps>
       <li Class="CompProperties_Drug">
@@ -83,8 +85,15 @@
     <scenarioCanAdd>true</scenarioCanAdd>
     <maxSeverity>1.0</maxSeverity>
     <comps>
+      <li Class="HediffCompProperties_Effecter">
+        <stateEffecter>High</stateEffecter>
+        <severityIndices>
+          <min>1</min>
+          <max>5</max>
+        </severityIndices>
+      </li>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-1.0</severityPerDay>
+        <severityPerDay>-2.0</severityPerDay>
       </li>
     </comps>
     <stages>

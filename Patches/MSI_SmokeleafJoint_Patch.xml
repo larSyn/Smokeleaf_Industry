@@ -6,6 +6,10 @@
 	<Operation Class="PatchOperationSequence">
 	    <success>Always</success>
 		<operations>
+	    	<li Class="ModCheck.FindFile">
+                <modName>Core</modName>
+                <file>Smokeleaf.xml</file>
+            </li>
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName = "SmokeleafJoint"]/description</xpath>
 				<value>
@@ -13,10 +17,16 @@
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "SmokeleafJoint"]/statBases/MarketValue</xpath>
+				<value>
+					<MarketValue>7</MarketValue>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName = "SmokeleafJoint"]/costList</xpath>
 				<value>
 					<costList>
-						<SmokeleafBuds>2</SmokeleafBuds>
+						<SmokeleafBuds>4</SmokeleafBuds>
 					</costList>
 				</value>
 			</li>
@@ -25,15 +35,34 @@
 				<value>
 					<recipeUsers>
 						<li>DrugLab</li>
-						<li>PoweredCultivationBench</li>
 					</recipeUsers>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName = "SmokeleafJoint"]/recipeMaker</xpath>
 					<value>
-						<researchPrerequisite>SmokeleafCultivation</researchPrerequisite>
+						<researchPrerequisite>DrugProduction</researchPrerequisite>
 					</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "SmokeleafJoint"]</xpath>
+					<value>
+					    <thingCategories>
+					      	<li>SmokeleafIndCatDrugs</li>
+					    </thingCategories>
+					</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/HediffDef[defName = "SmokeleafHigh"]/comps</xpath>
+				<value>
+      				<li Class="HediffCompProperties_Effecter">
+        				<stateEffecter>High</stateEffecter>
+        				<severityIndices>
+          					<min>1</min>
+          					<max>5</max>
+        				</severityIndices>
+      				</li>
+				</value>
 			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/HediffDef[defName = "SmokeleafHigh"]/comps/li[@Class="HediffCompProperties_SeverityPerDay"]/severityPerDay</xpath>
@@ -73,6 +102,10 @@
 	<Operation Class="PatchOperationSequence">
 	    <success>Always</success>
 	    <operations>
+	    	<li Class="ModCheck.FindFile">
+                <modName>Core</modName>
+                <file>Buildings_Production.xml</file>
+            </li>
 		    <li Class="PatchOperationTest">
 		        <xpath>Defs/ThingDef[defName = "DrugLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 		    </li>
@@ -80,6 +113,28 @@
 				<xpath>Defs/ThingDef[defName = "DrugLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 				<value>
 					<li>TrimmingTools</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+	    <success>Always</success>
+	    <operations>
+	    	<li Class="ModCheck.FindFile">
+                <modName>Core</modName>
+                <file>Plants_Cultivated_Farm.xml</file>
+            </li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "PlantSmokeleaf"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Plants/MSI_Smokeleaf</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "PlantSmokeleaf"]/plant</xpath>
+				<value>
+					<immatureGraphicPath>Things/ImmaturePlants/MSI_Smokeleaf</immatureGraphicPath>
 				</value>
 			</li>
 		</operations>

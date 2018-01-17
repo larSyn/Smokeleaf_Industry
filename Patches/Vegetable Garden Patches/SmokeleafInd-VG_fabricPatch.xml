@@ -6,10 +6,10 @@
 	<Operation Class="PatchOperationSequence"> 
 	    <success>Always</success>
 		<operations>
-			<li Class="ModCheck.isModLoaded">
-				<modName>VGP Garden Fabrics</modName>
-				<yourMod>Smokeleaf Industry</yourMod>
-			</li>
+            <li Class="ModCheck.FindFile">
+                <modName>VGP Garden Fabrics</modName>
+                <file>Recipes_loom.xml</file>
+            </li>
 			<li Class="PatchOperationRemove">
 				<xpath>Defs/RecipeDef[defName = "MakeHempCloth"]</xpath>
 			</li>
@@ -19,17 +19,17 @@
 	<Operation Class="PatchOperationSequence">
 	    <success>Always</success>
 		<operations>
-			<li Class="ModCheck.isModLoaded">
-				<modName>VGP Garden Fabrics</modName>
-				<yourMod>Smokeleaf Industry</yourMod>
-			</li>
+            <li Class="ModCheck.FindFile">
+                <modName>VGP Garden Fabrics</modName>
+                <file>Items_cloth.xml</file>
+            </li>
 			<li Class="PatchOperationRemove">
 				<xpath>Defs/ThingDef[defName = "HempCloth"]</xpath>
 			</li>
 		</operations>
 	</Operation>
 	
-  <!--========== Add Hemp Fabric To Loom ==========-->
+  <!--========== Add Fabrics To Loom ==========-->
 	
 	<Operation Class="PatchOperationSequence">
 	    <success>Always</success>
@@ -38,6 +38,10 @@
 				<modName>VGP Garden Fabrics</modName>
 				<yourMod>Smokeleaf Industry</yourMod>
 			</li>
+            <li Class="ModCheck.FindFile">
+                <modName>Smokeleaf Industry</modName>
+                <file>MSI_Recipes_Production.xml</file>
+            </li>
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/RecipeDef[defName = "CraftHempFibers"]/recipeUsers</xpath>
 				<value>
@@ -55,36 +59,6 @@
 						<li>TableElecLoom</li>
 					</recipeUsers>
 				</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/RecipeDef[defName = "CraftDevilsleafFibers"]/recipeUsers</xpath>
-				<value>
-					<recipeUsers>
-						<li>TableLoom</li>
-						<li>TableElecLoom</li>
-					</recipeUsers>
-				</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/RecipeDef[defName = "BulkCraftDevilsleafFibers"]/recipeUsers</xpath>
-				<value>
-					<recipeUsers>
-						<li>TableLoom</li>
-						<li>TableElecLoom</li>
-					</recipeUsers>
-				</value>
-			</li>
-		</operations>
-	</Operation>
-	
-  <!--========== Add Devilsleaf Fabric To Loom ==========-->
-	
-	<Operation Class="PatchOperationSequence">
-	    <success>Always</success>
-		<operations>
-			<li Class="ModCheck.isModLoaded">
-				<modName>VGP Garden Fabrics</modName>
-				<yourMod>Smokeleaf Industry</yourMod>
 			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/RecipeDef[defName = "CraftDevilsleafFibers"]/recipeUsers</xpath>

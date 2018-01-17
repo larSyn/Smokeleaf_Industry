@@ -4,7 +4,7 @@
   <ThingDef ParentName="MSI_MakeableDrugBase">
     <defName>SmokeleafHash</defName>
     <label>smokeleaf hash</label>
-    <description>Smokeleaf hash is a concentrated form of smokeleaf.  While not physically addictive, users may still develop a psychological dependence.</description>
+    <description>Smokeleaf hash is teh original concentrated form of smokeleaf. It is made from the resin collected from the buds.  While not physically addictive, users may still develop a psychological dependence.</description>
     <graphicData>
   		<texPath>Things/Items/MSI_hash</texPath>
   		<graphicClass>Graphic_StackCount</graphicClass>
@@ -12,7 +12,7 @@
     <rotatable>false</rotatable>
     <statBases>
   		<WorkToMake>500</WorkToMake>
-  		<MarketValue>18</MarketValue>
+  		<MarketValue>12</MarketValue>
   		<Mass>0.05</Mass>
   		<DeteriorationRate>6</DeteriorationRate>
     </statBases>
@@ -60,7 +60,7 @@
   		</recipeUsers>
     </recipeMaker>
     <costList>
-		  <SmokeleafBuds>4</SmokeleafBuds>
+		  <SmokeleafBuds>8</SmokeleafBuds>
     </costList>
     <comps>
 		<li Class="CompProperties_Drug">
@@ -82,9 +82,16 @@
     <scenarioCanAdd>true</scenarioCanAdd>
     <maxSeverity>1.0</maxSeverity>
     <comps>
-		<li Class="HediffCompProperties_SeverityPerDay">
-			<severityPerDay>-1.0</severityPerDay>
-		</li>
+      <li Class="HediffCompProperties_Effecter">
+        <stateEffecter>High</stateEffecter>
+        <severityIndices>
+          <min>1</min>
+          <max>5</max>
+        </severityIndices>
+      </li>
+		  <li Class="HediffCompProperties_SeverityPerDay">
+			 <severityPerDay>-2.0</severityPerDay>
+		  </li>
     </comps>
     <stages>
         <li>

@@ -1,5 +1,31 @@
 ----------------------------------------------------------------------------------------------------------------------------------
 
+Updated to v1.8
+
+Smokeleaf Industry
+Changelog:
+
+	-Updated to ModCheck 1.6
+	-Lots of patch optimization
+	-Added a new texture for mature smokeleaf plants. (Thanks for the reminder JinxVanAshke)
+	-Added a "Crude Smokeleaf Joint".  Replaces the regular joint at the Crafting Spot. *Note: If you have a Crafting Spot that has a bill for joints, you will need to deconstruct and rebuild it.
+	-Added a "Smokeleaf Cannagar" - a high tier smokeleaf "cigar" made with top shelf ingredients. 
+	-Added a new texture for Devilsleaf Carpet
+	-Added "Hemp Protein" - now you can survive completely off of Smokeleaf.
+	-Added two new planter types. Stone (unlocks with "Smokeleaf Cultivation") and Wood (unlocks with "Industrial Smokeleaf Cultivation"). 
+	-Added two new grow lights.  "Ceiling Lamp" (grows in a 3 tile radius) and the 
+	"Light Bank" (grows plants adjacent to it, draggable).  Both can be placed above other objects, but plants will NOT grow directly beneath them. Both unlock with the Grow Lamp (Industrial Smokeleaf Cultivation).
+	-Adjusted Trimming recipes. The "Crafting Spot" now yields 2:1 (Smokeleaf Leaves to byproducts), the "Drug Lab" now yields 1:1, and the "Cultivation Bench" now yields 1:2 (Buds only).  The Autotrimmer can process more Smokeleaf much faster and for less power at 1:1. (thanks JinxVanAshke, RyanRim)
+	-Added "Infused Meals" to the "Meals" category. (thanks Dub Scientist, GrimTrigger and Canute)
+	-Added "Infused Medicine" to the "Medicine" category.
+	-Moved "Hemp Fibers" to the "Plant Matter" category.
+	-Made Fibers, Seeds, and Buds able to be refined into "Chemfuel".
+	-Shortened the time for "Smokeleaf Lotion" to work. It is still a random chance, but the roll happens more frequently. 
+	-Recipe rebalancing. (thanks AZ)
+	-More words.
+
+----------------------------------------------------------------------------------------------------------------------------------
+
 Updated to v1.7
 
 Smokeleaf Industry

@@ -6,26 +6,16 @@
 	<Operation Class="PatchOperationSequence">
 	    <success>Always</success>
 	    <operations>
-		    <li Class="PatchOperationTest">
-		        <xpath>Defs/ThingDef[defName = "FueledStove"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter/thingDefs</xpath>
-		        <success>Invert</success>
-		    </li>
+	    	<li Class="ModCheck.FindFile">
+                <modName>Core</modName>
+                <file>Buildings_Production.xml</file>
+            </li>
 	    	<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName = "FueledStove"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter/thingDefs</xpath>
 				<value>
 					<li>HempFiber</li>
 				</value>
 			</li>
-		</operations>
-	</Operation>
-
-	<Operation Class="PatchOperationSequence">
-	    <success>Always</success>
-	    <operations>
-		    <li Class="PatchOperationTest">
-		        <xpath>Defs/ThingDef[defName = "FueledSmithy"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter/thingDefs</xpath>
-		        <success>Invert</success>
-		    </li>
 	    	<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName = "FueledSmithy"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter/thingDefs</xpath>
 				<value>
@@ -38,10 +28,10 @@
 	<Operation Class="PatchOperationSequence">
 	    <success>Always</success>
 	    <operations>
-		    <li Class="PatchOperationTest">
-		        <xpath>Defs/ThingDef[defName = "TorchLamp"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter/thingDefs</xpath>
-		        <success>Invert</success>
-		    </li>
+	    	<li Class="ModCheck.FindFile">
+                <modName>Core</modName>
+                <file>Buildings_Furniture.xml</file>
+            </li>
 	    	<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName = "TorchLamp"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter/thingDefs</xpath>
 				<value>

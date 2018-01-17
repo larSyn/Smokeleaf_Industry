@@ -10,6 +10,10 @@
 				<modName>VGP Vegetable Garden</modName>
 				<yourMod>Smokeleaf Industry</yourMod>
 			</li>
+            <li Class="ModCheck.FindFile">
+                <modName>Smokeleaf Industry</modName>
+                <file>MSI_Buildings_Power.xml</file>
+            </li>
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName = "HempolineGenerator"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter/thingDefs</xpath>
 				<value>
@@ -22,10 +26,10 @@
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
-			<li Class="ModCheck.isModLoaded">
-				<modName>VGP Vegetable Garden</modName>
-				<yourMod>Smokeleaf Industry</yourMod>
-			</li>
+            <li Class="ModCheck.FindFile">
+                <modName>VGP Vegetable Garden</modName>
+                <file>Items_Resources.xml</file>
+            </li>
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/RecipeDef[defName = "VG_MakeBiofuel"]/ingredients/li/count</xpath>
 				<value>
@@ -90,6 +94,36 @@
 						</recipeUsers>
 					</RecipeDef>
 				</value>
+			</li>
+		</operations>
+	</Operation>
+
+  <!--========== Remove Biofuel As Bench Fuel ==========-->
+	
+	<Operation Class="PatchOperationSequence">
+	    <success>Always</success>
+		<operations>
+            <li Class="ModCheck.FindFile">
+                <modName>VGP Garden Gourmet</modName>
+                <file>Buildings_Production.xml</file>
+            </li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "Oven"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter/thingDefs</xpath>
+					<value>
+						<li>HempFiber</li>
+					</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "HandCanningstove"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter/thingDefs</xpath>
+					<value>
+						<li>HempFiber</li>
+					</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "FueledCandyTable"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter/thingDefs</xpath>
+					<value>
+						<li>HempFiber</li>
+					</value>
 			</li>
 		</operations>
 	</Operation>
