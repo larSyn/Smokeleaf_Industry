@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-  <!--========== Smokeleaf Trader Patches ==========-->
+  <!--========== Smokeleaf Trader Patch - Neolithic Base ==========-->
 
   <Operation Class="PatchOperationSequence">
 	    <success>Always</success>
 		<operations>
+            <li Class="ModCheck.FindFile">
+                <modName>Core</modName>
+                <file>TraderKinds_Base_Neolithic.xml</file>
+            </li>
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/TraderKindDef[defName = "Base_Neolithic_Standard"]/stockGenerators</xpath>
 				<value>
@@ -44,10 +48,16 @@
 			</li>
 		</operations>
 	</Operation>
+
+  <!--========== Smokeleaf Trader Patch - Outlander Base ==========-->
 	
 	<Operation Class="PatchOperationSequence">
 	    <success>Always</success>
 		<operations>
+            <li Class="ModCheck.FindFile">
+                <modName>Core</modName>
+                <file>TraderKinds_Base_Outlander.xml</file>
+            </li>
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/TraderKindDef[defName = "Base_Outlander_Standard"]/stockGenerators</xpath>
 				<value>
@@ -140,7 +150,7 @@
 				<xpath>Defs/TraderKindDef[defName = "Base_Outlander_Standard"]/stockGenerators</xpath>
 				<value>
 					<li Class="StockGenerator_Category">
-				        <categoryDef>SmokeleafIndCatDrugs</categoryDef>
+				        <categoryDef>SmokeleafIndCatEdibles</categoryDef>
 				        <thingDefCountRange>
 				          <min>1</min>
 				          <max>3</max>
@@ -154,10 +164,16 @@
 			</li>
 		</operations>
 	</Operation>
+
+  <!--========== Smokeleaf Trader Patch - Outlander Caravan ==========-->
 	
 	<Operation Class="PatchOperationSequence">
 	    <success>Always</success>
 	    <operations>
+            <li Class="ModCheck.FindFile">
+                <modName>Core</modName>
+                <file>TraderKinds_Caravan_Outlander.xml</file>
+            </li>
 	    	<li Class="PatchOperationAdd">
 				<xpath>Defs/TraderKindDef[defName = "Caravan_Outlander_BulkGoods"]/stockGenerators</xpath>
 				<value>
@@ -184,10 +200,16 @@
 			</li>
 		</operations>
 	</Operation>
+
+  <!--========== Smokeleaf Trader Patch - Orbital ==========-->
 	
 	<Operation Class="PatchOperationSequence">
 	    <success>Always</success>
 		<operations>
+            <li Class="ModCheck.FindFile">
+                <modName>Core</modName>
+                <file>TraderKinds_Orbital_Misc.xml</file>
+            </li>
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/TraderKindDef[defName = "Orbital_BulkGoods"]/stockGenerators</xpath>
 				<value>
@@ -280,7 +302,7 @@
 				<xpath>Defs/TraderKindDef[defName = "Orbital_BulkGoods"]/stockGenerators</xpath>
 				<value>
 					<li Class="StockGenerator_Category">
-				        <categoryDef>SmokeleafIndCatDrugs</categoryDef>
+				        <categoryDef>SmokeleafIndCatEdibles</categoryDef>
 				        <thingDefCountRange>
 				          <min>1</min>
 				          <max>3</max>
@@ -360,7 +382,7 @@
 				<xpath>Defs/TraderKindDef[defName = "Orbital_PirateMerchant"]/stockGenerators</xpath>
 				<value>
 					<li Class="StockGenerator_Category">
-				        <categoryDef>SmokeleafIndCatDrugs</categoryDef>
+				        <categoryDef>SmokeleafIndCatEdibles</categoryDef>
 				        <thingDefCountRange>
 				          <min>1</min>
 				          <max>3</max>
@@ -464,7 +486,7 @@
 				<xpath>Defs/TraderKindDef[defName = "Orbital_Exotic"]/stockGenerators</xpath>
 				<value>
 					<li Class="StockGenerator_Category">
-				        <categoryDef>SmokeleafIndCatDrugs</categoryDef>
+				        <categoryDef>SmokeleafIndCatEdibles</categoryDef>
 				        <thingDefCountRange>
 				          <min>1</min>
 				          <max>3</max>

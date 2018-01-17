@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-  <!--========== Mill Hemp Flour ==========-->
+  <!--========== Change Recipe Users ==========-->
 	
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
@@ -10,6 +10,10 @@
 				<modName>VGP Garden Gourmet</modName>
 				<yourMod>Smokeleaf Industry</yourMod>
 			</li>
+            <li Class="ModCheck.FindFile">
+                <modName>Smokeleaf Industry</modName>
+                <file>MSI_Recipes_SmokeleafEdibles.xml</file>
+            </li>
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/RecipeDef[defName = "CraftHempFlour"]/recipeUsers</xpath>
 				<value>
@@ -25,18 +29,6 @@
 						<li>GrindStone</li>
 					</recipeUsers>
 				</value>
-			</li>
-		</operations>
-	</Operation>
-
-  <!--========== Make Hemp Milk ==========-->
-	
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="ModCheck.isModLoaded">
-				<modName>VGP Garden Gourmet</modName>
-				<yourMod>Smokeleaf Industry</yourMod>
 			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/RecipeDef[defName = "MakeHempMilk"]/recipeUsers</xpath>
@@ -56,57 +48,21 @@
 					</recipeUsers>
 				</value>
 			</li>
-		</operations>
-	</Operation>
-	
-  <!--========== Smokeleaf Butter & Hemp Milk ==========-->
-	
-	<!--<Operation Class="PatchOperationSequence">
-	    <success>Always</success>
-		<operations>
-			<li Class="ModCheck.isModLoaded">
-				<modName>VGP Garden Gourmet</modName>
-				<yourMod>Smokeleaf Industry</yourMod>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/RecipeDef[defName = "MakeSmokeleafButter"]/ingredients/li[1]/filter/thingDefs</xpath>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName = "MakeHempProtein"]/recipeUsers</xpath>
 				<value>
-					<li>soymilk</li>
-					<li>coconutmilk</li>
+					<recipeUsers>
+						<li>GrindStone</li>
+					</recipeUsers>
 				</value>
 			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/RecipeDef[defName = "MakeSmokeleafButter"]/fixedIngredientFilter/thingDefs</xpath>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName = "MakeHempProteinBulk"]/recipeUsers</xpath>
 				<value>
-					<li>soymilk</li>
-					<li>coconutmilk</li>
+					<recipeUsers>
+						<li>GrindStone</li>
+					</recipeUsers>
 				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/RecipeDef[defName = "MakeSmokeleafButterBulk"]/ingredients/li[1]/filter/thingDefs</xpath>
-				<value>
-					<li>soymilk</li>
-					<li>coconutmilk</li>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/RecipeDef[defName = "MakeSmokeleafButterBulk"]/fixedIngredientFilter/thingDefs</xpath>
-				<value>
-					<li>soymilk</li>
-					<li>coconutmilk</li>
-				</value>
-			</li>
-		</operations>
-	</Operation>-->
-
-  <!--========== Make Smokeleaf Butter ==========-->
-	
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="ModCheck.isModLoaded">
-				<modName>VGP Garden Gourmet</modName>
-				<yourMod>Smokeleaf Industry</yourMod>
 			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/RecipeDef[defName = "MakeSmokeleafButter"]/recipeUsers</xpath>
@@ -125,18 +81,6 @@
 						<li>Canningstove</li>
 					</recipeUsers>
 				</value>
-			</li>
-		</operations>
-	</Operation>
-
-  <!--========== Press Smokeleaf Seed Oil ==========-->
-
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="ModCheck.isModLoaded">
-				<modName>VGP Garden Gourmet</modName>
-				<yourMod>Smokeleaf Industry</yourMod>
 			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/RecipeDef[defName = "CraftSmokeleafSeedOil"]/recipeUsers</xpath>
@@ -168,6 +112,10 @@
 				<modName>VGP Garden Gourmet</modName>
 				<yourMod>Smokeleaf Industry</yourMod>
 			</li>
+            <li Class="ModCheck.FindFile">
+                <modName>Smokeleaf Industry</modName>
+                <file>MSI_Items_Edibles.xml</file>
+            </li>
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName = "HempFlour"]/thingCategories</xpath>
 				<value>
@@ -212,6 +160,10 @@
 				<modName>VGP Garden Gourmet</modName>
 				<yourMod>Smokeleaf Industry</yourMod>
 			</li>
+            <li Class="ModCheck.FindFile">
+                <modName>Smokeleaf Industry</modName>
+                <file>MSI_Recipes_SmokeleafEdibles.xml</file>
+            </li>
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/RecipeDef[defName = "BakeSmokeleafCookies"]/recipeUsers</xpath>
 				<value>
@@ -316,6 +268,10 @@
 				<modName>VGP Garden Gourmet</modName>
 				<yourMod>Smokeleaf Industry</yourMod>
 			</li>
+            <li Class="ModCheck.FindFile">
+                <modName>Smokeleaf Industry</modName>
+                <file>MSI_Recipes_SmokeleafEdibles.xml</file>
+            </li>
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/RecipeDef[defName = "BakeSmokeleafBrownies"]/recipeUsers</xpath>
 				<value>
@@ -370,6 +326,10 @@
 				<modName>VGP Garden Gourmet</modName>
 				<yourMod>Smokeleaf Industry</yourMod>
 			</li>
+            <li Class="ModCheck.FindFile">
+                <modName>Smokeleaf Industry</modName>
+                <file>MSI_Recipes_SmokeleafEdibles.xml</file>
+            </li>
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/RecipeDef[defName = "MakeSmokeleafSmoothie"]/recipeUsers</xpath>
 				<value>
@@ -468,6 +428,10 @@
 				<modName>VGP Garden Gourmet</modName>
 				<yourMod>Smokeleaf Industry</yourMod>
 			</li>
+            <li Class="ModCheck.FindFile">
+                <modName>Smokeleaf Industry</modName>
+                <file>MSI_Recipes_SmokeleafEdibles.xml</file>
+            </li>
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/RecipeDef[defName = "MakeSmokeleafNutriLeafBar"]/recipeUsers</xpath>
 				<value>
@@ -590,6 +554,10 @@
 				<modName>VGP Garden Gourmet</modName>
 				<yourMod>Smokeleaf Industry</yourMod>
 			</li>
+            <li Class="ModCheck.FindFile">
+                <modName>Smokeleaf Industry</modName>
+                <file>MSI_Recipes_SmokeleafEdibles.xml</file>
+            </li>
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/RecipeDef[defName = "MakeSmokeleafDeEnergyDrink"]/recipeUsers</xpath>
 				<value>
@@ -620,6 +588,10 @@
 				<modName>VGP Garden Gourmet</modName>
 				<yourMod>Smokeleaf Industry</yourMod>
 			</li>
+            <li Class="ModCheck.FindFile">
+                <modName>Smokeleaf Industry</modName>
+                <file>MSI_Recipes_SmokeleafEdibles.xml</file>
+            </li>
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/RecipeDef[defName = "MakeSmokeleafCandy"]/recipeUsers</xpath>
 				<value>

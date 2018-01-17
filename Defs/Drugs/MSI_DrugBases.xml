@@ -10,7 +10,7 @@
 			<MaxHitPoints>50</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 			<DeteriorationRate>2</DeteriorationRate>
-			<Beauty>-2</Beauty>
+			<Beauty>0</Beauty>
 		</statBases>
 		<altitudeLayer>Item</altitudeLayer>
 		<stackLimit>400</stackLimit>
@@ -21,7 +21,7 @@
 		<comps>
 			<li Class="CompProperties_Forbiddable" />
 		</comps>
-		<pathCost>15</pathCost>
+		<pathCost>5</pathCost>
 		<resourceReadoutPriority>Last</resourceReadoutPriority>
 		<drawGUIOverlay>true</drawGUIOverlay>
 		<ingestible>
@@ -29,6 +29,7 @@
 			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
 			<joyKind>Chemical</joyKind>
 			<chairSearchRadius>25</chairSearchRadius>
+			<nurseable>true</nurseable>
 		</ingestible>
 		<storedConceptLearnOpportunity>DrugPolicies</storedConceptLearnOpportunity>
 	</ThingDef>
@@ -42,12 +43,10 @@
 		</recipeMaker>
 		<ingestible>
 			<baseIngestTicks>720</baseIngestTicks>
-			<nurseable>false</nurseable>
-			<drugCategory>Social</drugCategory>
 			<ingestSound>Ingest_Smoke</ingestSound>
 			<ingestEffect>Smoke_Joint</ingestEffect>
 			<ingestEffectEat>EatVegetarian</ingestEffectEat>
-			<ingestHoldUsesTable>false</ingestHoldUsesTable>
+			<ingestHoldUsesTable>true</ingestHoldUsesTable>
 			<ingestCommandString>Smoke {0}</ingestCommandString>
 			<ingestReportString>Smoking {0}.</ingestReportString>
 			<useEatingSpeedStat>false</useEatingSpeedStat>
@@ -71,9 +70,6 @@
 			<ingestHoldUsesTable>false</ingestHoldUsesTable>
 			<ingestCommandString>Take {0}</ingestCommandString>
 			<ingestReportString>Taking {0}.</ingestReportString>
-			<drugCategory>Medical</drugCategory>
-			<nurseable>true</nurseable>
-			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
 			<drugCategory>Medical</drugCategory>
 		</ingestible>
 		<socialPropernessMatters>true</socialPropernessMatters>

@@ -13,7 +13,7 @@
     <rotatable>false</rotatable>
     <statBases>
   		<WorkToMake>600</WorkToMake>
-  		<MarketValue>65</MarketValue>
+  		<MarketValue>45</MarketValue>
   		<Mass>0.01</Mass>
   		<DeteriorationRate>0.5</DeteriorationRate>
     </statBases>
@@ -37,8 +37,8 @@
       </skillRequirements>
     </recipeMaker>
     <costList>
-		  <CBD>2</CBD>
-		  <Neutroamine>1</Neutroamine>
+		  <CBD>1</CBD>
+		  <Neutroamine>2</Neutroamine>
     </costList>
     <comps>
       <li Class="CompProperties_Drug">

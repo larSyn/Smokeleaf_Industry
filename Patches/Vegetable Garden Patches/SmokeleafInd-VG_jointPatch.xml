@@ -6,9 +6,9 @@
 	<Operation Class="PatchOperationSequence"> 
 	    <success>Always</success>
 		<operations>
-			<li Class="ModCheck.isModLoaded">
+			<li Class="ModCheck.FindFile">
 				<modName>VGP Garden Medicine</modName>
-				<yourMod>Smokeleaf Industry</yourMod>
+				<file>Garden Drugs.xml</file>
 			</li>
 			<li Class="PatchOperationRemove">
 				<xpath>Defs/RecipeDef[defName = "VG_BulkSmokeleafJoint"]</xpath>

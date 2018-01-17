@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="MSI_MakeableDrugBase">
+    <defName>SmokeleafCannagar</defName>
+    <label>smokeleaf cannagar</label>
+    <description>Smokeleaf buds wrapped around a stick and rolled in leaves soaked with oil. Very potent and very expensive. The drug improves mood, but also increases appetite, reduces focus and slows movement.  While not physically addictive, users may still develop a psychological dependence.</description>
+    <graphicData>
+      <texPath>Things/Items/MSI_cannagar</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>500</WorkToMake>
+      <MarketValue>45</MarketValue>
+      <Mass>0.05</Mass>
+			<DeteriorationRate>3</DeteriorationRate>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <ingestible>
+      <foodType>Plant, Processed</foodType>
+      <joy>0.85</joy>
+      <baseIngestTicks>720</baseIngestTicks>
+      <nurseable>true</nurseable>
+      <drugCategory>Social</drugCategory>
+      <ingestSound>Ingest_Smoke</ingestSound>
+      <ingestEffect>Smoke_Joint</ingestEffect>
+			<ingestEffectEat>EatVegetarian</ingestEffectEat>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.27,0,0.08)</offset>
+          <behind>true</behind>
+        </northDefault>
+        <east>
+          <offset>(0.45,0,0.08)</offset>
+        </east>
+        <south>
+          <offset>(0.27,0,0.08)</offset>
+        </south>
+        <west>
+          <offset>(-0.50,0,0.08)</offset>
+          <flip>true</flip>
+        </west>
+      </ingestHoldOffsetStanding>
+      <ingestHoldUsesTable>false</ingestHoldUsesTable>
+      <ingestCommandString>Smoke {0}</ingestCommandString>
+      <ingestReportString>Smoking {0}.</ingestReportString>
+      <ingestReportStringEat>Consuming {0}.</ingestReportStringEat>
+      <useEatingSpeedStat>false</useEatingSpeedStat>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>CannagarHigh</hediffDef>
+          <severity>0.75</severity>
+          <toleranceChemical>Cannagar</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_OffsetNeed">
+          <need>Rest</need>
+          <offset>-0.25</offset>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>CannagarTolerance</hediffDef>
+          <severity>0.040</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>AdvancedSmokeleafCultivation</researchPrerequisite>
+			<recipeUsers>
+        <li>PoweredCultivationBench</li>
+      </recipeUsers>
+			<workSpeedStat></workSpeedStat>
+			<workSkill></workSkill>
+    </recipeMaker>
+    <costList>
+      <SmokeleafBuds>7</SmokeleafBuds>
+      <SmokeleafDistillate>1</SmokeleafDistillate>
+      <SmokeleafLeaves>2</SmokeleafLeaves>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>Cannagar</chemical>
+        <addictiveness>0.04</addictiveness>
+        <minToleranceToAddict>0.15</minToleranceToAddict>
+        <existingAddictionSeverityOffset>0.06</existingAddictionSeverityOffset>
+        <needLevelOffset>1</needLevelOffset>
+        <listOrder>20</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>CannagarHigh</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>stoned on a Cannagar</label>
+    <labelNoun>stoniness</labelNoun>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_Effecter">
+        <stateEffecter>High</stateEffecter>
+        <severityIndices>
+          <min>1</min>
+          <max>5</max>
+        </severityIndices>
+      </li>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-2.0</severityPerDay>
+      </li>
+    </comps>
+      <stages>
+        <li>
+          <hungerRateFactor>1.15</hungerRateFactor>
+          <painOffset>-0.35</painOffset>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <offset>-0.2</offset>
+            </li>
+            <li>
+              <capacity>Moving</capacity>
+              <offset>-0.15</offset>
+            </li>
+            <li>
+              <capacity>Manipulation</capacity>
+              <offset>-0.15</offset>
+            </li>
+          </capMods>
+        </li>
+      </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>CannagarHigh</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>CannagarHigh</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>high on cannagar</label>
+        <description>This. Is. Amazing!</description>
+        <baseMoodEffect>35</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- Smokeleaf addiction -->
+
+  <ChemicalDef>
+    <defName>Cannagar</defName>
+    <label>Smokeleaf Cannagar</label>
+    <addictionHediff>CannagarAddiction</addictionHediff>
+    <toleranceHediff>CannagarTolerance</toleranceHediff>
+		<onGeneratedAddictedToleranceChance>0.8</onGeneratedAddictedToleranceChance>
+	</ChemicalDef>
+
+  <NeedDef ParentName="DrugAddictionNeedBase">
+    <defName>Chemical_Cannagar</defName>
+    <needClass>Need_Chemical</needClass>
+    <label>smokeleaf cannagar</label>
+    <description>Because of a developed Smokeleaf Cannagar dependence, this person needs to regularly consume the drug to avoid withdrawal symptoms.</description>
+    <listPriority>25</listPriority>
+  </NeedDef>
+  
+  <HediffDef ParentName="DrugToleranceBase">
+    <defName>CannagarTolerance</defName>
+    <label>smokeleaf cannagar tolerance</label>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.015</severityPerDay>
+      </li>
+      <li Class="HediffCompProperties_DrugEffectFactor">
+        <chemical>Cannagar</chemical>
+      </li>
+    </comps>
+		<hediffGivers>
+			<li Class="HediffGiver_RandomDrugEffect">
+				<hediff>Asthma</hediff>
+				<baseMtbDays>180</baseMtbDays>
+				<minSeverity>0.75</minSeverity>
+				<partsToAffect>
+					<li>LeftLung</li>
+					<li>RightLung</li>
+				</partsToAffect>
+				<countToAffect>2</countToAffect>
+			</li>
+			<li Class="HediffGiver_RandomDrugEffect">
+				<hediff>Carcinoma</hediff>
+				<baseMtbDays>180</baseMtbDays>
+				<minSeverity>0.60</minSeverity>
+				<partsToAffect>
+					<li>LeftLung</li>
+					<li>RightLung</li>
+				</partsToAffect>
+				<countToAffect>1</countToAffect>
+			</li>
+		</hediffGivers>
+	</HediffDef>
+
+  <HediffDef ParentName="AddictionBase">
+    <defName>CannagarAddiction</defName>
+    <hediffClass>Hediff_Addiction</hediffClass>
+    <label>smokeleaf cannagar dependence</label>
+    <causesNeed>Chemical_Cannagar</causesNeed>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.0333</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+      </li>
+      <li>
+        <label>withdrawal</label>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.2</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.2</offset>
+          </li>
+        </capMods>
+				<mentalStateGivers>
+					<li>
+						<mentalState>BingingFood</mentalState>
+						<mtbDays>15</mtbDays>
+					</li>
+					<li>
+						<mentalState>BingingDrugMajor</mentalState>
+						<mtbDays>25</mtbDays>
+					</li>
+				</mentalStateGivers>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>CannagarWithdrawal</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>CannagarAddiction</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>Crude smokeleaf joint withdrawal</label>
+        <description>I really have to wait two weeks for one of these things?!</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

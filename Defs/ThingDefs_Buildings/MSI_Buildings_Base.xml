@@ -17,4 +17,33 @@
 		</statBases>
   </ThingDef>
 
+  	<ThingDef Name="MSI_FurnitureBase" ParentName="MSI_BuildingBase" Abstract="True">
+	    <designationCategory>Furniture</designationCategory>
+	    <minifiedDef>MinifiedFurniture</minifiedDef>
+	    <tradeTags>
+	      	<li>Furniture</li>
+	    </tradeTags>
+  	</ThingDef>
+  
+	 <ThingDef Name="MSI_FurnitureWithQualityBase" ParentName="MSI_FurnitureBase" Abstract="True">
+	    <comps>
+	      <li>
+	        <compClass>CompQuality</compClass>
+	      </li>
+	    </comps>
+	 </ThingDef>
+
+  	<ThingDef Name="MSI_ArtableFurnitureBase" ParentName="MSI_FurnitureWithQualityBase" Abstract="True">
+    <comps>
+	     <li Class="CompProperties_Art">
+	        <nameMaker>ArtName_Furniture</nameMaker>
+	        <descriptionMaker>ArtDescription_Furniture</descriptionMaker>
+	        <minQualityForArtistic>Excellent</minQualityForArtistic>
+		</li>
+	    </comps>
+	    <inspectorTabs>
+	      <li>ITab_Art</li>
+	    </inspectorTabs>
+  	</ThingDef>
+
 </Defs>

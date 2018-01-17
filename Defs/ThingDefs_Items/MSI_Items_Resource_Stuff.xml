@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   
-    <!--========== Hemp Fiber ==========-->
+  <!--========== Hemp Fiber ==========-->
 	
-	<ThingDef ParentName="MSI_ResourceBase">
+	<ThingDef ParentName="MSI_RoughPlantBase">
 		<defName>HempFiber</defName>
 		<label>hemp fibers</label>
 		<description>Leftover stalks and leaves from trimming the smokeleaf plant.</description>
@@ -13,7 +13,7 @@
 		</graphicData>
 		<statBases>
 			<MaxHitPoints>90</MaxHitPoints>
-			<MarketValue>1.5</MarketValue>
+			<MarketValue>1</MarketValue>
 			<Mass>0.25</Mass>
 			<Flammability>1.0</Flammability>
 			<DeteriorationRate>12</DeteriorationRate>
@@ -53,16 +53,16 @@
 		</tools>
 		<stackLimit>400</stackLimit>
 		<thingCategories>
-			<li>ResourcesRaw</li>
+			<li>PlantMatter</li>
 		</thingCategories>
 		<researchPrerequisites>
 			<li>SmokeleafCultivation</li>
 		</researchPrerequisites>
 	</ThingDef>
   
-	<!--========== Smokeleaf Buds ==========-->
+  <!--========== Smokeleaf Buds ==========-->
   
-    <ThingDef ParentName="MSI_OrganicProductBase">
+    <ThingDef ParentName="MSI_RoughPlantBase">
 		<defName>SmokeleafBuds</defName>
 		<label>smokeleaf buds</label>
 		<description>The flower of the smokeleaf plant. Contains all the good stuff.</description>
@@ -72,9 +72,9 @@
 		</graphicData>
 		<statBases>
 			<MaxHitPoints>90</MaxHitPoints>
-			<MarketValue>2</MarketValue>
+			<MarketValue>1.15</MarketValue>
 			<Mass>0.05</Mass>
-			<Flammability>1.5</Flammability>
+			<Flammability>1.0</Flammability>
 			<DeteriorationRate>8</DeteriorationRate>
 		</statBases>
 		<stackLimit>400</stackLimit>
@@ -88,7 +88,7 @@
   
   <!--========== Smokeleaf Seeds ==========-->
   
-	<ThingDef ParentName="MSI_OrganicProductBase">
+	<ThingDef ParentName="MSI_RoughPlantBase">
 		<defName>SmokeleafSeed</defName>
 		<label>smokeleaf seed</label>
 		<description>The seed of the smokeleaf plant.</description>
@@ -97,8 +97,8 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>1.5</MarketValue>
-			<Flammability>0.5</Flammability>
+			<MarketValue>1</MarketValue>
+			<Flammability>1.0</Flammability>
 		</statBases>
 		<thingCategories>
 			<li>PlantMatter</li>
@@ -118,7 +118,7 @@
 		<graphicData>
 			<texPath>Things/Item/Resource/Cloth</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<color>(138,139,95)</color>
+			<color>(138,139,108)</color>
 		</graphicData>
 		<statBases>
 			<MaxHitPoints>110</MaxHitPoints>
@@ -216,13 +216,13 @@
 		<graphicData>
 			<texPath>Things/Items/MSI_bioComp</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<color>(130,130,100)</color>
+			<color>(123,123,96)</color>
 		</graphicData>
     	<soundInteract>Metal_Drop</soundInteract>
     	<soundDrop>Metal_Drop</soundDrop>
     	<useHitPoints>false</useHitPoints>
 		<statBases>
-			<MarketValue>8</MarketValue>
+			<MarketValue>10</MarketValue>
 			<Mass>0.25</Mass>
       		<SharpDamageMultiplier>0.55</SharpDamageMultiplier>
       		<BluntDamageMultiplier>0.85</BluntDamageMultiplier>
@@ -231,7 +231,7 @@
 			<categories>
 				<li>Metallic</li>
 			</categories>
-			<color>(130,130,100)</color>
+			<color>(123,123,96)</color>
 			<commonality>1.4</commonality>
       		<soundImpactStuff>BulletImpactMetal</soundImpactStuff>
       		<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
@@ -253,7 +253,7 @@
 		</researchPrerequisites>
 	</ThingDef>
   
-    <!--========== Hempoline ==========-->
+  <!--========== Hempoline ==========-->
 	
 	<ThingDef ParentName="MSI_OrganicProductBase">
 		<defName>Hempoline</defName>
@@ -266,7 +266,7 @@
 		<stackLimit>400</stackLimit>
 		<statBases>
 			<MaxHitPoints>50</MaxHitPoints>
-			<MarketValue>5</MarketValue>
+			<MarketValue>10</MarketValue>
 			<Mass>0.05</Mass>
 			<DeteriorationRate>1.0</DeteriorationRate>
 		</statBases>
@@ -310,7 +310,7 @@
 			<li>SmokeleafIndCatDrugs</li>
 		</thingCategories>
 		<costList>
-			<SmokeleafBuds>15</SmokeleafBuds>
+			<SmokeleafBuds>25</SmokeleafBuds>
 		</costList>
 		<recipeMaker>
 			<workSpeedStat>DrugProductionSpeed</workSpeedStat>
@@ -343,19 +343,16 @@
 		<soundDrop>Standard_Drop</soundDrop>
 		<statBases>
 			<MaxHitPoints>60</MaxHitPoints>
-			<MarketValue>36</MarketValue>
+			<MarketValue>50</MarketValue>
 			<Mass>0.5</Mass>
 			<Flammability>1.0</Flammability>
-			<MedicalPotency>1.50</MedicalPotency>
+			<MedicalPotency>1.60</MedicalPotency>
 			<DeteriorationRate>6</DeteriorationRate>
 			<WorkToMake>750</WorkToMake>
 		</statBases>
-		<thingCategories>
-			<li>Medicine</li>
-		</thingCategories>
 		<costList>
 			<Medicine>1</Medicine>
-			<CBD>2</CBD>
+			<CBD>1</CBD>
 		</costList>
 		<recipeMaker>
 			<workSpeedStat>DrugProductionSpeed</workSpeedStat>
@@ -371,6 +368,9 @@
 		<researchPrerequisites>
 			<li>SmokeleafPharmacology</li>
 		</researchPrerequisites>
+    	<thingCategories>
+      		<li>Medicine</li>
+    	</thingCategories>
 	</ThingDef>  
 	  
 </Defs>

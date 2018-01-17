@@ -12,7 +12,7 @@
     <rotatable>false</rotatable>
     <statBases>
   		<WorkToMake>750</WorkToMake>
-  		<MarketValue>50</MarketValue>
+  		<MarketValue>36</MarketValue>
   		<Mass>0.05</Mass>
   		<DeteriorationRate>6</DeteriorationRate>
     </statBases>
@@ -60,7 +60,8 @@
   		</recipeUsers>
     </recipeMaker>
     <costList>
-		  <SmokeleafHash>4</SmokeleafHash>
+		  <SmokeleafBuds>15</SmokeleafBuds>
+      <Neutroamine>1</Neutroamine>
     </costList>
     <comps>
 		<li Class="CompProperties_Drug">
@@ -82,8 +83,15 @@
     <scenarioCanAdd>true</scenarioCanAdd>
     <maxSeverity>1.0</maxSeverity>
     <comps>
+      <li Class="HediffCompProperties_Effecter">
+        <stateEffecter>High</stateEffecter>
+        <severityIndices>
+          <min>1</min>
+          <max>5</max>
+        </severityIndices>
+      </li>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-1.0</severityPerDay>
+        <severityPerDay>-2.0</severityPerDay>
       </li>
     </comps>
     <stages>
