@@ -90,8 +90,8 @@
   <!--========== Ceiling Lamp ==========-->
   
   <ThingDef ParentName="MSI_LampBase">
-    <defName>CeilingLamp</defName>
-    <label>ceiling lamp</label>
+    <defName>MSI_CeilingGrowLamp</defName>
+    <label>ceiling grow lamp</label>
     <thingClass>Building_SunLamp</thingClass>
     <description>A ceiling lamp designed for growing plants, with a built-in timer. Hang near growing plants.</description>
     <graphicData>
@@ -107,7 +107,7 @@
     <blockWind>false</blockWind>
     <tickerType>Rare</tickerType>
     <statBases>
-    <MaxHitPoints>150</MaxHitPoints>
+      <MaxHitPoints>150</MaxHitPoints>
       <Flammability>1.0</Flammability>
       <WorkToBuild>250</WorkToBuild>
       <Mass>3.5</Mass>
@@ -146,10 +146,10 @@
   <!--========== Tube Lights ==========-->
   
   <ThingDef ParentName="MSI_LampBase">
-    <defName>TubeLights</defName>
-    <label>light fixture</label>
+    <defName>MSI_TubeGrowLights</defName>
+    <label>grow light fixture</label>
     <thingClass>Building_SunLamp</thingClass>
-    <description>A light bank system designed for growing plants, but, is cost effective enough, that it works well in other areas too. Stay lit 24 hours a day.</description>
+    <description>A tube light system designed for growing plants, but, is cost effective enough, that it works well in other areas too. Stays lit 24 hours a day.</description>
     <graphicData>
       <texPath>Things/Buildings/MSI_lightBanks</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -178,9 +178,9 @@
     <placingDraggableDimensions>1</placingDraggableDimensions>
     <blockWind>false</blockWind>
     <tickerType>Rare</tickerType>
-    <costStuffCount>15</costStuffCount>
+    <costStuffCount>5</costStuffCount>
     <costList>
-      <Steel>5</Steel>
+      <Steel>15</Steel>
     </costList>
     <stuffCategories>
       <li>Metallic</li>
@@ -217,8 +217,8 @@
 	<!--========== Stone Planter ==========-->
 	
   <ThingDef ParentName="MSI_ArtableFurnitureBase">
-    <defName>StonePlanter</defName>
-    <label>stone planter</label>
+    <defName>MSI_StonePlanter</defName>
+    <label>planter</label>
 	  <description>A stone planter for smokeleaf or other plants. The soil is fertilized to encourage rapid growth. Requires light and heat.</description>
     <thingClass>Building_PlantGrower</thingClass>
     <graphicData>
@@ -266,7 +266,7 @@
   <!--========== Wooden Planter ==========-->
   
   <ThingDef ParentName="MSI_ArtableFurnitureBase">
-    <defName>WoodenPlanter</defName>
+    <defName>MSI_WoodenPlanter</defName>
     <label>planter</label>
     <description>A wooden planter for smokeleaf or other plants. The soil is fertilized to encourage rapid growth. Requires light and heat.</description>
     <thingClass>Building_PlantGrower</thingClass>

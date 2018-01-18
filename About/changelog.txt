@@ -1,6 +1,15 @@
 ----------------------------------------------------------------------------------------------------------------------------------
 
-Updated to v1.8
+Updated to v1.8b
+
+Smokeleaf Industry
+Changelog:
+
+	-Renamed some conflicting Def names.  Ceiling Lamps, Light Fixtures, and stone and wooden planters will have to be rebuilt.
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+Updated to v1.8a
 
 Smokeleaf Industry
 Changelog:
@@ -15,7 +24,8 @@ Changelog:
 	-Added two new planter types. Stone (unlocks with "Smokeleaf Cultivation") and Wood (unlocks with "Industrial Smokeleaf Cultivation"). 
 	-Added two new grow lights.  "Ceiling Lamp" (grows in a 3 tile radius) and the 
 	"Light Bank" (grows plants adjacent to it, draggable).  Both can be placed above other objects, but plants will NOT grow directly beneath them. Both unlock with the Grow Lamp (Industrial Smokeleaf Cultivation).
-	-Adjusted Trimming recipes. The "Crafting Spot" now yields 2:1 (Smokeleaf Leaves to byproducts), the "Drug Lab" now yields 1:1, and the "Cultivation Bench" now yields 1:2 (Buds only).  The Autotrimmer can process more Smokeleaf much faster and for less power at 1:1. (thanks JinxVanAshke, RyanRim)
+	-Adjusted Trimming recipes. The "Crafting Spot" now yields 2:1 (Smokeleaf Leaves to byproducts), the "Drug Lab" now yields 1:1, and the "Cultivation Bench" now yields 1:2 (Buds only).  
+	-The Autotrimmer can process more Smokeleaf much faster and for less power at 1:1. (thanks JinxVanAshke, RyanRim)
 	-Added "Infused Meals" to the "Meals" category. (thanks Dub Scientist, GrimTrigger and Canute)
 	-Added "Infused Medicine" to the "Medicine" category.
 	-Moved "Hemp Fibers" to the "Plant Matter" category.
