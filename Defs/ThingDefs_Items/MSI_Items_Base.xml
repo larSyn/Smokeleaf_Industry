@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!--========== Item Bases ==========-->
+  <!--========== Item Base ==========-->
   
   	<ThingDef Name="MSI_ResourceBase" Abstract="True">
 		<thingClass>ThingWithComps</thingClass>
@@ -52,10 +52,11 @@
   	<ThingDef ParentName="MSI_OrganicProductBase" Name="MSI_RoughPlantBase" Abstract="True">
    		<ingestible>
       		<foodType>Plant</foodType>
-      		<preferability>DesperateOnlyForHumanlikes</preferability>
-      		<nutrition>0.05</nutrition>
+      		<preferability>NeverForNutrition</preferability>
     	</ingestible>
   	</ThingDef>
+
+  <!--========== Edibles Base ==========-->
 	
   	<ThingDef Name="MSI_MealBase" Abstract="True">
 		<thingClass>ThingWithComps</thingClass>
@@ -68,7 +69,7 @@
 			<Beauty>-4</Beauty>
 			<Mass>0.44</Mass>
 			<DeteriorationRate>10</DeteriorationRate>
-		  </statBases>
+		</statBases>
 		<altitudeLayer>Item</altitudeLayer>
 		<stackLimit>75</stackLimit>
 		<tickerType>Rare</tickerType>
@@ -83,8 +84,9 @@
 		<resourceReadoutPriority>Last</resourceReadoutPriority>
 		<drawGUIOverlay>true</drawGUIOverlay>
 		<ingestible>
-		  <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
-		  <optimalityOffsetHumanlikes>16</optimalityOffsetHumanlikes>
+		  	<foodType>Meal</foodType>
+		    <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+		    <optimalityOffsetHumanlikes>16</optimalityOffsetHumanlikes>
 		</ingestible>
   	</ThingDef>
 
@@ -99,13 +101,13 @@
   
   	<ThingDef ParentName="MSI_MealRottable" Name="MSI_MealEdibles" Abstract="True">
 		<ingestible>
-		  	<foodType>Meal</foodType>
-		  	<baseIngestTicks>120</baseIngestTicks>
 		  	<chairSearchRadius>25</chairSearchRadius>
+      		<baseIngestTicks>500</baseIngestTicks>
 			<ingestSound>Meal_Eat</ingestSound>
 			<useEatingSpeedStat>true</useEatingSpeedStat>
 			<ingestEffectEat>EatVegetarian</ingestEffectEat>
 			<preferability>DesperateOnly</preferability>
+      		<optimalityOffsetFeedingAnimals>-50</optimalityOffsetFeedingAnimals>
 			<joy>0.5</joy>
 		 	<joyKind>Chemical</joyKind>
 			<ingestHoldOffsetStanding>
@@ -126,5 +128,19 @@
 		    </ingestHoldOffsetStanding>
 		</ingestible>
   	</ThingDef>
+
+  	<ThingDef Name="MSI_MakeableEdibleBase" ParentName="MSI_DrugBase" Abstract="True">
+		<ingestible>
+			<foodType>Processed</foodType>
+			<baseIngestTicks>500</baseIngestTicks>
+			<chairSearchRadius>25</chairSearchRadius>
+			<ingestSound>Meal_Eat</ingestSound>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestCommandString>Eat {0}</ingestCommandString>
+			<ingestReportString>Eating {0}.</ingestReportString>
+			<drugCategory>Social</drugCategory>
+		</ingestible>
+		<socialPropernessMatters>true</socialPropernessMatters>
+	</ThingDef>
 	
 </Defs>

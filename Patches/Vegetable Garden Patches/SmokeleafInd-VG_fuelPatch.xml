@@ -98,7 +98,26 @@
 		</operations>
 	</Operation>
 
-  <!--========== Remove Biofuel As Bench Fuel ==========-->
+  <!--========== Bench Fuels ==========-->
+
+	<Operation Class="PatchOperationSequence">
+	    <success>Always</success>
+	    <operations>
+	    	<li Class="ModCheck.FindFile">
+                <modName>VGP Garden Gourmet</modName>
+                <file>Buildings_Production.xml</file>
+            </li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "Oven"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "HandCanningstove"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "FueledCandyTable"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter</xpath>
+			</li>
+		</operations>
+	</Operation>
 	
 	<Operation Class="PatchOperationSequence">
 	    <success>Always</success>
@@ -108,21 +127,39 @@
                 <file>Buildings_Production.xml</file>
             </li>
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName = "Oven"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter/thingDefs</xpath>
+				<xpath>Defs/ThingDef[defName = "Oven"]/comps/li[contains(@Class,'CompProperties_Refuelable')]</xpath>
 					<value>
-						<li>HempFiber</li>
+						<fuelFilter>
+          					<thingDefs>
+            					<li>WoodLog</li>
+		 						<li>Bamboo</li>
+   		 						<li>HempBiocoal</li>
+       						</thingDefs>
+        				</fuelFilter>
 					</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName = "HandCanningstove"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter/thingDefs</xpath>
+				<xpath>Defs/ThingDef[defName = "HandCanningstove"]/comps/li[contains(@Class,'CompProperties_Refuelable')]</xpath>
 					<value>
-						<li>HempFiber</li>
+						<fuelFilter>
+          					<thingDefs>
+            					<li>WoodLog</li>
+		 						<li>Bamboo</li>
+   		 						<li>HempBiocoal</li>
+       						</thingDefs>
+        				</fuelFilter>
 					</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName = "FueledCandyTable"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter/thingDefs</xpath>
+				<xpath>Defs/ThingDef[defName = "FueledCandyTable"]/comps/li[contains(@Class,'CompProperties_Refuelable')]</xpath>
 					<value>
-						<li>HempFiber</li>
+						<fuelFilter>
+          					<thingDefs>
+            					<li>WoodLog</li>
+		 						<li>Bamboo</li>
+   		 						<li>HempBiocoal</li>
+       						</thingDefs>
+        				</fuelFilter>
 					</value>
 			</li>
 		</operations>

@@ -1,5 +1,23 @@
 ----------------------------------------------------------------------------------------------------------------------------------
 
+Updated to v1.9a
+
+Smokeleaf Industry
+Changelog:
+
+	-Added "Hemp Biocoal"-can be used as a fuel source for benches and torches. Needed to craft "Hempene"  (thanks to fractalesque for the idea)
+	-Added "Hempene"-an advanced material needed for advanced machinery.
+	-Added "Hempene Power Conduit" 
+	-Added "Hempene Battery"-an advanced battery that stores more power than a vanilla one.
+	-Added "Hempene Solar Generator"-and advanced solar generator that produces more power and is slightly larger than a vanilla one.
+	-Made Edibles into Drugs.  This should stop the 10 jobs in 10 ticks error and the pawns using the edibles to train animals. *This will require you to set up new Drug Policies, as the edibles don't appear in old policies*  (thanks to Teknominja, jacobbyte)
+	-Fixed Hemp Protein.  (thanks Vlad0mi3r)
+	-Made Hemp Biocomposite usable for crafting Components (thanks Madman666)
+	-Updated patches
+	-Words (thanks Nova82)
+
+----------------------------------------------------------------------------------------------------------------------------------
+
 Updated to v1.8b
 
 Smokeleaf Industry

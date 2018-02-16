@@ -212,7 +212,7 @@
 	<ThingDef ParentName="MSI_ResourceBase">
 		<defName>HempBiocomposite</defName>
 		<label>hemp biocomposite</label>
-		<description>A biocomposite material made from hemp fibers and hemp fabric. Useful as a cheap, sustainable alternative for metals.</description>
+		<description>A biocomposite material made from hemp fibers, hemp fabric and biocoal. Useful as a cheap, sustainable alternative for metals.</description>
 		<graphicData>
 			<texPath>Things/Items/MSI_bioComp</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -222,7 +222,7 @@
     	<soundDrop>Metal_Drop</soundDrop>
     	<useHitPoints>false</useHitPoints>
 		<statBases>
-			<MarketValue>10</MarketValue>
+			<MarketValue>42</MarketValue>
 			<Mass>0.25</Mass>
       		<SharpDamageMultiplier>0.55</SharpDamageMultiplier>
       		<BluntDamageMultiplier>0.85</BluntDamageMultiplier>
@@ -250,6 +250,59 @@
 		</thingCategories>
 		<researchPrerequisites>
 			<li>AdvancedSmokeleafProcessing</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+  <!--========== Carbonized Hemp ==========-->
+
+	<ThingDef ParentName="MSI_ResourceBase">
+		<defName>HempBiocoal</defName>
+		<label>hemp biocoal</label>
+		<description>The result of heating up hemp fibers to extremely high temperatures. Can be used as a fuel or as the base for other products.</description>
+		<graphicData>
+			<texPath>Things/Items/MSI_carbonizedHemp</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+    	<soundInteract>Metal_Drop</soundInteract>
+    	<soundDrop>Metal_Drop</soundDrop>
+    	<useHitPoints>false</useHitPoints>
+		<statBases>
+			<MarketValue>5</MarketValue>
+			<Mass>0.25</Mass>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<researchPrerequisites>
+			<li>IndustrialSmokeleafProcessing</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+  <!--========== Hemp Nanosheet ==========-->
+
+	<ThingDef ParentName="MSI_ResourceBase">
+		<defName>HempNanosheet</defName>
+		<label>hemp nanosheet</label>
+		<description>A Glitterworld material made from carbonized hemp fibers. It is used in advanced equipment for it's highly conductive properties.</description>
+		<graphicData>
+			<texPath>Things/Items/MSI_nanosheet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(72,74,1)</color>
+		</graphicData>
+    	<soundInteract>Metal_Drop</soundInteract>
+    	<soundDrop>Metal_Drop</soundDrop>
+    	<useHitPoints>false</useHitPoints>
+		<statBases>
+			<MarketValue>95</MarketValue>
+			<Mass>0.25</Mass>
+      		<SharpDamageMultiplier>0.55</SharpDamageMultiplier>
+      		<BluntDamageMultiplier>0.85</BluntDamageMultiplier>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<researchPrerequisites>
+			<li>SmokeleafGlittertech</li>
 		</researchPrerequisites>
 	</ThingDef>
   

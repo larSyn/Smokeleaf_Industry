@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+  <!--========== Vanilla Steel Recipes ==========-->
+
+  <!--========== Production Recipes ==========-->
+
+  	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+            <li Class="ModCheck.FindFile">
+                <modName>Core</modName>
+                <file>Recipes_Production.xml</file>
+            </li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName = "MakeComponent"]/ingredients/li[1]/filter/thingDefs</xpath>
+				<value>
+					<li>HempBiocomposite</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName = "MakeComponent"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<li>HempBiocomposite</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName = "MakeAdvancedComponent"]/ingredients/li[2]/filter/thingDefs</xpath>
+				<value>
+					<li>HempBiocomposite</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName = "MakeAdvancedComponent"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<li>HempBiocomposite</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>

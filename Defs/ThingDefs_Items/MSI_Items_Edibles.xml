@@ -95,7 +95,7 @@
 
 	<!--========== Hemp Milk ==========-->
   
-  <ThingDef ParentName="MSI_MealRottable">
+  <ThingDef ParentName="MSI_PlantFoodRawBase">
     <defName>HempMilk</defName>
     <label>hemp milk</label>
     <description>"Milk" made from smokeleaf seeds that are soaked and ground in water.</description>
@@ -127,7 +127,7 @@
 
   <!--========== Hemp Protein ==========-->
   
-  <ThingDef ParentName="MSI_MealRottable">
+  <ThingDef ParentName="MSI_PlantFoodRawBase">
     <defName>HempProtein</defName>
     <label>hemp Protein</label>
     <description>A protein powder made from crushed smokeleaf seeds.</description>
@@ -141,10 +141,12 @@
     <statBases>
       <MarketValue>12</MarketValue>
       <Flammability>0.5</Flammability>
+      <Mass>0.15</Mass>
     </statBases>
     <ingestible>
       <nutrition>0.05</nutrition>
       <foodType>Meat</foodType>
+      <preferability>DesperateOnlyForHumanlikes</preferability>
       <baseIngestTicks>120</baseIngestTicks>
       <chairSearchRadius>25</chairSearchRadius>
       <ingestSound>Meal_Eat</ingestSound>
@@ -153,13 +155,13 @@
       <preferability>RawBad</preferability>
     </ingestible>
     <thingCategories>
-      <li>MeatRaw</li>
+      <li>SmokeleafIndCatEdibles</li>
     </thingCategories>
   </ThingDef>
 
   <!--========== Smokeleaf Seed Oil ==========-->
   
-  <ThingDef ParentName="MSI_MealRottable">
+  <ThingDef ParentName="MSI_PlantFoodRawBase">
     <defName>SmokeleafSeedOil</defName>
     <label>smokeleaf seed oil</label>
     <description>Oils pressed from smokeleaf seeds. While seed oil does not possess any medicinal qualities, it has many various uses.</description>
@@ -191,7 +193,7 @@
 
 	<!--========== Edibles ==========-->
 
-  <ThingDef ParentName="MSI_MealEdibles">
+  <ThingDef ParentName="MSI_MakeableEdibleBase">
     <defName>SmokeleafBrownie</defName>
     <label>smokeleaf brownie</label>
     <thingClass>ThingWithComps</thingClass>
@@ -206,11 +208,9 @@
     <socialPropernessMatters>true</socialPropernessMatters>
     <statBases>
   		<MarketValue>13</MarketValue>
-  		<Mass>0.018</Mass>
+  		<Mass>0.25</Mass>
     </statBases>
     <ingestible>
-  		<nutrition>0.15</nutrition>
-  		<optimalityOffsetHumanlikes>6</optimalityOffsetHumanlikes>
   		<outcomeDoers>
   			<li Class="IngestionOutcomeDoer_GiveHediff">
   				<hediffDef>EdiblesHigh</hediffDef>
@@ -240,7 +240,7 @@
       </comps>
   </ThingDef>
   
-  <ThingDef ParentName="MSI_MealEdibles">
+  <ThingDef ParentName="MSI_MakeableEdibleBase">
     <defName>SmokeleafCookie</defName>
     <label>smokeleaf cookie</label>
     <thingClass>ThingWithComps</thingClass>
@@ -255,11 +255,9 @@
     <socialPropernessMatters>true</socialPropernessMatters>
     <statBases>
   		<MarketValue>10</MarketValue>
-  		<Mass>0.018</Mass>
+  		<Mass>0.15</Mass>
     </statBases>
     <ingestible>
-  		<nutrition>0.15</nutrition>
-  		<optimalityOffsetHumanlikes>6</optimalityOffsetHumanlikes>
   		<outcomeDoers>
   			<li Class="IngestionOutcomeDoer_GiveHediff">
   				<hediffDef>EdiblesHigh</hediffDef>
@@ -289,7 +287,7 @@
       </comps>
   </ThingDef>
   
-  <ThingDef ParentName="MSI_MealEdibles">
+  <ThingDef ParentName="MSI_MakeableEdibleBase">
     <defName>SmokeleafNutriLeaf</defName>
     <label>NutriLeaf bar</label>
     <thingClass>ThingWithComps</thingClass>
@@ -304,11 +302,9 @@
     <socialPropernessMatters>true</socialPropernessMatters>
     <statBases>
   		<MarketValue>15</MarketValue>
-  		<Mass>0.018</Mass>
+  		<Mass>0.25</Mass>
     </statBases>
     <ingestible>
-  		<nutrition>0.5</nutrition>
-  		<optimalityOffsetHumanlikes>6</optimalityOffsetHumanlikes>
   		<outcomeDoers>
   			<li Class="IngestionOutcomeDoer_GiveHediff">
   				<hediffDef>EdiblesHigh</hediffDef>
@@ -488,7 +484,7 @@
   
 	<!--========== Advanced Edibles ==========-->
 	
-  <ThingDef ParentName="MSI_MealEdibles">
+  <ThingDef ParentName="MSI_MakeableEdibleBase">
     <defName>SmokeleafDeEnergyDrink</defName>
     <label>smokeleaf de-energy drink</label>
     <thingClass>ThingWithComps</thingClass>
@@ -503,12 +499,10 @@
     <socialPropernessMatters>true</socialPropernessMatters>
     <statBases>
   		<MarketValue>40</MarketValue>
-  		<Mass>0.018</Mass>
+  		<Mass>0.25</Mass>
   		<WorkToMake>300</WorkToMake>
     </statBases>
     <ingestible>
-  		<nutrition>0.1</nutrition>
-  		<optimalityOffsetHumanlikes>6</optimalityOffsetHumanlikes>
   		<outcomeDoers>
   			<li Class="IngestionOutcomeDoer_GiveHediff">
   				<hediffDef>AdvancedEdiblesHigh</hediffDef>
@@ -538,7 +532,7 @@
     </comps>
   </ThingDef>
   
-  <ThingDef ParentName="MSI_MealEdibles">
+  <ThingDef ParentName="MSI_MakeableEdibleBase">
     <defName>SmokeleafSmoothie</defName>
     <label>smokeleaf smoothie</label>
     <thingClass>ThingWithComps</thingClass>
@@ -553,12 +547,10 @@
     <socialPropernessMatters>true</socialPropernessMatters>
     <statBases>
   		<MarketValue>35</MarketValue>
-  		<Mass>0.018</Mass>
+  		<Mass>0.5</Mass>
   		<WorkToMake>300</WorkToMake>
     </statBases>
     <ingestible>
-  		<nutrition>0.75</nutrition>
-  		<optimalityOffsetHumanlikes>6</optimalityOffsetHumanlikes>
   		<outcomeDoers>
   			<li Class="IngestionOutcomeDoer_GiveHediff">
   				<hediffDef>AdvancedEdiblesHigh</hediffDef>
@@ -588,7 +580,7 @@
      </comps>
   </ThingDef>
   
-  <ThingDef ParentName="MSI_MealEdibles">
+  <ThingDef ParentName="MSI_MakeableEdibleBase">
     <defName>SmokeleafCandy</defName>
     <label>smokeleaf candy</label>
     <thingClass>ThingWithComps</thingClass>
@@ -603,12 +595,10 @@
     <socialPropernessMatters>true</socialPropernessMatters>
     <statBases>
       <MarketValue>20</MarketValue>
-      <Mass>0.018</Mass>
+      <Mass>0.1</Mass>
       <WorkToMake>300</WorkToMake>
     </statBases>
     <ingestible>
-      <nutrition>0.1</nutrition>
-      <optimalityOffsetHumanlikes>6</optimalityOffsetHumanlikes>
       <outcomeDoers>
         <li Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>AdvancedEdiblesHigh</hediffDef>
@@ -801,6 +791,7 @@
       <WorkToMake>450</WorkToMake>
     </statBases>
     <ingestible>
+      <foodType>Meal</foodType>
       <preferability>MealFine</preferability>
       <tasteThought>AteInfusedMeal</tasteThought>
       <nutrition>0.95</nutrition>

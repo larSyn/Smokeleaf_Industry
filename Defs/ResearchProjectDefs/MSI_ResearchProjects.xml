@@ -80,6 +80,25 @@
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
+		<defName>AdvancedSmokeleafProcessing</defName>
+		<label>advanced smokeleaf processing</label>
+		<description>New methods have been developed for extracting and concentraing the compounds of smokeleaf. Because of this, new edibles and recreational forms are available.</description>
+		<baseCost>1750</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>AdvancedSmokeleafCultivation</li>
+			<li>IndustrialSmokeleafProcessing</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<tab>MSI</tab>
+		<researchViewX>5</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
 		<defName>SmokeleafPharmacology</defName>
 		<label>smokeleaf pharmacology</label>
 		<description>Researchers isolate the beneficial compounds of Smokeleaf and are able to apply them in modern medical methods with no ill side effects.</description>
@@ -99,21 +118,20 @@
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
-		<defName>AdvancedSmokeleafProcessing</defName>
-		<label>advanced smokeleaf processing</label>
-		<description>New methods have been developed for extracting and concentraing the compounds of smokeleaf. Because of this, new edibles and recreational forms are available.</description>
-		<baseCost>1750</baseCost>
+		<defName>SmokeleafGlittertech</defName>
+		<label>smokeleaf glittertech</label>
+		<description>Highly advanced uses for smokeleaf byproducts are developed after in-depth study by our researchers.</description>
+		<baseCost>2500</baseCost>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
-			<li>AdvancedSmokeleafCultivation</li>
-			<li>IndustrialSmokeleafProcessing</li>
+			<li>SmokeleafPharmacology</li>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<requiredResearchFacilities>
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
 		<tab>MSI</tab>
-		<researchViewX>5</researchViewX>
+		<researchViewX>7</researchViewX>
 		<researchViewY>1</researchViewY>
 	</ResearchProjectDef>
 	
