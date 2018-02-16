@@ -219,7 +219,7 @@
   <ThingDef ParentName="MSI_ArtableFurnitureBase">
     <defName>MSI_StonePlanter</defName>
     <label>planter</label>
-	  <description>A stone planter for smokeleaf or other plants. The soil is fertilized to encourage rapid growth. Requires light and heat.</description>
+	  <description>A stone planter for smokeleaf or other plants. The soil is fertilized to encourage rapid growth at 1.5x the normal rate. Requires light and heat.</description>
     <thingClass>Building_PlantGrower</thingClass>
     <graphicData>
       <texPath>Things/Buildings/MSI_stonePlanter</texPath>
@@ -268,7 +268,7 @@
   <ThingDef ParentName="MSI_ArtableFurnitureBase">
     <defName>MSI_WoodenPlanter</defName>
     <label>planter</label>
-    <description>A wooden planter for smokeleaf or other plants. The soil is fertilized to encourage rapid growth. Requires light and heat.</description>
+    <description>A wooden planter for smokeleaf or other plants. The soil is fertilized to encourage rapid growth at 2x the normal rate. Requires light and heat.</description>
     <thingClass>Building_PlantGrower</thingClass>
     <graphicData>
       <texPath>Things/Buildings/MSI_woodPlanter</texPath>
@@ -317,7 +317,7 @@
   <ThingDef ParentName="MSI_BuildingBase">
     <defName>SpaceBucket</defName>
     <label>space bucket</label>
-    <description>A self-contained growing system. Uses a fair amount of power for a single plant, but grows plants extremely quickly. Ideal for growing in confined spaces.  Requires heat.</description>
+    <description>A self-contained growing system. Uses a fair amount of power for a single plant, but grows plants at 5x the normal rate. Ideal for growing in confined spaces.  Requires heat.</description>
     <thingClass>Building_PlantGrower</thingClass>
     <graphicData>
       <texPath>Things/Buildings/MSI_spaceBucket</texPath>

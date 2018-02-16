@@ -280,9 +280,9 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<HempFiber>2</HempFiber>
+			<HempFiber>1</HempFiber>
 			<SmokeleafBuds>2</SmokeleafBuds>
-			<SmokeleafSeed>2</SmokeleafSeed>
+			<SmokeleafSeed>1</SmokeleafSeed>
 		</products>
 		<recipeUsers>
 			<li>PoweredCultivationBench</li>
@@ -577,7 +577,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>SmokeleafSeedOil</li>
+						<li>HempBiocoal</li>
 					</thingDefs>
 				</filter>
 				<count>5</count>
@@ -587,7 +587,7 @@
 			<thingDefs>
 				<li>HempFiber</li>
 				<li>HempFabric</li>
-				<li>SmokeleafSeedOil</li>
+				<li>HempBiocoal</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -633,7 +633,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>SmokeleafSeedOil</li>
+						<li>HempBiocoal</li>
 					</thingDefs>
 				</filter>
 				<count>50</count>
@@ -643,7 +643,7 @@
 			<thingDefs>
 				<li>HempFiber</li>
 				<li>HempFabric</li>
-				<li>SmokeleafSeedOil</li>
+				<li>HempBiocoal</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -652,6 +652,170 @@
 		<recipeUsers>
 			<li>FueledSmithy</li>
 			<li>ElectricSmithy</li>
+		</recipeUsers>
+	</RecipeDef>
+	
+	<!--========== Craft Hemp Biocoal ==========-->
+	
+	<RecipeDef>
+		<defName>CraftHempBiocoal</defName>
+		<label>craft hemp biocoal</label>
+		<description>Heat hemp fibers at extremely high temperatures to carbonize it.</description>
+		<jobString>Crafting hemp biocoal.</jobString>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<workAmount>350</workAmount>
+  		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>1.75</workSkillLearnFactor>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>HempFiber</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>HempFiber</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<HempBiocoal>1</HempBiocoal>
+		</products>
+		<recipeUsers>
+			<li>ElectricSmelter</li>
+		</recipeUsers>
+	</RecipeDef>
+		
+	<RecipeDef>
+		<defName>BulkCraftHempBiocoal</defName>
+		<label>craft hemp biocoal (bulk)</label>
+		<description>Heat hemp fibers at extremely high temperatures to carbonize it in larger quantities.</description>
+		<jobString>Crafting hemp biocoal.</jobString>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<workAmount>2500</workAmount>
+  		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>1.75</workSkillLearnFactor>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>HempFiber</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>HempFiber</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<HempBiocoal>10</HempBiocoal>
+		</products>
+		<recipeUsers>
+			<li>ElectricSmelter</li>
+		</recipeUsers>
+	</RecipeDef>
+	
+	<!--========== Craft Hemp Nanosheet ==========-->
+	
+	<RecipeDef>
+		<defName>CraftHempNanosheet</defName>
+		<label>craft hemp nanosheet</label>
+		<description>Process hemp bio-coal and hemp fiber into an advanced nanosheet.</description>
+		<jobString>Crafting hemp nanosheet.</jobString>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<workAmount>350</workAmount>
+  		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>2.5</workSkillLearnFactor>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>HempBiocoal</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>HempFiber</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>HempBiocoal</li>
+				<li>HempFiber</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<HempNanosheet>1</HempNanosheet>
+		</products>
+		<recipeUsers>
+			<li>ElectricSmelter</li>
+		</recipeUsers>
+	</RecipeDef>
+		
+	<RecipeDef>
+		<defName>BulkCraftNanosheet</defName>
+		<label>craft hemp nanosheet (bulk)</label>
+		<description>Process hemp bio-coal and hemp fiber into an advanced nanosheet in larger quantities.</description>
+		<jobString>Crafting hemp nanosheet.</jobString>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<workAmount>2500</workAmount>
+  		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>2.0</workSkillLearnFactor>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>HempBiocoal</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>HempFiber</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>HempBiocoal</li>
+				<li>HempFiber</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<HempNanosheet>5</HempNanosheet>
+		</products>
+		<recipeUsers>
+			<li>ElectricSmelter</li>
 		</recipeUsers>
 	</RecipeDef>
 	
@@ -675,7 +839,7 @@
 						<li>HempFiber</li>
 					</thingDefs>
 				</filter>
-				<count>25</count>
+				<count>15</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -719,7 +883,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Hempoline>15</Hempoline>
+			<Hempoline>25</Hempoline>
 		</products>
 		<recipeUsers>
 			<li>Refinery</li>
@@ -745,7 +909,7 @@
 						<li>SmokeleafSeed</li>
 					</thingDefs>
 				</filter>
-				<count>25</count>
+				<count>15</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -789,7 +953,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Hempoline>15</Hempoline>
+			<Hempoline>25</Hempoline>
 		</products>
 		<recipeUsers>
 			<li>Refinery</li>

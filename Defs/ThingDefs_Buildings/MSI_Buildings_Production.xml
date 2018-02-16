@@ -79,7 +79,7 @@
       <li Class="CompProperties_AffectedByFacilities">
         <linkableFacilities>
           <li>ToolCabinet</li>
-		  <li>TrimmingTools</li>
+		      <li>TrimmingTools</li>
         </linkableFacilities>
       </li>
       <li Class="CompProperties_Breakdownable"/>
@@ -104,7 +104,7 @@
     <graphicData>
       <texPath>Things/Production/MSI_medicinalsTable</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
-	  <shaderType>CutoutComplex</shaderType>
+	    <shaderType>CutoutComplex</shaderType>
       <drawSize>(3.5,1.5)</drawSize>
       <damageData>
         <cornerTL>Damage/Corner</cornerTL>
@@ -154,7 +154,7 @@
       <li Class="CompProperties_AffectedByFacilities">
         <linkableFacilities>
           <li>ToolCabinet</li>
-		  <li>TrimmingTools</li>
+		      <li>TrimmingTools</li>
         </linkableFacilities>
       </li>
       <li Class="CompProperties_Breakdownable"/>
@@ -164,7 +164,7 @@
     </placeWorkers>
     <researchPrerequisites>
       <li>SmokeleafPharmacology</li>
-	  <li>Electricity</li>
+	    <li>Electricity</li>
     </researchPrerequisites>
 	  <designationCategory>MSI</designationCategory>
   </ThingDef>
@@ -274,7 +274,7 @@
     <size>(1,1)</size>
 	<costStuffCount>50</costStuffCount>
     <costList>
-      <Steel>100</Steel>
+      <Steel>50</Steel>
     </costList>
 	<stuffCategories>
       <li>Metallic</li>

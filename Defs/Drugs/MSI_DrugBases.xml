@@ -14,9 +14,6 @@
 		</statBases>
 		<altitudeLayer>Item</altitudeLayer>
 		<stackLimit>400</stackLimit>
-		<thingCategories>
-			<li>SmokeleafIndCatDrugs</li>
-		</thingCategories>
 		<alwaysHaulable>true</alwaysHaulable>
 		<comps>
 			<li Class="CompProperties_Forbiddable" />
@@ -35,6 +32,9 @@
 	</ThingDef>
   
 	<ThingDef Name="MSI_MakeableDrugBase" ParentName="MSI_DrugBase" Abstract="True">
+		<thingCategories>
+			<li>SmokeleafIndCatDrugs</li>
+		</thingCategories>
 		<recipeMaker>
   			<workSpeedStat>DrugProductionSpeed</workSpeedStat>
   			<workSkill>Intellectual</workSkill>
@@ -55,6 +55,9 @@
 	</ThingDef>
   
 	<ThingDef Name="MSI_MakeableDrugPillBase" ParentName="MSI_DrugBase" Abstract="True">
+		<thingCategories>
+			<li>SmokeleafIndCatDrugs</li>
+		</thingCategories>
 		<recipeMaker>
   			<workSpeedStat>DrugProductionSpeed</workSpeedStat>
   			<workSkill>Intellectual</workSkill>
