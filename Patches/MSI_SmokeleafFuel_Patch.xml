@@ -8,32 +8,10 @@
 	    <operations>
 	    	<li Class="ModCheck.FindFile">
                 <modName>Core</modName>
-                <file>Buildings_Production.xml</file>
+                <file>Buildings_Power.xml</file>
             </li>
 	    	<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName = "FueledStove"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter/thingDefs</xpath>
-				<value>
-					<li>HempBiocoal</li>
-				</value>
-			</li>
-	    	<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName = "FueledSmithy"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter/thingDefs</xpath>
-				<value>
-					<li>HempBiocoal</li>
-				</value>
-			</li>
-		</operations>
-	</Operation>
-
-	<Operation Class="PatchOperationSequence">
-	    <success>Always</success>
-	    <operations>
-	    	<li Class="ModCheck.FindFile">
-                <modName>Core</modName>
-                <file>Buildings_Furniture.xml</file>
-            </li>
-	    	<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName = "TorchLamp"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter/thingDefs</xpath>
+				<xpath>Defs/ThingDef[defName = "WoodFiredGenerator"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter/thingDefs</xpath>
 				<value>
 					<li>HempBiocoal</li>
 				</value>

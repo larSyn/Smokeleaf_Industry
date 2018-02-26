@@ -258,13 +258,13 @@
 	<ThingDef ParentName="MSI_ResourceBase">
 		<defName>HempBiocoal</defName>
 		<label>hemp biocoal</label>
-		<description>The result of heating up hemp fibers to extremely high temperatures. Can be used as a fuel or as the base for other products.</description>
+		<description>The result of heating up hemp fibers to extremely high temperatures. Can be used as a fuel alternative for the wood-fired generator or as the base for other products.</description>
 		<graphicData>
 			<texPath>Things/Items/MSI_carbonizedHemp</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-    	<soundInteract>Metal_Drop</soundInteract>
-    	<soundDrop>Metal_Drop</soundDrop>
+    	<soundInteract>Wood_Drop</soundInteract>
+    	<soundDrop>Wood_Drop</soundDrop>
     	<useHitPoints>false</useHitPoints>
 		<statBases>
 			<MarketValue>5</MarketValue>
@@ -360,7 +360,7 @@
 			<WorkToMake>750</WorkToMake>
 		</statBases>
 		<thingCategories>
-			<li>SmokeleafIndCatDrugs</li>
+			<li>Medicine</li>
 		</thingCategories>
 		<costList>
 			<SmokeleafBuds>25</SmokeleafBuds>
