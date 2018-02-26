@@ -1,5 +1,25 @@
 ----------------------------------------------------------------------------------------------------------------------------------
 
+Updated to v1.9b
+
+Smokeleaf Industry
+Changelog:
+
+	-Fixed Cannagar Prereq.
+	-Fixed Biocoal Prereq.
+	-Fixed Nanosheet Prereq.
+	-Adjusted work amounts for Biocoal
+	-Edibles Category moved to the Drug Category
+	-Added Chemfuel recipe
+	-Combined Hempoline recipes into one
+	-Fixed Hemp Protein(Meat), Flour(Veg), Milk(Veg), and Seed Oil(Veg) not showing in Categories for recipes (thanks ZJK)
+	-CBD moved to moved to Medicine Category
+	-Devilsleaf Fabric research requirement lowered to Industrial Smokeleaf Processing
+	-Bulk Trimming recipes now require the next level of research to unlock, with a couple exceptions (thanks Canute)
+	-Words
+
+----------------------------------------------------------------------------------------------------------------------------------
+
 Updated to v1.9a
 
 Smokeleaf Industry

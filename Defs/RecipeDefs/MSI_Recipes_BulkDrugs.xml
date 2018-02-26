@@ -202,7 +202,7 @@
 		<jobString>extracting smokeleaf distillate</jobString>
 		<workAmount>3000</workAmount>
 		<workSkill>Crafting</workSkill>
-		<researchPrerequisite>AdvancedSmokeleafProcessing</researchPrerequisite>
+		<researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
 		<ingredients>
 			<li>
 				<filter>
@@ -311,7 +311,15 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>HerbalMedicine</li>
+						<li>SmokeleafSeedOil</li>
+					</thingDefs>
+				</filter>
+				<count>40</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Neutroamine</li>
 					</thingDefs>
 				</filter>
 				<count>10</count>
@@ -320,7 +328,8 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>CBD</li>
-				<li>HerbalMedicine</li>
+				<li>SmokeleafSeedOil</li>
+				<li>Neutroamine</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -351,7 +360,7 @@
 						<li>CBD</li>
 					</thingDefs>
 				</filter>
-				<count>20</count>
+				<count>10</count>
 			</li>
 			<li>
 				<filter>
@@ -359,7 +368,7 @@
 						<li>Neutroamine</li>
 					</thingDefs>
 				</filter>
-				<count>10</count>
+				<count>20</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -450,7 +459,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<CBD>5</CBD>
+			<CBD>3</CBD>
 		</products>
 		<recipeUsers>
 			<li>MedicinalsLab</li>
@@ -488,7 +497,7 @@
 						<li>CBD</li>
 					</thingDefs>
 				</filter>
-				<count>10</count>
+				<count>5</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>

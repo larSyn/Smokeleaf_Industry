@@ -65,7 +65,7 @@
       </outcomeDoers>
     </ingestible>
     <recipeMaker>
-      <researchPrerequisite>AdvancedSmokeleafCultivation</researchPrerequisite>
+      <researchPrerequisite>AdvancedSmokeleafProcessing</researchPrerequisite>
 			<recipeUsers>
         <li>PoweredCultivationBench</li>
       </recipeUsers>

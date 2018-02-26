@@ -48,7 +48,7 @@
 	<ResearchProjectDef>
 		<defName>IndustrialSmokeleafProcessing</defName>
 		<label>industrial smokeleaf processing</label>
-		<description>A new fuel is created from the fibers and seeds of smokeleaf.  The cooks have also learned a few new recipes.</description>
+		<description>A new fuel is created from the fibers and seeds of smokeleaf.  The cooks have also learned a few new recipes and a way to make a new fabric is discovered.</description>
 		<baseCost>1250</baseCost>
 		<techLevel>Industrial</techLevel>
 		<prerequisites>
@@ -64,7 +64,7 @@
 	<ResearchProjectDef>
 		<defName>AdvancedSmokeleafCultivation</defName>
 		<label>advanced smokeleaf cultivation</label>
-		<description>Our engineers have developed new machinery to aid in the growth and processing of smokeleaf. We also learned of a new way to smoke.</description>
+		<description>Our engineers have developed new machinery to aid in the growth and processing of smokeleaf.</description>
 		<baseCost>1500</baseCost>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
@@ -82,7 +82,7 @@
 	<ResearchProjectDef>
 		<defName>AdvancedSmokeleafProcessing</defName>
 		<label>advanced smokeleaf processing</label>
-		<description>New methods have been developed for extracting and concentraing the compounds of smokeleaf. Because of this, new edibles and recreational forms are available.</description>
+		<description>New methods have been developed for extracting and concentraing the compounds of smokeleaf. Because of this, new edibles and recreational forms are available. An advanced renewable metal has also been developed.</description>
 		<baseCost>1750</baseCost>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>

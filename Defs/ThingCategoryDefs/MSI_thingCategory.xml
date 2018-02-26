@@ -14,7 +14,7 @@
   	<ThingCategoryDef>
       <defName>SmokeleafIndCatEdibles</defName>
       <label>Smokeleaf Edibles</label>
-      <parent>Foods</parent>
+      <parent>Drugs</parent>
       <resourceReadoutRoot>true</resourceReadoutRoot>
       <iconPath>UI/Icons/MSI_thingCat_edibles_icon</iconPath>
     </ThingCategoryDef>
