@@ -283,7 +283,7 @@
 	<ThingDef ParentName="MSI_ResourceBase">
 		<defName>HempNanosheet</defName>
 		<label>hemp nanosheet</label>
-		<description>A Glitterworld material made from carbonized hemp fibers. It is used in advanced equipment for it's highly conductive properties.</description>
+		<description>A Glitterworld material made from carbonized hemp fibers. It is used in advanced equipment for it's highly conductive properties.  It can also be used to build various items.</description>
 		<graphicData>
 			<texPath>Things/Items/MSI_nanosheet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -293,11 +293,29 @@
     	<soundDrop>Metal_Drop</soundDrop>
     	<useHitPoints>false</useHitPoints>
 		<statBases>
-			<MarketValue>95</MarketValue>
+			<MarketValue>125</MarketValue>
 			<Mass>0.25</Mass>
-      		<SharpDamageMultiplier>0.55</SharpDamageMultiplier>
-      		<BluntDamageMultiplier>0.85</BluntDamageMultiplier>
+      		<SharpDamageMultiplier>1.3</SharpDamageMultiplier>
+      		<BluntDamageMultiplier>1.1</BluntDamageMultiplier>
 		</statBases>
+		<stuffProps>
+			<categories>
+				<li>Metallic</li>
+			</categories>
+			<color>(72,74,1)</color>
+			<commonality>1.4</commonality>
+      		<soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      		<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      		<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<statFactors>
+        		<MaxHitPoints>1.0</MaxHitPoints>
+				<WorkToMake>1.5</WorkToMake>
+       			<Flammability>0.0</Flammability>
+        		<MeleeWeapon_CooldownMultiplier>0.7</MeleeWeapon_CooldownMultiplier>
+			    <ArmorRating_Blunt>1.1</ArmorRating_Blunt>
+			    <ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+			</statFactors>	
+		</stuffProps>
 		<thingCategories>
 			<li>Manufactured</li>
 		</thingCategories>

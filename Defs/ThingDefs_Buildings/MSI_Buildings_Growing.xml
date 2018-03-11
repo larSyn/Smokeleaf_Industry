@@ -224,7 +224,7 @@
     <graphicData>
       <texPath>Things/Buildings/MSI_stonePlanter</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-	  <shaderType>Cutout</shaderType>
+	    <shaderType>Cutout</shaderType>
       <shadowData>
         <volume>(0.3, 0.6, 0.3)</volume>
       </shadowData>
@@ -238,6 +238,7 @@
 	  <pathCost>40</pathCost>
     <fillPercent>0.25</fillPercent>
     <statBases>
+      <Beauty>1.0</Beauty>
       <MaxHitPoints>150</MaxHitPoints>
       <WorkToBuild>750</WorkToBuild>
       <Mass>5</Mass>
@@ -273,7 +274,7 @@
     <graphicData>
       <texPath>Things/Buildings/MSI_woodPlanter</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-    <shaderType>Cutout</shaderType>
+      <shaderType>Cutout</shaderType>
       <shadowData>
         <volume>(0.3, 0.6, 0.3)</volume>
       </shadowData>
@@ -287,6 +288,7 @@
     <pathCost>40</pathCost>
     <fillPercent>0.25</fillPercent>
     <statBases>
+      <Beauty>1.5</Beauty>
       <MaxHitPoints>100</MaxHitPoints>
       <WorkToBuild>450</WorkToBuild>
       <Mass>4</Mass>
@@ -314,7 +316,7 @@
 
   <!--========== Space Bucket ==========-->
   
-  <ThingDef ParentName="MSI_BuildingBase">
+  <ThingDef ParentName="MSI_ArtableFurnitureBase">
     <defName>SpaceBucket</defName>
     <label>space bucket</label>
     <description>A self-contained growing system. Uses a fair amount of power for a single plant, but grows plants at 5x the normal rate. Ideal for growing in confined spaces.  Requires heat.</description>
@@ -322,7 +324,7 @@
     <graphicData>
       <texPath>Things/Buildings/MSI_spaceBucket</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-    <shaderType>CutoutComplex</shaderType>
+      <shaderType>CutoutComplex</shaderType>
       <shadowData>
         <volume>(0.3, 0.6, 0.3)</volume>
       </shadowData>
@@ -336,6 +338,7 @@
     <pathCost>40</pathCost>
     <fillPercent>0.25</fillPercent>
     <statBases>
+      <Beauty>2.0</Beauty>
       <MaxHitPoints>250</MaxHitPoints>
       <WorkToBuild>600</WorkToBuild>
       <Mass>3</Mass>
@@ -351,12 +354,12 @@
     </costList>
     <comps>
       <li Class="CompProperties_Forbiddable"/>
-    <li Class="CompProperties_Power">
+      <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>350</basePowerConsumption>
-    <startElectricalFires>true</startElectricalFires>
+        <startElectricalFires>true</startElectricalFires>
       </li>
-    <li Class="CompProperties_Glower">
+      <li Class="CompProperties_Glower">
         <overlightRadius>4.0</overlightRadius>
         <glowRadius>2.0</glowRadius>
         <glowColor>(225,235,250,0)</glowColor>

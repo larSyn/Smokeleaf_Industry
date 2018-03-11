@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--========== Plants ==========-->
+
+	<ThingDef ParentName="MSI_PlantBase">
+    <defName>MSI_SOG</defName>
+    <label>smokeleaf plant (SOG)</label>
+    <description>A leafy plant cultivated for its psychological effects. Using the Sea Of Green technique takes less time to grow, but produces a smaller yeild.</description>
+    <statBases>
+      	<MaxHitPoints>85</MaxHitPoints>
+    </statBases>
+    <graphicData>
+      	<texPath>Things/Plants/MSI_SOG</texPath>
+      	<graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>10</pathCost>
+    <ingestible>
+      	<nutrition>0.15</nutrition>
+    </ingestible>
+    <plant>
+    	<fertilitySensitivity>1.0</fertilitySensitivity>
+    	<growDays>4.50</growDays>
+    	<dieIfLeafless>true</dieIfLeafless>
+    	<reproduces>false</reproduces>
+    	<harvestTag>Standard</harvestTag>
+    	<harvestedThingDef>SmokeleafLeaves</harvestedThingDef>
+    	<harvestYield>6</harvestYield>
+    	<sowMinSkill>8</sowMinSkill>
+        <sowResearchPrerequisites>
+          <li>IndustrialSmokeleafCultivation</li>
+        </sowResearchPrerequisites>
+    	<sowTags>
+    		<li>Ground</li>
+    		<li>Hydroponic</li>
+    	</sowTags>
+    	<topWindExposure>0.1</topWindExposure>
+        <immatureGraphicPath>Things/ImmaturePlants/MSI_SOG</immatureGraphicPath>
+        <visualSizeRange>
+            <min>1.0</min>
+            <max>1.0</max>
+        </visualSizeRange>
+    </plant>
+  </ThingDef>
+
+  <ThingDef ParentName="MSI_PlantBase">
+    <defName>MSI_SCROG</defName>
+    <label>smokeleaf plant (SCROG)</label>
+    <description>A leafy plant cultivated for its psychological effects. Using the Screen Of Green technique takes more time to grow, but produces a higher yeild.</description>
+    <statBases>
+        <MaxHitPoints>85</MaxHitPoints>
+    </statBases>
+    <graphicData>
+        <texPath>Things/Plants/MSI_SCROG</texPath>
+        <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>10</pathCost>
+    <ingestible>
+        <nutrition>0.15</nutrition>
+    </ingestible>
+    <plant>
+        <fertilitySensitivity>1.0</fertilitySensitivity>
+        <growDays>10.50</growDays>
+        <dieIfLeafless>true</dieIfLeafless>
+        <reproduces>false</reproduces>
+        <harvestTag>Standard</harvestTag>
+        <harvestedThingDef>SmokeleafLeaves</harvestedThingDef>
+        <harvestYield>16</harvestYield>
+        <sowMinSkill>8</sowMinSkill>
+        <sowResearchPrerequisites>
+            <li>IndustrialSmokeleafCultivation</li>
+        </sowResearchPrerequisites>
+        <sowTags>
+            <li>Ground</li>
+            <li>Hydroponic</li>
+        </sowTags>
+        <topWindExposure>0.1</topWindExposure>
+        <immatureGraphicPath>Things/ImmaturePlants/MSI_SCROG</immatureGraphicPath>
+        <visualSizeRange>
+            <min>1.0</min>
+            <max>1.0</max>
+        </visualSizeRange>
+    </plant>
+  </ThingDef>
+
+</Defs>
