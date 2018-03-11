@@ -1,5 +1,21 @@
 ----------------------------------------------------------------------------------------------------------------------------------
 
+Updated to v1.10a
+
+Smokeleaf Industry
+Changelog:
+
+	-Changed Autotrimmer power requirement
+	-Added Sea of Green (SOG - grows faster/less yield) and Screen of Green (SCROG - grows slower/larger yield) growing techniques
+	-Made nanosheets into "Stuff" - It is slightly stronger than plasteel due to the amount of work to make it.
+	-Changed Smokeleaf Plant description
+	-Removed all uses of SI products being fuel sources (except hempoline)
+	-Made the Space Bucket "Artable" Furniture to add Beauty to it
+	-Added variant graphics for all smokeleaf plants
+	-Words
+
+----------------------------------------------------------------------------------------------------------------------------------
+
 Updated to v1.9b
 
 Smokeleaf Industry
