@@ -230,9 +230,9 @@
 	    <tickerType>Normal</tickerType>
 	    <description>A Glittertech solar generator, made with superconductive hempene, that produces more electricity from sunlight than a standard solar generator. Does not work in the dark.</description>
 	    <size>(5,5)</size>
-    	<costStuffCount>100</costStuffCount>
+    	<costStuffCount>50</costStuffCount>
 	    <costList>
-	      <HempNanosheet>100</HempNanosheet>
+	      <HempNanosheet>25</HempNanosheet>
 	      <Component>3</Component>
 	    </costList>
 	    <stuffCategories>

@@ -1,5 +1,17 @@
 ----------------------------------------------------------------------------------------------------------------------------------
 
+Updated to v1.10b
+
+Smokeleaf Industry
+Changelog:
+
+	-Fixed Chemfuel recipe producing Hempoline. (thanks Vlad0mi3r)
+	-Reduced Hemp solar panel cost. *A note about the solar panels.  They still store the same 1700w as the vanilla panels, but they transmit 10x more power when they are active.  I didn't have time to make a new class to raise the storage capacity, but will look to do so in the future.*
+	-Reduced market value of Hempoline.
+
+
+----------------------------------------------------------------------------------------------------------------------------------
+
 Updated to v1.10a
 
 Smokeleaf Industry
