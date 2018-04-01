@@ -937,7 +937,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Hempoline>5</Hempoline>
+			<Chemfuel>5</Chemfuel>
 		</products>
 		<recipeUsers>
 			<li>Refinery</li>
@@ -974,7 +974,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Hempoline>15</Hempoline>
+			<Chemfuel>15</Chemfuel>
 		</products>
 		<recipeUsers>
 			<li>Refinery</li>
