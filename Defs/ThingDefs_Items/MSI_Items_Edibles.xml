@@ -17,9 +17,9 @@
     <statBases>
       <MarketValue>4.0</MarketValue>
       <Flammability>0.5</Flammability>
+      <Nutrition>0.1</Nutrition>
     </statBases>
   	<ingestible>
-  		<nutrition>0.1</nutrition>
   		<foodType>Processed</foodType>
   		<baseIngestTicks>120</baseIngestTicks>
   		<chairSearchRadius>25</chairSearchRadius>
@@ -27,7 +27,7 @@
   		<useEatingSpeedStat>true</useEatingSpeedStat>
   		<ingestEffect>EatVegetarian</ingestEffect>
   		<preferability>RawBad</preferability>
-  		<joy>0.5</joy>
+  		<joy>0.25</joy>
   		<joyKind>Chemical</joyKind>
   		<outcomeDoers>
   			<li Class="IngestionOutcomeDoer_GiveHediff">
@@ -68,11 +68,11 @@
       <MarketValue>2.5</MarketValue>
       <Flammability>1.0</Flammability>
       <DeteriorationRate>12</DeteriorationRate>
+      <Nutrition>0.15</Nutrition>
     </statBases>
     <ingestible>
       <preferability>RawBad</preferability>
       <foodType>Processed</foodType>
-      <nutrition>0.1</nutrition>
       <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
       <useEatingSpeedStat>true</useEatingSpeedStat>
       <baseIngestTicks>120</baseIngestTicks>
@@ -109,10 +109,9 @@
     <statBases>
       <MarketValue>4.0</MarketValue>
       <Flammability>0.5</Flammability>
+      <Nutrition>0.15</Nutrition>
     </statBases>
   	<ingestible>
-      <preferability>RawTasty</preferability>
-  		<nutrition>0.05</nutrition>
   		<foodType>Processed</foodType>
   		<baseIngestTicks>120</baseIngestTicks>
   		<chairSearchRadius>25</chairSearchRadius>
@@ -143,11 +142,10 @@
       <MarketValue>12</MarketValue>
       <Flammability>0.5</Flammability>
       <Mass>0.15</Mass>
+      <Nutrition>0.2</Nutrition>
     </statBases>
     <ingestible>
-      <nutrition>0.05</nutrition>
       <foodType>Meat</foodType>
-      <preferability>DesperateOnlyForHumanlikes</preferability>
       <baseIngestTicks>120</baseIngestTicks>
       <chairSearchRadius>25</chairSearchRadius>
       <ingestSound>Meal_Eat</ingestSound>
@@ -176,9 +174,9 @@
     <statBases>
       <MarketValue>4.0</MarketValue>
       <Flammability>0.5</Flammability>
+      <Nutrition>0.05</Nutrition>
     </statBases>
     <ingestible>
-      <nutrition>0.05</nutrition>
       <foodType>Processed</foodType>
       <baseIngestTicks>120</baseIngestTicks>
       <chairSearchRadius>25</chairSearchRadius>
@@ -212,6 +210,7 @@
   		<Mass>0.25</Mass>
     </statBases>
     <ingestible>
+      <joy>0.5</joy>
   		<outcomeDoers>
   			<li Class="IngestionOutcomeDoer_GiveHediff">
   				<hediffDef>EdiblesHigh</hediffDef>
@@ -259,6 +258,7 @@
   		<Mass>0.15</Mass>
     </statBases>
     <ingestible>
+      <joy>0.5</joy>
   		<outcomeDoers>
   			<li Class="IngestionOutcomeDoer_GiveHediff">
   				<hediffDef>EdiblesHigh</hediffDef>
@@ -306,6 +306,7 @@
   		<Mass>0.25</Mass>
     </statBases>
     <ingestible>
+      <joy>0.5</joy>
   		<outcomeDoers>
   			<li Class="IngestionOutcomeDoer_GiveHediff">
   				<hediffDef>EdiblesHigh</hediffDef>
@@ -454,11 +455,11 @@
         </capMods>
 		<mentalStateGivers>
 			<li>
-				<mentalState>WanderSad</mentalState>
+				<mentalState>Wander_Sad</mentalState>
 				<mtbDays>30</mtbDays>
 			</li>
 			<li>
-				<mentalState>BingingDrugMajor</mentalState>
+				<mentalState>Binging_DrugMajor</mentalState>
 				<mtbDays>30</mtbDays>
 			</li>
 		</mentalStateGivers>
@@ -504,6 +505,7 @@
   		<WorkToMake>300</WorkToMake>
     </statBases>
     <ingestible>
+      <joy>0.7</joy>
   		<outcomeDoers>
   			<li Class="IngestionOutcomeDoer_GiveHediff">
   				<hediffDef>AdvancedEdiblesHigh</hediffDef>
@@ -552,6 +554,7 @@
   		<WorkToMake>300</WorkToMake>
     </statBases>
     <ingestible>
+      <joy>0.7</joy>
   		<outcomeDoers>
   			<li Class="IngestionOutcomeDoer_GiveHediff">
   				<hediffDef>AdvancedEdiblesHigh</hediffDef>
@@ -600,6 +603,7 @@
       <WorkToMake>300</WorkToMake>
     </statBases>
     <ingestible>
+      <joy>0.7</joy>
       <outcomeDoers>
         <li Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>AdvancedEdiblesHigh</hediffDef>
@@ -748,11 +752,11 @@
         </capMods>
 		<mentalStateGivers>
 			<li>
-				<mentalState>WanderSad</mentalState>
+				<mentalState>Wander_Sad</mentalState>
 				<mtbDays>10</mtbDays>
 			</li>
 			<li>
-				<mentalState>BingingDrugMajor</mentalState>
+				<mentalState>Binging_DrugMajor</mentalState>
 				<mtbDays>10</mtbDays>
 			</li>
 		</mentalStateGivers>
@@ -790,12 +794,12 @@
     <statBases>
       <MarketValue>27</MarketValue>
       <WorkToMake>450</WorkToMake>
+      <Nutrition>0.95</Nutrition>
     </statBases>
     <ingestible>
       <foodType>Meal</foodType>
       <preferability>MealFine</preferability>
       <tasteThought>AteInfusedMeal</tasteThought>
-      <nutrition>0.95</nutrition>
       <joy>0.85</joy>
       <joyKind>Chemical</joyKind>   
       <ingestEffect>EatVegetarian</ingestEffect>

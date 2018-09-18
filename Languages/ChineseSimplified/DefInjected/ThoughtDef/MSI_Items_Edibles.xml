@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Hediffs -->
+
+  <EdiblesHigh.stages.0.label>沉迷大麻食品</EdiblesHigh.stages.0.label>
+  <EdiblesHigh.stages.0.description>天哪.这是我吃过最好吃的食物了</EdiblesHigh.stages.0.description>
+
+
+  <!-- Edibles Addiction -->
+
+  <EdiblesWithdrawal.stages.1.label>大麻食物戒断</EdiblesWithdrawal.stages.1.label>
+  <EdiblesWithdrawal.stages.1.description>谁把那些布朗尼都吃了？</EdiblesWithdrawal.stages.1.description>
+
+
+  <!-- Advanced Hediffs -->
+
+  <AdvancedEdiblesHigh.stages.0.label>十分沉迷大麻食物</AdvancedEdiblesHigh.stages.0.label>
+  <AdvancedEdiblesHigh.stages.0.description>我想我需要去躺一会</AdvancedEdiblesHigh.stages.0.description>
+
+
+  <!-- Advanced Edibles Addiction -->
+
+  <AdvancedEdiblesWithdrawal.stages.1.label>高阶大麻食物戒断</AdvancedEdiblesWithdrawal.stages.1.label>
+  <AdvancedEdiblesWithdrawal.stages.1.description>...求求你...我还要...再给我吃一点...</AdvancedEdiblesWithdrawal.stages.1.description>
+
+
+</LanguageData>

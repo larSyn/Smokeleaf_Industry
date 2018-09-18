@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <SmokeleafLotion.label>烟草药用软膏</SmokeleafLotion.label>
+  <SmokeleafLotion.description>一种能移除旧伤痕,麻醉痛苦并回复移动力的软膏.</SmokeleafLotion.description>
+  <SmokeleafLotion.ingestible.ingestCommandString>使用 {0}</SmokeleafLotion.ingestible.ingestCommandString>
+  <SmokeleafLotion.ingestible.ingestReportString>使用中 {0}.</SmokeleafLotion.ingestible.ingestReportString>
+
+
+</LanguageData>

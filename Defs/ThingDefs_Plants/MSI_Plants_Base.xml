@@ -18,10 +18,6 @@
 			<graphicClass>Graphic_Random</graphicClass>
 			<shaderType>CutoutPlant</shaderType>
     </graphicData>
-    <ingestible>
-      <foodType>Plant</foodType>
-      <preferability>RawBad</preferability>
-		</ingestible>
     <plant>
 			<fertilityMin>0.5</fertilityMin>
 			<fertilitySensitivity>1.0</fertilitySensitivity>

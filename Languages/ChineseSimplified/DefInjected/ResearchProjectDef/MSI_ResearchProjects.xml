@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- MSI Research Projects -->
+
+  <SmokeleafCultivation.label>烟草切割机</SmokeleafCultivation.label>
+  <SmokeleafCultivation.description>将烟草切割成各个不同的部分.可以生产烟草花苞、烟草种子和大麻纤维.还能卷烟. </SmokeleafCultivation.description>
+
+  <SmokeleafProcessing.label>烟草处理机</SmokeleafProcessing.label>
+  <SmokeleafProcessing.description>制毒者正在试验新品...他们有一些非常有趣的发现.大麻食物现在是有益的食物.他们还发现一些烟草纤维可以用来制作一些新型的材料,当然我们需要用合适的工具才行.</SmokeleafProcessing.description>
+
+  <IndustrialSmokeleafCultivation.label>工业烟草切割台</IndustrialSmokeleafCultivation.label>
+  <IndustrialSmokeleafCultivation.description>这台工业烟草切割台是为让工人处理大量烟草所制.新增的储物柜能让工人们更方便拿取他们的切割工具.同时新增的由大麻为材料制成的灯能够帮你减低电费 </IndustrialSmokeleafCultivation.description>
+
+  <IndustrialSmokeleafProcessing.label>工业烟草处理机</IndustrialSmokeleafProcessing.label>
+  <IndustrialSmokeleafProcessing.description>研究一种新型的燃油,他们的主要原材料为烟草种子以及大麻纤维.在研究的过程中,毒贩发现几种新型的方式编制大麻布 </IndustrialSmokeleafProcessing.description>
+
+  <AdvancedSmokeleafCultivation.label>高阶烟叶切割机</AdvancedSmokeleafCultivation.label>
+  <AdvancedSmokeleafCultivation.description>我们的工程师发现一种新的机器能够帮你种植并处理烟草</AdvancedSmokeleafCultivation.description>
+
+  <AdvancedSmokeleafProcessing.label>高阶烟草处理机</AdvancedSmokeleafProcessing.label>
+  <AdvancedSmokeleafProcessing.description>一种新型的蒸馏方式已被发现.这项发现使你能够制作更多的大麻食品以及毒品.同时一种新型金属也被研发</AdvancedSmokeleafProcessing.description>
+
+  <SmokeleafPharmacology.label>烟草药剂台</SmokeleafPharmacology.label>
+  <SmokeleafPharmacology.description>研究者已经成功提取出烟草中有益的成分并运用在现代药品制作过程中.而且生产出来的药物没有副作用.</SmokeleafPharmacology.description>
+
+  <SmokeleafGlittertech.label>闪耀科技-烟草</SmokeleafGlittertech.label>
+  <SmokeleafGlittertech.description>在我们研究员持之以恒的努力下,高阶烟草副产业已被发现.</SmokeleafGlittertech.description>
+
+
+</LanguageData>

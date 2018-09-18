@@ -160,8 +160,7 @@
 				<baseMtbDays>180</baseMtbDays>
 				<minSeverity>0.5</minSeverity>
 				<partsToAffect>
-					<li>LeftLung</li>
-					<li>RightLung</li>
+					<li>Lung</li>
 				</partsToAffect>
 				<countToAffect>2</countToAffect>
 			</li>
@@ -170,8 +169,7 @@
 				<baseMtbDays>180</baseMtbDays>
 				<minSeverity>0.40</minSeverity>
 				<partsToAffect>
-					<li>LeftLung</li>
-					<li>RightLung</li>
+          <li>Lung</li>
 				</partsToAffect>
 				<countToAffect>1</countToAffect>
 			</li>
@@ -205,11 +203,11 @@
 			</capMods>
 			<mentalStateGivers>
 				<li>
-					<mentalState>BingingFood</mentalState>
+					<mentalState>Binging_Food</mentalState>
 					<mtbDays>20</mtbDays>
 				</li>
 				<li>
-					<mentalState>BingingDrugMajor</mentalState>
+					<mentalState>Binging_DrugMajor</mentalState>
 					<mtbDays>30</mtbDays>
 				</li>
 			</mentalStateGivers>

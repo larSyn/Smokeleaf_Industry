@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <CHO.label>大麻水烟</CHO.label>
+  <CHO.description>大麻水烟是由浸泡在化学液体中的烟叶制成的.在水烟蒸发后,有些有害物质被移除但同时其他危险成提高.使用者有上瘾可能.</CHO.description>
+  <CHO.ingestible.ingestCommandString>Smoke {0}</CHO.ingestible.ingestCommandString>
+  <CHO.ingestible.ingestReportString>Smoking {0}.</CHO.ingestible.ingestReportString>
+
+
+</LanguageData>

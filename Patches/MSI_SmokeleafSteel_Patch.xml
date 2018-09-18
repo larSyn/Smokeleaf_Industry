@@ -8,30 +8,26 @@
   	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
-            <li Class="ModCheck.FindFile">
-                <modName>Core</modName>
-                <file>Recipes_Production.xml</file>
-            </li>
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/RecipeDef[defName = "MakeComponent"]/ingredients/li[1]/filter/thingDefs</xpath>
+				<xpath>Defs/RecipeDef[defName = "Make_ComponentIndustrial"]/ingredients/li[1]/filter/thingDefs</xpath>
 				<value>
 					<li>HempBiocomposite</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/RecipeDef[defName = "MakeComponent"]/fixedIngredientFilter/thingDefs</xpath>
+				<xpath>Defs/RecipeDef[defName = "Make_ComponentIndustrial"]/fixedIngredientFilter/thingDefs</xpath>
 				<value>
 					<li>HempBiocomposite</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/RecipeDef[defName = "MakeAdvancedComponent"]/ingredients/li[2]/filter/thingDefs</xpath>
+				<xpath>Defs/RecipeDef[defName = "Make_ComponentSpacer"]/ingredients/li[2]/filter/thingDefs</xpath>
 				<value>
 					<li>HempBiocomposite</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/RecipeDef[defName = "MakeAdvancedComponent"]/fixedIngredientFilter/thingDefs</xpath>
+				<xpath>Defs/RecipeDef[defName = "Make_ComponentSpacer"]/fixedIngredientFilter/thingDefs</xpath>
 				<value>
 					<li>HempBiocomposite</li>
 				</value>

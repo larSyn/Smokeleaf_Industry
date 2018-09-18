@@ -10,10 +10,6 @@
 				<modName>VGP Vegetable Garden</modName>
 				<yourMod>Smokeleaf Industry</yourMod>
 			</li>
-            <li Class="ModCheck.FindFile">
-                <modName>Smokeleaf Industry</modName>
-                <file>MSI_Buildings_Power.xml</file>
-            </li>
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName = "HempolineGenerator"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter/thingDefs</xpath>
 				<value>
@@ -26,10 +22,10 @@
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
-            <li Class="ModCheck.FindFile">
-                <modName>VGP Vegetable Garden</modName>
-                <file>Items_Resources.xml</file>
-            </li>
+			<li Class="ModCheck.isModLoaded">
+				<modName>VGP Vegetable Garden</modName>
+				<yourMod>Smokeleaf Industry</yourMod>
+			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/RecipeDef[defName = "VG_MakeBiofuel"]/ingredients/li/count</xpath>
 				<value>
@@ -90,7 +86,7 @@
 							<VG_Biofuel>15</VG_Biofuel>
 						</products>
 						<recipeUsers>
-							 <li>Refinery</li>
+							 <li>BiofuelRefinery</li>
 						</recipeUsers>
 					</RecipeDef>
 				</value>
@@ -103,10 +99,10 @@
 	<Operation Class="PatchOperationSequence">
 	    <success>Always</success>
 	    <operations>
-	    	<li Class="ModCheck.FindFile">
-                <modName>VGP Garden Gourmet</modName>
-                <file>Buildings_Production.xml</file>
-            </li>
+			<li Class="ModCheck.isModLoaded">
+				<modName>VGP Vegetable Gourmet</modName>
+				<yourMod>Smokeleaf Industry</yourMod>
+			</li>
 			<li Class="PatchOperationRemove">
 				<xpath>Defs/ThingDef[defName = "Oven"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter</xpath>
 			</li>
@@ -122,10 +118,10 @@
 	<Operation Class="PatchOperationSequence">
 	    <success>Always</success>
 		<operations>
-            <li Class="ModCheck.FindFile">
-                <modName>VGP Garden Gourmet</modName>
-                <file>Buildings_Production.xml</file>
-            </li>
+			<li Class="ModCheck.isModLoaded">
+				<modName>VGP Vegetable Gourmet</modName>
+				<yourMod>Smokeleaf Industry</yourMod>
+			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName = "Oven"]/comps/li[contains(@Class,'CompProperties_Refuelable')]</xpath>
 					<value>

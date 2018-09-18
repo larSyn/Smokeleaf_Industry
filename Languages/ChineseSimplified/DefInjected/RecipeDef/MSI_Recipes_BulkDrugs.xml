@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Smokeleaf Joint Recipe -->
+
+  <BulkRollCrudeSmokeleafJointCraftingSpot.label>制作粗糙的烟草卷烟 (x5)</BulkRollCrudeSmokeleafJointCraftingSpot.label>
+  <BulkRollCrudeSmokeleafJointCraftingSpot.description>一次性生产更多的粗糙的烟草卷烟</BulkRollCrudeSmokeleafJointCraftingSpot.description>
+  <BulkRollCrudeSmokeleafJointCraftingSpot.jobString>卷烟草中</BulkRollCrudeSmokeleafJointCraftingSpot.jobString>
+
+  <BulkRollSmokeleafJointDrugLab.label>制作烟草卷烟 (x5)</BulkRollSmokeleafJointDrugLab.label>
+  <BulkRollSmokeleafJointDrugLab.description>一次性生产更多的烟草卷烟</BulkRollSmokeleafJointDrugLab.description>
+  <BulkRollSmokeleafJointDrugLab.jobString>卷烟草中</BulkRollSmokeleafJointDrugLab.jobString>
+
+  <BulkRollSmokeleafJointCultBench.label>制作烟草卷烟(x10)</BulkRollSmokeleafJointCultBench.label>
+  <BulkRollSmokeleafJointCultBench.description>一次性生产更多的烟草卷烟</BulkRollSmokeleafJointCultBench.description>
+  <BulkRollSmokeleafJointCultBench.jobString>卷烟草中</BulkRollSmokeleafJointCultBench.jobString>
+
+
+  <!-- Smokeleaf Hash Recipe -->
+
+  <BulkMakeSmokeleafHash.label>制作烟草麻醉剂 (大量)</BulkMakeSmokeleafHash.label>
+  <BulkMakeSmokeleafHash.description>制作大量的烟草麻醉剂</BulkMakeSmokeleafHash.description>
+  <BulkMakeSmokeleafHash.jobString>制作烟草麻醉剂中</BulkMakeSmokeleafHash.jobString>
+
+
+  <!-- Smokeleaf CHO Recipe -->
+
+  <BulkMakeCHO.label>制作大麻水烟 (大量)</BulkMakeCHO.label>
+  <BulkMakeCHO.description>制作大量的大麻水烟</BulkMakeCHO.description>
+  <BulkMakeCHO.jobString>制作大麻水烟中</BulkMakeCHO.jobString>
+
+
+  <!-- Smokeleaf Distillate Recipe -->
+
+  <BulkMakeSmokeleafDistillate.label>制作烟草蒸馏液 (大量)</BulkMakeSmokeleafDistillate.label>
+  <BulkMakeSmokeleafDistillate.description>制作大量的烟草蒸馏液</BulkMakeSmokeleafDistillate.description>
+  <BulkMakeSmokeleafDistillate.jobString>提取烟草蒸馏液中</BulkMakeSmokeleafDistillate.jobString>
+
+
+  <!-- Smokeleaf Cannagar Recipe -->
+
+  <BulkMakeSmokeleafCannagar.label>制作大麻烟 (大量)</BulkMakeSmokeleafCannagar.label>
+  <BulkMakeSmokeleafCannagar.description>制作大量的大麻烟</BulkMakeSmokeleafCannagar.description>
+  <BulkMakeSmokeleafCannagar.jobString>制作大麻烟中</BulkMakeSmokeleafCannagar.jobString>
+
+
+  <!-- Smokeleaf Tincture Recipe -->
+
+  <BulkMakeSmokeleafTincture.label>制作烟草药酊(大量)</BulkMakeSmokeleafTincture.label>
+  <BulkMakeSmokeleafTincture.description>制作大量的烟草药酊</BulkMakeSmokeleafTincture.description>
+  <BulkMakeSmokeleafTincture.jobString>制造烟草药酊中</BulkMakeSmokeleafTincture.jobString>
+
+
+  <!-- Smokeleaf Pills Recipe -->
+
+  <BulkMakeSmokeleafPills.label>制作烟草胶囊 (大量)</BulkMakeSmokeleafPills.label>
+  <BulkMakeSmokeleafPills.description>制作大量的烟草胶囊</BulkMakeSmokeleafPills.description>
+  <BulkMakeSmokeleafPills.jobString>making smokeleaf pills</BulkMakeSmokeleafPills.jobString>
+
+
+  <!-- Smokeleaf Lotion Recipe -->
+
+  <BulkMakeSmokeleafLotion.label>制作烟草医用软膏 (大量)</BulkMakeSmokeleafLotion.label>
+  <BulkMakeSmokeleafLotion.description>制作大量的烟草医用软膏</BulkMakeSmokeleafLotion.description>
+  <BulkMakeSmokeleafLotion.jobString>制作烟草医用软膏中</BulkMakeSmokeleafLotion.jobString>
+
+
+  <!-- CBD Recipe -->
+
+  <BulkExtractCBD.label>制作大麻二酚(大量)</BulkExtractCBD.label>
+  <BulkExtractCBD.description>大量地从烟草花苞中提取大麻二酚</BulkExtractCBD.description>
+  <BulkExtractCBD.jobString>提取大麻二酚中</BulkExtractCBD.jobString>
+
+
+  <!-- Infused Medicine Recipe -->
+
+  <BulkInfusedMedicine.label>制作大麻注射药物 (大量)</BulkInfusedMedicine.label>
+  <BulkInfusedMedicine.description>制作大量的大麻注射药物</BulkInfusedMedicine.description>
+  <BulkInfusedMedicine.jobString>制作大麻注射药物中</BulkInfusedMedicine.jobString>
+
+
+</LanguageData>

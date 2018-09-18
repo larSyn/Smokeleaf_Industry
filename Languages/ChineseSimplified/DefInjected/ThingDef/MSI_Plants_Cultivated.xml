@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Plants -->
+
+  <MSI_SOG.label>烟草 (SOG)</MSI_SOG.label>
+  <MSI_SOG.description>一个使用绿色之海生物技术改进的绿叶植物，需要更少的时间来生长，但是产量低。</MSI_SOG.description>
+
+  <MSI_SCROG.label>烟草 (SCROG)</MSI_SCROG.label>
+  <MSI_SCROG.description>一个使用生物技术改进的绿叶植物，需要更多的时间来生长，但是产量高。</MSI_SCROG.description>
+
+
+</LanguageData>

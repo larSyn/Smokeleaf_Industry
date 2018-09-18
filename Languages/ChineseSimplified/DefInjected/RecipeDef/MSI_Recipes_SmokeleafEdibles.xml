@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Craft Hemp Flour -->
+
+  <CraftHempFlour.label>研磨大麻面粉</CraftHempFlour.label>
+  <CraftHempFlour.description>将大麻种子研磨成用于烘焙的大麻面粉</CraftHempFlour.description>
+  <CraftHempFlour.jobString>研磨大麻面粉中</CraftHempFlour.jobString>
+
+  <BulkCraftHempFlour.label>研磨大麻面粉 (大量)</BulkCraftHempFlour.label>
+  <BulkCraftHempFlour.description>由大麻种子研磨制成的烘焙的大麻面粉</BulkCraftHempFlour.description>
+  <BulkCraftHempFlour.jobString>研磨大麻面粉中</BulkCraftHempFlour.jobString>
+
+
+  <!-- Craft Smokeleaf Seed Oil -->
+
+  <CraftSmokeleafSeedOil.label>压榨烟草食用油</CraftSmokeleafSeedOil.label>
+  <CraftSmokeleafSeedOil.description>把烟草种子压榨成食用油</CraftSmokeleafSeedOil.description>
+  <CraftSmokeleafSeedOil.jobString>压榨烟草种子中</CraftSmokeleafSeedOil.jobString>
+
+  <BulkCraftSmokeleafSeedOil.label>压榨烟草食用油 (bulk)</BulkCraftSmokeleafSeedOil.label>
+  <BulkCraftSmokeleafSeedOil.description>把烟草种子压榨成大量食用油</BulkCraftSmokeleafSeedOil.description>
+  <BulkCraftSmokeleafSeedOil.jobString>压榨烟草种子中</BulkCraftSmokeleafSeedOil.jobString>
+
+
+  <!-- Hemp Milk -->
+
+  <MakeHempMilk.label>制作大麻奶</MakeHempMilk.label>
+  <MakeHempMilk.description>将在水中浸泡过的烟草种子研磨成“奶”.</MakeHempMilk.description>
+  <MakeHempMilk.jobString>研磨大麻奶中</MakeHempMilk.jobString>
+
+  <MakeHempMilkBulk.label>制作大麻奶 (bulk)</MakeHempMilkBulk.label>
+  <MakeHempMilkBulk.description>将大量在水中浸泡过的烟草种子研磨成“奶”</MakeHempMilkBulk.description>
+  <MakeHempMilkBulk.jobString>研磨大麻奶中</MakeHempMilkBulk.jobString>
+
+
+  <!-- Hemp Protein -->
+
+  <MakeHempProtein.label>研磨大麻蛋白质粉</MakeHempProtein.label>
+  <MakeHempProtein.description>将大麻种子研磨成细腻的粉末以补充蛋白质</MakeHempProtein.description>
+  <MakeHempProtein.jobString>研磨大麻蛋白质粉中</MakeHempProtein.jobString>
+
+  <MakeHempProteinBulk.label>研磨大麻蛋白质粉 (大量)</MakeHempProteinBulk.label>
+  <MakeHempProteinBulk.description>将大量大麻种子研磨成细腻的粉末以补充蛋白质</MakeHempProteinBulk.description>
+  <MakeHempProteinBulk.jobString>研磨大麻蛋白质粉中</MakeHempProteinBulk.jobString>
+
+
+  <!-- Smokeleaf Butter -->
+
+  <MakeSmokeleafButter.label>制作烟叶黄油</MakeSmokeleafButter.label>
+  <MakeSmokeleafButter.description>把烟叶花苞在牛奶中泡煮然后制成黄油</MakeSmokeleafButter.description>
+  <MakeSmokeleafButter.jobString>制作黄油中</MakeSmokeleafButter.jobString>
+
+  <MakeSmokeleafButterBulk.label>制作烟叶黄油 (大量)</MakeSmokeleafButterBulk.label>
+  <MakeSmokeleafButterBulk.description>把烟叶花苞在牛奶中泡煮然后制成黄油</MakeSmokeleafButterBulk.description>
+  <MakeSmokeleafButterBulk.jobString>制作黄油中</MakeSmokeleafButterBulk.jobString>
+
+
+  <!-- Smokeleaf Cookies -->
+
+  <BakeSmokeleafCookies.label>烘焙烟叶小甜饼</BakeSmokeleafCookies.label>
+  <BakeSmokeleafCookies.description>烘焙“特别”，美味的饼干</BakeSmokeleafCookies.description>
+  <BakeSmokeleafCookies.jobString>烘焙烟叶小甜品中</BakeSmokeleafCookies.jobString>
+
+  <BakeSmokeleafCookiesBulk.label>烘焙烟叶小甜饼 (大量)</BakeSmokeleafCookiesBulk.label>
+  <BakeSmokeleafCookiesBulk.description>烘焙“特别”，美味的饼干</BakeSmokeleafCookiesBulk.description>
+  <BakeSmokeleafCookiesBulk.jobString>烘焙烟叶小甜品中</BakeSmokeleafCookiesBulk.jobString>
+
+
+  <!-- Smokeleaf Brownies -->
+
+  <BakeSmokeleafBrownies.label>烘焙烟叶布朗尼</BakeSmokeleafBrownies.label>
+  <BakeSmokeleafBrownies.description>烘焙“特别”美味的布朗尼</BakeSmokeleafBrownies.description>
+  <BakeSmokeleafBrownies.jobString>烘焙布朗尼中</BakeSmokeleafBrownies.jobString>
+
+  <BakeSmokeleafBrowniesBulk.label>烘焙烟叶布朗尼中 (大量)</BakeSmokeleafBrowniesBulk.label>
+  <BakeSmokeleafBrowniesBulk.description>烘焙“特别”美味的布朗尼</BakeSmokeleafBrowniesBulk.description>
+  <BakeSmokeleafBrowniesBulk.jobString>烘焙布朗尼中</BakeSmokeleafBrowniesBulk.jobString>
+
+
+  <!-- NutriLeaf Bar -->
+
+  <MakeSmokeleafNutriLeafBar.label>制作烟叶营养棒</MakeSmokeleafNutriLeafBar.label>
+  <MakeSmokeleafNutriLeafBar.description>制作烟叶营养棒</MakeSmokeleafNutriLeafBar.description>
+  <MakeSmokeleafNutriLeafBar.jobString>制作烟叶营养棒中</MakeSmokeleafNutriLeafBar.jobString>
+
+  <MakeSmokeleafNutriLeafBarBulk.label>制作烟叶营养棒 (大量)</MakeSmokeleafNutriLeafBarBulk.label>
+  <MakeSmokeleafNutriLeafBarBulk.description>制作大量烟叶营养棒.</MakeSmokeleafNutriLeafBarBulk.description>
+  <MakeSmokeleafNutriLeafBarBulk.jobString>制作烟叶营养棒中</MakeSmokeleafNutriLeafBarBulk.jobString>
+
+
+  <!-- Smokeleaf De-Energy Drink -->
+
+  <MakeSmokeleafDeEnergyDrink.label>制作烟叶能量饮料</MakeSmokeleafDeEnergyDrink.label>
+  <MakeSmokeleafDeEnergyDrink.description>烟草成瘾者约奇一直在研究的饮料...他把这饮料叫做五小时能量饮.这是一款很有潜力的饮料</MakeSmokeleafDeEnergyDrink.description>
+  <MakeSmokeleafDeEnergyDrink.jobString>制作烟草能量饮料</MakeSmokeleafDeEnergyDrink.jobString>
+
+  <MakeSmokeleafDeEnergyDrinkBulk.label>制作烟叶能量饮料 (大量)</MakeSmokeleafDeEnergyDrinkBulk.label>
+  <MakeSmokeleafDeEnergyDrinkBulk.description>烟草成瘾者约奇一直在研究的饮料...他把这饮料叫做五小时能量饮.这是一款很有潜力的饮料</MakeSmokeleafDeEnergyDrinkBulk.description>
+  <MakeSmokeleafDeEnergyDrinkBulk.jobString>制作烟草能量饮料</MakeSmokeleafDeEnergyDrinkBulk.jobString>
+
+
+  <!-- Smokeleaf Smoothie -->
+
+  <MakeSmokeleafSmoothie.label>制作烟叶奶昔</MakeSmokeleafSmoothie.label>
+  <MakeSmokeleafSmoothie.description>把搅拌机填满大麻叶然后搅拌成美味的烟叶奶昔</MakeSmokeleafSmoothie.description>
+  <MakeSmokeleafSmoothie.jobString>制作奶昔中</MakeSmokeleafSmoothie.jobString>
+
+  <MakeSmokeleafSmoothieBulk.label>制作烟叶奶昔 (大量)</MakeSmokeleafSmoothieBulk.label>
+  <MakeSmokeleafSmoothieBulk.description>把搅拌机填满大麻叶然后搅拌成美味的烟叶奶昔</MakeSmokeleafSmoothieBulk.description>
+  <MakeSmokeleafSmoothieBulk.jobString>制作奶昔中</MakeSmokeleafSmoothieBulk.jobString>
+
+
+  <!-- Smokeleaf Candy -->
+
+  <MakeSmokeleafCandy.label>制作烟叶硬糖</MakeSmokeleafCandy.label>
+  <MakeSmokeleafCandy.description>将果汁，烟草蒸馏液，烟草食用油一起加入糖浆在搅拌然后冷却成美味的硬糖.</MakeSmokeleafCandy.description>
+  <MakeSmokeleafCandy.jobString>制作烟叶硬糖中</MakeSmokeleafCandy.jobString>
+
+  <MakeSmokeleafCandyBulk.label>制作烟叶硬糖 (大量)</MakeSmokeleafCandyBulk.label>
+  <MakeSmokeleafCandyBulk.description>将果汁，烟草蒸馏液，烟草食用油一起加入糖浆在搅拌然后冷却成大量美味的硬糖 </MakeSmokeleafCandyBulk.description>
+  <MakeSmokeleafCandyBulk.jobString>制作烟叶硬糖中</MakeSmokeleafCandyBulk.jobString>
+
+
+  <!-- MSI Meal -->
+
+  <CookMealInfused.label>烹饪大麻餐</CookMealInfused.label>
+  <CookMealInfused.description>烹饪餐点时加点烟叶黄油会让食用者十分享受这份餐点</CookMealInfused.description>
+  <CookMealInfused.jobString>烹饪大麻餐中</CookMealInfused.jobString>
+
+  <BulkCookMealInfused.label>烹饪大麻餐 (大量)</BulkCookMealInfused.label>
+  <BulkCookMealInfused.description>烹饪餐点时加点烟叶黄油会让食用者十分享受这份餐点，足够让五人食用<BulkCookMealInfused.description>
+  <BulkCookMealInfused.jobString>烹饪大麻餐中</BulkCookMealInfused.jobString>
+
+
+</LanguageData>

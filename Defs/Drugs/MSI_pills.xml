@@ -19,12 +19,13 @@
     </statBases>
     <techLevel>Spacer</techLevel>
     <ingestible>
-		<outcomeDoers>
-			<li Class="IngestionOutcomeDoer_GiveHediff">
-				<hediffDef>SmokeleafPillsHigh</hediffDef>
-				<severity>1.0</severity>
-			</li>
-		</outcomeDoers>
+		  <outcomeDoers>
+			  <li Class="IngestionOutcomeDoer_GiveHediff">
+				  <hediffDef>SmokeleafPillsHigh</hediffDef>
+				  <severity>1.0</severity>
+			  </li>
+		  </outcomeDoers>
+      <joy>0.1</joy>
     </ingestible>
     <recipeMaker>
   		<researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- HempBlock TileStoneBase -->
+
+  <BrickHempcrete.label>大麻砖块</BrickHempcrete.label>
+  <BrickHempcrete.description>精心切割石头砖块给你的屋子一种城堡的感觉.看上去很好看但是铺设所需的时间很长</BrickHempcrete.description>
+
+
+  <!-- HempBlock FlagStoneBase -->
+
+  <FlagstoneHempcrete.label>大麻岩块</FlagstoneHempcrete.label>
+  <FlagstoneHempcrete.description>随意切割的石块，不怎么好看，但是他们是一种十分适合铺设外部道路的材料.可惜在拆除的时候你不会回收资源</FlagstoneHempcrete.description>
+
+
+  <!-- Hempcrete Misc Floors -->
+
+  <Hempcrete.label>大麻混凝土</Hempcrete.label>
+  <Hempcrete.description>平滑的大麻混凝土地板.提高你的移动速度而且非常容易清扫</Hempcrete.description>
+
+  <HempcreteTile.label>大麻瓷砖</HempcreteTile.label>
+  <HempcreteTile.description>大块大麻瓷砖。漂亮但是需要大量人力物力</HempcreteTile.description>
+
+  <HempcretePlate.label>大麻碎砖</HempcretePlate.label>
+  <HempcretePlate.description>大块大麻碎砖。漂亮但是需要大量人力物力</HempcretePlate.description>
+
+  <HempcretePath.label>大麻道路</HempcretePath.label>
+  <HempcretePath.description>用一块块大麻铺成的道路 </HempcretePath.description>
+
+
+  <!-- Hemp Carpet -->
+
+  <CarpetHemp.label>大麻地毯</CarpetHemp.label>
+  <CarpetHemp.description>由坚韧的大麻布所制成的地毯，有防火效果.</CarpetHemp.description>
+
+  <CarpetDevilsleaf.label>魔叶地毯</CarpetDevilsleaf.label>
+  <CarpetDevilsleaf.description>由魔叶布制成的地毯，有些许防火效果</CarpetDevilsleaf.description>
+
+
+  <!-- Hemp Stalk Floor -->
+
+  <HempStalkFloor.label>大麻地板</HempStalkFloor.label>
+  <HempStalkFloor.description>由大麻叶制成的漂亮木板，不过小心火灾。</HempStalkFloor.description>
+
+
+</LanguageData>

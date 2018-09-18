@@ -4,7 +4,7 @@
 	<RecipeDef Name="MSI_CraftBulkDrugs" Abstract="True">
 		<workSkill>Intellectual</workSkill>
     	<workSkillLearnFactor>1.75</workSkillLearnFactor>
-		<workSpeedStat>DrugProductionSpeed</workSpeedStat>
+		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 	</RecipeDef>
@@ -410,7 +410,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Medicine</li>
+						<li>MedicineIndustrial</li>
 					</thingDefs>
 				</filter>
 				<count>10</count>
@@ -419,7 +419,7 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>CBD</li>
-				<li>Medicine</li>
+				<li>MedicineIndustrial</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -486,7 +486,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Medicine</li>
+						<li>MedicineIndustrial</li>
 					</thingDefs>
 				</filter>
 				<count>5</count>
@@ -502,7 +502,7 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>Medicine</li>
+				<li>MedicineIndustrial</li>
 				<li>CBD</li>
 			</thingDefs>
 		</fixedIngredientFilter>

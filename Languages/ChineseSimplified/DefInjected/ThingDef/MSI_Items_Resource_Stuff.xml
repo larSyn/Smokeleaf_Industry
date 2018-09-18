@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Hemp Fiber -->
+
+  <HempFiber.label>大麻纤维</HempFiber.label>
+  <HempFiber.description>烟草处理后所遗留下的产物</HempFiber.description>
+  <HempFiber.stuffProps.stuffAdjective>大麻</HempFiber.stuffProps.stuffAdjective>
+
+
+  <!-- Smokeleaf Buds -->
+
+  <SmokeleafBuds.label>烟草花苞</SmokeleafBuds.label>
+  <SmokeleafBuds.description>烟草植物的花.一棵植物中所有的好东西都在这花苞里</SmokeleafBuds.description>
+
+
+  <!-- Smokeleaf Seeds -->
+
+  <SmokeleafSeed.label>烟草种子</SmokeleafSeed.label>
+  <SmokeleafSeed.description>烟草植物的种子</SmokeleafSeed.description>
+
+
+  <!-- Hemp -->
+
+  <HempFabric.label>大麻布</HempFabric.label>
+  <HempFabric.description>由大麻纤维编织成的大麻布.</HempFabric.description>
+  <HempFabric.stuffProps.stuffAdjective>大麻布</HempFabric.stuffProps.stuffAdjective>
+
+
+  <!-- Devilsleaf Fabric -->
+
+  <DevilsleafFabric.label>魔叶布</DevilsleafFabric.label>
+  <DevilsleafFabric.description>汇聚大麻叶和魔菇布优点的布匹</DevilsleafFabric.description>
+  <DevilsleafFabric.stuffProps.stuffAdjective>魔叶布</DevilsleafFabric.stuffProps.stuffAdjective>
+
+
+  <!-- Hemp Biocomposite -->
+
+  <HempBiocomposite.label>大麻复合材料</HempBiocomposite.label>
+  <HempBiocomposite.description>一种用大麻纤维和碳化大麻制成的复合材料.一种更便宜的金属材料</HempBiocomposite.description>
+  <HempBiocomposite.stuffProps.stuffAdjective>大麻复合材料</HempBiocomposite.stuffProps.stuffAdjective>
+
+
+  <!-- Carbonized Hemp -->
+
+  <HempBiocoal.label>大麻碳</HempBiocoal.label>
+  <HempBiocoal.description>在高温下游大麻纤维转变成的大麻碳.能够作为木材发电机的燃油之一.</HempBiocoal.description>
+
+
+  <!-- Hemp Nanosheet -->
+
+  <HempNanosheet.label>大麻纳米布</HempNanosheet.label>
+  <HempNanosheet.description>一种由大麻碳制成的闪耀世界材料.由于高导电的特性，它是各种高级科技的原材料</HempNanosheet.description>
+  <HempNanosheet.stuffProps.stuffAdjective>hemp nanosheet</HempNanosheet.stuffProps.stuffAdjective>
+
+
+  <!-- Hempoline -->
+
+  <Hempoline.label>大麻燃油</Hempoline.label>
+  <Hempoline.description>一种由烟叶杆或者种子制成的安全又稳定的燃油.没有挥发性但是终将会腐烂变坏.</Hempoline.description>
+
+
+  <!-- CBD -->
+
+  <CBD.label>大麻二酚</CBD.label>
+  <CBD.description>一种从烟草中提取的化合物.大麻二酚可以单独使用或者与其他化合物一起制药..</CBD.description>
+
+
+  <!-- Infused Medicine -->
+
+  <InfusedMedicine.label>大麻注射药物</InfusedMedicine.label>
+  <InfusedMedicine.description>含有大麻二酚的注射药剂。</InfusedMedicine.description>
+
+
+</LanguageData>

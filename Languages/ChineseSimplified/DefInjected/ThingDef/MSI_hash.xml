@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <SmokeleafHash.label>烟草麻醉剂</SmokeleafHash.label>
+  <SmokeleafHash.description>烟草麻醉剂是烟草最早的提取物,其主要材料为新鲜收货的烟草花苞.没有任何物理依赖性但是会有心理依赖性</SmokeleafHash.description>
+  <SmokeleafHash.ingestible.ingestCommandString>抽烟 {0}</SmokeleafHash.ingestible.ingestCommandString>
+  <SmokeleafHash.ingestible.ingestReportString>抽烟中 {0}.</SmokeleafHash.ingestible.ingestReportString>
+
+
+</LanguageData>

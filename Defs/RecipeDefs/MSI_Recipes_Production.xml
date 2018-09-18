@@ -864,7 +864,7 @@
 			<Hempoline>5</Hempoline>
 		</products>
 		<recipeUsers>
-			<li>Refinery</li>
+			<li>BiofuelRefinery</li>
 		</recipeUsers>
 	</RecipeDef>
 	
@@ -901,7 +901,7 @@
 			<Hempoline>25</Hempoline>
 		</products>
 		<recipeUsers>
-			<li>Refinery</li>
+			<li>BiofuelRefinery</li>
 		</recipeUsers>
 	</RecipeDef>
 	
@@ -940,7 +940,7 @@
 			<Chemfuel>5</Chemfuel>
 		</products>
 		<recipeUsers>
-			<li>Refinery</li>
+			<li>BiofuelRefinery</li>
 		</recipeUsers>
 	</RecipeDef>
 	
@@ -977,7 +977,7 @@
 			<Chemfuel>15</Chemfuel>
 		</products>
 		<recipeUsers>
-			<li>Refinery</li>
+			<li>BiofuelRefinery</li>
 		</recipeUsers>
 	</RecipeDef>
 	

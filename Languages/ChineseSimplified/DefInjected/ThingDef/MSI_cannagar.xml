@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <SmokeleafCannagar.label>大麻烟</SmokeleafCannagar.label>
+  <SmokeleafCannagar.description>将大麻花裹在木棍周围然后用大麻叶将其卷起并浸泡在油内.非常强效以及昂贵.这个毒品可以提高人物心情和食欲但是会降低人物的移动速率.不会有任何物理依赖性但是会有心理依赖性</SmokeleafCannagar.description>
+  <SmokeleafCannagar.ingestible.ingestCommandString>抽烟 {0}</SmokeleafCannagar.ingestible.ingestCommandString>
+  <SmokeleafCannagar.ingestible.ingestReportString>抽烟中 {0}.</SmokeleafCannagar.ingestible.ingestReportString>
+
+
+</LanguageData>

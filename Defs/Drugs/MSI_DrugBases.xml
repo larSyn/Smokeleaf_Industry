@@ -36,7 +36,7 @@
 			<li>SmokeleafIndCatDrugs</li>
 		</thingCategories>
 		<recipeMaker>
-  			<workSpeedStat>DrugProductionSpeed</workSpeedStat>
+  			<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
   			<workSkill>Intellectual</workSkill>
 			<effectWorking>Cook</effectWorking>
 			<soundWorking>Recipe_CookMeal</soundWorking>
@@ -59,7 +59,7 @@
 			<li>SmokeleafIndCatDrugs</li>
 		</thingCategories>
 		<recipeMaker>
-  			<workSpeedStat>DrugProductionSpeed</workSpeedStat>
+  			<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
   			<workSkill>Intellectual</workSkill>
 			<effectWorking>Cook</effectWorking>
 			<soundWorking>Recipe_CookMeal</soundWorking>

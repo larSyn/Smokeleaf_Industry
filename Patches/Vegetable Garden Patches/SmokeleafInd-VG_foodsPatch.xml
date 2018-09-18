@@ -6,10 +6,10 @@
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
-            <li Class="ModCheck.FindFile">
-                <modName>VGP Garden Gourmet</modName>
-                <file>Recipes_Baking.xml</file>
-            </li>
+			<li Class="ModCheck.isModLoaded">
+				<modName>VGP Garden Gourmet</modName>
+				<yourMod>Smokeleaf Industry</yourMod>
+			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/RecipeDef[defName = "BakeBread"]/ingredients/li[1]/filter/thingDefs</xpath>
 				<value>
@@ -138,10 +138,10 @@
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success> 
 		<operations>
-            <li Class="ModCheck.FindFile">
-                <modName>VGP Garden Gourmet</modName>
-                <file>Recipes_Brewing.xml</file>
-            </li>
+			<li Class="ModCheck.isModLoaded">
+				<modName>VGP Garden Gourmet</modName>
+				<yourMod>Smokeleaf Industry</yourMod>
+			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/RecipeDef[defName = "MakeChocolatemilk"]/ingredients/li[2]/filter/thingDefs</xpath>
 				<value>
@@ -162,10 +162,10 @@
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success> 
 		<operations>
-            <li Class="ModCheck.FindFile">
-                <modName>VGP Garden Gourmet</modName>
-                <file>Recipes_SweetsTable.xml</file>
-            </li>
+			<li Class="ModCheck.isModLoaded">
+				<modName>VGP Garden Gourmet</modName>
+				<yourMod>Smokeleaf Industry</yourMod>
+			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/RecipeDef[defName = "MakeIcecream"]/ingredients/li[3]/filter/thingDefs</xpath>
 				<value>
@@ -210,10 +210,10 @@
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success> 
 		<operations>
-            <li Class="ModCheck.FindFile">
-                <modName>VGP Garden Gourmet</modName>
-                <file>Recipes_Prep.xml</file>
-            </li>
+			<li Class="ModCheck.isModLoaded">
+				<modName>VGP Garden Gourmet</modName>
+				<yourMod>Smokeleaf Industry</yourMod>
+			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/RecipeDef[defName = "Makesoycheese"]/ingredients/li[1]/filter/thingDefs</xpath>
 				<value>

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Grow Lamp -->
+
+  <GrowLamp.label>大麻灯</GrowLamp.label>
+  <GrowLamp.description>一个为室内使用所设计的节能灯，内置闹钟</GrowLamp.description>
+  <GrowLamp.comps.4.offMessage>在植物最佳生长期间设定闹钟</GrowLamp.comps.4.offMessage>
+  <GrowLamp_Blueprint.label>大麻灯 (蓝图)</GrowLamp_Blueprint.label>
+  <GrowLamp_Blueprint_Install.label>大麻灯 (蓝图)</GrowLamp_Blueprint_Install.label>
+  <GrowLamp_Frame.label>大麻灯(建造中)</GrowLamp_Frame.label>
+  <GrowLamp_Frame.description>一个为室内使用所设计的节能灯，内置闹钟</GrowLamp_Frame.description>
+
+
+  <!-- Ceiling Lamp -->
+
+  <MSI_CeilingGrowLamp.label>大麻吊灯</MSI_CeilingGrowLamp.label>
+  <MSI_CeilingGrowLamp.description>一种为室内种植所设计的吊灯，内置闹钟.</MSI_CeilingGrowLamp.description>
+  <MSI_CeilingGrowLamp.comps.4.offMessage>在植物最佳生长期间设定闹钟</MSI_CeilingGrowLamp.comps.4.offMessage>
+  <MSI_CeilingGrowLamp_Blueprint.label>大麻吊灯 (蓝图)</MSI_CeilingGrowLamp_Blueprint.label>
+  <MSI_CeilingGrowLamp_Blueprint_Install.label>大麻吊灯 (蓝图)</MSI_CeilingGrowLamp_Blueprint_Install.label>
+  <MSI_CeilingGrowLamp_Frame.label>大麻吊灯 (建造中)</MSI_CeilingGrowLamp_Frame.label>
+  <MSI_CeilingGrowLamp_Frame.description>一种为室内种植所设计的吊灯，内置闹钟.</MSI_CeilingGrowLamp_Frame.description>
+
+
+  <!-- Tube Lights -->
+
+  <MSI_TubeGrowLights.label>大麻灯管</MSI_TubeGrowLights.label>
+  <MSI_TubeGrowLights.description>一种为种植设计的管道灯光系统，由于其运行所需能源很低，他还能用于其他地区.一天24小时都发光的一种灯</MSI_TubeGrowLights.description>
+  <MSI_TubeGrowLights_Blueprint.label>大麻灯管 (蓝图)</MSI_TubeGrowLights_Blueprint.label>
+  <MSI_TubeGrowLights_Blueprint_Install.label>大麻灯管 (蓝图)</MSI_TubeGrowLights_Blueprint_Install.label>
+  <MSI_TubeGrowLights_Frame.label>大麻灯管(建造中)</MSI_TubeGrowLights_Frame.label>
+  <MSI_TubeGrowLights_Frame.description>一种为种植设计的管道灯光系统，由于其运行所需能源很低，他还能用于其他地区.一天24小时都发光的一种灯</MSI_TubeGrowLights_Frame.description>
+
+
+  <!-- Stone Planter -->
+
+  <MSI_StonePlanter.label>石制种植盆</MSI_StonePlanter.label>
+  <MSI_StonePlanter.description>一个石制的种植盆用来种植烟草或者其他植物.种植盆中的土壤已经堆肥，种植的植物生长率提高1.5倍.需要灯光与热量</MSI_StonePlanter.description>
+  <MSI_StonePlanter_Blueprint.label>石制种植盆(蓝图)</MSI_StonePlanter_Blueprint.label>
+  <MSI_StonePlanter_Blueprint_Install.label>石制种植盆 (蓝图)</MSI_StonePlanter_Blueprint_Install.label>
+  <MSI_StonePlanter_Frame.label>石制种植盆 (建造中)</MSI_StonePlanter_Frame.label>
+  <MSI_StonePlanter_Frame.description>一个石制的种植盆用来种植烟草或者其他植物.种植盆中的土壤已经堆肥，种植的植物生长率提高1.5倍.需要灯光与热量</MSI_StonePlanter_Frame.description>
+
+
+  <!-- Wooden Planter -->
+
+  <MSI_WoodenPlanter.label>木制种植盆</MSI_WoodenPlanter.label>
+  <MSI_WoodenPlanter.description>一个木制的种植盆用来种植烟草或者其他植物.种植盆中的土壤已经堆肥，种植的植物生长率提高2倍.需要灯光与热量</MSI_WoodenPlanter.description>
+  <MSI_WoodenPlanter_Blueprint.label>木制种植盆 (蓝图)</MSI_WoodenPlanter_Blueprint.label>
+  <MSI_WoodenPlanter_Blueprint_Install.label>木制种植盆 (蓝图)</MSI_WoodenPlanter_Blueprint_Install.label>
+  <MSI_WoodenPlanter_Frame.label>木制种植盆 (建造中)</MSI_WoodenPlanter_Frame.label>
+  <MSI_WoodenPlanter_Frame.description>一个木制的种植盆用来种植烟草或者其他植物.种植盆中的土壤已经堆肥，种植的植物生长率提高2倍.需要灯光与热量</MSI_WoodenPlanter_Frame.description>
+
+
+  <!-- Space Bucket -->
+
+  <SpaceBucket.label>太空种植罐</SpaceBucket.label>
+  <SpaceBucket.description>自带种植系统.用大量的能源种植一颗作物，但是植物的生长速率为一般的5倍。需要热量</SpaceBucket.description>
+  <SpaceBucket_Blueprint.label>太空种植罐(蓝图)</SpaceBucket_Blueprint.label>
+  <SpaceBucket_Blueprint_Install.label>太空种植罐 (蓝图)</SpaceBucket_Blueprint_Install.label>
+  <SpaceBucket_Frame.label>太空种植罐 (建造中)</SpaceBucket_Frame.label>
+  <SpaceBucket_Frame.description>自带种植系统.用大量的能源种植一颗作物，但是植物的生长速率为一般的5倍。需要热量</SpaceBucket_Frame.description>
+
+
+</LanguageData>

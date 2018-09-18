@@ -6,10 +6,6 @@
 	<Operation Class="PatchOperationSequence">
 	    <success>Always</success>
 		<operations>
-	    	<li Class="ModCheck.FindFile">
-                <modName>Core</modName>
-                <file>Smokeleaf.xml</file>
-            </li>
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName = "SmokeleafJoint"]/description</xpath>
 				<value>
@@ -102,10 +98,6 @@
 	<Operation Class="PatchOperationSequence">
 	    <success>Always</success>
 	    <operations>
-	    	<li Class="ModCheck.FindFile">
-                <modName>Core</modName>
-                <file>Buildings_Production.xml</file>
-            </li>
 		    <li Class="PatchOperationTest">
 		        <xpath>Defs/ThingDef[defName = "DrugLab"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 		    </li>
@@ -121,46 +113,20 @@
 	<Operation Class="PatchOperationSequence">
 	    <success>Always</success>
 	    <operations>
-	    	<li Class="ModCheck.FindFile">
-                <modName>Core</modName>
-                <file>Plants_Cultivated_Farm.xml</file>
-            </li>
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName = "PlantSmokeleaf"]/graphicData/texPath</xpath>
-				<value>
-					<texPath>Things/Plants/MSI_Smokeleaf</texPath>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName = "PlantSmokeleaf"]/plant</xpath>
-				<value>
-					<immatureGraphicPath>Things/ImmaturePlants/MSI_Smokeleaf</immatureGraphicPath>
-				</value>
-			</li>
-		</operations>
-	</Operation>
-
-	<Operation Class="PatchOperationSequence">
-	    <success>Always</success>
-	    <operations>
-	    	<li Class="ModCheck.FindFile">
-                <modName>Core</modName>
-                <file>Plants_Cultivated_Farm.xml</file>
-            </li>
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName = "PlantSmokeleaf"]/description</xpath>
+				<xpath>Defs/ThingDef[defName = "Plant_Smokeleaf"]/description</xpath>
 				<value>
 					<description>A leafy plant cultivated for its psychological effects. Smokeleaf plants can be seperated into a few base ingredients.  These ingredients can make food, medicine, and powerful drugs.</description>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName = "PlantSmokeleaf"]/graphicData/texPath</xpath>
+				<xpath>Defs/ThingDef[defName = "Plant_Smokeleaf"]/graphicData/texPath</xpath>
 				<value>
 					<texPath>Things/Plants/MSI_Smokeleaf</texPath>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName = "PlantSmokeleaf"]/plant</xpath>
+				<xpath>Defs/ThingDef[defName = "Plant_Smokeleaf"]/plant</xpath>
 				<value>
 					<immatureGraphicPath>Things/ImmaturePlants/MSI_Smokeleaf</immatureGraphicPath>
 				</value>

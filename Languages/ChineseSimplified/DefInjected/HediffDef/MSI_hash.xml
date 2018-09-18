@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <HashHigh.label>注射烟草麻醉剂</HashHigh.label>
+
+
+  <!-- Hash addiction -->
+
+  <HashTolerance.label>烟草麻醉剂耐受</HashTolerance.label>
+  <HashTolerance.stages.1.label>弱</HashTolerance.stages.1.label>
+  <HashTolerance.stages.2.label>强</HashTolerance.stages.2.label>
+  <HashTolerance.stages.3.label>严重</HashTolerance.stages.3.label>
+
+  <HashAddiction.label>烟草麻醉剂沉迷</HashAddiction.label>
+  <HashAddiction.stages.1.label>戒断</HashAddiction.stages.1.label>
+
+
+</LanguageData>

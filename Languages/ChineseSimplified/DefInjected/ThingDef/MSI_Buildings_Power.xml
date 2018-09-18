@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Hempoline Generator -->
+
+  <HempolineGenerator.label>大麻燃油发电机</HempolineGenerator.label>
+  <HempolineGenerator.description>通过燃烧大麻燃油发电.必须手动补充燃料</HempolineGenerator.description>
+  <HempolineGenerator_Blueprint.label>大麻燃油发电机 (蓝图)</HempolineGenerator_Blueprint.label>
+  <HempolineGenerator_Blueprint_Install.label>大麻燃油发电机 (蓝图)</HempolineGenerator_Blueprint_Install.label>
+  <HempolineGenerator_Frame.label>大麻燃油发电机 (建造中)</HempolineGenerator_Frame.label>
+  <HempolineGenerator_Frame.description>通过燃烧大麻燃油发电.必须手动补充燃料</HempolineGenerator_Frame.description>
+
+
+  <!-- Hempene Conduit -->
+
+  <HempPowerConduit.label>大麻电线</HempPowerConduit.label>
+  <HempPowerConduit.description>一个大麻制作的发光电线.当电力通过时会发出绿色的光能够缓解眼部疲劳。可以在墙下铺设。可以连接其他电线</HempPowerConduit.description>
+  <HempPowerConduit_Blueprint.label>大麻电线 (蓝图)</HempPowerConduit_Blueprint.label>
+  <HempPowerConduit_Blueprint_Install.label>h大麻电线 (蓝图)</HempPowerConduit_Blueprint_Install.label>
+  <HempPowerConduit_Frame.label>大麻电线 (建造中)</HempPowerConduit_Frame.label>
+  <HempPowerConduit_Frame.description>一个大麻制作的发光电线.当电力通过时会发出绿色的光能够缓解眼部疲劳。可以在墙下铺设。可以连接其他电线</HempPowerConduit_Frame.description>
+
+
+  <!-- Hemp Battery -->
+
+  <HempBattery.label>大麻蓄电池</HempBattery.label>
+  <HempBattery.description>一个由大麻纳米布制作的大麻蓄电池，其储电量高于普通蓄电池.警告：暴露在雨水或者火焰下的蓄电池肯能会爆炸.</HempBattery.description>
+  <HempBattery_Blueprint.label>大麻蓄电池 (蓝图)</HempBattery_Blueprint.label>
+  <HempBattery_Blueprint_Install.label>大麻蓄电池 (蓝图)</HempBattery_Blueprint_Install.label>
+  <HempBattery_Frame.label>大麻蓄电池 (建造中)</HempBattery_Frame.label>
+  <HempBattery_Frame.description>一个由大麻纳米布制作的大麻蓄电池，其储电量高于普通蓄电池.警告：暴露在雨水或者火焰下的蓄电池肯能会爆炸.</HempBattery_Frame.description>
+
+
+  <!-- Hemp Solar Panel -->
+
+  <HempSolarGenerator.label>大麻太阳能板</HempSolarGenerator.label>
+  <HempSolarGenerator.description>由大麻超导体制成的闪耀科技太阳能板，在太阳下能够比普通的太阳能板产生更多的电力.在黑暗中无法产生电力</HempSolarGenerator.description>
+  <HempSolarGenerator_Blueprint.label>大麻太阳能板 (蓝图)</HempSolarGenerator_Blueprint.label>
+  <HempSolarGenerator_Blueprint_Install.label>大麻太阳能板 (蓝图)</HempSolarGenerator_Blueprint_Install.label>
+  <HempSolarGenerator_Frame.label>大麻太阳能板 (建造中)</HempSolarGenerator_Frame.label>
+  <HempSolarGenerator_Frame.description>由大麻超导体制成的闪耀科技太阳能板，在太阳下能够比普通的太阳能板产生更多的电力.在黑暗中无法产生电力</HempSolarGenerator_Frame.description>
+
+
+</LanguageData>

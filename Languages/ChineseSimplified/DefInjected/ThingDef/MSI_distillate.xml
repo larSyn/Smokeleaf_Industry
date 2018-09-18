@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <SmokeleafDistillate.label>烟草提取液</SmokeleafDistillate.label>
+  <SmokeleafDistillate.description>烟草提取液是一种最纯净的提取物.能给你最好的致幻效果并不受任何其他烟草制品所带的有害效果.不会有任何物理依赖性但是会有心理依赖性</SmokeleafDistillate.description>
+  <SmokeleafDistillate.ingestible.ingestCommandString>抽烟 {0}</SmokeleafDistillate.ingestible.ingestCommandString>
+  <SmokeleafDistillate.ingestible.ingestReportString>抽烟中 {0}.</SmokeleafDistillate.ingestible.ingestReportString>
+
+
+</LanguageData>

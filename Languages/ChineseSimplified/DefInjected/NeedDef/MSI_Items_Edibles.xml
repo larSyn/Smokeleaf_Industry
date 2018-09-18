@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Edibles Addiction -->
+
+  <Chemical_Edibles.label>大麻食品</Chemical_Edibles.label>
+  <Chemical_Edibles.description>因为大麻食品真是的太好吃了，这个人需要经常食用以防止戒断症状 </Chemical_Edibles.description>
+
+
+  <!-- Advanced Edibles Addiction -->
+
+  <Chemical_AdvancedEdibles.label>高级大麻食物</Chemical_AdvancedEdibles.label>
+  <Chemical_AdvancedEdibles.description>因为大麻食品真是的太好吃了，这个人需要经常食用以防止戒断症状 </Chemical_AdvancedEdibles.description>
+
+
+</LanguageData>

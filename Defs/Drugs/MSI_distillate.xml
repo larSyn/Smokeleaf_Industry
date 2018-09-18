@@ -188,11 +188,11 @@
         </capMods>
 		<mentalStateGivers>
 			<li>
-				<mentalState>WanderOwnRoom</mentalState>
+				<mentalState>Wander_OwnRoom</mentalState>
 				<mtbDays>60</mtbDays>
 			</li>
 			<li>
-				<mentalState>BingingDrugMajor</mentalState>
+				<mentalState>Binging_DrugMajor</mentalState>
 				<mtbDays>50</mtbDays>
 			</li>
 		</mentalStateGivers>

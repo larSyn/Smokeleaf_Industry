@@ -4,14 +4,13 @@
   <ThingDef Name="MSI_BuildingBase" Abstract="True">
 		<category>Building</category>
 		<thingClass>Building</thingClass>
-		<minifiedDef>MinifiedFurniture</minifiedDef>
-		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 		<selectable>true</selectable>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<repairEffect>Repair</repairEffect>
 		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
-		<filthLeaving>BuildingRubble</filthLeaving>
+		<filthLeaving>Filth_RubbleBuilding</filthLeaving>
 		<statBases>
 			<SellPriceFactor>0.70</SellPriceFactor>
 		</statBases>
@@ -19,10 +18,10 @@
 
   	<ThingDef Name="MSI_FurnitureBase" ParentName="MSI_BuildingBase" Abstract="True">
 	    <designationCategory>Furniture</designationCategory>
-	    <minifiedDef>MinifiedFurniture</minifiedDef>
-	    <tradeTags>
-	      	<li>Furniture</li>
-	    </tradeTags>
+    	<minifiedDef>MinifiedThing</minifiedDef>
+    	<thingCategories>
+      		<li>BuildingsFurniture</li>
+    	</thingCategories>
   	</ThingDef>
   
 	 <ThingDef Name="MSI_FurnitureWithQualityBase" ParentName="MSI_FurnitureBase" Abstract="True">
@@ -35,15 +34,16 @@
 
   	<ThingDef Name="MSI_ArtableFurnitureBase" ParentName="MSI_FurnitureWithQualityBase" Abstract="True">
     <comps>
-	     <li Class="CompProperties_Art">
-	        <nameMaker>ArtName_Furniture</nameMaker>
-	        <descriptionMaker>ArtDescription_Furniture</descriptionMaker>
-	        <minQualityForArtistic>Excellent</minQualityForArtistic>
-		</li>
-	    </comps>
-	    <inspectorTabs>
-	      <li>ITab_Art</li>
-	    </inspectorTabs>
+	    <li Class="CompProperties_Art">
+        	<nameMaker>NamerArtFurniture</nameMaker>
+        	<descriptionMaker>ArtDescription_Furniture</descriptionMaker>
+			<canBeEnjoyedAsArt>false</canBeEnjoyedAsArt>
+        	<minQualityForArtistic>Excellent</minQualityForArtistic>
+      	</li>
+	</comps>
+	<inspectorTabs>
+		<li>ITab_Art</li>
+	</inspectorTabs>
   	</ThingDef>
 
 </Defs>

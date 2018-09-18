@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <SmokeleafPills.label>大麻胶囊</SmokeleafPills.label>
+  <SmokeleafPills.description>一种能避免医疗的胶囊，能帮你快速恢复并减低疼痛感.使用后你可能会头晕</SmokeleafPills.description>
+  <SmokeleafPills.ingestible.ingestCommandString>吃 {0}</SmokeleafPills.ingestible.ingestCommandString>
+  <SmokeleafPills.ingestible.ingestReportString>正在吃 {0}.</SmokeleafPills.ingestible.ingestReportString>
+
+
+</LanguageData>
