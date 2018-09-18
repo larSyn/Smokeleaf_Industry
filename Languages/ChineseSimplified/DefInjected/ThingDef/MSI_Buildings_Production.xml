@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Smokeleaf Cultivation Bench -->
+
+  <PoweredCultivationBench.label>烟草切割台</PoweredCultivationBench.label>
+  <PoweredCultivationBench.description>一个未处理烟草设计的切割台.最新的毒品以及配方都会自动添加.在停电的情况下生产速度减慢</PoweredCultivationBench.description>
+  <PoweredCultivationBench_Blueprint.label>烟草切割台 (蓝图)</PoweredCultivationBench_Blueprint.label>
+  <PoweredCultivationBench_Blueprint_Install.label>烟草切割台 (蓝图)</PoweredCultivationBench_Blueprint_Install.label>
+  <PoweredCultivationBench_Frame.label>烟草切割台 (建造中)</PoweredCultivationBench_Frame.label>
+  <PoweredCultivationBench_Frame.description>一个未处理烟草设计的切割台.最新的毒品以及配方都会自动添加.在停电的情况下生产速度减慢</PoweredCultivationBench_Frame.description>
+
+
+  <!-- Smokeleaf Medicinals Lab -->
+
+  <MedicinalsLab.label>烟草药剂实验室</MedicinalsLab.label>
+  <MedicinalsLab.description>一个带有闪耀科技设备的实验室以最高效率进行烟草处理.需要电力才能运行</MedicinalsLab.description>
+  <MedicinalsLab_Blueprint.label>烟草药剂实验室 (蓝图)</MedicinalsLab_Blueprint.label>
+  <MedicinalsLab_Blueprint_Install.label>烟草药剂实验室 (蓝图)</MedicinalsLab_Blueprint_Install.label>
+  <MedicinalsLab_Frame.label>烟草药剂实验室 (建造中)</MedicinalsLab_Frame.label>
+  <MedicinalsLab_Frame.description>一个带有闪耀科技设备的实验室以最高效率进行烟草处理.需要电力才能运行</MedicinalsLab_Frame.description>
+
+
+  <!-- Smokeleaf Auto Trimmer -->
+
+  <SmokeleafAutoTrimmer.label>全自动烟草切割机</SmokeleafAutoTrimmer.label>
+  <SmokeleafAutoTrimmer.description>自动把新鲜收割的烟草切割成有用的材料.大大地提高速度并降低能源消耗</SmokeleafAutoTrimmer.description>
+  <SmokeleafAutoTrimmer_Blueprint.label>全自动烟草切割机 (蓝图)</SmokeleafAutoTrimmer_Blueprint.label>
+  <SmokeleafAutoTrimmer_Blueprint_Install.label>全自动烟草切割机 (聊天)</SmokeleafAutoTrimmer_Blueprint_Install.label>
+  <SmokeleafAutoTrimmer_Frame.label>全自动烟草切割机 (建造中)</SmokeleafAutoTrimmer_Frame.label>
+  <SmokeleafAutoTrimmer_Frame.description>自动把新鲜收割的烟草切割成有用的材料</SmokeleafAutoTrimmer_Frame.description>
+
+
+  <!-- Trimming Tools -->
+
+  <TrimmingTools.label>烟草收割工具</TrimmingTools.label>
+  <TrimmingTools.description>提高工作效率.需要放置在工作台附近.一个工作他最多连接两个工作柜</TrimmingTools.description>
+  <TrimmingTools_Blueprint.label>烟草收割工具 (蓝图)</TrimmingTools_Blueprint.label>
+  <TrimmingTools_Blueprint_Install.label>烟草收割工具(蓝图)</TrimmingTools_Blueprint_Install.label>
+  <TrimmingTools_Frame.label>烟草收割工具 (建造中)</TrimmingTools_Frame.label>
+  <TrimmingTools_Frame.description>提高工作效率.需要放置在工作台附近.一个工作他最多连接两个工作柜</TrimmingTools_Frame.description>
+
+
+</LanguageData>

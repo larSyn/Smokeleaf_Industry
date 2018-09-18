@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 切割烟草 -->
+
+  <AutoTrimSmokeleaf.label>自动切割烟草 (x25)</AutoTrimSmokeleaf.label>
+  <AutoTrimSmokeleaf.description>快速切割大量的烟草</AutoTrimSmokeleaf.description>
+  <AutoTrimSmokeleaf.jobString>切割烟草中</AutoTrimSmokeleaf.jobString>
+
+  <BulkAutoTrimSmokeleaf.label>自动切割烟草 (x75)</BulkAutoTrimSmokeleaf.label>
+  <BulkAutoTrimSmokeleaf.description>快速切割大量的烟草</BulkAutoTrimSmokeleaf.description>
+  <BulkAutoTrimSmokeleaf.jobString>切割烟草中</BulkAutoTrimSmokeleaf.jobString>
+
+
+  <!-- Hand 切割烟草-Crafting Spot -->
+
+  <TrimSmokeleafCraftingSpot.label>切割烟草</TrimSmokeleafCraftingSpot.label>
+  <TrimSmokeleafCraftingSpot.description>把烟草切割成有用的材料</TrimSmokeleafCraftingSpot.description>
+  <TrimSmokeleafCraftingSpot.jobString>切割烟草中</TrimSmokeleafCraftingSpot.jobString>
+
+  <BulkTrimSmokeleafCraftingSpot.label>切割烟草(x5)</BulkTrimSmokeleafCraftingSpot.label>
+  <BulkTrimSmokeleafCraftingSpot.description>把大量的烟草切割成有用的材料</BulkTrimSmokeleafCraftingSpot.description>
+  <BulkTrimSmokeleafCraftingSpot.jobString>切割烟草中.</BulkTrimSmokeleafCraftingSpot.jobString>
+
+
+  <!-- Hand 切割烟草-Drug Lab -->
+
+  <TrimSmokeleafDrugLab.label>切割烟草</TrimSmokeleafDrugLab.label>
+  <TrimSmokeleafDrugLab.description>把烟草切割成有用的材料</TrimSmokeleafDrugLab.description>
+  <TrimSmokeleafDrugLab.jobString>切割烟草中</TrimSmokeleafDrugLab.jobString>
+
+  <BulkTrimSmokeleafDrugLab.label>切割烟草 (x5)</BulkTrimSmokeleafDrugLab.label>
+  <BulkTrimSmokeleafDrugLab.description>把大量烟草切割成大量有用的材料</BulkTrimSmokeleafDrugLab.description>
+  <BulkTrimSmokeleafDrugLab.jobString>切割烟草中</BulkTrimSmokeleafDrugLab.jobString>
+
+
+  <!-- Hand 切割烟草-Cultivation Bench -->
+
+  <TrimSmokeleafCultLab.label>切割烟草</TrimSmokeleafCultLab.label>
+  <TrimSmokeleafCultLab.description>高效的把烟草切割成有用的材料</TrimSmokeleafCultLab.description>
+  <TrimSmokeleafCultLab.jobString>切割烟草中</TrimSmokeleafCultLab.jobString>
+
+  <BulkTrimSmokeleafCultLab.label>切割烟草 (x5)</BulkTrimSmokeleafCultLab.label>
+  <BulkTrimSmokeleafCultLab.description>高效的把烟草切割成有用的材料</BulkTrimSmokeleafCultLab.description>
+  <BulkTrimSmokeleafCultLab.jobString>切割烟草中</BulkTrimSmokeleafCultLab.jobString>
+
+  <BulkTrimSmokeleafCultBench.label>切割烟草 (x10)</BulkTrimSmokeleafCultBench.label>
+  <BulkTrimSmokeleafCultBench.description>高效的把烟草切割成有用的材料</BulkTrimSmokeleafCultBench.description>
+  <BulkTrimSmokeleafCultBench.jobString>切割烟草中.</BulkTrimSmokeleafCultBench.jobString>
+
+
+  <!-- Craft Hemp Fabric -->
+
+  <CraftHempFibers.label>编制大麻布</CraftHempFibers.label>
+  <CraftHempFibers.description>把大麻纤维制作成坚韧的大麻布</CraftHempFibers.description>
+  <CraftHempFibers.jobString>编制大麻布中</CraftHempFibers.jobString>
+
+  <BulkCraftHempFibers.label>编制大麻布 (大量)</BulkCraftHempFibers.label>
+  <BulkCraftHempFibers.description>把大量的大麻纤维制作成坚韧的大麻布</BulkCraftHempFibers.description>
+  <BulkCraftHempFibers.jobString>编制大麻布中</BulkCraftHempFibers.jobString>
+
+
+  <!-- Craft Devilsleaf Fabric -->
+
+  <CraftDevilsleafFibers.label>制作魔叶布</CraftDevilsleafFibers.label>
+  <CraftDevilsleafFibers.description>通过处理大麻纤维和魔菇布编织成十分坚韧的布匹</CraftDevilsleafFibers.description>
+  <CraftDevilsleafFibers.jobString>制作魔叶布中</CraftDevilsleafFibers.jobString>
+
+  <BulkCraftDevilsleafFibers.label>制作魔叶布 (大量)</BulkCraftDevilsleafFibers.label>
+  <BulkCraftDevilsleafFibers.description>通过处理大量的大麻纤维和大量的魔菇布编织成十分坚韧的布匹</BulkCraftDevilsleafFibers.description>
+  <BulkCraftDevilsleafFibers.jobString>制作魔叶布中</BulkCraftDevilsleafFibers.jobString>
+
+
+  <!-- Craft Hemp Biocomposite -->
+
+  <CraftHempBiocomposite.label>制作大麻复合材料</CraftHempBiocomposite.label>
+  <CraftHempBiocomposite.description>把大麻纤维和大麻布制作成轻便的大麻复合材料</CraftHempBiocomposite.description>
+  <CraftHempBiocomposite.jobString>制作大麻复合材料中</CraftHempBiocomposite.jobString>
+
+  <BulkCraftHempBiocomposite.label>制作大麻复合材料 (大量)</BulkCraftHempBiocomposite.label>
+  <BulkCraftHempBiocomposite.description>把大量的大麻纤维和大量的大麻布制作成轻便的大麻复合材料</BulkCraftHempBiocomposite.description>
+  <BulkCraftHempBiocomposite.jobString>制作大麻复合材料中</BulkCraftHempBiocomposite.jobString>
+
+
+  <!-- Craft Hemp Biocoal -->
+
+  <CraftHempBiocoal.label>制作大麻生化碳</CraftHempBiocoal.label>
+  <CraftHempBiocoal.description>通过高温碳化大麻纤维</CraftHempBiocoal.description>
+  <CraftHempBiocoal.jobString>碳化大麻中</CraftHempBiocoal.jobString>
+
+  <BulkCraftHempBiocoal.label>制作大麻生化碳 (大量)</BulkCraftHempBiocoal.label>
+  <BulkCraftHempBiocoal.description>通过高温碳化大量大麻纤维</BulkCraftHempBiocoal.description>
+  <BulkCraftHempBiocoal.jobString>碳化大麻中</BulkCraftHempBiocoal.jobString>
+
+
+  <!-- 制作大麻纳米布 -->
+
+  <CraftHempNanosheet.label>制作大麻纳米布</CraftHempNanosheet.label>
+  <CraftHempNanosheet.description>将大麻生化碳与大麻纤维编织成大麻纳米布</CraftHempNanosheet.description>
+  <CraftHempNanosheet.jobString>制作做大麻纳米布中</CraftHempNanosheet.jobString>
+
+  <BulkCraftNanosheet.label>制作大麻纳米布 (大量)</BulkCraftNanosheet.label>
+  <BulkCraftNanosheet.description>将大麻生化碳与大麻纤维编织成大麻纳米布</BulkCraftNanosheet.description>
+  <BulkCraftNanosheet.jobString>制作做大麻纳米布中</BulkCraftNanosheet.jobString>
+
+
+  <!-- Refine Hempoline -->
+
+  <MakeHempoline.label>制作大麻燃油</MakeHempoline.label>
+  <MakeHempoline.description>通过压榨大麻纤维或者大麻种子制作一桶大麻燃油</MakeHempoline.description>
+  <MakeHempoline.jobString>压榨大麻燃油中</MakeHempoline.jobString>
+
+  <MakeBulkHempoline.label>制作大麻燃油 (大量)</MakeBulkHempoline.label>
+  <MakeBulkHempoline.description>通过压榨大麻纤维或者大麻种子制作大量大麻燃油</MakeBulkHempoline.description>
+  <MakeBulkHempoline.jobString>压榨大麻燃油中</MakeBulkHempoline.jobString>
+
+
+  <!-- Refine Chemfuel -->
+
+  <MakeChemfuelFromSmokeleafProducts.label>制作烟草化合燃油</MakeChemfuelFromSmokeleafProducts.label>
+  <MakeChemfuelFromSmokeleafProducts.description>从烟草产品中压榨烟草化合燃油</MakeChemfuelFromSmokeleafProducts.description>
+  <MakeChemfuelFromSmokeleafProducts.jobString>制作烟草化合燃油中</MakeChemfuelFromSmokeleafProducts.jobString>
+
+  <MakeBulkChemfuelFromSmokeleafProducts.label>制作烟草化合燃油 (大量)</MakeBulkChemfuelFromSmokeleafProducts.label>
+  <MakeBulkChemfuelFromSmokeleafProducts.description>从烟草产品中压榨烟草化合燃油</MakeBulkChemfuelFromSmokeleafProducts.description>
+  <MakeBulkChemfuelFromSmokeleafProducts.jobString>压榨烟草化合燃油中</MakeBulkChemfuelFromSmokeleafProducts.jobString>
+
+
+  <!-- Hempcrete Blocks -->
+
+  <MakeHempcreteBlocks.label>制作大麻砖</MakeHempcreteBlocks.label>
+  <MakeHempcreteBlocks.description>把大麻产品压制成砖块</MakeHempcreteBlocks.description>
+  <MakeHempcreteBlocks.jobString>压制大麻砖中</MakeHempcreteBlocks.jobString>
+
+  <MakeHempcreteBlocksBulk.label>制作大麻砖 (大量)</MakeHempcreteBlocksBulk.label>
+  <MakeHempcreteBlocksBulk.description>把大麻产品压制成砖块</MakeHempcreteBlocksBulk.description>
+  <MakeHempcreteBlocksBulk.jobString>压制大麻砖中</MakeHempcreteBlocksBulk.jobString>
+
+
+</LanguageData>

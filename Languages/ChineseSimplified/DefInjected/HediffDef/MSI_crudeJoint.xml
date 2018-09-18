@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <CrudeJointHigh.label>沉迷粗制烟草卷</CrudeJointHigh.label>
+  <CrudeJointHigh.labelNoun>沉迷粗制烟草卷</CrudeJointHigh.labelNoun>
+
+
+  <!-- Smokeleaf addiction -->
+
+  <CrudeJointTolerance.label>沉迷粗制烟草卷耐受</CrudeJointTolerance.label>
+  <CrudeJointTolerance.stages.0.label>弱</CrudeJointTolerance.stages.0.label>
+  <CrudeJointTolerance.stages.1.label>弱</CrudeJointTolerance.stages.1.label>
+  <CrudeJointTolerance.stages.2.label>强</CrudeJointTolerance.stages.2.label>
+  <CrudeJointTolerance.stages.3.label>严重</CrudeJointTolerance.stages.3.label>
+
+  <CrudeJointAddiction.label>沉迷粗制烟草卷沉迷</CrudeJointAddiction.label>
+  <CrudeJointAddiction.stages.1.label>戒断</CrudeJointAddiction.stages.1.label>
+
+
+</LanguageData>

@@ -16,14 +16,10 @@
     </graphicData>
     <selectable>true</selectable>
     <pathCost>10</pathCost>
-    <ingestible>
-      	<nutrition>0.15</nutrition>
-    </ingestible>
     <plant>
     	<fertilitySensitivity>1.0</fertilitySensitivity>
     	<growDays>4.50</growDays>
     	<dieIfLeafless>true</dieIfLeafless>
-    	<reproduces>false</reproduces>
     	<harvestTag>Standard</harvestTag>
     	<harvestedThingDef>SmokeleafLeaves</harvestedThingDef>
     	<harvestYield>6</harvestYield>
@@ -57,14 +53,10 @@
     </graphicData>
     <selectable>true</selectable>
     <pathCost>10</pathCost>
-    <ingestible>
-        <nutrition>0.15</nutrition>
-    </ingestible>
     <plant>
         <fertilitySensitivity>1.0</fertilitySensitivity>
         <growDays>10.50</growDays>
         <dieIfLeafless>true</dieIfLeafless>
-        <reproduces>false</reproduces>
         <harvestTag>Standard</harvestTag>
         <harvestedThingDef>SmokeleafLeaves</harvestedThingDef>
         <harvestYield>16</harvestYield>

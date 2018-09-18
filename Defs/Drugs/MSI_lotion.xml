@@ -25,6 +25,7 @@
 				<severity>1.0</severity>
 			</li>
 		</outcomeDoers>
+  		<joy>0.1</joy>
     </ingestible>
     <recipeMaker>
 		<researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
@@ -38,7 +39,7 @@
     </recipeMaker>
     <costList>
 		<CBD>2</CBD>
-		<Medicine>1</Medicine>
+		<MedicineIndustrial>1</MedicineIndustrial>
     </costList>
     <comps>
       <li Class="CompProperties_Drug">

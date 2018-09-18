@@ -31,7 +31,7 @@
 		<size>(2,2)</size>
 		<costList>
 		  <Steel>150</Steel>
-		  <Component>3</Component>
+		  <ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
 		<comps>
 		  <li Class="CompProperties_Power">
@@ -86,11 +86,11 @@
 	        	<rect>(0,0.35,1,0.3)</rect>
 	      	</damageData>
 	    </graphicData>
-	    <blueprintGraphicData>
-	      <texPath>Things/Building/Linked/PowerConduit_Blueprint_Atlas</texPath>
-	    </blueprintGraphicData>
 	    <uiIconPath>UI/Icons/MSI_hempeneConduit_icon</uiIconPath>
 	    <building>
+	    	<blueprintGraphicData>
+	      		<texPath>Things/Building/Linked/PowerConduit_Blueprint_Atlas</texPath>
+	    	</blueprintGraphicData>
 			<ai_chillDestination>false</ai_chillDestination>
 			<isInert>true</isInert>
 	        <isEdifice>false</isEdifice>
@@ -125,7 +125,7 @@
 	    <rotatable>false</rotatable>
 	    <selectable>true</selectable>
 	    <neverMultiSelect>true</neverMultiSelect>
-	    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+	    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 	    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 	    <designationCategory>MSI</designationCategory>
 	    <clearBuildingArea>false</clearBuildingArea>
@@ -160,7 +160,10 @@
 	    <castEdgeShadows>true</castEdgeShadows>
 	    <fillPercent>0.40</fillPercent>
 	    <tickerType>Normal</tickerType>
-	    <minifiedDef>MinifiedFurniture</minifiedDef>
+	    <minifiedDef>MinifiedThing</minifiedDef>
+    	<thingCategories>
+      		<li>BuildingsPower</li>
+    	</thingCategories>
 	    <statBases>
 	      <MaxHitPoints>250</MaxHitPoints>
 	      <WorkToBuild>1000</WorkToBuild>
@@ -173,7 +176,7 @@
     	<costStuffCount>50</costStuffCount>
 	    <costList>
 	      <HempNanosheet>50</HempNanosheet>
-	      <Component>2</Component>
+	      <ComponentIndustrial>2</ComponentIndustrial>
 	    </costList>
 	    <stuffCategories>
 	      <li>Metallic</li>
@@ -182,7 +185,7 @@
 	      <li Class="CompProperties_Battery">
 	        <storedEnergyMax>2500</storedEnergyMax>
 	        <efficiency>0.75</efficiency>
-	        <startElectricalFires>true</startElectricalFires>
+        	<shortCircuitInRain>true</shortCircuitInRain>
 	        <transmitsPower>true</transmitsPower>
 	      </li>
 		  <li Class="CompProperties_Glower">
@@ -233,7 +236,7 @@
     	<costStuffCount>50</costStuffCount>
 	    <costList>
 	      <HempNanosheet>25</HempNanosheet>
-	      <Component>3</Component>
+	      <ComponentIndustrial>3</ComponentIndustrial>
 	    </costList>
 	    <stuffCategories>
 	      <li>Metallic</li>

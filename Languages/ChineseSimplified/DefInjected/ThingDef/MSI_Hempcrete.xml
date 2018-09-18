@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Hempcrete -->
+
+  <BlocksHempcrete.label>大麻砖</BlocksHempcrete.label>
+  <BlocksHempcrete.description>由大麻制作砖块,不是非常坚硬</BlocksHempcrete.description>
+  <BlocksHempcrete.stuffProps.stuffAdjective>大麻砖</BlocksHempcrete.stuffProps.stuffAdjective>
+
+
+</LanguageData>

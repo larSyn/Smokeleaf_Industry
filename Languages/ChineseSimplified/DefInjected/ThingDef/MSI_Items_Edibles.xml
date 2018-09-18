@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Smokeleaf Butter -->
+
+  <SmokeleafButter.label>大麻黄油</SmokeleafButter.label>
+  <SmokeleafButter.description>把烟叶花苞在牛奶中泡煮然后制成黄油</SmokeleafButter.description>
+
+
+  <!-- Hemp Flour -->
+
+  <HempFlour.label>大麻面粉</HempFlour.label>
+  <HempFlour.description>由大麻种子研磨制成的烘焙的大麻面粉</HempFlour.description>
+
+
+  <!-- Hemp Milk -->
+
+  <HempMilk.label>大麻奶</HempMilk.label>
+  <HempMilk.description>在水中浸泡过的烟草种子研磨成的“奶”</HempMilk.description>
+
+
+  <!-- Hemp Protein -->
+
+  <HempProtein.label>大麻蛋白质粉</HempProtein.label>
+  <HempProtein.description>大麻种子研磨成细腻的粉末以补充蛋白质</HempProtein.description>
+
+
+  <!-- Smokeleaf Seed Oil -->
+
+  <SmokeleafSeedOil.label>烟草食用油</SmokeleafSeedOil.label>
+  <SmokeleafSeedOil.description>烟草种子压榨成食用油，毫无医用价值但是可以用于烹饪</SmokeleafSeedOil.description>
+
+
+  <!-- Edibles -->
+
+  <SmokeleafBrownie.label>烟叶布朗尼</SmokeleafBrownie.label>
+  <SmokeleafBrownie.description>“特别”美味的布朗尼</SmokeleafBrownie.description>
+  <SmokeleafBrownie.ingestible.ingestCommandString>吃 {0}</SmokeleafBrownie.ingestible.ingestCommandString>
+  <SmokeleafBrownie.ingestible.ingestReportString>正在吃 {0}.</SmokeleafBrownie.ingestible.ingestReportString>
+
+  <SmokeleafCookie.label>烟叶小甜饼</SmokeleafCookie.label>
+  <SmokeleafCookie.description>一种会让你感觉很舒服的小甜饼</SmokeleafCookie.description>
+  <SmokeleafCookie.ingestible.ingestCommandString>吃 {0}</SmokeleafCookie.ingestible.ingestCommandString>
+  <SmokeleafCookie.ingestible.ingestReportString>正在吃 {0}.</SmokeleafCookie.ingestible.ingestReportString>
+
+  <SmokeleafNutriLeaf.label>烟叶营养棒</SmokeleafNutriLeaf.label>
+  <SmokeleafNutriLeaf.description>一种用水果和烟叶制成的零食能量棒,很有嚼劲</SmokeleafNutriLeaf.description>
+  <SmokeleafNutriLeaf.ingestible.ingestCommandString>吃 {0}</SmokeleafNutriLeaf.ingestible.ingestCommandString>
+  <SmokeleafNutriLeaf.ingestible.ingestReportString>正在吃 {0}.</SmokeleafNutriLeaf.ingestible.ingestReportString>
+
+
+  <!-- Advanced Edibles -->
+
+  <SmokeleafDeEnergyDrink.label>烟叶能量饮料</SmokeleafDeEnergyDrink.label>
+  <SmokeleafDeEnergyDrink.description>在接下去的五小时不要做任何计划.</SmokeleafDeEnergyDrink.description>
+  <SmokeleafDeEnergyDrink.ingestible.ingestCommandString>喝 {0}</SmokeleafDeEnergyDrink.ingestible.ingestCommandString>
+  <SmokeleafDeEnergyDrink.ingestible.ingestReportString>正在喝 {0}.</SmokeleafDeEnergyDrink.ingestible.ingestReportString>
+
+  <SmokeleafSmoothie.label>烟草奶昔</SmokeleafSmoothie.label>
+  <SmokeleafSmoothie.description>一种美味的奶昔.</SmokeleafSmoothie.description>
+  <SmokeleafSmoothie.ingestible.ingestCommandString>喝 {0}</SmokeleafSmoothie.ingestible.ingestCommandString>
+  <SmokeleafSmoothie.ingestible.ingestReportString>正在喝{0}.</SmokeleafSmoothie.ingestible.ingestReportString>
+
+  <SmokeleafCandy.label>烟草硬糖</SmokeleafCandy.label>
+  <SmokeleafCandy.description>一个水果味的硬糖</SmokeleafCandy.description>
+  <SmokeleafCandy.ingestible.ingestCommandString>吃 {0}</SmokeleafCandy.ingestible.ingestCommandString>
+  <SmokeleafCandy.ingestible.ingestReportString>正在吃 {0}.</SmokeleafCandy.ingestible.ingestReportString>
+
+
+  <!-- Infused Meal -->
+
+  <MealInfused.label>大麻餐</MealInfused.label>
+  <MealInfused.description>一个能填饱肚子的简餐，他好像还会让你沉迷.</MealInfused.description>
+
+
+</LanguageData>

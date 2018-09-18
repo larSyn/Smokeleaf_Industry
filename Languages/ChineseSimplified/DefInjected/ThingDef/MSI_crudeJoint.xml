@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <CrudeSmokeleafJoint.label>粗糙的烟草卷</CrudeSmokeleafJoint.label>
+  <CrudeSmokeleafJoint.description>胡乱的吧烟草花卷进叶子里然后抽取.非常强效以及昂贵.这个毒品可以提高人物心情和食欲但是会降低人物的移动速率.不会有任何物理依赖性但是会有心理依赖性</CrudeSmokeleafJoint.description>
+  <CrudeSmokeleafJoint.ingestible.ingestCommandString>抽烟 {0}</CrudeSmokeleafJoint.ingestible.ingestCommandString>
+  <CrudeSmokeleafJoint.ingestible.ingestReportString>抽烟中 {0}.</CrudeSmokeleafJoint.ingestible.ingestReportString>
+
+
+</LanguageData>

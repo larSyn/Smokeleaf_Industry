@@ -3,7 +3,7 @@
   
   <!--========== Hemp Fiber ==========-->
 	
-	<ThingDef ParentName="MSI_RoughPlantBase">
+	<ThingDef ParentName="MSI_ResourceBase">
 		<defName>HempFiber</defName>
 		<label>hemp fibers</label>
 		<description>Leftover stalks and leaves from trimming the smokeleaf plant.</description>
@@ -14,7 +14,7 @@
 		<statBases>
 			<MaxHitPoints>90</MaxHitPoints>
 			<MarketValue>1</MarketValue>
-			<Mass>0.25</Mass>
+			<Mass>0.15</Mass>
 			<Flammability>1.0</Flammability>
 			<DeteriorationRate>12</DeteriorationRate>
       		<SharpDamageMultiplier>0.2</SharpDamageMultiplier>
@@ -29,7 +29,7 @@
 			<color>(138,139,95)</color>
 			<constructEffect>ConstructWood</constructEffect>
 			<appearance>Planks</appearance>
-			<soundImpactStuff>BulletImpactWood</soundImpactStuff>
+			<soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
 			<soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
 			<soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
 			<statFactors>
@@ -62,7 +62,7 @@
   
   <!--========== Smokeleaf Buds ==========-->
   
-    <ThingDef ParentName="MSI_RoughPlantBase">
+    <ThingDef ParentName="MSI_ResourceBase">
 		<defName>SmokeleafBuds</defName>
 		<label>smokeleaf buds</label>
 		<description>The flower of the smokeleaf plant. Contains all the good stuff.</description>
@@ -72,7 +72,7 @@
 		</graphicData>
 		<statBases>
 			<MaxHitPoints>90</MaxHitPoints>
-			<MarketValue>1.15</MarketValue>
+			<MarketValue>1.25</MarketValue>
 			<Mass>0.05</Mass>
 			<Flammability>1.0</Flammability>
 			<DeteriorationRate>8</DeteriorationRate>
@@ -88,7 +88,7 @@
   
   <!--========== Smokeleaf Seeds ==========-->
   
-	<ThingDef ParentName="MSI_RoughPlantBase">
+	<ThingDef ParentName="MSI_ResourceBase">
 		<defName>SmokeleafSeed</defName>
 		<label>smokeleaf seed</label>
 		<description>The seed of the smokeleaf plant.</description>
@@ -98,6 +98,7 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>1</MarketValue>
+			<Mass>0.05</Mass>
 			<Flammability>1.0</Flammability>
 		</statBases>
 		<thingCategories>
@@ -117,15 +118,19 @@
 		<description>Fabric woven from hemp fibers.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/Cloth</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
+      		<graphicClass>Graphic_StackCount</graphicClass>
 			<color>(138,139,108)</color>
 		</graphicData>
 		<statBases>
 			<MaxHitPoints>110</MaxHitPoints>
-			<MarketValue>6</MarketValue>
+			<MarketValue>4</MarketValue>
 			<Mass>0.05</Mass>
-			<Flammability>1.0</Flammability>
 			<DeteriorationRate>8</DeteriorationRate>
+      		<StuffPower_Armor_Sharp>0.45</StuffPower_Armor_Sharp>
+      		<StuffPower_Armor_Blunt>0.15</StuffPower_Armor_Blunt>
+      		<StuffPower_Armor_Heat>0.5</StuffPower_Armor_Heat>
+      		<StuffPower_Insulation_Cold>22</StuffPower_Insulation_Cold>
+      		<StuffPower_Insulation_Heat>22</StuffPower_Insulation_Heat>
 		</statBases>
 		<stuffProps>
 			<categories>
@@ -133,20 +138,9 @@
 			</categories>
 			<color>(138,139,108)</color>
 			<commonality>1.4</commonality>
-			<statOffsets>
-				<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
-				<ArmorRating_Sharp>0.075</ArmorRating_Sharp>
-				<ArmorRating_Heat>0.05</ArmorRating_Heat>
-				<ArmorRating_Electric>0.025</ArmorRating_Electric>
-			</statOffsets>
 			<statFactors>
-				<WorkToMake>1.3</WorkToMake>
-				<ArmorRating_Blunt>1.25</ArmorRating_Blunt>
-				<ArmorRating_Sharp>1.75</ArmorRating_Sharp>
-				<ArmorRating_Heat>1.5</ArmorRating_Heat>
-				<ArmorRating_Electric>1.0</ArmorRating_Electric>
-				<Insulation_Cold>1.0</Insulation_Cold>
-				<Insulation_Heat>1.5</Insulation_Heat>
+				<Flammability>1.0</Flammability>
+        		<MaxHitPoints>1.3</MaxHitPoints>
 			</statFactors>	
 		</stuffProps>
 		<thingCategories>
@@ -166,15 +160,19 @@
 		<description>Hemp fabric blended with devilstrand to make a new textile with the best qualities of each material.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/Cloth</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
+			<graphicClass>Graphic_StackCount</graphicClass>
 			<color>(97,33,26)</color>
 		</graphicData>
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
 			<MarketValue>12</MarketValue>
 			<Mass>0.05</Mass>
-			<Flammability>1.0</Flammability>
 			<DeteriorationRate>8</DeteriorationRate>
+      		<StuffPower_Armor_Sharp>1.40</StuffPower_Armor_Sharp>
+      		<StuffPower_Armor_Blunt>0.5</StuffPower_Armor_Blunt>
+      		<StuffPower_Armor_Heat>3.5</StuffPower_Armor_Heat>
+      		<StuffPower_Insulation_Cold>22</StuffPower_Insulation_Cold>
+      		<StuffPower_Insulation_Heat>22</StuffPower_Insulation_Heat>
 		</statBases>
 		<stuffProps>
 			<categories>
@@ -182,20 +180,9 @@
 			</categories>
 			<color>(97,33,26)</color>
 			<commonality>1.4</commonality>
-			<statOffsets>
-				<ArmorRating_Blunt>0.075</ArmorRating_Blunt>
-				<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
-				<ArmorRating_Heat>0.05</ArmorRating_Heat>
-				<ArmorRating_Electric>0.05</ArmorRating_Electric>
-			</statOffsets>
 			<statFactors>
-				<WorkToMake>1.3</WorkToMake>
-				<ArmorRating_Blunt>1.5</ArmorRating_Blunt>
-				<ArmorRating_Sharp>3.0</ArmorRating_Sharp>
-				<ArmorRating_Heat>1.5</ArmorRating_Heat>
-				<ArmorRating_Electric>2.5</ArmorRating_Electric>
-				<Insulation_Cold>1.25</Insulation_Cold>
-				<Insulation_Heat>1.5</Insulation_Heat>
+				<Flammability>1.0</Flammability>
+        		<MaxHitPoints>1.3</MaxHitPoints>
 			</statFactors>	
 		</stuffProps>
 		<thingCategories>
@@ -212,7 +199,7 @@
 	<ThingDef ParentName="MSI_ResourceBase">
 		<defName>HempBiocomposite</defName>
 		<label>hemp biocomposite</label>
-		<description>A biocomposite material made from hemp fibers, hemp fabric and biocoal. Useful as a cheap, sustainable alternative for metals.</description>
+		<description>A biocomposite material made from hemp fibers, hemp fabric and biocoal. Useful as a sustainable alternative for metals.</description>
 		<graphicData>
 			<texPath>Things/Items/MSI_bioComp</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -222,7 +209,7 @@
     	<soundDrop>Metal_Drop</soundDrop>
     	<useHitPoints>false</useHitPoints>
 		<statBases>
-			<MarketValue>42</MarketValue>
+			<MarketValue>10</MarketValue>
 			<Mass>0.25</Mass>
       		<SharpDamageMultiplier>0.55</SharpDamageMultiplier>
       		<BluntDamageMultiplier>0.85</BluntDamageMultiplier>
@@ -233,7 +220,7 @@
 			</categories>
 			<color>(123,123,96)</color>
 			<commonality>1.4</commonality>
-      		<soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      		<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
       		<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
       		<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
 			<statFactors>
@@ -268,7 +255,7 @@
     	<useHitPoints>false</useHitPoints>
 		<statBases>
 			<MarketValue>5</MarketValue>
-			<Mass>0.25</Mass>
+			<Mass>0.1</Mass>
 		</statBases>
 		<thingCategories>
 			<li>Manufactured</li>
@@ -304,7 +291,7 @@
 			</categories>
 			<color>(72,74,1)</color>
 			<commonality>1.4</commonality>
-      		<soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      		<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
       		<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
       		<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
 			<statFactors>
@@ -384,7 +371,7 @@
 			<SmokeleafBuds>25</SmokeleafBuds>
 		</costList>
 		<recipeMaker>
-			<workSpeedStat>DrugProductionSpeed</workSpeedStat>
+			<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
 			<workSkill>Intellectual</workSkill>
 			<recipeUsers>
 				<li>MedicinalsLab</li>
@@ -422,11 +409,11 @@
 			<WorkToMake>750</WorkToMake>
 		</statBases>
 		<costList>
-			<Medicine>1</Medicine>
+			<MedicineIndustrial>1</MedicineIndustrial>
 			<CBD>1</CBD>
 		</costList>
 		<recipeMaker>
-			<workSpeedStat>DrugProductionSpeed</workSpeedStat>
+			<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
 			<workSkill>Intellectual</workSkill>
 			<recipeUsers>
 				<li>MedicinalsLab</li>

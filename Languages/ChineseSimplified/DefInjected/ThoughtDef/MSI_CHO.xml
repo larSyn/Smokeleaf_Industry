@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <CHOHigh.stages.0.label>沉迷烟草快感</CHOHigh.stages.0.label>
+  <CHOHigh.stages.0.description>哦..天哪..我好想死</CHOHigh.stages.0.description>
+
+
+  <!-- CHO addiction -->
+
+  <CHOWithdrawal.stages.1.label>烟草碳水化合物戒断</CHOWithdrawal.stages.1.label>
+  <CHOWithdrawal.stages.1.description>我还要..更多..</CHOWithdrawal.stages.1.description>
+
+
+</LanguageData>

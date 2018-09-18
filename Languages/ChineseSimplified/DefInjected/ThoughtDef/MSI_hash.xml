@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <HashHigh.stages.0.label>沉迷麻醉剂效果</HashHigh.stages.0.label>
+  <HashHigh.stages.0.description>感觉麻麻地，但是这让我整个人都兴奋起来了.</HashHigh.stages.0.description>
+
+
+  <!-- Hash addiction -->
+
+  <HashWithdrawal.stages.1.label>麻醉剂戒断</HashWithdrawal.stages.1.label>
+  <HashWithdrawal.stages.1.description>这地方真无聊，如果有点麻醉剂就好了</HashWithdrawal.stages.1.description>
+
+
+</LanguageData>

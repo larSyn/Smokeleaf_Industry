@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <SmokeleafDistillateHigh.label>点烟草蒸馏液</SmokeleafDistillateHigh.label>
+
+
+  <!-- Smokeleaf distillate addiction -->
+
+  <SmokeleafDistillateTolerance.label>烟草蒸馏液耐受</SmokeleafDistillateTolerance.label>
+  <SmokeleafDistillateTolerance.stages.1.label>弱</SmokeleafDistillateTolerance.stages.1.label>
+  <SmokeleafDistillateTolerance.stages.2.label>强</SmokeleafDistillateTolerance.stages.2.label>
+  <SmokeleafDistillateTolerance.stages.3.label>严重</SmokeleafDistillateTolerance.stages.3.label>
+
+  <SmokeleafDistillateAddiction.label>烟草蒸馏液沉迷</SmokeleafDistillateAddiction.label>
+  <SmokeleafDistillateAddiction.stages.1.label>戒断</SmokeleafDistillateAddiction.stages.1.label>
+
+
+</LanguageData>

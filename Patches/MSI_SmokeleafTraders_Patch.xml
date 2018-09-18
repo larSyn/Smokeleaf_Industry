@@ -6,10 +6,6 @@
   <Operation Class="PatchOperationSequence">
 	    <success>Always</success>
 		<operations>
-            <li Class="ModCheck.FindFile">
-                <modName>Core</modName>
-                <file>TraderKinds_Base_Neolithic.xml</file>
-            </li>
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/TraderKindDef[defName = "Base_Neolithic_Standard"]/stockGenerators</xpath>
 				<value>
@@ -54,10 +50,6 @@
 	<Operation Class="PatchOperationSequence">
 	    <success>Always</success>
 		<operations>
-            <li Class="ModCheck.FindFile">
-                <modName>Core</modName>
-                <file>TraderKinds_Base_Outlander.xml</file>
-            </li>
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/TraderKindDef[defName = "Base_Outlander_Standard"]/stockGenerators</xpath>
 				<value>
@@ -170,10 +162,6 @@
 	<Operation Class="PatchOperationSequence">
 	    <success>Always</success>
 	    <operations>
-            <li Class="ModCheck.FindFile">
-                <modName>Core</modName>
-                <file>TraderKinds_Caravan_Outlander.xml</file>
-            </li>
 	    	<li Class="PatchOperationAdd">
 				<xpath>Defs/TraderKindDef[defName = "Caravan_Outlander_BulkGoods"]/stockGenerators</xpath>
 				<value>
@@ -206,10 +194,6 @@
 	<Operation Class="PatchOperationSequence">
 	    <success>Always</success>
 		<operations>
-            <li Class="ModCheck.FindFile">
-                <modName>Core</modName>
-                <file>TraderKinds_Orbital_Misc.xml</file>
-            </li>
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/TraderKindDef[defName = "Orbital_BulkGoods"]/stockGenerators</xpath>
 				<value>

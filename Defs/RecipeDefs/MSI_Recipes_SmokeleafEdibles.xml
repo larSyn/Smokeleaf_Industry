@@ -180,17 +180,14 @@
       <HempMilk>1</HempMilk>
     </products>
     <fixedIngredientFilter>
-    <thingDefs>
-            <li>SmokeleafSeed</li>
-         </thingDefs>
-      <disallowedSpecialFilters>
-        <li>AllowRotten</li>
-      </disallowedSpecialFilters>
+      <thingDefs>
+        <li>SmokeleafSeed</li>
+      </thingDefs>
     </fixedIngredientFilter>
-  <recipeUsers>
-    <li>FueledStove</li>
-    <li>ElectricStove</li>
-  </recipeUsers>
+    <recipeUsers>
+      <li>FueledStove</li>
+      <li>ElectricStove</li>
+    </recipeUsers>
   </RecipeDef>
   
   <RecipeDef ParentName="MSI_CookMealBase">
@@ -218,16 +215,13 @@
     </products>
     <fixedIngredientFilter>
     <thingDefs>
-            <li>SmokeleafSeed</li>
-         </thingDefs>
-      <disallowedSpecialFilters>
-        <li>AllowRotten</li>
-      </disallowedSpecialFilters>
+      <li>SmokeleafSeed</li>
+    </thingDefs>
     </fixedIngredientFilter>
-  <recipeUsers>
-    <li>FueledStove</li>
-    <li>ElectricStove</li>
-  </recipeUsers>
+    <recipeUsers>
+      <li>FueledStove</li>
+      <li>ElectricStove</li>
+    </recipeUsers>
   </RecipeDef>
 
   <!--========== Hemp Protein ==========-->
@@ -257,16 +251,13 @@
     </products>
     <fixedIngredientFilter>
     <thingDefs>
-            <li>SmokeleafSeed</li>
-         </thingDefs>
-      <disallowedSpecialFilters>
-        <li>AllowRotten</li>
-      </disallowedSpecialFilters>
+      <li>SmokeleafSeed</li>
+    </thingDefs>
     </fixedIngredientFilter>
-  <recipeUsers>
-    <li>FueledStove</li>
-    <li>ElectricStove</li>
-  </recipeUsers>
+    <recipeUsers>
+      <li>FueledStove</li>
+      <li>ElectricStove</li>
+    </recipeUsers>
   </RecipeDef>
   
   <RecipeDef ParentName="MSI_CookMealBase">
@@ -293,17 +284,14 @@
       <HempProtein>5</HempProtein>
     </products>
     <fixedIngredientFilter>
-    <thingDefs>
-            <li>SmokeleafSeed</li>
-         </thingDefs>
-      <disallowedSpecialFilters>
-        <li>AllowRotten</li>
-      </disallowedSpecialFilters>
+      <thingDefs>
+        <li>SmokeleafSeed</li>
+      </thingDefs>
     </fixedIngredientFilter>
-  <recipeUsers>
-    <li>FueledStove</li>
-    <li>ElectricStove</li>
-  </recipeUsers>
+    <recipeUsers>
+      <li>FueledStove</li>
+      <li>ElectricStove</li>
+    </recipeUsers>
   </RecipeDef>
   
   <!--========== Smokeleaf Butter ==========-->
@@ -349,9 +337,6 @@
         <li>HempMilk</li>
         <li>SmokeleafSeedOil</li>
       </thingDefs>
-      <disallowedSpecialFilters>
-        <li>AllowRotten</li>
-      </disallowedSpecialFilters>
     </fixedIngredientFilter>
     <recipeUsers>
       <li>FueledStove</li>
@@ -401,9 +386,6 @@
         <li>HempMilk</li>
         <li>SmokeleafSeedOil</li>
       </thingDefs>
-      <disallowedSpecialFilters>
-        <li>AllowRotten</li>
-      </disallowedSpecialFilters>
     </fixedIngredientFilter>
     <recipeUsers>
       <li>FueledStove</li>
@@ -450,9 +432,6 @@
         <li>SmokeleafButter</li>
 			  <li>HempFlour</li>
       </thingDefs>
-      <disallowedSpecialFilters>
-        <li>AllowRotten</li>
-      </disallowedSpecialFilters>
     </fixedIngredientFilter>
   	<recipeUsers>
   		<li>FueledStove</li>
@@ -497,9 +476,6 @@
         <li>SmokeleafButter</li>
   			<li>HempFlour</li>
       </thingDefs>
-      <disallowedSpecialFilters>
-        <li>AllowRotten</li>
-      </disallowedSpecialFilters>
     </fixedIngredientFilter>
   	<recipeUsers>
   		<li>FueledStove</li>
@@ -555,9 +531,6 @@
   			<li>HempFlour</li>
   			<li>Chocolate</li>
       </thingDefs>
-      <disallowedSpecialFilters>
-        <li>AllowRotten</li>
-      </disallowedSpecialFilters>
     </fixedIngredientFilter>
   	<recipeUsers>
   		<li>FueledStove</li>
@@ -611,9 +584,6 @@
 			  <li>HempFlour</li>
 			  <li>Chocolate</li>
       </thingDefs>
-      <disallowedSpecialFilters>
-        <li>AllowRotten</li>
-      </disallowedSpecialFilters>
     </fixedIngredientFilter>
   	<recipeUsers>
   		<li>FueledStove</li>
@@ -671,9 +641,6 @@
   			<li>SmokeleafButter</li>
   			<li>HempFlour</li>
       </thingDefs>
-      <disallowedSpecialFilters>
-        <li>AllowRotten</li>
-      </disallowedSpecialFilters>
     </fixedIngredientFilter>
   	<recipeUsers>
   		<li>FueledStove</li>
@@ -729,9 +696,6 @@
   			<li>SmokeleafButter</li>
   			<li>HempFlour</li>
       </thingDefs>
-      <disallowedSpecialFilters>
-        <li>AllowRotten</li>
-      </disallowedSpecialFilters>
     </fixedIngredientFilter>
   	<recipeUsers>
   		<li>FueledStove</li>
@@ -777,9 +741,6 @@
         <li>SmokeleafDistillate</li>
   			<li>Ambrosia</li>
       </thingDefs>
-      <disallowedSpecialFilters>
-        <li>AllowRotten</li>
-      </disallowedSpecialFilters>
     </fixedIngredientFilter>
   	<recipeUsers>
   		<li>FueledStove</li>
@@ -823,9 +784,6 @@
         <li>SmokeleafDistillate</li>
   			<li>Ambrosia</li>
       </thingDefs>
-      <disallowedSpecialFilters>
-        <li>AllowRotten</li>
-      </disallowedSpecialFilters>
     </fixedIngredientFilter>
   	<recipeUsers>
   		<li>FueledStove</li>
@@ -885,9 +843,6 @@
         <li>Milk</li>
 		    <li>HempMilk</li>
       </thingDefs>
-      <disallowedSpecialFilters>
-      <li>AllowRotten</li>
-      </disallowedSpecialFilters>
     </fixedIngredientFilter>
   	<recipeUsers>
   		<li>FueledStove</li>
@@ -945,9 +900,6 @@
 		    <li>Milk</li>
 		    <li>HempMilk</li>
       </thingDefs>
-      <disallowedSpecialFilters>
-      <li>AllowRotten</li>
-      </disallowedSpecialFilters>
     </fixedIngredientFilter>
   	<recipeUsers>
   		<li>FueledStove</li>
@@ -1005,9 +957,6 @@
         <li>RawAgave</li>
         <li>SmokeleafSeedOil</li>
       </thingDefs>
-      <disallowedSpecialFilters>
-      <li>AllowRotten</li>
-      </disallowedSpecialFilters>
     </fixedIngredientFilter>
     <recipeUsers>
       <li>FueledStove</li>
@@ -1063,9 +1012,6 @@
         <li>RawAgave</li>
         <li>SmokeleafSeedOil</li>
       </thingDefs>
-      <disallowedSpecialFilters>
-      <li>AllowRotten</li>
-      </disallowedSpecialFilters>
     </fixedIngredientFilter>
     <recipeUsers>
       <li>FueledStove</li>
@@ -1108,9 +1054,6 @@
 				<li>MealFine</li>
 				<li>SmokeleafButter</li>
 			</thingDefs>
-			<disallowedSpecialFilters>
-				<li>AllowRotten</li>
-			</disallowedSpecialFilters>
 		</fixedIngredientFilter>
 		<products>
 			<MealInfused>1</MealInfused>
@@ -1154,9 +1097,6 @@
 				<li>MealSimple</li>
 				<li>SmokeleafButter</li>
 			</thingDefs>
-			<disallowedSpecialFilters>
-				<li>AllowRotten</li>
-			</disallowedSpecialFilters>
 		</fixedIngredientFilter>
 		<products>
 			<MealInfused>5</MealInfused>

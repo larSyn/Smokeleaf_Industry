@@ -10,7 +10,7 @@
     <fillPercent>0.20</fillPercent>
     <pathCost>8</pathCost>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
     <designationCategory>Furniture</designationCategory>
     <rotatable>false</rotatable>
     <graphicData>
@@ -58,7 +58,7 @@
     </statBases>
     <costList>
       <Steel>50</Steel>
-	    <Component>1</Component>
+	    <ComponentIndustrial>1</ComponentIndustrial>
     </costList>
     <comps>
       <li Class="CompProperties_Glower">
@@ -68,7 +68,6 @@
       </li>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
-        <startElectricalFires>true</startElectricalFires>
 		    <shortCircuitInRain>true</shortCircuitInRain>
         <basePowerConsumption>1000</basePowerConsumption>
       </li>
@@ -82,8 +81,8 @@
 	<fertility>2.0</fertility>
 	<researchPrerequisites>
 	  <li>IndustrialSmokeleafCultivation</li>
-    </researchPrerequisites>
-    <specialDisplayRadius>5.8</specialDisplayRadius>
+  </researchPrerequisites>
+  <specialDisplayRadius>5.8</specialDisplayRadius>
 	<designationCategory>MSI</designationCategory>
   </ThingDef>
   
@@ -114,7 +113,7 @@
     </statBases>
     <costList>
       <Steel>35</Steel>
-      <Component>1</Component>
+      <ComponentIndustrial>1</ComponentIndustrial>
     </costList>
     <comps>
       <li Class="CompProperties_Glower">
@@ -124,7 +123,6 @@
       </li>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
-        <startElectricalFires>true</startElectricalFires>
         <shortCircuitInRain>true</shortCircuitInRain>
         <basePowerConsumption>300</basePowerConsumption>
       </li>
@@ -199,7 +197,6 @@
       </li>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
-        <startElectricalFires>true</startElectricalFires>
         <shortCircuitInRain>true</shortCircuitInRain>
         <basePowerConsumption>15</basePowerConsumption>
       </li>
@@ -253,7 +250,7 @@
     <fertility>1.5</fertility>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
     <building>
-      <defaultPlantToGrow>PlantSmokeleaf</defaultPlantToGrow>
+      <defaultPlantToGrow>Plant_Smokeleaf</defaultPlantToGrow>
       <sowTag>Hydroponic</sowTag>
     </building>
     <tickerType>Rare</tickerType>
@@ -303,7 +300,7 @@
     <fertility>2.0</fertility>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
     <building>
-      <defaultPlantToGrow>PlantSmokeleaf</defaultPlantToGrow>
+      <defaultPlantToGrow>Plant_Smokeleaf</defaultPlantToGrow>
       <sowTag>Hydroponic</sowTag>
     </building>
     <tickerType>Rare</tickerType>
@@ -350,14 +347,13 @@
     <costStuffCount>50</costStuffCount>
     <costList>
       <Steel>25</Steel>
-      <Component>1</Component>
+      <ComponentIndustrial>1</ComponentIndustrial>
     </costList>
     <comps>
       <li Class="CompProperties_Forbiddable"/>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>350</basePowerConsumption>
-        <startElectricalFires>true</startElectricalFires>
       </li>
       <li Class="CompProperties_Glower">
         <overlightRadius>4.0</overlightRadius>
@@ -368,7 +364,7 @@
     <fertility>5.0</fertility>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
     <building>
-      <defaultPlantToGrow>PlantSmokeleaf</defaultPlantToGrow>
+      <defaultPlantToGrow>Plant_Smokeleaf</defaultPlantToGrow>
       <sowTag>Hydroponic</sowTag>
     </building>
     <researchPrerequisites>

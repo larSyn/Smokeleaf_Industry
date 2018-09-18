@@ -21,12 +21,13 @@
     <ingestible>
 		<foodType>Fluid, Processed</foodType>
 		<ingestSound>Ingest_Beer</ingestSound>
-		<outcomeDoers>
-			<li Class="IngestionOutcomeDoer_GiveHediff">
-				<hediffDef>SmokeleafTinctureHigh</hediffDef>
-				<severity>1.0</severity>
-			</li>
-		</outcomeDoers>
+		  <outcomeDoers>
+			  <li Class="IngestionOutcomeDoer_GiveHediff">
+				  <hediffDef>SmokeleafTinctureHigh</hediffDef>
+				  <severity>1.0</severity>
+			  </li>
+		  </outcomeDoers>
+      <joy>0.1</joy>
     </ingestible>
     <recipeMaker>
   		<researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>

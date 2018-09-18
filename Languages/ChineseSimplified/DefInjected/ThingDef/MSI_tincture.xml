@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <SmokeleafTincture.label>烟草药酊</SmokeleafTincture.label>
+  <SmokeleafTincture.description>一种强效的烟草要定能有效地减低痛苦.使用者会有点头晕</SmokeleafTincture.description>
+  <SmokeleafTincture.ingestible.ingestCommandString>使用 {0}</SmokeleafTincture.ingestible.ingestCommandString>
+  <SmokeleafTincture.ingestible.ingestReportString>使用中 {0}.</SmokeleafTincture.ingestible.ingestReportString>
+
+
+</LanguageData>

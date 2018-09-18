@@ -5,8 +5,8 @@
 		<layerable>true</layerable>
 		<affordances>
 			<li>Light</li>
-			<li>Heavy</li>
-			<li>SmoothHard</li>
+      		<li>Medium</li>
+      		<li>Heavy</li>
 		</affordances>
 		<statBases>
 			<WorkToBuild>135</WorkToBuild>
@@ -145,7 +145,7 @@
 		<defName>HempcretePath</defName>
 		<label>hempcrete path</label>
 		<renderPrecedence>220</renderPrecedence>
-		<description>A random looking path made from smooth hempcrete chunks. </description>
+		<description>A random looking path made from smooth hempcrete chunks.</description>
 		<texturePath>Terrain/MSI_hempcretePath</texturePath>
 		<statBases>
 			<Cleanliness>0.1</Cleanliness>

@@ -35,25 +35,13 @@
   
   	<ThingDef Abstract="True" Name="MSI_PlantFoodRawBase" ParentName="MSI_OrganicProductBase">
 		<ingestible>
-			  <preferability>RawBad</preferability>
 			  <tasteThought>AteRawFood</tasteThought>
-			  <nutrition>0.05</nutrition>
 			  <ingestEffect>EatVegetarian</ingestEffect>
 			  <ingestSound>RawVegetable_Eat</ingestSound>
+      		  <foodType>Plant</foodType>
+      		  <preferability>NeverForNutrition</preferability>
 		</ingestible>
 		<socialPropernessMatters>true</socialPropernessMatters>
-		<comps>
-			<li Class="CompProperties_FoodPoisoningChance">
-				<humanlikeOnly>true</humanlikeOnly>
-			</li>
-		</comps>
-  	</ThingDef>
-
-  	<ThingDef ParentName="MSI_OrganicProductBase" Name="MSI_RoughPlantBase" Abstract="True">
-   		<ingestible>
-      		<foodType>Plant</foodType>
-      		<preferability>NeverForNutrition</preferability>
-    	</ingestible>
   	</ThingDef>
 
   <!--========== Edibles Base ==========-->

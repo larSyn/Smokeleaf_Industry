@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Auto Trimmer -->
+
+  <DoBillsAutoTrimmer.label>自动收割烟草</DoBillsAutoTrimmer.label>
+  <DoBillsAutoTrimmer.verb>收割烟草中</DoBillsAutoTrimmer.verb>
+  <DoBillsAutoTrimmer.gerund>正在收割烟草于</DoBillsAutoTrimmer.gerund>
+
+
+  <!-- Cultivation Bench -->
+
+  <DoBillsCultivationBench.label>在烟草切割机生产烟草产品</DoBillsCultivationBench.label>
+  <DoBillsCultivationBench.verb>生产烟草产品 </DoBillsCultivationBench.verb>
+  <DoBillsCultivationBench.gerund>生产烟草产品于</DoBillsCultivationBench.gerund>
+
+
+  <!-- Medicinals Lab -->
+
+  <DoBillsProduceMedicinals.label>在烟草药剂台制作药物</DoBillsProduceMedicinals.label>
+  <DoBillsProduceMedicinals.verb>制作药物</DoBillsProduceMedicinals.verb>
+  <DoBillsProduceMedicinals.gerund>制作药物于</DoBillsProduceMedicinals.gerund>
+
+
+</LanguageData>

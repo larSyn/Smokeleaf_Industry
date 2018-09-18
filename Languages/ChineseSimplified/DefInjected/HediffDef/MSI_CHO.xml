@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <CHOHigh.label>吸大麻水烟</CHOHigh.label>
+
+
+  <!-- CHO addiction -->
+
+  <CHOTolerance.label>大麻水烟耐受</CHOTolerance.label>
+  <CHOTolerance.stages.1.label>弱</CHOTolerance.stages.1.label>
+  <CHOTolerance.stages.2.label>强</CHOTolerance.stages.2.label>
+  <CHOTolerance.stages.3.label>严重</CHOTolerance.stages.3.label>
+
+  <CHOAddiction.label>大麻水烟成瘾</CHOAddiction.label>
+  <CHOAddiction.stages.1.label>戒断</CHOAddiction.stages.1.label>
+
+
+</LanguageData>

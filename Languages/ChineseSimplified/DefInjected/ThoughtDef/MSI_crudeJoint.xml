@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <CrudeJointHigh.stages.0.label>沉迷粗制烟草卷</CrudeJointHigh.stages.0.label>
+  <CrudeJointHigh.stages.0.description>我的天哪，我的头好痛。</CrudeJointHigh.stages.0.description>
+
+
+  <!-- Smokeleaf addiction -->
+
+  <CrudeJointWithdrawal.stages.1.label>粗制的烟草卷戒断</CrudeJointWithdrawal.stages.1.label>
+  <CrudeJointWithdrawal.stages.1.description>我好想现在抽一根</CrudeJointWithdrawal.stages.1.description>
+
+
+</LanguageData>

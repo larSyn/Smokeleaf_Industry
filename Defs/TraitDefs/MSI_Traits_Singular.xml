@@ -12,7 +12,7 @@
 				<description>NAME has a passion for gardening and smokeleaf. HECAP gets a mood bonus for every plant HE sows.</description>
 				<skillGains>
 					<li>
-						<key>Growing</key>
+						<key>Plants</key>
 						<value>5</value>
 					</li>
 				</skillGains>
@@ -35,9 +35,9 @@
 				<label>stoner</label>
 				<description>NAME has a high tolerance for smokeleaf. HECAP rarely suffers any withdrawal effects.</description>
 				<disallowedMentalStates>
-					<li>BingingDrugMajor</li>
-					<li>BingingDrugExtreme</li>
-					<li>BingingFood</li>
+					<li>Binging_DrugMajor</li>
+					<li>Binging_DrugExtreme</li>
+					<li>Binging_Food</li>
 				</disallowedMentalStates>
 				<statOffsets>
 					<MentalBreakThreshold>-0.1</MentalBreakThreshold>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <CannagarHigh.label>沉迷大麻烟</CannagarHigh.label>
+  <CannagarHigh.labelNoun>沉迷</CannagarHigh.labelNoun>
+
+
+  <!-- Smokeleaf addiction -->
+
+  <CannagarTolerance.label>大麻烟耐受</CannagarTolerance.label>
+  <CannagarTolerance.stages.0.label>弱</CannagarTolerance.stages.0.label>
+  <CannagarTolerance.stages.1.label>弱</CannagarTolerance.stages.1.label>
+  <CannagarTolerance.stages.2.label>强</CannagarTolerance.stages.2.label>
+  <CannagarTolerance.stages.3.label>严重</CannagarTolerance.stages.3.label>
+
+  <CannagarAddiction.label>大麻烟成瘾</CannagarAddiction.label>
+  <CannagarAddiction.stages.1.label>戒断</CannagarAddiction.stages.1.label>
+
+
+</LanguageData>

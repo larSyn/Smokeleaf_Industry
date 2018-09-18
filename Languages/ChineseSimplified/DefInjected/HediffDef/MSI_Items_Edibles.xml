@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Hediffs -->
+
+  <EdiblesHigh.label>大麻食品沉迷</EdiblesHigh.label>
+
+
+  <!-- Edibles Addiction -->
+
+  <EdiblesTolerance.label>大麻食品耐受</EdiblesTolerance.label>
+  <EdiblesTolerance.stages.1.label>弱</EdiblesTolerance.stages.1.label>
+  <EdiblesTolerance.stages.2.label>强</EdiblesTolerance.stages.2.label>
+  <EdiblesTolerance.stages.3.label>严重</EdiblesTolerance.stages.3.label>
+
+  <EdiblesAddiction.label>大麻食品沉迷</EdiblesAddiction.label>
+  <EdiblesAddiction.stages.1.label>戒断</EdiblesAddiction.stages.1.label>
+
+
+  <!-- Advanced Hediffs -->
+
+  <AdvancedEdiblesHigh.label>严重沉迷大麻食品</AdvancedEdiblesHigh.label>
+
+
+  <!-- Advanced Edibles Addiction -->
+
+  <AdvancedEdiblesTolerance.label>高级大麻食物沉迷</AdvancedEdiblesTolerance.label>
+  <AdvancedEdiblesTolerance.stages.1.label>弱</AdvancedEdiblesTolerance.stages.1.label>
+  <AdvancedEdiblesTolerance.stages.2.label>强</AdvancedEdiblesTolerance.stages.2.label>
+  <AdvancedEdiblesTolerance.stages.3.label>严重</AdvancedEdiblesTolerance.stages.3.label>
+
+  <AdvancedEdiblesAddiction.label>高级大麻食物沉迷</AdvancedEdiblesAddiction.label>
+  <AdvancedEdiblesAddiction.stages.1.label>戒断</AdvancedEdiblesAddiction.stages.1.label>
+
+
+</LanguageData>

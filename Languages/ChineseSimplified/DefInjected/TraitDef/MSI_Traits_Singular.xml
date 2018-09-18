@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Traits -->
+
+  <SmokeleafFarmer.degreeDatas.0.label>烟草农夫</SmokeleafFarmer.degreeDatas.0.label>
+  <SmokeleafFarmer.degreeDatas.0.description>NAME 喜欢种植和烟叶,每种一株烟草他都会更快乐</SmokeleafFarmer.degreeDatas.0.description>
+
+  <Stoner.degreeDatas.0.label>上瘾者</Stoner.degreeDatas.0.label>
+  <Stoner.degreeDatas.0.description>NAME 对烟草有很高的承受力，他很少受到戒断影响</Stoner.degreeDatas.0.description>
+
+
+</LanguageData>

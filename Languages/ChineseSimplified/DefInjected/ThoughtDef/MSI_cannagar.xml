@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <CannagarHigh.stages.0.label>大麻烟快感</CannagarHigh.stages.0.label>
+  <CannagarHigh.stages.0.description>噢 天哪 这..这真是爽呆了！</CannagarHigh.stages.0.description>
+
+
+  <!-- Smokeleaf addiction -->
+
+  <CannagarWithdrawal.stages.1.label>粗糙的烟草卷戒断</CannagarWithdrawal.stages.1.label>
+  <CannagarWithdrawal.stages.1.description>我真的要再等两个月才成抽一根吗?!</CannagarWithdrawal.stages.1.description>
+
+
+</LanguageData>
