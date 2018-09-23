@@ -112,5 +112,72 @@
 			</li>
 		</operations>
 	</Operation>
+
+  <!--========== Add Fabrics To Bandage Kits ==========-->
+
+  	<Operation Class="PatchOperationSequence"> 
+	    <success>Always</success>
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>VGP Garden Medicine</modName>
+				<yourMod>Smokeleaf Industry</yourMod>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName = "Make_Bandagekit"]/ingredients/li/filter/thingDefs</xpath>
+				<value>
+					<thingDefs>
+						<li>Cloth</li>
+						<li>HempFabric</li>
+						<li>DevilsleafFabric</li>
+						<li>Flaxcloth</li>
+					</thingDefs>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName = "Make_Bandagekit"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<thingDefs>
+						<li>Cloth</li>
+						<li>HempFabric</li>
+						<li>DevilsleafFabric</li>
+						<li>Flaxcloth</li>
+					</thingDefs>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence"> 
+	    <success>Always</success>
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>VGP Garden Medicine</modName>
+				<yourMod>Smokeleaf Industry</yourMod>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName = "MakeBulkBandagekit"]/ingredients/li/filter/thingDefs</xpath>
+				<value>
+					<thingDefs>
+						<li>Cloth</li>
+						<li>HempFabric</li>
+						<li>DevilsleafFabric</li>
+						<li>Flaxcloth</li>
+					</thingDefs>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName = "MakeBulkBandagekit"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<thingDefs>
+						<li>Cloth</li>
+						<li>HempFabric</li>
+						<li>DevilsleafFabric</li>
+						<li>Flaxcloth</li>
+					</thingDefs>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
 	
 </Patch>
