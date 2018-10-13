@@ -9,7 +9,7 @@
 		<degreeDatas>
 			<li>
 				<label>smokeleaf farmer</label>
-				<description>NAME has a passion for gardening and smokeleaf. HECAP gets a mood bonus for every plant HE sows.</description>
+				<description>[PAWN_nameDef] has a passion for gardening and smokeleaf. [PAWN_pronoun] gets a mood bonus for every plant [PAWN_pronoun] sows.</description>
 				<skillGains>
 					<li>
 						<key>Plants</key>
@@ -33,7 +33,7 @@
 		<degreeDatas>
 			<li>
 				<label>stoner</label>
-				<description>NAME has a high tolerance for smokeleaf. HECAP rarely suffers any withdrawal effects.</description>
+				<description>[PAWN_nameDef] has a high tolerance for smokeleaf. [PAWN_pronoun] rarely suffers any withdrawal effects.</description>
 				<disallowedMentalStates>
 					<li>Binging_DrugMajor</li>
 					<li>Binging_DrugExtreme</li>

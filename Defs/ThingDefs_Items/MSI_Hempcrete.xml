@@ -9,13 +9,15 @@
     <soundInteract>Stone_Drop</soundInteract>
     <soundDrop>Stone_Drop</soundDrop>
     <useHitPoints>false</useHitPoints>
+    <tradeability>Buyable</tradeability>
     <statBases>
       <Mass>1</Mass>
-	    <MaxHitPoints>150</MaxHitPoints>
+	    <MaxHitPoints>100</MaxHitPoints>
       <MarketValue>2</MarketValue>
       <SharpDamageMultiplier>0.5</SharpDamageMultiplier>
       <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
-	     <Beauty>-2</Beauty>
+	    <Beauty>-2</Beauty>
+      <ConstructionSpeedFactor>0.8</ConstructionSpeedFactor>
 	  </statBases>
     <thingCategories>
       <li>StoneBlocks</li>
@@ -30,15 +32,15 @@
         <WorkToBuild>140</WorkToBuild>
       </statOffsets>
       <statFactors>
-		<MarketValue>1.0</MarketValue>
+		    <MarketValue>1.0</MarketValue>
         <Mass>1</Mass>
         <MaxHitPoints>0.8</MaxHitPoints>
         <Flammability>0</Flammability>
         <WorkToBuild>5.0</WorkToBuild>
-		<WorkToMake>1.1</WorkToMake>
+		    <WorkToMake>1.1</WorkToMake>
         <DoorOpenSpeed>1.25</DoorOpenSpeed>
         <BedRestEffectiveness>1.0</BedRestEffectiveness>
-        <MeleeWeapon_CooldownMultiplier>1.35</MeleeWeapon_CooldownMultiplier>
+        <MeleeWeapon_CooldownMultiplier>1.25</MeleeWeapon_CooldownMultiplier>
       </statFactors>
     </stuffProps>
   </ThingDef>
