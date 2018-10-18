@@ -64,6 +64,50 @@
 			</li>
 		</operations>
 	</Operation>
+
+  <!--========== Devilsleaf Recipe ==========-->
+
+	<Operation Class="PatchOperationSequence"> 
+	    <success>Always</success>
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>VGP Garden Fabrics</modName>
+				<yourMod>Smokeleaf Industry</yourMod>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName = "CraftDevilsleafFibers"]/ingredients/li[2]/filter/thingDefs</xpath>
+				<value>
+					<thingDefs>
+						<li>RawDevilstrand</li>
+					</thingDefs>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName = "CraftDevilsleafFibers"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<thingDefs>
+						<li>RawDevilstrand</li>
+					</thingDefs>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName = "BulkCraftDevilsleafFibers"]/ingredients/li[2]/filter/thingDefs</xpath>
+				<value>
+					<thingDefs>
+						<li>RawDevilstrand</li>
+					</thingDefs>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName = "BulkCraftDevilsleafFibers"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<thingDefs>
+						<li>RawDevilstrand</li>
+					</thingDefs>
+				</value>
+			</li>
+		</operations>
+	</Operation>
 	
   <!--========== Add Fabrics To Loom ==========-->
 	

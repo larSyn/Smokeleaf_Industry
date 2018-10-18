@@ -3,7 +3,7 @@
 
 	<!--========== Trim Smokeleaf ==========-->
 
-  <RecipeDef>
+  	<RecipeDef>
 		<defName>AutoTrimSmokeleaf</defName>
 		<label>auto trim smokeleaf (x25)</label>
 		<description>Trim large amounts of smokeleaf very quickly.</description>
