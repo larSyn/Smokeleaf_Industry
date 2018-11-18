@@ -1,5 +1,15 @@
 ----------------------------------------------------------------------------------------------------------------------------------
 
+Smokeleaf Industry v1.13a
+
+	-removed Architect Sense support for new vanilla categories
+	-research balancing
+	-general balancing
+	-fixed VG Fabric and Medicine patches
+	-words
+
+----------------------------------------------------------------------------------------------------------------------------------
+
 Updated to v1.10b
 
 Smokeleaf Industry

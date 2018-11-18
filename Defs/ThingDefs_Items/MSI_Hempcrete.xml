@@ -60,7 +60,6 @@
     </stuffProps>
 		<researchPrerequisites>
 			<li>SmokeleafProcessing</li>
-			<li>Stonecutting</li>
 		</researchPrerequisites>
   </ThingDef>
 

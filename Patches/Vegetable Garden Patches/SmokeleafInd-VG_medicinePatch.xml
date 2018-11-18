@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!--========== Add Fabrics To Bandage Kits ==========-->
+
+  	<Operation Class="PatchOperationSequence"> 
+	    <success>Always</success>
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>VGP Garden Medicine</modName>
+				<yourMod>Smokeleaf Industry</yourMod>
+			</li>
+			<li Class="ModCheck.isModLoaded">
+				<modName>VGP Garden Fabrics</modName>
+				<yourMod>Smokeleaf Industry</yourMod>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/RecipeDef[defName = "Make_Bandagekit"]/ingredients/li/filter/thingDefs</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/RecipeDef[defName = "Make_Bandagekit"]/fixedIngredientFilter/thingDefs</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName = "Make_Bandagekit"]/ingredients/li/filter</xpath>
+				<value>
+					<thingDefs>
+						<li>Cloth</li>
+						<li>Synthread</li>
+						<li>DevilstrandCloth</li>
+						<li>Hyperweave</li>
+						<li>HempFabric</li>
+            			<li>Flaxcloth</li>
+					</thingDefs>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName = "Make_Bandagekit"]/fixedIngredientFilter</xpath>
+				<value>
+					<thingDefs>
+						<li>Cloth</li>
+						<li>Synthread</li>
+						<li>DevilstrandCloth</li>
+						<li>Hyperweave</li>
+						<li>HempFabric</li>
+            			<li>Flaxcloth</li>
+					</thingDefs>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence"> 
+	    <success>Always</success>
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>VGP Garden Medicine</modName>
+				<yourMod>Smokeleaf Industry</yourMod>
+			</li>
+			<li Class="ModCheck.isModLoaded">
+				<modName>VGP Garden Fabrics</modName>
+				<yourMod>Smokeleaf Industry</yourMod>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/RecipeDef[defName = "MakeBulkBandagekit"]/ingredients/li/filter/thingDefs</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/RecipeDef[defName = "MakeBulkBandagekit"]/fixedIngredientFilter/thingDefs</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName = "MakeBulkBandagekit"]/ingredients/li/filter</xpath>
+				<value>
+					<thingDefs>
+						<li>Cloth</li>
+						<li>Synthread</li>
+						<li>DevilstrandCloth</li>
+						<li>Hyperweave</li>
+						<li>HempFabric</li>
+						<li>DevilsleafFabric</li>
+            			<li>Flaxcloth</li>
+					</thingDefs>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName = "MakeBulkBandagekit"]/fixedIngredientFilter</xpath>
+				<value>
+					<thingDefs>
+						<li>Cloth</li>
+						<li>Synthread</li>
+						<li>DevilstrandCloth</li>
+						<li>Hyperweave</li>
+						<li>HempFabric</li>
+						<li>DevilsleafFabric</li>
+            			<li>Flaxcloth</li>
+					</thingDefs>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+  	<Operation Class="PatchOperationSequence"> 
+	    <success>Always</success>
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>VGP Garden Medicine</modName>
+				<yourMod>Smokeleaf Industry</yourMod>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName = "Make_Bandagekit"]/ingredients/li/filter/thingDefs</xpath>
+				<value>
+					<li>HempFabric</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName = "Make_Bandagekit"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<li>HempFabric</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence"> 
+	    <success>Always</success>
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>VGP Garden Medicine</modName>
+				<yourMod>Smokeleaf Industry</yourMod>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName = "MakeBulkBandagekit"]/ingredients/li/filter/thingDefs</xpath>
+				<value>
+					<li>HempFabric</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/RecipeDef[defName = "MakeBulkBandagekit"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<li>HempFabric</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>

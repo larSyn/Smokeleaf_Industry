@@ -20,27 +20,8 @@
 			<li>SmokeleafProcessing</li>
 			<li>Stonecutting</li>
 		</researchPrerequisites>
-	</TerrainDef>
-  
-	<ArchitectSense.DesignationSubCategoryDef>
-        <defName>MSI_FloorBase</defName>
-        <label>Hemp Floors</label>
-        <description>Floors made from hemp products.</description>
-        <defNames>
-            <li>BrickHempcrete</li>
-            <li>FlagstoneHempcrete</li>
-            <li>Hempcrete</li>
-            <li>HempcreteTile</li>
-            <li>CarpetHemp</li>
-            <li>CarpetDevilsleaf</li>
-            <li>HempcretePlate</li>
-            <li>HempStalkFloor</li>
-            <li>HempcretePath</li>
-        </defNames>
-        <designationCategory>Floors</designationCategory>
-    	<preview>true</preview>
-        <debug>true</debug>
-    </ArchitectSense.DesignationSubCategoryDef>  
+    	<designatorDropdown>Floor_Hemp</designatorDropdown>
+	</TerrainDef> 
   
   <!--========== HempBlock TileStoneBase ==========-->
   
@@ -169,6 +150,7 @@
 			<Beauty>3</Beauty>
 			<Flammability>0.25</Flammability>
 		</statBases>
+    	<designatorDropdown>Floor_Carpet</designatorDropdown>
     </TerrainDef>
   
 	<TerrainDef ParentName="MSI_CarpetBase">

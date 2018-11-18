@@ -4,7 +4,7 @@
   <ThingDef ParentName="MSI_MakeableDrugPillBase">
     <defName>SmokeleafPills</defName>
     <label>smokeleaf pills</label>
-    <description>A pill form medicinal that offers preventative treatment, aids in recovery and provides mild pain relief.  May cause drowsiness.</description>
+    <description>A pill form medicinal that offers preventative treatment (Malaria and Plague), aids in recovery and provides mild pain relief.  May cause drowsiness.</description>
     <graphicData>
   		<texPath>Things/Items/MSI_pill</texPath>
   		<graphicClass>Graphic_StackCount</graphicClass>
