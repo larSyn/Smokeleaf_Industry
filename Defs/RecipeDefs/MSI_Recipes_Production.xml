@@ -181,7 +181,7 @@
 		<skillRequirements>
 			<Crafting>3</Crafting>
 		</skillRequirements>
-		<researchPrerequisite>DrugProduction</researchPrerequisite>
+		<researchPrerequisite>SmokeleafCultivation</researchPrerequisite>
 		<ingredients>
 			<li>
 				<filter>
@@ -412,7 +412,7 @@
 		
 	<RecipeDef>
 		<defName>BulkCraftHempFibers</defName>
-		<label>craft hemp fabric (bulk)</label>
+		<label>craft hemp fabric (x10)</label>
 		<description>Process hemp fibers into a durable fabric in larger quantities.</description>
 		<jobString>Crafting hemp fabric.</jobString>
 		<effectWorking>Tailor</effectWorking>
@@ -500,7 +500,7 @@
 		
 	<RecipeDef>
 		<defName>BulkCraftDevilsleafFibers</defName>
-		<label>craft devilsleaf fabric (bulk)</label>
+		<label>craft devilsleaf fabric (x10)</label>
 		<description>Process hemp fibers and devilstrand into an extrememly durable fabric in larger quantities.</description>
 		<jobString>Crafting devilsleaf fabric.</jobString>
 		<effectWorking>Tailor</effectWorking>
@@ -606,7 +606,7 @@
 		
 	<RecipeDef>
 		<defName>BulkCraftHempBiocomposite</defName>
-		<label>craft hemp biocomposite (bulk)</label>
+		<label>craft hemp biocomposite (x10)</label>
 		<description>Process hemp fibers and hemp seed oil into a lightweight biocomposite in larger quantities.</description>
 		<jobString>Crafting hemp biocomposite.</jobString>
 		<effectWorking>Tailor</effectWorking>
@@ -700,7 +700,7 @@
 		
 	<RecipeDef>
 		<defName>BulkCraftHempBiocoal</defName>
-		<label>craft hemp biocoal (bulk)</label>
+		<label>craft hemp biocoal (x10)</label>
 		<description>Heat hemp fibers at extremely high temperatures to carbonize it in larger quantities.</description>
 		<jobString>Crafting hemp biocoal.</jobString>
 		<effectWorking>Smelt</effectWorking>
@@ -784,7 +784,7 @@
 		
 	<RecipeDef>
 		<defName>BulkCraftNanosheet</defName>
-		<label>craft hemp nanosheet (bulk)</label>
+		<label>craft hemp nanosheet (x5)</label>
 		<description>Process hemp bio-coal and hemp fiber into an advanced nanosheet in larger quantities.</description>
 		<jobString>Crafting hemp nanosheet.</jobString>
 		<effectWorking>Smelt</effectWorking>
@@ -833,7 +833,7 @@
 	
 	<RecipeDef>
 		<defName>MakeHempoline</defName>
-		<label>make hempoline</label>
+		<label>make hempoline (x5)</label>
 		<description>Make a batch of hempoline by refining hemp fibers or seeds.</description>
 		<jobString>MAking hempoline from hemp fibers.</jobString>
 		<effectWorking>Cremate</effectWorking>
@@ -870,7 +870,7 @@
 	
 	<RecipeDef>
 		<defName>MakeBulkHempoline</defName>
-		<label>make hempoline from hemp fibers (bulk)</label>
+		<label>make hempoline from hemp fibers (x25)</label>
 		<description>Make a batch of hempoline by refining hemp fibersor seeds, in larger quantities.</description>
 		<jobString>Makining hempoline from hemp fibers.</jobString>
 		<effectWorking>Cremate</effectWorking>
@@ -909,7 +909,7 @@
 	
 	<RecipeDef>
 		<defName>MakeChemfuelFromSmokeleafProducts</defName>
-		<label>make chemfuel from smokeleaf products</label>
+		<label>make chemfuel from smokeleaf products (x5)</label>
 		<description>Make a batch of chemfuel by refining oils from smokeleaf products.</description>
 		<jobString>Refining chemfuel from smokeleaf seeds.</jobString>
 		<effectWorking>Cremate</effectWorking>
@@ -946,7 +946,7 @@
 	
 	<RecipeDef>
 		<defName>MakeBulkChemfuelFromSmokeleafProducts</defName>
-		<label>make chemfuel from smokeleaf products (bulk)</label>
+		<label>make chemfuel from smokeleaf products (x25)</label>
 		<description>Make a batch of chemfuel by refining oils from smokeleaf products in larger quantities.</description>
 		<jobString>Refining chemfuel from smokeleaf seeds.</jobString>
 		<effectWorking>Cremate</effectWorking>

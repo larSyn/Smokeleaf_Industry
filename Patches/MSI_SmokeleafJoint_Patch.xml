@@ -37,7 +37,7 @@
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName = "SmokeleafJoint"]/recipeMaker</xpath>
 					<value>
-						<researchPrerequisite>DrugProduction</researchPrerequisite>
+						<researchPrerequisite>SmokeleafCultivation</researchPrerequisite>
 					</value>
 			</li>
 			<li Class="PatchOperationAdd">

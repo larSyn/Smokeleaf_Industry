@@ -63,7 +63,7 @@
 		<description>Roll more joints at a time.</description>
 		<jobString>making smokeleaf joints</jobString>
 		<workAmount>1500</workAmount>
-		<researchPrerequisite>DrugProduction</researchPrerequisite>
+		<researchPrerequisite>SmokeleafCultivation</researchPrerequisite>
 		<ingredients>
 			<li>
 				<filter>
@@ -122,7 +122,7 @@
 	
 	<RecipeDef ParentName="MSI_CraftBulkDrugs">
 		<defName>BulkMakeSmokeleafHash</defName>
-		<label>make smokeleaf hash (bulk)</label>
+		<label>make smokeleaf hash (x5)</label>
 		<description>Make smokeleaf hash in larger quantities.</description>
 		<jobString>making smokeleaf hash</jobString>
 		<workAmount>3000</workAmount>
@@ -154,7 +154,7 @@
 	
 	<RecipeDef ParentName="MSI_CraftBulkDrugs">
 		<defName>BulkMakeCHO</defName>
-		<label>make chemfuel hash oil (bulk)</label>
+		<label>make chemfuel hash oil (x5)</label>
 		<description>Make chemfuel hash oil in larger quantities.</description>
 		<jobString>making chemfuel hash oil</jobString>
 		<effectWorking>BurnDrug</effectWorking>
@@ -197,7 +197,7 @@
 	
 	<RecipeDef ParentName="MSI_CraftBulkDrugs">
 		<defName>BulkMakeSmokeleafDistillate</defName>
-		<label>make smokeleaf distillate (bulk)</label>
+		<label>make smokeleaf distillate (x5)</label>
 		<description>Make smokeleaf distillate in larger quantities.</description>
 		<jobString>extracting smokeleaf distillate</jobString>
 		<workAmount>3000</workAmount>
@@ -239,7 +239,7 @@
 	
 	<RecipeDef ParentName="MSI_CraftBulkDrugs">
 		<defName>BulkMakeSmokeleafCannagar</defName>
-		<label>make smokeleaf cannagar (bulk)</label>
+		<label>make smokeleaf cannagar (x5)</label>
 		<description>Make smokeleaf cannagar in larger quantities.</description>
 		<jobString>making smokeleaf cannagar</jobString>
 		<workAmount>3000</workAmount>
@@ -290,7 +290,7 @@
 	
 	<RecipeDef ParentName="MSI_CraftBulkDrugs">
 		<defName>BulkMakeSmokeleafTincture</defName>
-		<label>make smokeleaf tincture (bulk)</label>
+		<label>make smokeleaf tincture (x10)</label>
 		<description>Make smokeleaf tincture in larger quantities.</description>
 		<jobString>making smokeleaf tincture</jobString>
 		<workAmount>3000</workAmount>
@@ -344,7 +344,7 @@
 	
 	<RecipeDef ParentName="MSI_CraftBulkDrugs">
 		<defName>BulkMakeSmokeleafPills</defName>
-		<label>make smokeleaf pills (bulk)</label>
+		<label>make smokeleaf pills (x10)</label>
 		<description>Make smokeleaf pills in larger quantities.</description>
 		<jobString>making smokeleaf pills</jobString>
 		<workAmount>3000</workAmount>
@@ -389,7 +389,7 @@
 	
 	<RecipeDef ParentName="MSI_CraftBulkDrugs">
 		<defName>BulkMakeSmokeleafLotion</defName>
-		<label>make smokeleaf lotion (bulk)</label>
+		<label>make smokeleaf lotion (x10)</label>
 		<description>Make smokeleaf lotion in larger quantities.</description>
 		<jobString>making smokeleaf lotion</jobString>
 		<workAmount>3000</workAmount>
@@ -433,8 +433,42 @@
 	<!--========== CBD Recipe ==========-->
 	
 	<RecipeDef ParentName="MSI_CraftBulkDrugs">
+		<defName>ExtractCBD</defName>
+		<label>extract CBD</label>
+		<description>Extract CBD from smokeleaf buds.</description>
+		<jobString>Extracting CBD</jobString>
+		<workAmount>3000</workAmount>
+		<skillRequirements>
+			<Crafting>3</Crafting>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+		<researchPrerequisite>SmokeleafPharmacology</researchPrerequisite>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SmokeleafBuds</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SmokeleafBuds</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<CBD>1</CBD>
+		</products>
+		<recipeUsers>
+			<li>MedicinalsLab</li>
+		</recipeUsers>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="MSI_CraftBulkDrugs">
 		<defName>BulkExtractCBD</defName>
-		<label>make CBD (bulk)</label>
+		<label>extract CBD (x3)</label>
 		<description>Extract CBD from smokeleaf buds in larger quantities.</description>
 		<jobString>Extracting CBD</jobString>
 		<workAmount>3000</workAmount>
@@ -471,7 +505,7 @@
 	
 	<RecipeDef ParentName="MSI_CraftBulkDrugs">
 		<defName>BulkInfusedMedicine</defName>
-		<label>make infused medicine (bulk)</label>
+		<label>make infused medicine (x5)</label>
 		<description>Make infused medicine in larger quantities.</description>
 		<jobString>making infuse medicine</jobString>
 		<effectWorking>BurnDrug</effectWorking>

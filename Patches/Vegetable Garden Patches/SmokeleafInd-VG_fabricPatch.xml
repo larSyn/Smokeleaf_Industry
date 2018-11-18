@@ -40,6 +40,7 @@
 				<xpath>Defs/RecipeDef[defName = "Makeblendedcloth"]/ingredients/li/filter/thingDefs</xpath>
 				<value>
 					<thingDefs>
+						<li>Cloth</li>
 						<li>Synthread</li>
 						<li>DevilstrandCloth</li>
 						<li>Hyperweave</li>
@@ -53,6 +54,7 @@
 				<xpath>Defs/RecipeDef[defName = "Makeblendedcloth"]/fixedIngredientFilter/thingDefs</xpath>
 				<value>
 					<thingDefs>
+						<li>Cloth</li>
 						<li>Synthread</li>
 						<li>DevilstrandCloth</li>
 						<li>Hyperweave</li>
@@ -60,6 +62,36 @@
 						<li>DevilsleafFabric</li>
 						<li>Flaxcloth</li>
 					</thingDefs>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+  <!--========== Add Fabric To Loom ==========-->
+	
+	<Operation Class="PatchOperationSequence">
+	    <success>Always</success>
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>VGP Garden Fabrics</modName>
+				<yourMod>Smokeleaf Industry</yourMod>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName = "CraftHempFibers"]/recipeUsers</xpath>
+				<value>
+					<recipeUsers>
+						<li>TableLoom</li>
+						<li>TableElecLoom</li>
+					</recipeUsers>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName = "BulkCraftHempFibers"]/recipeUsers</xpath>
+				<value>
+					<recipeUsers>
+						<li>TableLoom</li>
+						<li>TableElecLoom</li>
+					</recipeUsers>
 				</value>
 			</li>
 		</operations>
@@ -108,120 +140,5 @@
 			</li>
 		</operations>
 	</Operation>
-	
-  <!--========== Add Fabrics To Loom ==========-->
-	
-	<Operation Class="PatchOperationSequence">
-	    <success>Always</success>
-		<operations>
-			<li Class="ModCheck.isModLoaded">
-				<modName>VGP Garden Fabrics</modName>
-				<yourMod>Smokeleaf Industry</yourMod>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/RecipeDef[defName = "CraftHempFibers"]/recipeUsers</xpath>
-				<value>
-					<recipeUsers>
-						<li>TableLoom</li>
-						<li>TableElecLoom</li>
-					</recipeUsers>
-				</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/RecipeDef[defName = "BulkCraftHempFibers"]/recipeUsers</xpath>
-				<value>
-					<recipeUsers>
-						<li>TableLoom</li>
-						<li>TableElecLoom</li>
-					</recipeUsers>
-				</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/RecipeDef[defName = "CraftDevilsleafFibers"]/recipeUsers</xpath>
-				<value>
-					<recipeUsers>
-						<li>TableLoom</li>
-						<li>TableElecLoom</li>
-					</recipeUsers>
-				</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/RecipeDef[defName = "BulkCraftDevilsleafFibers"]/recipeUsers</xpath>
-				<value>
-					<recipeUsers>
-						<li>TableLoom</li>
-						<li>TableElecLoom</li>
-					</recipeUsers>
-				</value>
-			</li>
-		</operations>
-	</Operation>
 
-  <!--========== Add Fabrics To Bandage Kits ==========-->
-
-  	<Operation Class="PatchOperationSequence"> 
-	    <success>Always</success>
-		<operations>
-			<li Class="ModCheck.isModLoaded">
-				<modName>VGP Garden Medicine</modName>
-				<yourMod>Smokeleaf Industry</yourMod>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/RecipeDef[defName = "Make_Bandagekit"]/ingredients/li/filter/thingDefs</xpath>
-				<value>
-					<thingDefs>
-						<li>Cloth</li>
-						<li>HempFabric</li>
-						<li>DevilsleafFabric</li>
-						<li>Flaxcloth</li>
-					</thingDefs>
-				</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/RecipeDef[defName = "Make_Bandagekit"]/fixedIngredientFilter/thingDefs</xpath>
-				<value>
-					<thingDefs>
-						<li>Cloth</li>
-						<li>HempFabric</li>
-						<li>DevilsleafFabric</li>
-						<li>Flaxcloth</li>
-					</thingDefs>
-				</value>
-			</li>
-		</operations>
-	</Operation>
-
-	<Operation Class="PatchOperationSequence"> 
-	    <success>Always</success>
-		<operations>
-			<li Class="ModCheck.isModLoaded">
-				<modName>VGP Garden Medicine</modName>
-				<yourMod>Smokeleaf Industry</yourMod>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/RecipeDef[defName = "MakeBulkBandagekit"]/ingredients/li/filter/thingDefs</xpath>
-				<value>
-					<thingDefs>
-						<li>Cloth</li>
-						<li>HempFabric</li>
-						<li>DevilsleafFabric</li>
-						<li>Flaxcloth</li>
-					</thingDefs>
-				</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/RecipeDef[defName = "MakeBulkBandagekit"]/fixedIngredientFilter/thingDefs</xpath>
-				<value>
-					<thingDefs>
-						<li>Cloth</li>
-						<li>HempFabric</li>
-						<li>DevilsleafFabric</li>
-						<li>Flaxcloth</li>
-					</thingDefs>
-				</value>
-			</li>
-		</operations>
-	</Operation>
-
-	
 </Patch>

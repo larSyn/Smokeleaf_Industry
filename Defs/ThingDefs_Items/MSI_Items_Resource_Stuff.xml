@@ -368,10 +368,11 @@
 		<statBases>
 			<MaxHitPoints>30</MaxHitPoints>
 			<MarketValue>30</MarketValue>
-			<Mass>0.5</Mass>
-			<Flammability>1.0</Flammability>
-			<MedicalPotency>0.75</MedicalPotency>
-			<DeteriorationRate>6</DeteriorationRate>
+			<Mass>0.25</Mass>
+			<Flammability>0.75</Flammability>
+      		<MedicalPotency>1.00</MedicalPotency>
+      		<MedicalQualityMax>1.00</MedicalQualityMax>
+			<DeteriorationRate>2</DeteriorationRate>
 			<WorkToMake>750</WorkToMake>
 		</statBases>
 		<thingCategories>
@@ -380,17 +381,6 @@
 		<costList>
 			<SmokeleafBuds>25</SmokeleafBuds>
 		</costList>
-		<recipeMaker>
-			<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
-			<workSkill>Intellectual</workSkill>
-			<recipeUsers>
-				<li>MedicinalsLab</li>
-			</recipeUsers>
-			<skillRequirements>
-				<Crafting>3</Crafting>
-				<Medicine>5</Medicine>
-			</skillRequirements>
-		</recipeMaker>
 		<researchPrerequisites>
 			<li>SmokeleafPharmacology</li>
 		</researchPrerequisites>
