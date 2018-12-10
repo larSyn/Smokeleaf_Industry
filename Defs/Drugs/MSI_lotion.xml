@@ -59,7 +59,7 @@
 		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
 		<maxSeverity>1.0</maxSeverity>
 		<comps>
-			<li Class="HealRandomOldWound.HediffCompProperties_HealRandomOldWound" />
+			<li Class="SmokeleafIndustry.HediffCompProperties_HealRandomOldWound" />
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>-0.8</severityPerDay>
 			</li>

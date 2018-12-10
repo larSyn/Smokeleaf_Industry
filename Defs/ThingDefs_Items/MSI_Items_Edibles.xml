@@ -17,7 +17,7 @@
     <statBases>
       <MarketValue>4.0</MarketValue>
       <Flammability>0.5</Flammability>
-      <Nutrition>0.1</Nutrition>
+      <Nutrition>0.05</Nutrition>
     </statBases>
   	<ingestible>
   		<foodType>Processed</foodType>
@@ -68,7 +68,7 @@
       <MarketValue>2.5</MarketValue>
       <Flammability>1.0</Flammability>
       <DeteriorationRate>12</DeteriorationRate>
-      <Nutrition>0.15</Nutrition>
+      <Nutrition>0.05</Nutrition>
     </statBases>
     <ingestible>
       <preferability>RawBad</preferability>
@@ -109,7 +109,7 @@
     <statBases>
       <MarketValue>4.0</MarketValue>
       <Flammability>0.5</Flammability>
-      <Nutrition>0.15</Nutrition>
+      <Nutrition>0.05</Nutrition>
     </statBases>
   	<ingestible>
   		<foodType>Processed</foodType>
@@ -142,7 +142,7 @@
       <MarketValue>12</MarketValue>
       <Flammability>0.5</Flammability>
       <Mass>0.15</Mass>
-      <Nutrition>0.2</Nutrition>
+      <Nutrition>0.25</Nutrition>
     </statBases>
     <ingestible>
       <foodType>Meat</foodType>
@@ -336,7 +336,7 @@
     </comps>
   </ThingDef>
   
-  <!--========== Hediffs ==========-->
+  <!--========== Edibles Hediffs ==========-->
 	
   <HediffDef>
     <defName>EdiblesHigh</defName>
@@ -633,7 +633,7 @@
      </comps>
   </ThingDef>
   
-    	<!--========== Advanced Hediffs ==========-->
+    	<!--========== Advanced Edibles Hediffs ==========-->
 	
   <HediffDef>
     <defName>AdvancedEdiblesHigh</defName>

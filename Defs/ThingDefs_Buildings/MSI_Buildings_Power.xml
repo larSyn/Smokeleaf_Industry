@@ -183,7 +183,7 @@
 	    </stuffCategories>
 	    <comps>
 	      <li Class="CompProperties_Battery">
-	        <storedEnergyMax>2500</storedEnergyMax>
+	        <storedEnergyMax>3000</storedEnergyMax>
 	        <efficiency>0.75</efficiency>
         	<shortCircuitInRain>true</shortCircuitInRain>
 	        <transmitsPower>true</transmitsPower>
@@ -208,6 +208,7 @@
   	<ThingDef ParentName="MSI_BuildingBase">
 	    <defName>HempSolarGenerator</defName>
 	    <label>hempene solar generator</label>
+	    <description>A Glittertech solar generator, made with superconductive hempene, that produces more electricity from sunlight than a standard solar generator. Does not work in the dark.</description>
 	    <thingClass>Building</thingClass>
 	    <graphicData>
 	      <texPath>Things/Buildings/MSI_solarPanel</texPath>
@@ -231,7 +232,6 @@
 	      <Flammability>0.5</Flammability>
 	    </statBases>
 	    <tickerType>Normal</tickerType>
-	    <description>A Glittertech solar generator, made with superconductive hempene, that produces more electricity from sunlight than a standard solar generator. Does not work in the dark.</description>
 	    <size>(5,5)</size>
     	<costStuffCount>50</costStuffCount>
 	    <costList>
@@ -243,8 +243,8 @@
 	    </stuffCategories>
 	    <comps>
 	      <li Class="CompProperties_Power">
-	        <compClass>CompPowerPlantSolar</compClass>
-	        <basePowerConsumption>-10</basePowerConsumption>
+	        <compClass>SmokeleafIndustry.CompPowerPlantHempSolar</compClass>
+	        <basePowerConsumption>-3000</basePowerConsumption>
 	        <transmitsPower>true</transmitsPower>
 	      </li>
 	      <li Class="CompProperties_Breakdownable"/>
